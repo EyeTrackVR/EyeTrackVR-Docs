@@ -17,7 +17,7 @@ parent: Software Guide
 - [x] Windows/Linux PC
 
 ## Install Python
-EyetrackVR is currently using python version 3.11.0 before attempting to continue, please install it. [Python 3.11.0](https://www.python.org/downloads/release/python-3110/)
+EyetrackVR is currently using python version `3.11.0`. Before you continue, please install it. [Python 3.11.0](https://www.python.org/downloads/release/python-3110/)
 
 ## Installing Poetry
 
