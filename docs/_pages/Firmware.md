@@ -12,10 +12,7 @@ Firmware is the second part of the equation to get your trackers going. It lives
 
 # What should I download and where?
 
-Current testing has been with `loucass003's` firmware [found here](https://github.com/Futurabeast/futura-face-cam).
-It's tried and working although it's a bit more complicated to setup and does not fully fulfil our needs. Download and install this one, for now.
-
-We're working on our own solution called OpenIris, [found here](https://github.com/lorow/OpenIris). So far we have:
+Current testing has been on our own solution called OpenIris, [found here](https://github.com/lorow/OpenIris). So far we have:
 
 ### Working right now
 
