@@ -3,7 +3,7 @@ var url = window.location.pathname;
 
 if (
   window.matchMedia("(prefers-color-scheme: light)") &&
-  url == "https://github.com/RedHawk989/EyeTrackVR/contact/"
+  url == "/EyeTrackVR/contact/"
 ) {
   var discord_scheme = "light";
 
@@ -13,7 +13,7 @@ if (
 
 if (
   window.matchMedia("(prefers-color-scheme: dark)") &&
-  url == "https://github.com/RedHawk989/EyeTrackVR/contact/"
+  url == "/EyeTrackVR/contact/"
 ) {
   var discord_scheme = "dark";
 
