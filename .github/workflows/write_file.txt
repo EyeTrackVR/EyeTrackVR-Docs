@@ -35,7 +35,7 @@ jobs:
               author: 'ZanzyTHEbar'
               email: info@h-bat.com
               # baseurl: "" # the subpath of your site, e.g. /blog
-              url: "https://redhawk989.github.io"
+              url: "https://docs.eyetrackvr.dev"
 
               # twitter_username:
               # facebook_username:
