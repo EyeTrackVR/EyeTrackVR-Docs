@@ -18,7 +18,7 @@ previews: 3
 sass:
   style: compressed
 
-baseurl: '/'
+baseurl: ''
 
 favicon: "/assets/images/favicon.png" # the favicon for your site
 
