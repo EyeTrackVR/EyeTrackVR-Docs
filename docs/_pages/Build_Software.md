@@ -40,8 +40,3 @@ Now, you should be ready to build the app.
 With a command prompt open in the EyeTrackApp folder, run the command `poetry run pyinstaller eyetrackapp.spec`
 
 Give it time to build the app. Once done, the app should be under `dist/eyetrackapp`
-
-## Optional step:
-
-1. Use a program like [Resource Hacker](http://www.angusj.com/resourcehacker/) to replace the .exe icon with the correct logo found in the Images folder.
-- [Here is a tutorial](https://www.howtogeek.com/75983/stupid-geek-tricks-how-to-modify-the-icon-of-an-.exe-file/)
