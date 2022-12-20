@@ -20,7 +20,6 @@ Download the [latest Visual Studio Code](https://code.visualstudio.com/download)
 
 ### Install
 
-
 {% include custom/images/image_2.html url="https://i.imgur.com/hAm3Zu0.gif" max-width="500" caption="" alt="" %}
 
 ## 2. Install PlatformIO IDE
@@ -29,20 +28,18 @@ Once Visual Studio Code is installed, open it and install [PlatformIO IDE for VS
 
 {% include custom/images/image_2.html url="https://i.imgur.com/ebV0IgT.gif" max-width="500" caption="" alt="" %}
 
-
-
 ## 3. Clone the firmware project
 
 Make sure you close any current projects you have open or open a new window before moving forward with these steps.
 
-1. Go to [https://github.com/lorow/OpenIris](https://github.com/lorow/OpenIris) and download the latest version of the code. 
+1. Go to [https://github.com/lorow/OpenIris](https://github.com/lorow/OpenIris) and `clone` the latest version from the `main` branch.
+   1. If you do not have `git` installed please install it from [here](https://git-scm.com/downloads).
+   2. If you do not know how to clone a repo please refer to [this documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-2. Extract the zip, take note of the path it is in for when we open it in Platform IO. 
+2. Extract the zip, take note of the path it is in for when we open it in Platform IO.
 
 3. Open the firmware in VS Code by going to PlatformIO, selecting open, then navigating to OpenIris ESP folder and opening it.
-   
+
 {% include custom/images/image_2.html url="https://i.imgur.com/c61Cpaz.gif" max-width="500" caption="" alt="" %}
-
-
 
 _This is a direct adaptation from SlimeVR. Credit goes to the SlimeVR team [adapted from here](https://docs.slimevr.dev/firmware/setup-and-install.html)_
