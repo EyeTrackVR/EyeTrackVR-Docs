@@ -36,10 +36,10 @@ Make sure you close any current projects you have open or open a new window befo
    1. If you do not have `git` installed please install it from [here](https://git-scm.com/download/win).
    2. If you do not know how to clone a repo please refer to [this documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-2. Extract the zip, take note of the path it is in for when we open it in Platform IO.
+   _**Do not download as a zip**_ - please only properly clone the project, take note of the path you run the clone command in, this is where the files will be downloaded. When we open it in PlatformIO later, this path will be needed.
 
-3. Open the firmware in VS Code by going to PlatformIO, selecting open, then navigating to OpenIris ESP folder and opening it.
+2. Open the firmware in VSCode by going to PlatformIO, selecting open, then navigating to `OpenIris/ESP`  folder and opening it.
 
 {% include custom/images/image_2.html url="https://i.imgur.com/c61Cpaz.gif" max-width="500" caption="" alt="" %}
 
-_This is a direct adaptation from SlimeVR. Credit goes to the SlimeVR team [adapted from here](https://docs.slimevr.dev/firmware/setup-and-install.html)_
+_This is an adaptation from SlimeVR. Credit goes to the SlimeVR team [adapted from here](https://docs.slimevr.dev/firmware/setup-and-install.html)_
