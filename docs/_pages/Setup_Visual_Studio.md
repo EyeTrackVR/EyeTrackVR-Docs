@@ -33,7 +33,7 @@ Once Visual Studio Code is installed, open it and install [PlatformIO IDE for VS
 Make sure you close any current projects you have open or open a new window before moving forward with these steps.
 
 1. Go to [https://github.com/lorow/OpenIris](https://github.com/lorow/OpenIris) and `clone` the latest version from the `main` branch.
-   1. If you do not have `git` installed please install it from [here](https://git-scm.com/downloads).
+   1. If you do not have `git` installed please install it from [here](https://git-scm.com/download/win).
    2. If you do not know how to clone a repo please refer to [this documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
 2. Extract the zip, take note of the path it is in for when we open it in Platform IO.
