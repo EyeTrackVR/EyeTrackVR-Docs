@@ -34,7 +34,18 @@ Make sure you close any current projects you have open or open a new window befo
 
 1. Go to [https://github.com/lorow/OpenIris](https://github.com/lorow/OpenIris) and `clone` the latest version from the `main` branch.
    1. If you do not have `git` installed please install it from [here](https://git-scm.com/download/win).
-   2. If you do not know how to clone a repo please refer to [this documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+   2. Open Git Bash.
+{% include custom/images/image_2.html url="https://i.imgur.com/DWO5vkE.png" max-width="500" caption="" alt="" %}
+
+   3. Change the directory to the directory that you want the firmware to be cloned. Ex: `cd C:\`
+{% include custom/images/image_2.html url="https://i.imgur.com/mWAVxtF.png" max-width="500" caption="" alt="" %}   
+
+   4. Clone the repository by entering the command: `git clone https://github.com/lorow/OpenIris.git`
+{% include custom/images/image_2.html url="https://i.imgur.com/YbXpX7t.png" max-width="500" caption="" alt="" %}   
+   
+
+   For more info about cloning please refer to [this documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
    _**Do not download as a zip**_ - please only properly clone the project, take note of the path you run the clone command in, this is where the files will be downloaded. When we open it in PlatformIO later, this path will be needed.
 
