@@ -11,7 +11,7 @@ parent: Getting Started
 
 ### Software is not final. 
 Bugs can and will occur which may hinder the experience or useability at times.
-Do not expect 100% reliable and perfect function.
+Do not expect 100% reliable and perfect function. Not all features are fully developed yet.
 
 ### Firmware may have user difficulties.
 Our firmware has not been tested widely so issues may creep up.

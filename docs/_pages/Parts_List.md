@@ -34,7 +34,9 @@ Here is an amazon link for 3 ESP32-Cams and programmers without the proper camer
 - 1x Lower gauge wire to power ESPs
 [28 gauge wire from AliExpress here](https://a.aliexpress.com/_mK72cy6)
 
+Reccommended:
 
+- 2x External antennas for ESPs [5 pack on AliExpress here](https://www.aliexpress.com/item/3256801834968221.html)
 
 ## IR Emitters
 
