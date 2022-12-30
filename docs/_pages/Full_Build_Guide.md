@@ -18,7 +18,7 @@ has_toc: true
 
 [Step 4: Gather up all of your hardware.](#step-4-gather-up-all-of-your-hardware)
 
-[Step 5: Install external antennas or sheild ESP antenna with antistatic bag.](#step-5-install-external-antennas-or-sheild-esp-antenna-with-antistatic-bag)
+[Step 5: Install external antennas or sheild ESP antenna with antistatic bag.](#step-5-install-external-antennas-or-shield-esp-antenna-with-an-antistatic-bag)
 
 [Step 6: Attach cameras to ESPs.](#step-6-connect-esp-to-the-programmer-to-flash)
 
@@ -74,13 +74,14 @@ Make sure you have at least the following:
 
 {% include custom/images/image_2.html url="https://i.imgur.com/j18rRI7.jpg" max-width="400" caption="ESPs, cams, a programmer and a USB connector" alt="img of components" %}
 
-## Step 5: Install external antennas or sheild ESP antenna with antistatic bag.
+
+## Step 5: Install external antennas or shield ESP antenna with an antistatic bag.
 
 Some ESP-CAM boards have issues with signal integrity, there are 2 things you can do to help/solve the issues.
 
 The first option is to use an external antenna.
 
-This is the best solution when it comes to the end result. If you have Vive/Tundra trackers, this is a **REQUIRED** step. The interference from the trackers will make your ESP stream unusable. Antistatic bag does not help in this case. Unfortunately, removing the antenna is not super easy, you have to either move a resistor or, remove it and bridge 2 solder pads. The image attached below shows the orentation of that pads need to be connected for which mode. You can not bridge all connections and have both antennas active at the same time. The 0 ohm resistor does not need to be on the board, you can simply bridge the connections.
+This is the best solution when it comes to the final result. If you have Vive/Tundra trackers, this is a **REQUIRED** step. The interference from the trackers will make your ESP stream unusable. An antistatic bag does not help in this case. Unfortunately, removing the antenna is not super easy, you have to either move a resistor or, remove it and bridge 2 solder pads. The image attached below shows the orientation of the pads that need to be connected for which mode. You can not bridge all connections and have both antennas active at the same time. The 0-ohm resistor does not need to be on the board, you can simply bridge the connections.
 
 {% include custom/images/image_2.html url="https://i.imgur.com/OzpxFMD.png" max-width="400" caption="Image from: https://randomnerdtutorials.com/esp32-cam-connect-external-antenna/" alt="img" %}
 
@@ -91,8 +92,8 @@ Below is an example of bridging the connections and attaching an antenna.
 
 <iframe width="500" height="300" src="https://www.youtube.com/embed/r4PsuWTFRBg" title="How to add an external antenna to ESP32-CAM board" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-The second option is to cover the ESP's antenna with antistatic bag.
-This can help aid problems, and can compleatly solve them in some cases. Best of all, it is compleatly free! However, it should be noted that it performs worse than an external antenna and in certain cases will not solve the issue like if you have Vive trackers. 
+The second option is to cover the ESP's antenna with an antistatic bag.
+This can help aid problems, and can completely solve them in some cases. Best of all, it is completely free! However, it should be noted that it performs worse than an external antenna and in certain cases will not solve the issue like if you have Vive trackers. 
 
 <iframe width="500" height="300" src="https://www.youtube.com/embed/wS4PS3Mw250" title="Covering an ESP32-CAM's antenna with anti-static bag" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
