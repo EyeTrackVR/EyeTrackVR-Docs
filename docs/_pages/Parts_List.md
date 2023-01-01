@@ -82,4 +82,6 @@ If you are a Patreon please check out discount codes available to you, and also 
 
 If you own another headset not listed above, that means there are no mounts designed for them yet. If you have basic skills in modeling or think up a solution to mount cams and emitters, please try to make a mount and then let us in the discord know so it can be added here. Any headset that can fit the camera is potentially compatible. If you are willing, give it a shot to design a mount for the rest of the community.
 
+Check out our basic guide on making your own mount [here.](https://docs.eyetrackvr.dev/creating-your-own-camera-mount/)
+
 {% include custom/alerts/Tip.html content="If you have a headset mount that is not listed above, please let us know in the discord so it can be added here" %}
