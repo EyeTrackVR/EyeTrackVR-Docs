@@ -33,10 +33,10 @@ This will contain a list of features that are in progress, completed, and planne
 - [ ] Setup flashing of ESPs through anything other than VSC
 - [ ] New GUI
 - [ ] Power regulator board
-- [ ] Custom ESP-CAM boards
 - [ ] New IR LED PCB (only for the power reg board)
 
 ## Planned
 
 - [ ] Support for binary parameters
 - [ ] Dynamic foveated rendering via OpenXR (not a guarantee)
+- [ ] Custom ESP-CAM boards

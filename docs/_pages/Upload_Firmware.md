@@ -81,6 +81,7 @@ watch the monitor for output like this:
 
 The text, highlighted in green for demonstration, is the stream address of the camera. Take note of this for input into the software.
 
+Keep in mind while testing and getting set up, the ESP can only have one client, to use the camera in the app, make sure you close the browser tab you tested it in.
 
 
 ## Troubleshooting

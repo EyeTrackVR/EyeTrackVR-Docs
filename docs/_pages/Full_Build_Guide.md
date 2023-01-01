@@ -236,9 +236,19 @@ Flip around and solder the other end.
 
 ## Wire up the PCBs V3.
 
+Pay attention to the direction of the LEDs on the PCBs. 
+
+If the green dot is facing inwards like in the picture below:
+{% include custom/images/image_2.html url="https://i.imgur.com/tFCQTqE.jpg" max-width="400" caption="" alt="img" %}
+Use the following diagram:
 {% include custom/images/image_2.html url="https://i.imgur.com/2pFF3oM.png" max-width="500" caption="" alt="drawing" %}
 
-The PCB that receives the 5V power is the one with the resistor. The second one, which gets its power from the ground pin of the first, does not have a resistor on it and its power input pin is the AR pin (After-Resistor). The 2nd PCBs ground pin goes to the ground of the system, in the diagram it is the ESPs ground pin.
+If the green dot is facing outward like the picture below:
+
+{% include custom/images/image_2.html url="https://i.imgur.com/bEq6Ww0.jpg" max-width="400" caption="" alt="img" %} 
+
+Use the following diagram:
+{% include custom/images/image_2.html url="https://i.imgur.com/IoX715c.png" max-width="400" caption="" alt="img" %} 
 
 
 ## Step 19: 3D print mounts.
