@@ -2,7 +2,7 @@
 # Use this YAML file to create a list of FAQ questions and answers.
 
 - question: "What is the goal of this project?"
-  answer: "To provide an open source, affordable VR eyetracker for VR Chat and more."
+  answer: "To provide an open source, affordable VR eyetracker for Socail games like VRChat as well as provide an open eyetracking platform."
   hyper_link: ""
   link_description: ""
   type: "general"
@@ -16,7 +16,7 @@
   faq_link_id: 2
 
 - question: "How will this work?"
-  answer: "Currently, a camera is mounted inside the headset for each eye. The camera streams through wifi to a PC client which processes and sends eye tracking data to VR Chat."
+  answer: "Currently, a camera is mounted inside the headset for each eye. The camera streams through wifi to a PC client which processes and sends eye tracking data to an OSC endpoint ex VRChat."
   hyper_link: ""
   link_description: ""
   type: "general"
@@ -30,7 +30,7 @@
   faq_link_id: 4
 
 - question: "When will this be completed?"
-  answer: "When it's done 😉 I have a semi busy life so development may slow and speed up inconsistently. I have a goal to be done with all base features in June."
+  answer: "When it's done 😉 I have a semi busy life so development may slow and speed up inconsistently."
   hyper_link: ""
   link_description: ""
   type: "general"
@@ -44,14 +44,14 @@
   faq_link_id: 6
 
 - question: "How expensive will this be?"
-  answer: "My goal is to keep it as cheap as possible with around $75 as the absolute max, with current projections being around $25-40"
+  answer: "My goal is to keep it as cheap as possible with around $75 as the absolute max, with current setups being around $25-40. aaaa"
   hyper_link: ""
   link_description: ""
   type: "general"
   faq_link_id: 7
 
 - question: "How do I set up my avatar?"
-  answer: "Check out the VR Chat face tracking wiki on our github. Keep in mind that we currently only support float parameters. aaaa "
+  answer: "Check out the VR Chat face tracking wiki on our github. Keep in mind that we currently only support float parameters. "
   hyper_link: ""
   link_description: ""
   type: "general"
