@@ -64,7 +64,7 @@
   type: "general"
   faq_link_id: 9
 
-- question: "Where's the docs?"
+- question: "Where are the docs?"
   answer: "All of our documentation is located on this website, all future documentation will be found here as well."
   hyper_link: ""
   link_description: ""
