@@ -36,7 +36,7 @@ Here is an Amazon link for 3 ESP32-Cams and programmers without the proper camer
 
 Reccommended:
 
-- 2x External antennas for ESPs [AliExpress here](https://www.aliexpress.com/item/2255800868378357.html) or [Amazon here](https://www.amazon.com/gp/product/B09K3ZPY5Z/ref=ox_sc_act_title_1?smid=AE2OZG2NN3099&psc=1
+- 2x External antennas for ESPs [AliExpress here](https://www.aliexpress.com/item/2255800868378357.html) or [Amazon here](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
 ## IR Emitters
 
 - 4x Unfocused SMD IR emitters
