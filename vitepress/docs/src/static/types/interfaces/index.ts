@@ -6,6 +6,6 @@ export interface ISocialLinks {
 export interface IMembers {
     name: string,
     avatar?: string,
-    title: string,
+    title?: string,
     links: ISocialLinks[],
 }

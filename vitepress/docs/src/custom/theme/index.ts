@@ -2,9 +2,8 @@
 //https://vitepress.vuejs.org/guide/theme-nav#navigation-links
 
 //import MyLayout from '../../vue/MyLayout.vue'
-import { type ThemeConfig } from "../../static/types/interfaces"
 
-const theme: ThemeConfig = {
+const theme = {
     logo: {
         src: '/logo.svg',
         alt: 'EyeTrackVR Logo',
@@ -69,4 +68,4 @@ const theme: ThemeConfig = {
 
 const ThemeSettings = {}
 
-export { theme, ThemeConfig, ThemeSettings }
+export { theme, ThemeSettings }
