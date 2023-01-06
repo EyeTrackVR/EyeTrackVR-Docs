@@ -5,7 +5,7 @@ import { theme, ThemeConfig } from '../src/custom/theme'
 export default defineConfigWithTheme<ThemeConfig>({
     outDir: '../dist',
     srcDir: './src/pages',
-    //cleanUrls: 'with-subfolders',
+    cleanUrls: 'with-subfolders',
     head: [
         [
             'link',

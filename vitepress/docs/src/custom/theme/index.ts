@@ -8,8 +8,13 @@ import { logo } from "../logo"
 const theme: ThemeConfig = {
 
     logo: logo,
+    siteTitle: 'EyeTrackVR Docs',
     nav: [
-        { text: 'Guide', link: '/guide' },
+        { text: "About", link: "/about" },
+        { text: "Contact", link: "/contact" },
+        { text: "Guide", link: "/guide" },
+        { text: "Configs", link: "/configs" },
+        { text: "Changelog", link: "https://github.com/..." },
         {
             text: 'Dropdown Menu',
             items: [
@@ -21,12 +26,29 @@ const theme: ThemeConfig = {
     ],
     sidebar: [
         {
-            text: 'Guide',
+            text: "Section A",
+            collapsible: true,
             items: [
-                { text: 'Introduction', link: '/introduction' },
-                { text: 'Getting Started', link: '/getting-started' },
-            ]
-        }
+                { text: "Introduction", link: "/introduction" },
+                { text: "Getting Started", link: "/getting-started" },
+            ],
+        },
+        {
+            text: "Section B",
+            collapsible: false,
+            items: [
+                { text: "Introduction", link: "/introduction" },
+                { text: "Getting Started", link: "/getting-started" },
+            ],
+        },
+        {
+            text: "Section C",
+            collapsible: true,
+            items: [
+                { text: "Introduction", link: "/introduction" },
+                { text: "Getting Started", link: "/getting-started" },
+            ],
+        },
     ],
     socialLinks: [
         { icon: 'github', link: 'https://github.com/RedHawk989/EyeTrackVR' },
