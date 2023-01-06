@@ -6,7 +6,7 @@ import { type ThemeConfig } from "../../static/types/interfaces"
 
 const theme: ThemeConfig = {
     logo: {
-        src: '/EyeTrackVRFinalLogoNoBG.png',
+        src: '/logo.svg',
         alt: 'EyeTrackVR Logo',
     },
     siteTitle: 'EyeTrackVR Docs',
