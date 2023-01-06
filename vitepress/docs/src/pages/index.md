@@ -7,7 +7,7 @@ hero:
   image:
     src: /EyeTrackVRFinalLogoNoBG.png
     alt: ETRVR logo
-  tagline: For VRChat via OSC and UDP protocol.
+  tagline: For Social VR Games via OSC and UDP protocol.
   actions:
     - theme: brand
       text: Get Started
