@@ -1,8 +1,8 @@
 // .vitepress/config.ts
-import { defineConfigWithTheme } from 'vitepress'
-import { theme, ThemeConfig } from '../src/custom/theme'
+import { defineConfig } from 'vitepress'
+import { theme } from '../src/custom/theme'
 
-export default defineConfigWithTheme<ThemeConfig>({
+export default defineConfig({
     outDir: '../dist',
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',

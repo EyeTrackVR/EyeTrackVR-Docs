@@ -6,9 +6,11 @@ import { type ThemeConfig } from "../../static/types/interfaces"
 import { logo } from "../logo"
 
 const theme: ThemeConfig = {
-
     logo: logo,
     siteTitle: 'EyeTrackVR Docs',
+    /* Note the footer will not show when sidebar is active */
+    message: "Released under the MIT License.",
+    copyright: "Copyright © 2022-present ETVR",
     nav: [
         { text: "About", link: "/about" },
         { text: "Contact", link: "/contact" },

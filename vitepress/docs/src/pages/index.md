@@ -15,4 +15,17 @@ hero:
     - theme: alt
       text: View on GitHub
       link: https://github.com/RedHawk989/EyeTrackVR
+features:
+  - icon: ⚡️
+    title: Adocs, The DX that can't be beat
+    details: Lorem ipsum...
+  - icon: 🎉
+    title: Power of Vue meets Markdown
+    details: Lorem ipsum...
+  - icon: 🔥
+    title: Simple and minimal, always
+    details: Lorem ipsum...
+  - icon: 🎀
+    title: Stylish and cool
+    details: Lorem ipsum...
 ---

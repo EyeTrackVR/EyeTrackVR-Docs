@@ -12,7 +12,8 @@
 
 Open source and *affordable* VR eye tracker platform for [VRChat](https://hello.vrchat.com/) via `OSC` and `UDP` protocol.
 
-#### This project is in development and is not fully finished however, it is working for most users
+<Badge type="warning" text="CAUTION" />
+This project is in active development, however, it is working for most users {.text-2xl .italic .font-bold}
 
 ## Hardware
 
@@ -21,11 +22,15 @@ Please check out our [Parts list](https://redhawk989.github.io/EyeTrackVR/parts-
 ## About IR Emitter Safety
 
 Please *exercise extreme caution* when messing around with IR emitters.
-<ins>Once safety testing has been completed links and files will be provided for the emitters</ins>. Please do not try to make, or use any emitters unless you know exactly what you are doing as it could be very harmful to your eyes if not done correctly.
+
+Once safety testing has been completed links and files will be provided for the emitters. {.italic .underline}
+
+Please do not try to make, or use any emitters unless you know exactly what you are doing as it could be very harmful to your eyes if not done correctly.
 When files and resources are released <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE**</ins>. This can result in irreversible bodily harm.
+
 The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we strive to make EyeTrackVR as safe as possible, we do not hold any responsibility for damage done.
 
-##### Make sure you are using **NON-focused** emitters and at around ***5ma total power***
+Make sure you are using **non-focused** emitters and at around ***5ma total power*** {.text-2xl .text-[orange] .italic .underline}
 
 [Effect of infrared radiation on the lens](./docs/Reference_Docs/saftey/effect_of_ir_on_the_lens.pdf)
 
