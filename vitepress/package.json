@@ -1,0 +1,22 @@
+{
+  "name": "etvr_docs",
+  "version": "1.0.0",
+  "description": "Official Docs for ETVR",
+  "main": "index.js",
+  "repository": "https://github.com/RedHawk989/EyeTrackVR",
+  "author": "DaOfficialWizard",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.35",
+    "vue": "^3.2.45",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^7.7.2",
+    "tailwindcss": "^3.1.5"
+  }
+}
