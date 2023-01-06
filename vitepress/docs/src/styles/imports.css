@@ -9,6 +9,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:500');
 
 /* Custom Imports */
+@import 'theme.css';
 @import 'index.css';
 @import 'scrollbar.css';
 
