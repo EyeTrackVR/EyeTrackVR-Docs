@@ -6,15 +6,15 @@ export default defineConfig({
     outDir: '../dist',
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',
-    head: [
+    /* head: [
         [
             'link',
             { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
         ]
         // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    ],
+    ], */
     markdown: {
-        //theme: 'material-palenight',
+        theme: 'material-palenight',
         lineNumbers: true
     },
     lastUpdated: true,

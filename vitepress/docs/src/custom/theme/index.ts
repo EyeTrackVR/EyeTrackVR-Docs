@@ -3,10 +3,12 @@
 
 //import MyLayout from '../../vue/MyLayout.vue'
 import { type ThemeConfig } from "../../static/types/interfaces"
-import { logo } from "../logo"
 
 const theme: ThemeConfig = {
-    logo: logo,
+    logo: {
+        src: '/EyeTrackVRFinalLogoNoBG.png',
+        alt: 'EyeTrackVR Logo',
+    },
     siteTitle: 'EyeTrackVR Docs',
     /* Note the footer will not show when sidebar is active */
     message: "Released under the MIT License.",
@@ -56,12 +58,12 @@ const theme: ThemeConfig = {
         { icon: 'github', link: 'https://github.com/RedHawk989/EyeTrackVR' },
         { icon: 'discord', link: 'https://discord.gg/kkXYbVykZX' },
         // You can also add custom icons by passing SVG as string:
-        {
+        /* {
             icon: {
                 svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>'
             },
             link: '...'
-        }
+        } */
     ]
 }
 

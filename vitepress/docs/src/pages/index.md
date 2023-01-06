@@ -5,7 +5,7 @@ hero:
   name: EyeTrackVR Docs
   text: Opensource and affordable VR eye tracking.
   image:
-    src: /logo.svg
+    src: /EyeTrackVRFinalLogoNoBG.png
     alt: ETRVR logo
   tagline: For VRChat via OSC and UDP protocol.
   actions:
