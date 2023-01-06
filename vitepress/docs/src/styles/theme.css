@@ -103,7 +103,6 @@
 /**
  * Shadows
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-shadow-1: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.06);
   --vp-shadow-2: 0 3px 12px rgba(0, 0, 0, 0.07), 0 1px 4px rgba(0, 0, 0, 0.07);
@@ -115,7 +114,6 @@
 /**
  * Z-indexes
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-z-index-local-nav: 10;
   --vp-z-index-nav: 20;
@@ -128,7 +126,6 @@
 /**
  * Icons
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-icon-copy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2'/%3E%3C/svg%3E");
   --vp-icon-copied: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4'/%3E%3C/svg%3E");
@@ -139,13 +136,12 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  --vp-layout-max-width: 1440px;
+  --vp-layout-max-width: 2560px;
 }
 
 /**
  * Component: Code
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-code-line-height: 1.7;
   --vp-code-font-size: 0.875em;
@@ -176,6 +172,7 @@
   --vp-code-tab-active-bar-color: var(--vp-c-brand);
 }
 
+/* Code Block */
 .dark {
   --vp-code-block-bg: var(--vp-c-black);
 
@@ -186,7 +183,6 @@
 /**
  * Component: Button
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-button-brand-border: var(--vp-c-brand-light);
   --vp-button-brand-text: var(--vp-c-text-dark-1);
@@ -247,7 +243,6 @@
 /**
  * Component: Custom Block
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-custom-block-code-font-size: 13px;
 
@@ -295,11 +290,10 @@
 /**
  * Component: Nav
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-nav-height: var(--vp-nav-height-mobile);
   --vp-nav-height-mobile: 56px;
-  --vp-nav-height-desktop: 72px;
+  --vp-nav-height-desktop: 82px;
 }
 
 @media (min-width: 960px) {
@@ -311,15 +305,13 @@
 /**
  * Component: Sidebar
  * -------------------------------------------------------------------------- */
-
 :root {
-  --vp-sidebar-width: 272px;
+  --vp-sidebar-width: 372px;
 }
 
 /**
  * Component: Home
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-home-hero-name-color: var(--vp-c-brand);
   --vp-home-hero-name-background: transparent;
@@ -331,7 +323,6 @@
 /**
  * Component: Badge
  * -------------------------------------------------------------------------- */
-
 :root {
   --vp-badge-info-border: var(--vp-c-divider-light);
   --vp-badge-info-text: var(--vp-c-text-2);
