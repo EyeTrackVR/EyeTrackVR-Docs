@@ -33,12 +33,12 @@
 
   --vp-c-sponsor: #fd1d7c; */
 
-  --vp-c-brand: #ff7340;
-  --vp-c-brand-light: #ff5719;
-  --vp-c-brand-lighter: #ff7340;
-  --vp-c-brand-lighter: rgba(255, 135, 23, 0.25);
-  --vp-c-brand-dark: #ff622d;
-  --vp-c-brand-darker: #e23c00;
+  --vp-c-brand: #ab5ac7;
+  --vp-c-brand-light: #ab5ac7e3;
+  --vp-c-brand-lighter: #ab5ac7;
+  --vp-c-brand-lighter: rgba(31, 23, 255, 0.25);
+  --vp-c-brand-dark: #4d45a8;
+  --vp-c-brand-darker: #3a3381;
 
   --vp-c-sponsor: #fd1d7c;
 

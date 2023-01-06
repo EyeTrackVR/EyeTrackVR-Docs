@@ -30,7 +30,7 @@ import { members, contributors } from '../static/members'
   />
   <VPTeamPageSection>
     <template #title>Contributors</template>
-    <template #lead>Those who have actively contributed to development <br> However, are not a part of the core team</template>
+    <template #lead>Those who have actively contributed to development.<br> Community Support</template>
     <template #members>
       <VPTeamMembers size="small" :members="contributors" />
     </template>
