@@ -17,27 +17,27 @@ hero:
       link: https://github.com/RedHawk989/EyeTrackVR
 features:
   - icon: ⚡️
-    title: Adocs, The DX that can't be beat
-    details: Lorem ipsum...
+    title: Open Source
+    details: EyeTrackVR is fully open source and free to use.
   - icon: 🎉
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
-  - icon: 🔥
-    title: Simple and minimal, always
-    details: Lorem ipsum...
-  - icon: 🎀
-    title: Stylish and cool
-    details: Lorem ipsum...
-  - icon: ⚡️
-    title: Adocs, The DX that can't be beat
-    details: Lorem ipsum...
-  - icon: 🎉
-    title: Power of Vue meets Markdown
-    details: Lorem ipsum...
-  - icon: 🔥
-    title: Simple and minimal, always
-    details: Lorem ipsum...
-  - icon: 🎀
-    title: Stylish and cool
-    details: Lorem ipsum...
+    title: Community Driven
+    details: EyeTrackVR is built by you for you.
+  - icon: 💰
+    title: Affordable
+    details: EyeTrackVR is affordable and easy to use.
+  - icon: 🎮
+    title: Nearly All VR Headsets
+    details: EyeTrackVR works with nearly all VR headsets.
+  - icon: 🔨
+    title: Completely DIY
+    details: EyeTrackVR is completely DIY and easy to build.
+  - icon: 🌐
+    title: Open Platform
+    details: EyeTrackVR is open platform and works with any Social VR game.
+  - icon: 🔏
+    title: Privacy Focused
+    details: EyeTrackVR is privacy focused and does not collect any data, hosted on your own PC.
+  - icon: 📡
+    title: Open Protocol
+    details: EyeTrackVR uses the Open Sound Control (OSC) protocol.
 ---
