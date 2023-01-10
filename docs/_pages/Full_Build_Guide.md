@@ -239,7 +239,7 @@ Flip around and solder the other end.
 Pay attention to the direction of the LEDs on the PCBs. 
 
 If the green dot is facing inwards like in the picture below:
-{% include custom/images/image_2.html url="https://i.imgur.com/tFCQTqE.jpg" max-width="400" caption="" alt="img" %}
+{% include custom/images/image_2.html url="https://i.imgur.com/TiLTAms.png" max-width="400" caption="" alt="img" %}
 Use the following diagram:
 {% include custom/images/image_2.html url="https://i.imgur.com/2pFF3oM.png" max-width="500" caption="" alt="drawing" %}
 
@@ -248,7 +248,7 @@ If the green dot is facing outward like the picture below:
 {% include custom/images/image_2.html url="https://i.imgur.com/bEq6Ww0.jpg" max-width="400" caption="" alt="img" %} 
 
 Use the following diagram:
-{% include custom/images/image_2.html url="https://i.imgur.com/IoX715c.png" max-width="400" caption="" alt="img" %} 
+{% include custom/images/image_2.html url="https://i.imgur.com/ubIa1ir.png" max-width="400" caption="" alt="img" %} 
 
 
 ## Step 19: 3D print mounts.
