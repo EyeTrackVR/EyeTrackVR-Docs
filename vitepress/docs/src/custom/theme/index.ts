@@ -5,19 +5,20 @@
 
 const theme = {
     logo: {
-        src: '/logo.svg',
-        alt: 'EyeTrackVR Logo',
+        light: '/logo.svg', dark: '/logo.svg', alt: 'EyeTrackVR Logo'
     },
     siteTitle: 'EyeTrackVR Docs',
     /* Note the footer will not show when sidebar is active */
-    message: "Released under the MIT License.",
-    copyright: "Copyright © 2022-present ETVR",
+    footer: {
+        message: "Released under the MIT License.",
+        copyright: "Copyright © 2022-present ETVR",
+    },
+    searchPlaceholder: "Search...",
     nav: [
         { text: "About", link: "/about" },
         { text: "Contact", link: "/contact" },
         { text: "Guide", link: "/guide" },
         { text: "Configs", link: "/configs" },
-        { text: "Changelog", link: "https://github.com/..." },
         {
             text: 'Dropdown Menu',
             items: [
@@ -55,14 +56,7 @@ const theme = {
     ],
     socialLinks: [
         { icon: 'github', link: 'https://github.com/RedHawk989/EyeTrackVR' },
-        { icon: 'discord', link: 'https://discord.gg/kkXYbVykZX' },
-        // You can also add custom icons by passing SVG as string:
-        /* {
-            icon: {
-                svg: '<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg>'
-            },
-            link: '...'
-        } */
+        { icon: 'discord', link: 'https://discord.gg/kkXYbVykZX' }
     ]
 }
 

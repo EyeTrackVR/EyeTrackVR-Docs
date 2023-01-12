@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 import { theme } from '../src/custom/theme'
 
 export default defineConfig({
-    outDir: '../dist',
+    outDir: './.vitepress/out',
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',
     /* head: [
@@ -19,6 +19,6 @@ export default defineConfig({
     },
     lastUpdated: true,
     title: 'EyeTrackVR Docs',
-    description: 'An awesome docs template built by me',
+    description: 'The official documentation for EyeTrackVR',
     themeConfig: theme,
 })
