@@ -10,6 +10,6 @@ const props = defineProps(['options']);
             </span>
         </div>
         <div class="mt-2 pl-1 text-2xl font-bold tracking-tight text-slate-900" :class="options.title_color">{{ options.title }}</div>
-        <p class="mt-2 pl-1 text-sm text-slate-500 dark:text-slate-400">{{ options.content }}</p>
+        <p class="mt-2 pl-1 text-sm" :class="options.text_color">{{ options.content }}</p>
     </div>
 </template>

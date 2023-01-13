@@ -3,10 +3,20 @@ import Alerts from '../../vue/alerts/Alerts.vue'
 
 const user_warning = {
     type: 'warning',
-    title: 'Warning',
+    title: '',
     title_color: 'text-[orange]',
+    text_color: 'text-slate-500 dark:text-slate-400',
     badge_content: 'CAUTION',
     content: 'This project is in active development. However, it is working for most users',
+}
+
+const led_power_warning = {
+    type: 'danger',
+    title: 'Please pay attention',
+    title_color: 'text-[red]',
+    text_color: 'text-orange-400 dark:text-orange-500',
+    badge_content: 'WARNING',
+    content: 'Make sure you are using non-focused emitters and at around 5ma total power',
 }
 </script>
 
@@ -31,7 +41,7 @@ When files and resources are released <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFET
 
 The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we strive to make EyeTrackVR as safe as possible, we do not hold any responsibility for damage done.
 
-Make sure you are using **non-focused** emitters and at around ***5ma total power*** {.text-2xl .text-[orange] .italic .underline}
+<Alerts :options="led_power_warning" />
 
 [Effect of infrared radiation on the lens](./docs/Reference_Docs/saftey/effect_of_ir_on_the_lens.pdf)
 
