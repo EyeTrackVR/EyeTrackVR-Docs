@@ -15,7 +15,13 @@ const theme = {
     },
     searchPlaceholder: "Search...",
     nav: [
-        { text: "About", link: "/about" },
+        {
+            text: 'About',
+            items: [
+                { text: 'About Us', link: '/about' },
+                { text: 'Development Road Map', link: '/dev_roadmap' },
+            ]
+        },
         { text: "Contact", link: "/contact" },
         { text: "Guide", link: "/guide" },
         { text: "Configs", link: "/configs" },
