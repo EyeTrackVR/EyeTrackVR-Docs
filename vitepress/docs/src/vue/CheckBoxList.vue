@@ -1,6 +1,5 @@
 <script setup>
 const props = defineProps(['options']);
-console.log(props.options);
 </script>
 
 <template>

@@ -6,18 +6,16 @@
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
-  margin-top: 0.48rem;
-  margin-bottom: 0.48rem;
-  border-radius: 1rem;
+  border-radius: 10px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ae6d6d;
-  border-radius: 1rem;
+  background: #6d7faeb4;
+  border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b24646;
+  background: #6d7fae;
 }
