@@ -15,7 +15,9 @@ import { members, contributors } from '../static/members'
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      Our Team
+      <div class="text-[#ab5ac7]">
+        Our Team
+      </div>
     </template>
     <template #lead>
       The development of EyeTrackVR is guided by an international

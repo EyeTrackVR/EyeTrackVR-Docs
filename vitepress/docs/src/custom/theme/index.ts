@@ -5,7 +5,7 @@
 
 const theme = {
     logo: {
-        light: '/logo.svg', dark: '/logo.svg', alt: 'EyeTrackVR Logo'
+        light: '/logo_light.png', dark: '/logo.svg', alt: 'EyeTrackVR Logo'
     },
     siteTitle: 'EyeTrackVR Docs',
     /* Note the footer will not show when sidebar is active */
@@ -23,16 +23,6 @@ const theme = {
             ]
         },
         { text: "Contact", link: "/contact" },
-        { text: "Guide", link: "/guide" },
-        { text: "Configs", link: "/configs" },
-        {
-            text: 'Dropdown Menu',
-            items: [
-                { text: 'Item A', link: '/item-1' },
-                { text: 'Item B', link: '/item-2' },
-                { text: 'Item C', link: '/item-3' }
-            ]
-        }
     ],
     sidebar: [
         {
