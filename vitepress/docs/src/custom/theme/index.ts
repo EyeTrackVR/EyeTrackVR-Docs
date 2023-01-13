@@ -36,19 +36,19 @@ const theme = {
             text: "How to Build",
             collapsible: true,
             items: [
-                { text: "Full Build Guide", link: "/full_build_guide" },
-                { text: "Part List", link: "/part_list" },
-                { text: "How to Create your own Camera Mount", link: "/creating_your_own_mount" },
+                { text: "Full Build Guide", link: "/how_to_build/full_build_guide" },
+                { text: "Part List", link: "/how_to_build/parts_list" },
+                { text: "How to Create your own Camera Mount", link: "/how_to_build/creating_your_own_mount" },
             ],
         },
         {
             text: "Firmware Guide",
             collapsible: true,
             items: [
-                { text: "Introduction", link: "/firmware" },
-                { text: "Setup Visual Studio Code environment", link: "/setup_vscode" },
-                { text: "Configuring Firmware", link: "/configure_firmware" },
-                { text: "Getting Started", link: "/upload_firmware" },
+                { text: "Introduction", link: "/firmware_guide/firmware" },
+                { text: "Setup Visual Studio Code environment", link: "/firmware_guide/setup_vscode" },
+                { text: "Configuring Firmware", link: "/firmware_guide/configure_firmware" },
+                { text: "Getting Started", link: "/firmware_guide/upload_firmware" },
             ],
         },
         {
