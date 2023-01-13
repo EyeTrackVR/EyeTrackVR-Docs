@@ -5,7 +5,7 @@ This will contain a list of features that are in progress, completed, and planne
 ## Completed
 
 <div>
-    <ul class="no-style">
+    <ul style="list-style: none;">
         <li>
             <input type="checkbox" checked>
             <label>Tracking algorithm</label>
@@ -40,7 +40,7 @@ This will contain a list of features that are in progress, completed, and planne
 ## In Progress
 
 <div>
-    <ul class="no-style">
+    <ul style="list-style: none;">
         <li>
             <input type="checkbox" unchecked>
             <label>Variable eye openness tracking</label>
@@ -79,7 +79,7 @@ This will contain a list of features that are in progress, completed, and planne
 ## Planned
 
 <div>
-    <ul class="no-style">
+    <ul style="list-style: none;">
         <li>
             <input type="checkbox" unchecked>
             <label>Support for binary parameters</label>
