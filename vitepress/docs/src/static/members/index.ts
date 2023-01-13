@@ -1,4 +1,4 @@
-import { type IMembers } from '../../static/types/interfaces'
+import { type IMembers } from '../types/interfaces'
 
 const members: IMembers[] = [
     {

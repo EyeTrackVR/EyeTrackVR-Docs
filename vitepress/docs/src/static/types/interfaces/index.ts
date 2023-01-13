@@ -9,3 +9,12 @@ export interface IMembers {
     title?: string,
     links: ISocialLinks[],
 }
+
+export interface IDevRoadMapObject {
+    label: string,
+}
+
+export interface IDevRoadMap {
+    state: boolean,
+    object: IDevRoadMapObject[],
+}
