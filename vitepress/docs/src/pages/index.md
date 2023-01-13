@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /intro
+      link: /getting_started/intro
     - theme: alt
       text: View on GitHub
       link: https://github.com/RedHawk989/EyeTrackVR

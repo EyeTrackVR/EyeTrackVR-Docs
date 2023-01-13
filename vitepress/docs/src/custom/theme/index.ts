@@ -13,7 +13,6 @@ const theme = {
         message: "Released under the MIT License.",
         copyright: "Copyright © 2022-present ETVR",
     },
-    searchPlaceholder: "Search...",
     nav: [
         {
             text: 'About',
@@ -26,27 +25,53 @@ const theme = {
     ],
     sidebar: [
         {
-            text: "Section A",
+            text: "Getting Started",
             collapsible: true,
             items: [
-                { text: "Introduction", link: "/introduction" },
-                { text: "Getting Started", link: "/getting-started" },
+                { text: "Introduction", link: "/getting_started/intro" },
+                { text: "Things to know before you start", link: "/getting_started/things_to_know" },
             ],
         },
         {
-            text: "Section B",
-            collapsible: false,
+            text: "How to Build",
+            collapsible: true,
             items: [
-                { text: "Introduction", link: "/introduction" },
-                { text: "Getting Started", link: "/getting-started" },
+                { text: "Full Build Guide", link: "/full_build_guide" },
+                { text: "Part List", link: "/part_list" },
+                { text: "How to Create your own Camera Mount", link: "/creating_your_own_mount" },
             ],
         },
         {
-            text: "Section C",
+            text: "Firmware Guide",
             collapsible: true,
             items: [
-                { text: "Introduction", link: "/introduction" },
-                { text: "Getting Started", link: "/getting-started" },
+                { text: "Introduction", link: "/firmware" },
+                { text: "Setup Visual Studio Code environment", link: "/setup_vscode" },
+                { text: "Configuring Firmware", link: "/configure_firmware" },
+                { text: "Getting Started", link: "/upload_firmware" },
+            ],
+        },
+        {
+            text: "Software Guide",
+            collapsible: true,
+            items: [
+                { text: "Installing and setting up the ETVR App", link: "/eyetrackvr_app_guide" },
+                { text: "Building the app from source", link: "/build_software" },
+            ],
+        },
+        {
+            text: "Miscellaneous",
+            collapsible: true,
+            items: [
+                { text: "VR Chat Avatar Setup", link: "/vrc_avatar_setup" },
+                { text: "FAQ", link: "/faq" },
+            ],
+        },
+        {
+            text: "Archive",
+            collapsible: true,
+            items: [
+                { text: "Prepare to solder IR LED PCB V2's", link: "/fox_ir_v2_build_instructions" },
             ],
         },
     ],
