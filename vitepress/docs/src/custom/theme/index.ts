@@ -55,23 +55,23 @@ const theme = {
             text: "Software Guide",
             collapsible: true,
             items: [
-                { text: "Installing and setting up the ETVR App", link: "/eyetrackvr_app_guide" },
-                { text: "Building the app from source", link: "/build_software" },
+                { text: "Installing and setting up the ETVR App", link: "/software_guide/eyetrackvr_app_guide" },
+                { text: "Building the app from source", link: "/software_guide/build_software" },
             ],
         },
         {
             text: "Miscellaneous",
             collapsible: true,
             items: [
-                { text: "VR Chat Avatar Setup", link: "/vrc_avatar_setup" },
-                { text: "FAQ", link: "/faq" },
+                { text: "VR Chat Avatar Setup", link: "/misc/vrc_avatar_setup" },
+                { text: "FAQ", link: "/misc/faq" },
             ],
         },
         {
             text: "Archive",
             collapsible: true,
             items: [
-                { text: "Prepare to solder IR LED PCB V2's", link: "/fox_ir_v2_build_instructions" },
+                { text: "Prepare to solder IR LED PCB V2's", link: "/archive/fox_ir_v2_build_instructions" },
             ],
         },
     ],
