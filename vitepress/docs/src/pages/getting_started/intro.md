@@ -7,7 +7,14 @@ import { alerts } from '../../static/alerts'
 
 Open source and *affordable* VR eye tracker platform for [VRChat](https://hello.vrchat.com/) via `OSC` and `UDP` protocol.
 
-<Alerts :options="alerts.user_warning" />
+<Alerts :options="alerts.user_warning">
+    <template v-slot:content>
+        <p>
+            This project is in active development.
+            However, it is working for most users.
+        </p>
+    </template>
+</Alerts>
 
 ## Hardware
 
@@ -24,7 +31,13 @@ When files and resources are released <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFET
 
 The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we strive to make EyeTrackVR as safe as possible, we do not hold any responsibility for damage done.
 
-<Alerts :options="alerts.led_power_warning" />
+<Alerts :options="alerts.led_power_warning">
+    <template v-slot:content>
+        <p>
+            Make sure you are using <ins class="text-red-400 dark:text-red-500">non-focused</ins> emitters and at around <ins class="font-bold">5ma</ins> total power.
+        </p>
+    </template>
+</Alerts>
 
 [Effect of infrared radiation on the lens](./docs/Reference_Docs/saftey/effect_of_ir_on_the_lens.pdf)
 

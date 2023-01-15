@@ -6,13 +6,33 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
 
 # Parts List {.text-[#ab5ac7]}
 
+<Alerts :options="alerts.parts_list_one">
+    <template v-slot:content>
+        <p>
+           Please note that no hardware has been fully set in stone, all purchases are at your loss if hardware changes.
+        </p>
+    </template>
+</Alerts>
+
 ## This page will include a basic part list for building an EyeTrackVR setup
 
-<Alerts :options="alerts.parts_list_one" />
+<Alerts :options="alerts.parts_list_two">
+    <template v-slot:content>
+        <p>
+           It is recommended to source main parts from AliExpress as it is much cheaper.
+        </p>
+    </template>
+</Alerts>
 
-<Alerts :options="alerts.parts_list_two" />
+---
 
-<Alerts :options="alerts.parts_list_three" />
+<Alerts :options="alerts.parts_list_three">
+    <template v-slot:content>
+        <p>
+           It is good practice to buy more than needed in some cases, namely programmers and ESPs, this reduces the risk of a DOA (dead on arrival) causing a delay.
+        </p>
+    </template>
+</Alerts>
 
 ## Camera setup
 
@@ -42,9 +62,23 @@ Reccommended:
 - 4x Unfocused SMD IR emitters
 Recomended ones [from LCSC here](https://www.lcsc.com/product-detail/Infrared-IR-LEDs_XINGLIGHT-XL-3216HIRC-850_C965891.html).
 Alternative ones [from Digikey here](https://www.digikey.com/en/products/detail/inolux/IN-P32ZTIR/10384796). The difference between them is the ones from LCSC are rated for lower power, which means in the event of a short or mishap they should be safer, hence why they are recommended.
-<Alerts :options="alerts.parts_list_four" />
+<Alerts :options="alerts.parts_list_four">
+    <template v-slot:content>
+        <p>
+           The smaller ones can not be soldered at temps above 245C or they will burn. Low temp solder is recommended.
+        </p>
+    </template>
+</Alerts>
 
-<Alerts :options="alerts.parts_list_five" />
+<Alerts :options="alerts.parts_list_five">
+    <template v-slot:content>
+        <p>
+           <text class="font-bold">DO NOT BUY FOCUSED ONES!</text>
+           <br>
+           If they look like something you would find in a TV remote, do not use them. If you aren't exactly sure what you are doing, buy them from the LCSC or Digikey link.
+        </p>
+    </template>
+</Alerts>
 
 - 4x IR emitter PCBs (highly recommended) Gerber files and schematics located [here.](https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
 
@@ -79,4 +113,10 @@ If you own another headset not listed above, that means there are no mounts desi
 
 Check out our basic guide on making your own mount [here.](https://docs.eyetrackvr.dev/creating_your_own_camera_mount/)
 
-<Alerts :options="alerts.parts_list_six" />
+<Alerts :options="alerts.parts_list_six">
+    <template v-slot:content>
+        <p>
+           If you have a headset mount that is not listed above, please let us know in the discord so it can be added here.
+        </p>
+    </template>
+</Alerts>

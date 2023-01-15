@@ -4,16 +4,14 @@ const alerts = {
         title: '',
         title_color: 'text-[orange]',
         text_color: 'text-slate-500 dark:text-slate-400',
-        badge_content: 'CAUTION',
-        content: 'This project is in active development. However, it is working for most users',
+        badge_content: 'CAUTION'
     },
     led_power_warning: {
         type: 'danger',
         title: 'Please pay attention',
-        title_color: 'text-[red]',
+        title_color: 'text-red-400 dark:text-red-500',
         text_color: 'text-orange-400 dark:text-orange-500',
-        badge_content: 'WARNING',
-        content: 'Make sure you are using non-focused emitters and at around 5ma total power',
+        badge_content: 'WARNING'
     },
     parts_list_one: {
         type: 'warning',
@@ -21,7 +19,6 @@ const alerts = {
         title_color: 'text-[orange]',
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'CAUTION',
-        content: 'Please note that no hardware has been fully set in stone, all purchases are at your loss if hardware changes',
     },
     parts_list_two: {
         type: 'info',
@@ -29,7 +26,6 @@ const alerts = {
         title_color: 'text-[blue]',
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'NOTE',
-        content: 'It is recommended to source main parts from AliExpress as it is much cheaper.',
     },
     parts_list_three: {
         type: 'info',
@@ -37,7 +33,6 @@ const alerts = {
         title_color: 'text-[blue]',
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'NOTE',
-        content: 'It is good practice to buy more than needed in some cases, namely programmers and ESPs, this reduces the risk of a DOA (dead on arrival) causing a delay.',
     },
     parts_list_four: {
         type: 'info',
@@ -45,7 +40,6 @@ const alerts = {
         title_color: 'text-[blue]',
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'NOTE',
-        content: 'The smaller ones can not be soldered at temps above 245C or they will burn. Low temp solder is recommended',
     },
     parts_list_five: {
         type: 'warning',
@@ -53,7 +47,6 @@ const alerts = {
         title_color: 'text-[orange]',
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'CAUTION',
-        content: '(DO NOT BUY FOCUSED ONES! If they look like something you would find in a TV remote do not use them, if you aren\'t exactly sure what you are doing, buy them from the LCSC or Digikey link)',
     },
     parts_list_six: {
         type: 'tip',
@@ -61,7 +54,6 @@ const alerts = {
         title_color: 'text-[green]',
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'TIP',
-        content: 'If you have a headset mount that is not listed above, please let us know in the discord so it can be added here',
     },
 }
 
