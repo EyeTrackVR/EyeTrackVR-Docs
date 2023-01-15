@@ -1,52 +1,20 @@
+<script setup>
+import Alerts from '../../vue/alerts/Alerts.vue'
+import CheckBoxList from '../../vue/CheckBoxList.vue'
+import ImageCard from '../../vue/images/ImageComponent.vue'
+import { RequiredHardware } from '../../static/req_hardware'
+import { image_settings } from '../../static/image_settings'
+</script>
+
 # Build Guide {.text-[#ab5ac7]}
 
 ## This page will contain a step-by-step assembly guide
 
-### Table of contents
-
-[Step 1 Make sure you have read the Things to know before you start guide](#step-1-make-sure-your-have-read-the-things-to-know-before-you-start-guide)
-
-[Step 2: Order all the parts listed on our Parts list](#step-2-order-all-the-parts-listed-on-our-parts-list)
-
-[Step 3: Wait for things to arrive.](#step-3-wait-for-things-to-arrive)
-
-[Step 4: Gather up all of your hardware.](#step-4-gather-up-all-of-your-hardware)
-
-[Step 5: Install external antennas or sheild ESP antenna with antistatic bag.](#step-5-install-external-antennas-or-shield-esp-antenna-with-an-antistatic-bag)
-
-[Step 6: Attach cameras to ESPs.](#step-6-connect-esp-to-the-programmer-to-flash)
-
-[Step 7: Connect ESP to the programmer to flash.](#step-7-connect-esp-to-the-programmer-to-flash)
-
-[Step 8: Configure Visual Studio Code and prepare to flash the firmware.](#step-7-configure-visual-studio-code-and-prepare-to-flash-the-firmware)
-
-[Step 9: Plug in your ESP and flash the firmware.](#step-8-plug-in-your-esp-and-flash-the-firmware)
-
-[Step 10: Connect your power wires to a USB Type-A board.](#step-9-connect-your-power-wires-to-a-usb-type-a-board)
-
-[Step 11: Cut wires for IR LEDs.](#step-10-cut-wires-for-ir-leds)
-
-[Step 12: Twist the positive USB wire and positive IR LED wires together and tin them.](#step-11-twist-the-positive-usb-wire-and-positive-ir-led-wires-together-and-tin-them)
-
-[Step 13: Solder the positive wire to ESP.](#step-12-solder-the-positive-wire-to-esp)
-
-[Step 14: Solder the negative wire to ESP](#step-13-solder-the-negative-wire-to-esp)
-
-[Step 15: Wire up the 2nd ESP.](#step-14-wire-up-the-2nd-esp)
-
-[Step 16: Prepare to solder IR LED PCBs](#step-15-prepare-to-solder-ir-led-pcbs)
-
-[Step 17: Solder resistors on PCB V3.](#step-17-solder-resistors-on-pcb-v3)
-
-[Step 18: Wire up PCBs V3](#wire-up-the-pcbs-v3)
-
-[Step 19: 3D print mounts.](#step-19-3d-print-mounts)
-
-## Step 1: Make sure your have read the [Things to know before you start](https://redhawk989.github.io/EyeTrackVR/things-to-know) guide
+## Step 1: Make sure your have read the [Things to know before you start](/getting_started/things_to_know.html) guide
 
 This will give you a basic overview of the project's status and what to expect currently.
 
-## Step 2: Order all the parts listed on our [Parts list](https://redhawk989.github.io/EyeTrackVR/parts-list/)
+## Step 2: Order all the parts listed on our [Parts list](/how_to_build/parts_list.html)
 
 Please take note of the fact that hardware still may change, although with more developments it seems like we are going to stick with current hardware.
 
@@ -59,17 +27,9 @@ Please allow anywhere from 2 weeks to 2 months for everything to arrive.
 
 Make sure you have at least the following:
 
-- [x] 2 ESP 32 CAM boards
-- [x] 2 160 degree cameras
-- [x] 1 USB board to power your ESPs
-- [x] 1 Programmer board (buying an extra is reccomended)
-- [x] IR emitters, resistors, and preferably PCBs
-- [x] Lower gauge wire to power ESPs
-- [x] Higher gauge wire to power IR LEDs
-- [x] 3d printer to print mounts. (Buying them from some place like JLCPCB is also an option)
-- [x] Glue of some form, hot glue highly recommended.
+<CheckBoxList :options="{...RequiredHardware}" />
 
-{% include custom/images/image_2.html url="https://i.imgur.com/j18rRI7.jpg" max-width="400" caption="ESPs, cams, a programmer and a USB connector" alt="img of components" %}
+<ImageCard :options="image_settings.image_one" />
 
 ## Step 5: Install external antennas or shield ESP antenna with an antistatic bag
 
@@ -79,35 +39,39 @@ The first option is to use an external antenna.
 
 This is the best solution when it comes to the final result. If you have Vive/Tundra trackers, this is a **REQUIRED** step. The interference from the trackers will make your ESP stream unusable. An antistatic bag does not help in this case. Unfortunately, removing the antenna is not super easy, you have to either move a resistor or, remove it and bridge 2 solder pads. The image attached below shows the orientation of the pads that need to be connected for which mode. You can not bridge all connections and have both antennas active at the same time. The 0-ohm resistor does not need to be on the board, you can simply bridge the connections.
 
-{% include custom/images/image_2.html url="https://i.imgur.com/OzpxFMD.png" max-width="400" caption="Image from: <https://randomnerdtutorials.com/esp32-cam-connect-external-antenna/>" alt="img" %}
+<ImageCard :options="image_settings.external_antenna" />
 
 Below is an example of bridging the connections and attaching an antenna.
 
-{% include custom/images/image_2.html url="https://i.imgur.com/RIFpNqW.jpg" max-width="400" caption="" alt="img" %}
+<ImageCard :options="image_settings.external_antenna_resistors" />
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/r4PsuWTFRBg" title="How to add an external antenna to ESP32-CAM board" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div align="center">
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/r4PsuWTFRBg" title="How to add an external antenna to ESP32-CAM board" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 The second option is to cover the ESP's antenna with an antistatic bag.
 This can help aid problems, and can completely solve them in some cases. Best of all, it is completely free! However, it should be noted that it performs worse than an external antenna and in certain cases will not solve the issue like if you have Vive trackers.
 
-<iframe width="500" height="300" src="https://www.youtube.com/embed/wS4PS3Mw250" title="Covering an ESP32-CAM's antenna with anti-static bag" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div align="center">
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/wS4PS3Mw250" title="Covering an ESP32-CAM's antenna with anti-static bag" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Step 6: Attach cameras to ESPs
 
 Look at your ESP and locate the camera ribbon cable connector as circled below.
-{% include custom/images/image_2.html url="https://i.imgur.com/T5asLGN.jpg" max-width="400" caption="" alt="img" %}
+<ImageCard :options="image_settings.camera_socket" />
 
 Flip the gray part up to allow the cameras to be connected. Do not force it, or shove objects into it to open, fingernails are fine.
-{% include custom/images/image_2.html url="https://i.imgur.com/Z8b8Sin.jpg" max-width="400" caption="" alt="img" %}
+<ImageCard :options="image_settings.camera_socket_clip" />
 
 Now slide in a camera, please note that the pins are facing down, you should only see the black part.
-{% include custom/images/image_2.html url="https://i.imgur.com/dDBIi9j.jpg" max-width="400" caption="" alt="img" %}
+<ImageCard :options="image_settings.camera_cable" />
 
 Once the camera has been slid in, press the gray part of the connector back down. There will be a small amount of force but still be gentle.
 Note the ammount of black coming out of the connector.
-{% include custom/images/image_2.html url="https://i.imgur.com/VnFi5XS.jpg" max-width="400" caption="" alt="img" %}
+<ImageCard :options="image_settings.camera_clip_close" />
 
-## Step 7: Connect ESP to the programmer to flash
+<!--## Step 7: Connect ESP to the programmer to flash
 
 Why flash before you have it assembled? It's simple, to make sure they actually work before you spend time soldering to them.
 
@@ -297,4 +261,4 @@ In others there are no specified spots, you will have to mess around to find wha
 This image shows the optimal/near-optimal position for the LEDs. Hot glue is your friend with this.
 {% include custom/images/image_2.html url="https://i.imgur.com/3rCRU5A.jpg" max-width="500" caption="" alt="drawing" %}
 
-Tip: Use rubbing alcohol to easily remove hot glue.
+Tip: Use rubbing alcohol to easily remove hot glue. -->
