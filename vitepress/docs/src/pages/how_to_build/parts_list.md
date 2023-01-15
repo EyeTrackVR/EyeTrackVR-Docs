@@ -1,12 +1,18 @@
+<script setup>
+import Alerts from '../../vue/alerts/Alerts.vue'
+import { alerts } from '../../static/alerts'
+import PartsList from '../../vue/parts_list/PartsList.vue'
+</script>
+
 # Parts List {.text-[#ab5ac7]}
 
 ## This page will include a basic part list for building an EyeTrackVR setup
 
-{% include custom/alerts/Warning.html content=" Please note that no hardware has been fully set in stone, all purchases are at your loss if hardware changes" %}
+<Alerts :options="alerts.parts_list_one" />
 
-{% include custom/alerts/Note.html content="It is recommended to source main parts from AliExpress as it is much cheaper." %}
+<Alerts :options="alerts.parts_list_two" />
 
-{% include custom/alerts/Note.html content="It is good practice to buy more than needed in some cases, namely programmers and ESPs, this reduces the risk of a DOA (dead on arrival) causing a delay." %}
+<Alerts :options="alerts.parts_list_three" />
 
 ## Camera setup
 
@@ -36,9 +42,9 @@ Reccommended:
 - 4x Unfocused SMD IR emitters
 Recomended ones [from LCSC here](https://www.lcsc.com/product-detail/Infrared-IR-LEDs_XINGLIGHT-XL-3216HIRC-850_C965891.html).
 Alternative ones [from Digikey here](https://www.digikey.com/en/products/detail/inolux/IN-P32ZTIR/10384796). The difference between them is the ones from LCSC are rated for lower power, which means in the event of a short or mishap they should be safer, hence why they are recommended.
-{% include custom/alerts/Note.html content="The smaller ones can not be soldered at temps above 245C or they will burn. Low temp solder is recommended" %}
+<Alerts :options="alerts.parts_list_four" />
 
-{% include custom/alerts/Warning.html content="(DO NOT BUY FOCUSED ONES! If they look like something you would find in a TV remote do not use them, if you aren't exactly sure what you are doing, buy them from the LCSC or Digikey link)" %}
+<Alerts :options="alerts.parts_list_five" />
 
 - 4x IR emitter PCBs (highly recommended) Gerber files and schematics located [here.](https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
 
@@ -65,7 +71,7 @@ If you are a Patreon please check out discount codes available to you, and also 
 
 - 1x Soldering iron and solder (lead-free solder highly recommended) Generic soldering iron from [AliExpress here](https://www.aliexpress.com/item/3256801448141079.html) or [Amazon here](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
 
-{% include custom/3d_printed_parts/Parts.html %}
+<PartsList />
 
 ### Other Headsets
 
@@ -73,4 +79,4 @@ If you own another headset not listed above, that means there are no mounts desi
 
 Check out our basic guide on making your own mount [here.](https://docs.eyetrackvr.dev/creating_your_own_camera_mount/)
 
-{% include custom/alerts/Tip.html content="If you have a headset mount that is not listed above, please let us know in the discord so it can be added here" %}
+<Alerts :options="alerts.parts_list_six" />
