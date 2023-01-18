@@ -1,6 +1,8 @@
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
+import ImageCard from '../../vue/images/ImageComponent.vue'
 import { alerts } from '../../static/alerts'
+import { image_settings } from '../../static/image_settings'
 </script>
 
 # EyeTrackVR {.text-3xl .font-bold .underline}
@@ -58,7 +60,7 @@ If it is not listed, It is recommended that you try to make a mount, or wait for
 
 Please join our discord for updates and any questions.
 
-[![Discord](https://discord.com/api/guilds/946212245187199026/widget.png?style=banner3)](https://discord.gg/kkXYbVykZX)
+<ImageCard :options="image_settings.discord_content"/>
 
 # Licenses
 

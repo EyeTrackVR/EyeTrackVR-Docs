@@ -5,6 +5,12 @@ const image_settings = {
         caption: "'ESPs, cams, a programmer and a USB connector'",
         max_width: "max-width: 400px;"
     },
+    discord_content: {
+        url: "https://discord.com/api/guilds/946212245187199026/widget.png?style=banner3",
+        url_2: "https://discord.gg/kkXYbVykZX",
+        alt: "'discord banner'",
+        max_width: "max-width: 400px;"
+    },
     external_antenna: {
         url: "https://i.imgur.com/OzpxFMD.png",
         alt: "'img of external antenna'",
