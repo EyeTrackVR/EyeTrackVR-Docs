@@ -1,9 +1,9 @@
----
-layout: default
-title: FAQ
-nav_order: 14
-has_children: false
-permalink: /faq/
----
+<script setup>
+import FAQ from '../../vue/faq/FAQ.vue'
+</script>
 
-{% include custom/FAQ/faq_template.html type="general" %}
+# Frequently Asked Questions {.text-[#ab5ac7]}
+
+<br>
+
+<FAQ />
