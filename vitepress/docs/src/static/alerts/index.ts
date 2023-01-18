@@ -55,6 +55,20 @@ const alerts = {
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'TIP',
     },
+    upload_firmware_one: {
+        type: 'info',
+        title: '',
+        title_color: 'text-[blue]',
+        text_color: 'text-slate-500 dark:text-slate-400',
+        badge_content: 'NOTE',
+    },
+    configure_firmware_one: {
+        type: 'info',
+        title: '',
+        title_color: 'text-[blue]',
+        text_color: 'text-slate-500 dark:text-slate-400',
+        badge_content: 'NOTE',
+    },
 }
 
 export { alerts }

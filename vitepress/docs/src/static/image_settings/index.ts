@@ -37,6 +37,61 @@ const image_settings = {
         alt: "'img of camera cable'",
         max_width: "max-width: 400px;"
     },
+    upload_firmware_image_one: {
+        url: "https://i.imgur.com/dSPSpkY.png",
+        alt: "'platformio serial monitor button'",
+        max_width: "max-width: 500px;"
+    },
+    upload_firmware_image_two: {
+        url: "https://i.imgur.com/PoHP3NC.png",
+        alt: "'img of platformio serial monitor'",
+        max_width: "max-width: 600px;"
+    },
+    setup_vscode_image_one: {
+        url: "https://i.imgur.com/jXPXIFz.gif",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    setup_vscode_image_two: {
+        url: "https://i.imgur.com/hAm3Zu0.gif",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    setup_vscode_image_three: {
+        url: "https://i.imgur.com/ebV0IgT.gif",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    setup_vscode_image_four: {
+        url: "https://i.imgur.com/DWO5vkE.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    setup_vscode_image_five: {
+        url: "https://i.imgur.com/mWAVxtF.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    setup_vscode_image_six: {
+        url: "https://i.imgur.com/YbXpX7t.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    setup_vscode_image_seven: {
+        url: "https://i.imgur.com/c61Cpaz.gif",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    configure_firmware_one: {
+        url: "https://i.imgur.com/VZeI39I.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    configure_firmware_two: {
+        url: "https://i.imgur.com/ySzUMPO.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
 };
 
 export { image_settings }

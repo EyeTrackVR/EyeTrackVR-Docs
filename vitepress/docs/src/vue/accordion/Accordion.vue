@@ -26,6 +26,8 @@ export default {
     },
     methods: {
         toggleAccordion() {
+            // TODO: toggle the accodrian with a smooth transition
+
             this.isOpen = !this.isOpen;
         },
     },

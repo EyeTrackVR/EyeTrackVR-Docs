@@ -1,16 +1,15 @@
----
-layout: page
-title: Building and uploading the firmware manually
-permalink: /building-and-flashing-firmware-manually/
-nav_order: 3
-parent: Firmware Guide
----
+<script setup>
+import Alerts from '../../vue/alerts/Alerts.vue'
+import ImageCard from '../../vue/images/ImageComponent.vue'
+import { image_settings } from '../../static/image_settings'
+import { alerts } from '../../static/alerts'
+</script>
 
-# Building and uploading the firmware manually
+# Building and uploading the firmware manually {.text-[#ab5ac7]}
 
 Uploading your firmware must initially be done over cable. Once you have the tracker connected to your WiFi after your first firmware update, you can opt to use OTA in the future.
 
-## 1. Connect your tracker to your PC via the programmer.
+## 1. Connect your tracker to your PC via the programmer
 
 First, connect your ESP32-Cam to your programmer. In the case of the ESP32-Cam-MB board, it's as simple as sticking it into the socket the way it came in the package and then connecting it to your PC with a micro-USB cable. In some cases, there is a button labeled IOO on the programmer. If that button exists make sure to hold it in while you plug the programmer into your pc, once plugged in you can release the button.
 
@@ -33,7 +32,13 @@ In the case of an FTDI programmer, the steps aren't as easy, so grab [this guide
   This sends the firmware to the ESP.
   ![img](https://i.imgur.com/lI3PFVC.png)
 
-{% include custom/alerts/Note.html content="The MB board does the resetting for you, so if you're using the FTDI programmer, follow the guide linked above (the one from randomnerdtutorials)"  %}  
+<Alerts :options="alerts.upload_firmware_one">
+    <template v-slot:content>
+        <p>
+           The MB board does the resetting for you. If you're using the FTDI programmer, follow the guide linked above (the one from randomnerdtutorials)
+        </p>
+    </template>
+</Alerts>  
 
 - If the upload is successful, you should get an output that looks like this:
 
@@ -71,23 +76,23 @@ Once you have successfully connected your trackers to your WiFi, you can use OTA
 
 ## Finding the IP address of your tracker
 
-Connect your tracker to your PC and then open a serial monitor in VSC by pressing the "plug" icon.
-{% include custom/images/image_2.html url="https://i.imgur.com/dSPSpkY.png" max-width="500" caption="" alt="img" %}
+Connect your tracker to your PC and then open a serial monitor in VSC by pressing the `plug`  icon.
+
+<ImageCard :options="image_settings.upload_firmware_image_one" />
 
 Now, press the restart button on the esp itself.
 watch the monitor for output like this:
 
-{% include custom/images/image_2.html url="https://i.imgur.com/PoHP3NC.png" max-width="600" caption="" alt="img" %}
+<ImageCard :options="image_settings.upload_firmware_image_two" />
 
 The text, highlighted in green for demonstration, is the stream address of the camera. Take note of this for input into the software.
 
 Keep in mind while testing and getting set up, the ESP can only have one client, to use the camera in the app, make sure you close the browser tab you tested it in.
 
-
 ## Troubleshooting
 
-If you encountered an issue while following these steps check the [FAQ.](https://redhawk989.github.io/EyeTrackVR/faq/)
+If you encountered an issue while following these steps check the [FAQ.](/misc/faq/)
 
 If you don't find an answer to your question there ask in **#questions** channel in [the discord](https://discord.gg/kkXYbVykZX), we will be happy to help.
 
-*Adapted from the SlimeVR docs, Credit goes to the SlimeVR team [here](https://docs.slimevr.dev/firmware/setup-and-install.html)*
+*Adapted from the SlimeVR docs, Some Credit goes to the SlimeVR team [here](https://docs.slimevr.dev/firmware/setup-and-install.html)*
