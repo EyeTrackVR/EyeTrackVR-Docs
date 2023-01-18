@@ -12,6 +12,7 @@ export interface IMembers {
 
 export interface IDevRoadMapObject {
     label: string,
+    link?: string,
 }
 
 export interface IDevRoadMap {

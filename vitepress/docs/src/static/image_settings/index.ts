@@ -92,6 +92,68 @@ const image_settings = {
         alt: "'img'",
         max_width: "max-width: 500px;"
     },
+    eyetrack_vr_guide_one: {
+        url: "https://i.imgur.com/olwRFYI.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_two: {
+        url: "https://i.imgur.com/Ugzzgbh.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_three: {
+        url: "https://i.imgur.com/z6V7A71.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_four: {
+        url: "https://i.imgur.com/MJb2h74.png",
+        alt: "'img'",
+        caption: "See the Awating Eye Cropping Settings text?",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_five: {
+        url: "https://i.imgur.com/1pNYITS.png",
+        alt: "'img'",
+        caption: ":O It's my eye!",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_six: {
+        url: "https://i.imgur.com/HZSvFBv.png",
+        alt: "'img'",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_seven: {
+        url: "https://i.imgur.com/xXTB3sM.png",
+        alt: "'img'",
+        caption: "It's crooked!",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_eight: {
+        url: "https://i.imgur.com/blsrpCX.png",
+        alt: "'img'",
+        caption: "Much better!",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_nine: {
+        url: "https://i.imgur.com/30fFadH.png",
+        alt: "'img'",
+        caption: "Much better!",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_ten: {
+        url: "https://i.imgur.com/ZjpKfCV.png",
+        alt: "'img'",
+        caption: "Much better!",
+        max_width: "max-width: 500px;"
+    },
+    eyetrack_vr_guide_eleven: {
+        url: "https://i.imgur.com/KPUn8S1.png",
+        alt: "'img'",
+        caption: "Much better!",
+        max_width: "max-width: 500px;"
+    },
 };
 
 export { image_settings }

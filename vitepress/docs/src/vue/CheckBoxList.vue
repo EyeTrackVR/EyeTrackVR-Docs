@@ -8,11 +8,16 @@ const props = defineProps(['options']);
             <li v-for='item in props.options.object'>
                 <div v-if="props.options.state">
                     <input type="checkbox" checked>
-                    <label>{{ item.label }}</label>
+                    <label v-if="item.link !== null || props.link !== ''"><a :href="item.link" target="_blank">{{
+                        item.label
+                    }}</a></label>
+                    <label v-else>{{ item.label }}</label>
                 </div>
                 <div v-else>
                     <input type="checkbox" unchecked>
                     <label>{{ item.label }}</label>
+                    <label v-if="item.link === null || props.link === ''">{{ item.label }}</label>
+                    <label v-else><a :href="item.link" target="_blank">{{ item.label }}</a></label>
                 </div>
             </li>
         </ul>

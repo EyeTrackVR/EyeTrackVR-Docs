@@ -1,23 +1,31 @@
----
-layout: page
-title: Building the app from source
-permalink: /building-the-app/
-nav_order: 3
-parent: Software Guide
----
+<script setup>
+import Alerts from '../../vue/alerts/Alerts.vue'
+import CheckList from '../../vue/CheckBoxList.vue'
+import ImageCard from '../../vue/images/ImageComponent.vue'
+import { image_settings } from '../../static/image_settings'
+import { alerts } from '../../static/alerts'
+import { Requirements } from '../../static/app_build_requirements'
+</script>
+
+# Build the app from source {.text-[#ab5ac7]}
 
 ## This guide will show how to build the app from source
 
-{% include custom/alerts/Note.html content="This is NOT a required step, you do not need to build the app from source." %}
+<Alerts :options="alerts.build_software_one">
+    <template v-slot:content>
+        <p>
+           This is NOT a required step, you do not need to build the app from source.
+        </p>
+    </template>
+</Alerts>
 
-## Requirements:
+## Requirements
 
-- [x] [Python 3.11.0](https://www.python.org/downloads/release/python-3110/)
-- [x] [Poetry](https://python-poetry.org/)
-- [x] Windows/Linux PC
+<CheckList :options="{...Requirements}"/>
 
 ## Install Python
-EyetrackVR is currently using [Python 3.11.0](https://www.python.org/downloads/release/python-3110/) Before you continue, please install it. 
+
+EyetrackVR is currently using [Python 3.11.0](https://www.python.org/downloads/release/python-3110/) Before you continue, please install it.
 
 ## Installing Poetry
 
@@ -27,14 +35,13 @@ To install Poetry open Windows Powershell and run the following command `(Invoke
 
 [Poetry Documentation](https://python-poetry.org/docs/)
 
-
-## Install the required Python modules.
+## Install the required Python modules
 
 After cloning the project and installing Poetry, open a command prompt in the EyeTrackApp folder. Then run the command: `poetry install`
 
 This should install all of the required modules.
 
-## Build the app.
+## Build the app
 
 Now, you should be ready to build the app.
 With a command prompt open in the EyeTrackApp folder, run the command `poetry run pyinstaller eyetrackapp.spec`
