@@ -5,7 +5,7 @@ import { alerts } from '../../static/alerts'
 import { image_settings } from '../../static/image_settings'
 </script>
 
-# EyeTrackVR {.text-3xl .font-bold .underline}
+# EyeTrackVR {.text-3xl .font-bold .underline .text-[#ab5ac7]}
 
 Open source and *affordable* VR eye tracker platform for [VRChat](https://hello.vrchat.com/) via `OSC` and `UDP` protocol.
 
