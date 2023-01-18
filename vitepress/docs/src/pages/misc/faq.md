@@ -6,4 +6,6 @@ import FAQ from '../../vue/faq/FAQ.vue'
 
 <br>
 
+---
+
 <FAQ />
