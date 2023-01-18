@@ -1,5 +1,5 @@
 <script setup>
-    import Alerts from '../../vue/alerts/Alerts.vue'
+import Alerts from '../../vue/alerts/Alerts.vue'
 import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'
 import { alerts } from '../../static/alerts'
