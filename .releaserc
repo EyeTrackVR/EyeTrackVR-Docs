@@ -155,7 +155,7 @@
             "@semantic-release/exec",
             {
                 "prepareCmd": "sed -i 's/\"version\": \"[0-9\\.]*\",/\"version\": \"${nextRelease.version}\",/g' ./vitepress/package.json",
-                "publishCmd": ""
+                "publishCmd": "ls -la"
             }
         ],
         [
