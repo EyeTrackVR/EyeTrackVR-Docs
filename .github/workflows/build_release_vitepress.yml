@@ -17,12 +17,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18
+      - name: CD to Vitepress
+        run: cd vitepress
       - name: Install dependencies
         uses: Borales/actions-yarn@v4.2.0
+        with:
+          cmd: install
       - name: Build project
-        run: |
-          cd vitepress && yarn
-          yarn build
+        run: yarn build
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
