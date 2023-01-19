@@ -34,17 +34,10 @@ jobs:
         run: cd vitepress && yarn install --frozen-lockfile
       - name: Build project
         run: cd vitepress && yarn build
-      - name: Upload production-ready build files
-        uses: actions/upload-artifact@v2
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
         with:
-          name: production-files
           path: ./vitepress/docs/.vitepress/dist
-      - name: Setup Pages
-        uses: actions/configure-pages@v2
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: docs/.vitepress/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
