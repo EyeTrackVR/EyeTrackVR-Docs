@@ -10,11 +10,11 @@ import { image_settings } from '../../static/image_settings'
 
 ## This page will contain a step-by-step assembly guide
 
-## Step 1: Make sure your have read the [Things to know before you start](/getting_started/things_to_know.html) guide
+## Step 1: Make sure your have read the [Things to know before you start](/getting_started/things_to_know) guide
 
 This will give you a basic overview of the project's status and what to expect currently.
 
-## Step 2: Order all the parts listed on our [Parts list](/how_to_build/parts_list.html)
+## Step 2: Order all the parts listed on our [Parts list](/how_to_build/parts_list)
 
 Please take note of the fact that hardware still may change, although with more developments it seems like we are going to stick with current hardware.
 
