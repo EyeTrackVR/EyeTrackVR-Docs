@@ -1,11 +1,23 @@
 name: Build and Deploy to Github Pages
 on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch: {}
   push:
     branches: [docs]
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   build:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     name: Build CodeBase
     runs-on: ubuntu-latest
     steps:
@@ -17,11 +29,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 18
+          cache: yarn
       - name: Install dependencies
-        uses: Borales/actions-yarn@v4.2.0
-        with:
-          cmd: install
-          dir: vitepress
+        run: cd vitepress && yarn install --frozen-lockfile
       - name: Build project
         run: cd vitepress && yarn build
       - name: Upload production-ready build files
@@ -29,50 +39,62 @@ jobs:
         with:
           name: production-files
           path: ./vitepress/docs/.vitepress/dist
-  deploy:
-    runs-on: ubuntu-latest
-    name: Deploy
-    needs: [build]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
         with:
-          fetch-depth: 0
-      - name: Create Directory
-        run: mkdir -p dist
-      - name: Download artifact
-        uses: actions/download-artifact@v2
-        with:
-          name: production-files
-          path: dist/
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: npm install -g conventional-changelog-conventionalcommits
-      - run: npm install -g semantic-release@v19.0.5
-      - run: npm install -g @semantic-release/exec
-      - run: npm install -g @semantic-release/git
-      - run: npm install -g @semantic-release/release-notes-generator
-      - run: npm install -g @semantic-release/changelog
-      - run: npm install -g @semantic-release/github
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: semantic-release
+          path: docs/.vitepress/dist
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-  cleanup:
-    name: Cleanup actions
-    needs:
-      - deploy
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: "♻️ remove build artifacts"
-        uses: geekyeggo/delete-artifact@v1
-        with:
-          name: production-files
+        id: deployment
+        uses: actions/deploy-pages@v1
+  #deploy:
+  #  environment:
+  #    name: github-pages
+  #    url: ${{ steps.deployment.outputs.page_url }}
+  #  runs-on: ubuntu-latest
+  #  name: Deploy
+  #  needs: [build]
+  #  steps:
+  #    - name: Checkout
+  #      uses: actions/checkout@v3
+  #      with:
+  #        fetch-depth: 0
+  #    - name: Create Directory
+  #      run: mkdir -p dist
+  #    - name: Download artifact
+  #      uses: actions/download-artifact@v2
+  #      with:
+  #        name: production-files
+  #        path: dist/
+  #    - name: Setup node
+  #      uses: actions/setup-node@v3
+  #      with:
+  #        node-version: 18
+  #    - run: npm install -g conventional-changelog-conventionalcommits
+  #    - run: npm install -g semantic-release@v19.0.5
+  #    - run: npm install -g @semantic-release/exec
+  #    - run: npm install -g @semantic-release/git
+  #    - run: npm install -g @semantic-release/release-notes-generator
+  #    - run: npm install -g @semantic-release/changelog
+  #    - run: npm install -g @semantic-release/github
+  #    - name: Release
+  #      env:
+  #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  #      run: semantic-release
+  #    - name: Deploy to GitHub Pages
+  #      uses: peaceiris/actions-gh-pages@v3
+  #      with:
+  #        github_token: ${{ secrets.GITHUB_TOKEN }}
+  #        publish_dir: ./dist
+  #cleanup:
+  #  name: Cleanup actions
+  #  needs:
+  #    - deploy
+  #  runs-on: ubuntu-latest
+  #  timeout-minutes: 10
+  #  steps:
+  #    - name: "♻️ remove build artifacts"
+  #      uses: geekyeggo/delete-artifact@v1
+  #      with:
+  #        name: production-files
