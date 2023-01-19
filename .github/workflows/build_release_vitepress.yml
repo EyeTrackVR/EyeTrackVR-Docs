@@ -19,10 +19,10 @@ jobs:
           node-version: 18
       - name: Install dependencies
         uses: Borales/actions-yarn@v4.2.0
-        with:
-          cmd: install # will run `yarn install` command
       - name: Build project
-        run: yarn build
+        run: |
+          cd vitepress && yarn
+          yarn build
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
         with:
