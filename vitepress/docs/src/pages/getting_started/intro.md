@@ -20,7 +20,7 @@ Open source and *affordable* VR eye tracker platform for [VRChat](https://hello.
 
 ## Hardware
 
-Please check out our [Parts list](https://redhawk989.github.io/EyeTrackVR/parts-list/) and our [full build guide](https://redhawk989.github.io/EyeTrackVR/full-build-guide/) along with our [hardware repo.](https://github.com/RedHawk989/EyeTrackVR-Hardware)
+Please check out our [Parts list](../how_to_build/parts_list/) and our [full build guide](../how_to_build/full_build_guide/) along with our [hardware repo.](https://github.com/RedHawk989/EyeTrackVR-Hardware)
 
 ## About IR Emitter Safety
 
@@ -41,11 +41,11 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
     </template>
 </Alerts>
 
-[Effect of infrared radiation on the lens](./docs/Reference_Docs/saftey/effect_of_ir_on_the_lens.pdf)
+[Effect of infrared radiation on the lens](../saftey/effect_of_ir_on_the_lens.pdf)
 
-[Training-library Nir Stds](./docs/Reference_Docs/saftey/training-library_nir_stds_20021011.pdf)
+[Training-library Nir Stds](../saftey/training-library_nir_stds_20021011.pdf)
 
-[AN002_Details on photobiological safety of LED light sources](./docs/Reference_Docs/saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
+[AN002_Details on photobiological safety of LED light sources](../saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
 
 ## Firmware
 
@@ -53,7 +53,7 @@ Our firmware called OpenIris is made by `lorow` found [here](https://github.com/
 
 ## Headset support
 
-Please take a look at our list of [3d printable mounts](https://redhawk989.github.io/EyeTrackVR/parts-list/#other-parts) and see if your headset is on the list.
+Please take a look at our list of [3d printable mounts](../how_to_build/parts_list#other-parts) and see if your headset is on the list.
 If it is not listed, It is recommended that you try to make a mount, or wait for a skilled community member to create one.
 
 #### Contact

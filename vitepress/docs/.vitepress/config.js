@@ -6,6 +6,7 @@ export default defineConfig({
     outDir: './.vitepress/dist',
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',
+    ignoreDeadLinks: true,
     /* head: [
         [
             'link',
