@@ -224,7 +224,7 @@ const image_settings = {
         caption: "The LED is flipped in this Image, the green dot should face AWAY from the PCB.",
         max_width: "max-width: 400px;"
     },
-    fox_ir_build_instructions_twelve: {
+    fox_ir_build_instructions_thirteen: {
         url: "https://i.imgur.com/gopjVG3.png",
         alt: "'drawing'",
         max_width: "max-width: 500px;"

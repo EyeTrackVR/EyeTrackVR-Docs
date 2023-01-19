@@ -15,9 +15,10 @@ const props = defineProps(['options']);
                 </div>
                 <div v-else>
                     <input type="checkbox" unchecked>
-                    <label>{{ item.label }}</label>
-                    <label v-if="item.link === null || props.link === ''">{{ item.label }}</label>
-                    <label v-else><a :href="item.link" target="_blank">{{ item.label }}</a></label>
+                    <label v-if="item.link !== null || props.link !== ''"><a :href="item.link" target="_blank">{{
+                        item.label
+                    }}</a></label>
+                    <label v-else>{{ item.label }}</label>
                 </div>
             </li>
         </ul>
