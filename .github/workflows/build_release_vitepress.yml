@@ -21,12 +21,11 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
-      #- name: Install dependencies
-      #  uses: Borales/actions-yarn@v4.2.0
-      #  with:
-      #    cmd: install
-      #    dir: vitepress
+      - name: Install dependencies
+        uses: Borales/actions-yarn@v4.2.0
+        with:
+          cmd: install
+          dir: vitepress
       - name: Build project
         run: cd vitepress && yarn && yarn build
       - name: Upload production-ready build files
