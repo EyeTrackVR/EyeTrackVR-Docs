@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 import { theme } from '../src/custom/theme'
 
 export default defineConfig({
-    outDir: './.vitepress/out',
+    outDir: './.vitepress/dist',
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',
     /* head: [

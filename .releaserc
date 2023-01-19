@@ -148,8 +148,8 @@
         [
             "@semantic-release/exec",
             {
-                "prepareCmd": "sed -i 's/\"version\": \"[0-9\\.]*\",/\"version\": \"${nextRelease.version}\",/g' ./NetworkManager/library.json",
-                "publishCmd": "pio pkg publish --no-interactive"
+                "prepareCmd": "sed -i 's/\"version\": \"[0-9\\.]*\",/\"version\": \"${nextRelease.version}\",/g' ./vitepress/package.json",
+                "publishCmd": ""
             }
         ],
         [
@@ -162,7 +162,7 @@
             "@semantic-release/git",
             {
                 "assets": [
-                    "NetworkManager/library.json",
+                    "vitepress/package.json",
                     "LICENSE*",
                     "CHANGELOG.md"
                 ],

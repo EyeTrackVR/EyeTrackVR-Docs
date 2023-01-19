@@ -10,3 +10,8 @@ node_modules
 .DS_Store
 .idea
 .vscode
+.temp
+cache
+.cache
+dist
+out
