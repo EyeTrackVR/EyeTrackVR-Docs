@@ -7,7 +7,7 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-  
+
 jobs:
   build:
     name: Build CodeBase
@@ -38,17 +38,17 @@ jobs:
     name: Deploy
     needs: [build]
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-      - name: Create Directory
-        run: mkdir -p dist
+      #- name: Checkout
+      #  uses: actions/checkout@v3
+      #  with:
+      #    fetch-depth: 0
+      #- name: Create Directory
+      #  run: mkdir -p dist
       - name: Download artifact
         uses: actions/download-artifact@v2
         with:
           name: production-files
-          path: dist/
+          path: ./dist
       #- name: Setup node
       #  uses: actions/setup-node@v3
       #  with:
@@ -69,15 +69,14 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-  cleanup:
-    name: Cleanup actions
-    needs:
-      - deploy
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: "♻️ remove build artifacts"
-        uses: geekyeggo/delete-artifact@v1
-        with:
-          name: production-files
-
+  #cleanup:
+  #  name: Cleanup actions
+  #  needs:
+  #    - deploy
+  #  runs-on: ubuntu-latest
+  #  timeout-minutes: 10
+  #  steps:
+  #    - name: "♻️ remove build artifacts"
+  #      uses: geekyeggo/delete-artifact@v1
+  #      with:
+  #        name: production-files
