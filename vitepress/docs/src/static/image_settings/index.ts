@@ -43,6 +43,175 @@ const image_settings = {
         alt: "'img of camera cable'",
         max_width: "max-width: 400px;"
     },
+    _7_12_one: {
+        url: "https://i.imgur.com/LsLPAcd.jpg",
+        alt: "",
+        max_width: "max-width: 400px;"
+    },
+    _7_12_two: {
+        url: "https://i.imgur.com/Cdu9lSN.jpg",
+        alt: "",
+        max_width: "max-width: 400px;"
+    },
+    _7_12_three: {
+        url: "https://i.imgur.com/QlRrWNn.jpg",
+        alt: "",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_one: {
+        url: "https://i.imgur.com/DhnmLBG.jpg",
+        alt: "",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_two: {
+        url: "https://i.imgur.com/PWA0gtq.jpg",
+        alt: "",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_three: {
+        url: "https://i.imgur.com/0zXY79j.jpg",
+        alt: "",
+        caption: "357ohm resistors and V3 PCBs",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_four: {
+        url: "https://i.imgur.com/n1noWKq.png",
+        alt: "",
+        caption: "V3",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_five: {
+        url: "https://i.imgur.com/Ap8OAWY.png",
+        alt: "",
+        caption: "The green markings and notched corners mark the positive sides of the LEDs pictured above.",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_six: {
+        url: "https://i.imgur.com/gb4etdB.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_seven: {
+        url: "https://i.imgur.com/ev5QFch.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_eight: {
+        url: "https://i.imgur.com/8jCQOHw.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_nine: {
+        url: "https://i.imgur.com/CHUb7Iv.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    _13_18_ten: {
+        url: "https://i.imgur.com/jZYAm5O.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_one: {
+        url: "https://i.imgur.com/pjvLHJL.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_two: {
+        url: "https://i.imgur.com/RbHZQhl.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_three: {
+        url: "https://i.imgur.com/VyClWvp.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_four: {
+        url: "https://i.imgur.com/tFCQTqE.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_five: {
+        url: "https://i.imgur.com/TiLTAms.png",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_six: {
+        url: "https://i.imgur.com/2pFF3oM.png",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_seven: {
+        url: "https://i.imgur.com/bEq6Ww0.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_eight: {
+        url: "https://i.imgur.com/ubIa1ir.png",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 400px;"
+    },
+    end_nine: {
+        url: "https://i.imgur.com/a6ERUFx.png",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_ten: {
+        url: "https://i.imgur.com/Wy89UWy.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_eleven: {
+        url: "https://i.imgur.com/LtKOLWo.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_twelve: {
+        url: "https://i.imgur.com/9mty1bv.png",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_thirteen: {
+        url: "https://i.imgur.com/ArLO1ls.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_fourteen: {
+        url: "https://i.imgur.com/ZIecsMM.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_fifteen: {
+        url: "https://i.imgur.com/tYD1KKe.png",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
+    end_sixteen: {
+        url: "https://i.imgur.com/3rCRU5A.jpg",
+        alt: "",
+        caption: "",
+        max_width: "max-width: 500px;"
+    },
     upload_firmware_image_one: {
         url: "https://i.imgur.com/dSPSpkY.png",
         alt: "'platformio serial monitor button'",

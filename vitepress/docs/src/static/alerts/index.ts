@@ -97,6 +97,13 @@ const alerts = {
         text_color: 'text-slate-500 dark:text-slate-400',
         badge_content: 'NOTE',
     },
+    end_one: {
+        type: 'info',
+        title: '',
+        title_color: 'text-[blue]',
+        text_color: 'text-slate-500 dark:text-slate-400',
+        badge_content: 'NOTE',
+    },
 }
 
 export { alerts }

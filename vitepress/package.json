@@ -2,7 +2,6 @@
   "name": "etvr_docs",
   "version": "1.0.0",
   "description": "Official Docs for ETVR",
-  "main": "index.js",
   "repository": "https://github.com/RedHawk989/EyeTrackVR",
   "author": "DaOfficialWizard",
   "license": "MIT",
