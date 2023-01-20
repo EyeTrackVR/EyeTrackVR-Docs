@@ -7,7 +7,8 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
-
+permissions:
+  contents: write
 jobs:
   build:
     name: Build CodeBase
@@ -65,10 +66,14 @@ jobs:
       #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       #  run: semantic-release
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v3.9.2
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: docs.eyetrackvr.dev
+          allow_empty_commit: true
+          full_commit_message: ${{ github.event.head_commit.message }}
+
   #cleanup:
   #  name: Cleanup actions
   #  needs:
