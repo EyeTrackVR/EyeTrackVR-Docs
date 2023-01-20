@@ -36,7 +36,7 @@ const theme = {
             text: "How to Build",
             collapsible: true,
             items: [
-                { text: "Full Build Guide", link: "/how_to_build/full_build_guide" },
+                { text: "Full Build Guide", link: "/how_to_build/full_build" },
                 { text: "Part List", link: "/how_to_build/parts_list" },
                 { text: "How to Create your own Camera Mount", link: "/how_to_build/creating_your_own_mount" },
             ],

@@ -59,16 +59,20 @@ This can help aid problems, and can completely solve them in some cases. Best of
 ## Step 6: Attach cameras to ESPs
 
 Look at your ESP and locate the camera ribbon cable connector as circled below.
+
 <ImageCard :options="image_settings.camera_socket" />
 
 Flip the gray part up to allow the cameras to be connected. Do not force it, or shove objects into it to open, fingernails are fine.
+
 <ImageCard :options="image_settings.camera_socket_clip" />
 
 Now slide in a camera, please note that the pins are facing down, you should only see the black part.
+
 <ImageCard :options="image_settings.camera_cable" />
 
 Once the camera has been slid in, press the gray part of the connector back down. There will be a small amount of force but still be gentle.
 Note the ammount of black coming out of the connector.
+
 <ImageCard :options="image_settings.camera_clip_close" />
 
 <!--## Step 7: Connect ESP to the programmer to flash
@@ -262,3 +266,4 @@ This image shows the optimal/near-optimal position for the LEDs. Hot glue is you
 {% include custom/images/image_2.html url="https://i.imgur.com/3rCRU5A.jpg" max-width="500" caption="" alt="drawing" %}
 
 Tip: Use rubbing alcohol to easily remove hot glue. -->
+
