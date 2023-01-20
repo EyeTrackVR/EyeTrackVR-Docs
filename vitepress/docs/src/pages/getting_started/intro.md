@@ -7,7 +7,7 @@ import { image_settings } from '../../static/image_settings'
 
 # EyeTrackVR {.text-3xl .font-bold .underline .text-[#ab5ac7]}
 
-Open source and *affordable* VR eye tracker platform for [VRChat](https://hello.vrchat.com/) via `OSC` and `UDP` protocol.
+Open source and *affordable* VR eye tracker platform for Social VR Games via `OSC` and `UDP` protocol.
 
 <Alerts :options="alerts.user_warning">
     <template v-slot:content>
@@ -44,11 +44,13 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
     </template>
 </Alerts>
 
+::: details Want to see the safety data sheets?
 [Effect of infrared radiation on the lens](../saftey/effect_of_ir_on_the_lens.pdf)
 
-[Training-library Nir Stds](../saftey/training-library_nir_stds_20021011.pdf)
-
 [AN002_Details on photobiological safety of LED light sources](../saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
+
+[Training-library Nir Stds](../saftey/training-library_nir_stds_20021011.pdf)
+:::
 
 ## Firmware
 
