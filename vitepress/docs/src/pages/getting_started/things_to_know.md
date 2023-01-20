@@ -23,4 +23,4 @@ Important steps may be missing.
 
 This will require some basic Unity knowledge and owning your own avatar.
 
-### Once you have acknowledged the items above, move on to the [Full Build Guide](../how_to_build/full_build_guide)
+### Once you have acknowledged the items above, move on to the [Full Build Guide](../how_to_build/full_build)
