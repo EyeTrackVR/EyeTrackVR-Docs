@@ -9,7 +9,7 @@ const alerts = {
     led_power_warning: {
         type: 'danger',
         title: 'Please pay attention',
-        title_color: 'dark:text-[ea4b7d] text-[b63a61]',
+        title_color: 'text-[#b63a61] dark:text-[#ea4b7d]',
         text_color: 'text-orange-400 dark:text-orange-500',
         badge_content: 'WARNING'
     },
