@@ -18,25 +18,25 @@ hero:
 features:
   - icon: ⚡️
     title: Open Source
-    details: EyeTrackVR is fully open source and free to use.
+    details: fully open source and free to use.
   - icon: 🎉
     title: Community Driven
-    details: EyeTrackVR is built by you for you.
+    details: built by you for you.
   - icon: 💰
     title: Affordable
-    details: EyeTrackVR is affordable and easy to use.
+    details: affordable and easy to use.
   - icon: 🎮
     title: Nearly All VR Headsets
     details: EyeTrackVR works with nearly all VR headsets.
   - icon: 🔨
     title: Completely DIY
-    details: EyeTrackVR is completely DIY and easy to build.
+    details: completely DIY and easy to build.
   - icon: 🌐
     title: Open Platform
-    details: EyeTrackVR is open platform and works with any Social VR game.
+    details: open platform and works with any Social VR game.
   - icon: 🔏
     title: Privacy Focused
-    details: EyeTrackVR is privacy focused and does not collect any data, hosted on your own PC.
+    details: privacy focused and does not collect any data, hosted on your own PC.
   - icon: 📡
     title: Open Protocol
     details: EyeTrackVR uses the Open Sound Control (OSC) protocol.
