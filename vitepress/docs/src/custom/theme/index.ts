@@ -68,6 +68,13 @@ const theme = {
             ],
         },
         {
+            text: "Development",
+            collapsible: true,
+            items: [
+                { text: "Docs", link: "/development/docs/dev_docs" },
+            ],
+        },
+        {
             text: "Archive",
             collapsible: true,
             items: [
