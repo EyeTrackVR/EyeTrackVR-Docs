@@ -1,3 +1,5 @@
+<img src="./img/logo.png" alt="Logo" align="right" height="76"/>
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
