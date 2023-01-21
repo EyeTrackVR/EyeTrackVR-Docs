@@ -2,7 +2,7 @@
 
 # EyeTrackVR Documentation Site
 
-This is the source code for the EyeTrackVR project documentation site. It is built using [VitePress](https://vitepress.vuejs.org/).
+This is the source code for the [EyeTrackVR project](https://github.com/RedHawk989/EyeTrackVR) documentation site. It is built using [VitePress](https://vitepress.vuejs.org/).
 
 Please visit the [documentation site](https://docs.eyetrackvr.dev/) for more information.
 
