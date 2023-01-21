@@ -1,6 +1,6 @@
 [![Build and Deploy to Github Pages](https://github.com/RedHawk989/EyeTrackVR-Docs/actions/workflows/build_release_vitepress.yml/badge.svg)](https://github.com/RedHawk989/EyeTrackVR-Docs/actions/workflows/build_release_vitepress.yml)
 
-# EyeTrackVR Docuemntation Site
+# EyeTrackVR Documentation Site
 
 This is the source code for the EyeTrackVR project documentation site. It is built using [VitePress](https://vitepress.vuejs.org/).
 
