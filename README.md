@@ -9,6 +9,7 @@ This is the source code for the [EyeTrackVR project](https://github.com/RedHawk9
 Please visit the [documentation site](https://docs.eyetrackvr.dev/) for more information.
 
 ## Development
+
 ### install dependencies
 
 ```bash
