@@ -72,4 +72,4 @@ feat: add a new feature
 BREAKING CHANGE: this is a breaking change
 ```
 
-[Top](#standardsguide)
+[Top](#standards-guide)

@@ -54,4 +54,4 @@ Please join our discord for updates and any questions.
 ***All software is under the [MIT License](http://opensource.org/licenses/MIT).
 All documentation, including the [Wiki](https://github.com/RedHawk989/EyeTrackVR/wiki), is under the Creative Commons CC-BY-SA-4.0 license***.
 
-[Top](#eyetrackvr)
+[Top](#eyetrackvr-documentation-site)
