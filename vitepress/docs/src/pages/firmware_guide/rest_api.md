@@ -76,7 +76,6 @@ We allow you to store up to 3 wifi networks in memory. If you try to add more th
 You must follow the following format for the `power` param:
 
 Using the following enum, you pass the _number_ to the right of the `=` sign that corresponds with the power in `dBm` that you wish to use.
-
 ```cpp
 typedef enum {
     WIFI_POWER_19_5dBm = 78,// 19.5dBm
@@ -93,7 +92,6 @@ typedef enum {
     WIFI_POWER_MINUS_1dBm = -4// -1dBm
 } wifi_power_t;
 ```
-
 :::
 
 #### /setDevice
