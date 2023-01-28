@@ -1,3 +1,23 @@
+# 📦 Changelog 
+[![conventional commits](https://img.shields.io/badge/conventional%20commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
+> All notable changes to this project will be documented in this file
+
+## [1.1.0](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.0.0...v1.1.0) (2023-01-28)
+
+
+### 📝 Documentation
+
+* fix broken links in full_build.md ([c5cd3a4](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/c5cd3a443b54dc7abf91f9bdf2a1b4b8aeea3c05))
+
+
+### 🍕 Features
+
+* add docs for MDNS  and REST API ([2b386da](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/2b386da8ea917b2349d94b16a5fdfac040c2627a))
+* add docs for MDNS  and REST API ([6f69ae6](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/6f69ae61b394c1ce5779320661c638c7d05c318c))
+* add docs for MDNS  and REST API ([ae82ded](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/ae82ded5456fe0f47363cdbe75a10c7b9a3ac249))
+* add docs for MDNS  and REST API ([a8b7acd](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/a8b7acd8bfdb624a0735543d88ebdf93469eed08))
+
 <img src="./img/logo.png" alt="Logo" align="right" height="76"/>
 
 # 📦 Changelog 
