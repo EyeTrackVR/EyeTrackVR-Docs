@@ -147,7 +147,7 @@ const image_settings = {
         max_width: "max-width: 400px;"
     },
     end_six: {
-        url: "https://i.imgur.com/2pFF3oM.png",
+        url: "https://i.imgur.com/pqDgpYP.png",
         alt: "",
         caption: "",
         max_width: "max-width: 500px;"
@@ -159,7 +159,7 @@ const image_settings = {
         max_width: "max-width: 400px;"
     },
     end_eight: {
-        url: "https://i.imgur.com/pqDgpYP.png",
+        url: "https://i.imgur.com/r2Jo45t.png",
         alt: "",
         caption: "",
         max_width: "max-width: 400px;"
