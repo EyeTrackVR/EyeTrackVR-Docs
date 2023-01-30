@@ -224,7 +224,7 @@ Flip around and solder the other end.
 Pay attention to the direction of the LEDs on the PCBs.
 :::
 
-If the green dot is facing inwards like in the picture below:
+If the green dot is facing inwards toward the text like in the picture below:
 
 <ImageCard :options="image_settings.end_five"/>
 
@@ -232,7 +232,7 @@ Use the following diagram:
 
 <ImageCard :options="image_settings.end_six"/>
 
-If the green dot is facing outward like the picture below:
+If the green dot is facing away from the text like the picture below:
 
 <ImageCard :options="image_settings.end_seven"/>
 
