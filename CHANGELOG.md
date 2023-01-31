@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.1.2](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.1...v1.1.2) (2023-01-31)
+
+
+### 🐛 Bug Fixes
+
+* fix docsfor firmware config ([a74111e](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/a74111e9e9e2a6e8b906adf387248f163f83c934))
+
 ## [1.1.1](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.0...v1.1.1) (2023-01-28)
 
 
