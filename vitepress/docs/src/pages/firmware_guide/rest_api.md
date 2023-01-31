@@ -18,7 +18,7 @@ For basic `GET` requests, you can use your browser of choice.
 
 The REST API follows the following standard:
 
-```
+```txt
 http://{device_name}.local:81/control/command/{endpoint}?{param}={value}&{param}={value}
 ```
 

@@ -11,7 +11,7 @@ import { alerts } from '../../static/alerts'
 
 <ImageCard :options="image_settings.configure_firmware_one"/>
 
-## Open the `platformio.ini` file
+## Open the `ini/user_config.ini` file
 
 <ImageCard :options="image_settings.configure_firmware_two"/>
 
