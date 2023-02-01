@@ -15,7 +15,7 @@ import { alerts } from '../../static/alerts'
 
 This will give you a basic overview of the project's status and what to expect currently.
 
-## Step 2: Order all the parts listed on our [Parts list](../how_to_build/parts_list)
+## Step 2: Order all the parts listed on our [Parts list](../parts_list)
 
 Please take note of the fact that hardware still may change, although with more developments it seems like we are going to stick with current hardware.
 
