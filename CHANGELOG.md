@@ -3,6 +3,18 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.1.3](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.2...v1.1.3) (2023-02-05)
+
+
+### 📝 Documentation
+
+* fix parts link ([6f956cd](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/6f956cd37f024d8aba2677f014bda2b6c22ecab8))
+
+
+### 🐛 Bug Fixes
+
+* button highlight on hover in light mode ([270c1de](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/270c1de56ead392ae3914ed28e6affac2922e061))
+
 ## [1.1.2](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.1...v1.1.2) (2023-01-31)
 
 
