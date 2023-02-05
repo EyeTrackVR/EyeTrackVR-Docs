@@ -37,7 +37,7 @@
   --vp-c-sponsor: #fd1d7c; */
 
   --vp-c-brand: var(--font-accent);
-  --vp-c-brand-light: var(--font-accent-ligt);
+  --vp-c-brand-light: var(--font-accent-light);
   --vp-c-brand-lighter: var(--font-accent);
   --vp-c-brand-lighter: rgba(31, 23, 255, 0.25);
   --vp-c-brand-dark: #4d45a8;
