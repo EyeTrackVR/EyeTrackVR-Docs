@@ -5,9 +5,22 @@ import { alerts } from '../../static/alerts'
 
 # How to set up your avatar for eye tracking: {.text-[#ab5ac7]}
 
-Currently, the best resource is the [VRC Face Tracking GitHub](https://github.com/benaclejames/VRCFaceTracking/wiki/Eye-Tracking-Setup) and [Discord](https://discord.gg/Fh4FNehzKn).
+Currently, the best resource is the [VRC Face Tracking Wiki](https://github.com/benaclejames/VRCFaceTracking/wiki/Eye-Tracking-Setup) and [Discord](https://discord.gg/Fh4FNehzKn).
 
 I hope to have a good video available from a community member that shows and explains the process eventually.
+If you have the skills to make one, please do.
+
+### We currently use the following paramaters.
+
+`LeftEyeX`
+
+`RightEyeX`
+
+`EyesY`
+
+`LeftEyeLidExpandedSqueeze`
+
+`RightEyeLidExpandedSqueeze`
 
 <div align="center">
     <Alerts :options="alerts.vrc_avatar_setup">
