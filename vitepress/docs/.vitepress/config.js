@@ -20,6 +20,6 @@ export default defineConfig({
     },
     lastUpdated: true,
     title: 'EyeTrackVR Docs',
-    description: 'The official documentation for EyeTrackVR',
+    description: 'The official documentation for EyeTrackVR. Opensource and affordable VR eye tracking.',
     themeConfig: theme,
 })

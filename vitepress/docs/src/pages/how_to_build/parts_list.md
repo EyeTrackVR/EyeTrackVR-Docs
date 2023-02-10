@@ -105,7 +105,12 @@ If you are a Patreon please check out discount codes available to you, and also 
 
 - 1x Soldering iron and solder (lead-free solder highly recommended) Generic soldering iron from [AliExpress here](https://www.aliexpress.com/item/3256801448141079.html) or [Amazon here](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
 
+## 3D Printed Mounts
+
+Mounts with a `★` next to them are the reccomended mounts for the respected hmd. This is based user feedback on what works best for the most people.
+
 <PartsList />
+
 
 ### Other Headsets
 

@@ -9,6 +9,17 @@ import { image_settings } from '../../static/image_settings'
 
 Open source and *affordable* VR eye tracker platform for Social VR Games via `OSC` and `UDP` protocol.
 
+### Welcome to the EyetrackVR documentation website. Here you will find all avalable documentation regauding building, development, and other resources related to this project.
+
+
+Want to get started? Check out the [getting started page](../getting_started/things_to_know) and then the [full build guide.](../how_to_build/full_build)
+
+
+
+
+
+
+
 <Alerts :options="alerts.user_warning">
     <template v-slot:content>
         <p>
@@ -18,20 +29,16 @@ Open source and *affordable* VR eye tracker platform for Social VR Games via `OS
     </template>
 </Alerts>
 
-## Hardware
-
-Please check out our [Parts list](../how_to_build/parts_list/) and our [full build guide](../how_to_build/full_build/) along with our [hardware repo.](https://github.com/RedHawk989/EyeTrackVR-Hardware)
 
 ## About IR Emitter Safety
 
-Please *exercise extreme caution* when messing around with IR emitters.
+Please *exercise caution* when messing around with IR emitters.
 
-Once safety testing has been completed links and files will be provided for the emitters. {.italic .underline}
-
-Please do not try to make, or use any emitters unless you know exactly what you are doing as it could be very harmful to your eyes if not done correctly.
+IR can be dangerous to your eyes once at a certain power level. It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes.
+If you doubt yourself, just do exactly what we do. Don't use different emitters, dont use differnt means of power, etc.
 
 ::: danger
-When files and resources are released <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE**</ins>. This can result in irreversible bodily harm.
+It is important that you <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE**</ins>. This can result in irreversible bodily harm.
 :::
 
 The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we strive to make EyeTrackVR as safe as possible, we do not hold any responsibility for damage done.
@@ -52,18 +59,23 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 [Training-library Nir Stds](../saftey/training-library_nir_stds_20021011.pdf)
 :::
 
+## Hardware
+
+Please check out our [parts list](../how_to_build/parts_list) and [hardware repo.](https://github.com/RedHawk989/EyeTrackVR-Hardware) for information regauring hardware.
+
 ## Firmware
 
 Our firmware called OpenIris is made by `lorow` found [here](https://github.com/lorow/OpenIris).
 
 ## Headset support
 
+In theory, we are compatible with every VR headset. However, mounts may not have been made yet.
 Please take a look at our list of [3d printable mounts](../how_to_build/parts_list#other-parts) and see if your headset is on the list.
 If it is not listed, It is recommended that you try to make a mount, or wait for a skilled community member to create one.
 
 #### Contact
 
-Please join our discord for updates and any questions.
+Please join our discord for updates and any questions. We hope to see you there!
 
 <ImageCard :options="image_settings.discord_content"/>
 

@@ -4,7 +4,7 @@ const members: IMembers[] = [
     {
         name: 'Prohurtz',
         avatar: 'https://avatars.githubusercontent.com/u/48768484?v=4',
-        title: 'Initiator / Moderator / Documentor / Lead Software Developer',
+        title: 'Creator / Lead Software Developer / Documentor / Hardware Developer',
         links: [
             {
                 icon: 'github',
@@ -53,7 +53,6 @@ const contributors: IMembers[] = [
         avatar: 'https://avatars.githubusercontent.com/u/34539?v=4',
         links: [
             { icon: 'github', link: 'https://github.com/qdot' },
-            { icon: 'twitter', link: 'https://twitter.com/qdot' },
         ]
     },
     {
@@ -63,6 +62,13 @@ const contributors: IMembers[] = [
             { icon: 'github', link: 'https://github.com/dfgHiatus' },
         ]
     },
+    {
+        name: 'PallasNeko',
+        avatar: 'https://avatars.githubusercontent.com/u/124042774?v=4',
+        links: [
+            { icon: 'github', link: 'https://github.com/PallasNeko' },
+        ]
+    }
 ]
 
 export { members, contributors, IMembers }
