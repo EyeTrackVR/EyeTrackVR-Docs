@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.1.12](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.11...v1.1.12) (2023-02-12)
+
+
+### 🐛 Bug Fixes
+
+* make titles dynamic to font accent ([cf5382b](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/cf5382bd6eb68569792861a03b076b612df66ade))
+
 ## [1.1.11](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.10...v1.1.11) (2023-02-12)
 
 
