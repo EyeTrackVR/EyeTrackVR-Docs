@@ -6,17 +6,15 @@
 
 In the `mDNS` protocol the IP address of the device can change, but the name of the device will always be the same. This means that you can connect to the device using the name of the device, even if the IP address of the device changes.
 
-The name of the device is the name of the device followed by `.local`. For example, if the name of the device is `esp32`, you can connect to the device using `http://esp32.local`.
-
 ## How to use it
 
 ### Enable mDNS
 
 The `mDNS` is enabled by default on the new firmware, and can not be disabled.
 
-To use it,all you need to do is set the name of the device in the `platformio.ini` file.
+To use it, all you need to do is set the name of the device in the firmware config file.
 
-This setting can be located under the `[wifi]` section of the `platformio.ini` file.
+This setting can be located under the `[wifi]` section of the `ini/user_config.ini` file.
 
 ```ini
 mdnsname = "openiristracker" # do not add .local
