@@ -84,7 +84,7 @@ The default configutration is `debug` for the `espAIThinker` environment. If you
 ::: tip Coming Soon
 GIF(s) for changing the environment will be added soon.
 
-Want to help? [Submit a PR](https:://github.com/RedHawk989/EyeTrackVR-Docs) to add the GIF(s).
+Want to help? [Submit a PR](https://github.com/RedHawk989/EyeTrackVR-Docs) to add the GIF(s).
 :::
 
 ::: tip Coming Soon
