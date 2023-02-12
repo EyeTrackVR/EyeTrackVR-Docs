@@ -28,6 +28,14 @@ http://{device_name}.local:81/control/builtin/command/{endpoint}?{param}={value}
 
 ::: info Note
 Any endpoint marked with `**` is currently not implemented, and will be implemented in the future.
+
+If you would like to help us implement these endpoints, please contact us.
+
+We are also open to suggestions for new endpoints.
+
+> **Note**: Any endpoint that makes changes to the config will require a call to `/save` to write the changes to the flash.
+> This is to prevent the flash from being written to too often, which can cause the flash to wear out.
+> The device will write the changes to the flash and then restart itself after a call to `/save`.
 :::
 
 The REST API has the following endpoints:
@@ -42,7 +50,7 @@ The REST API has the following endpoints:
 | /getStoredConfig | GET | Returns a _JSON_ object of the devices current config. |
 | /setTxPower | POST | Sets the Transmission Power of the ESPs |
 | /setDevice | POST | Sets the `OTA` and `mDNS` settings |
-| /setCamera | POST | Sets all of the wifi settings |
+| /setCamera | POST | Sets all of the camera settings |
 | /wifi | POST | Adds a new wifi network, or writes over an existing one |
 | /wifi | DELETE | Deletes a wifi network `**` |
 
