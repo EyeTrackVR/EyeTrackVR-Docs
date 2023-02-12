@@ -1,4 +1,4 @@
-# Things To Know Before You Start {.text-[#ab5ac7]}
+# Things To Know Before You Start {.text-[var(--font-accent)]}
 
 ## This page will be an overview of things to know and understand before you start this project
 

@@ -1,4 +1,4 @@
-# Creating Your Own Mount {.text-[#ab5ac7]}
+# Creating Your Own Mount {.text-[var(--font-accent)]}
 
 ## This page will include a basic rundown on how to create your own camera mount for a headset that may not have any existing community mounts
 

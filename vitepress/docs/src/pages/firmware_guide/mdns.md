@@ -1,4 +1,4 @@
-# MDNS {.text-[#ab5ac7]}
+# MDNS {.text-[var(--font-accent)]}
 
 ## What is it?
 

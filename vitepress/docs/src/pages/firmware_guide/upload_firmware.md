@@ -5,7 +5,7 @@ import { image_settings } from '../../static/image_settings'
 import { alerts } from '../../static/alerts'
 </script>
 
-# Building and uploading the firmware manually {.text-[#ab5ac7]}
+# Building and uploading the firmware manually {.text-[var(--font-accent)]}
 
 Uploading your firmware must initially be done over cable. Once you have the tracker connected to your WiFi after your first firmware update, you can opt to use OTA in the future.
 

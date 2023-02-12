@@ -1,4 +1,4 @@
-# What is this? {.text-[#ab5ac7]}
+# What is this? {.text-[var(--font-accent)]}
 
 Firmware is the second part of the equation to get your trackers going. It lives on the ESP32 chip, and is responsible for streaming video data from the tracker.
 

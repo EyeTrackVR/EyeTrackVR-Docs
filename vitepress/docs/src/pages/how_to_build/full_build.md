@@ -7,7 +7,7 @@ import { image_settings } from '../../static/image_settings'
 import { alerts } from '../../static/alerts'
 </script>
 
-# Build Guide {.text-[#ab5ac7]}
+# Build Guide {.text-[var(--font-accent)]}
 
 ## This page will contain a step-by-step assembly guide
 

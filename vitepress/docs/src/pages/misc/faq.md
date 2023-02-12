@@ -2,7 +2,7 @@
 import FAQ from '../../vue/faq/FAQ.vue'
 </script>
 
-# Frequently Asked Questions {.text-[#ab5ac7]}
+# Frequently Asked Questions {.text-[var(--font-accent)]}
 
 <br>
 

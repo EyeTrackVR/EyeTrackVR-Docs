@@ -3,7 +3,7 @@ import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'
 </script>
 
-# Fox IR V2 Buil dInstructions {.text-[#ab5ac7]}
+# Fox IR V2 Buil dInstructions {.text-[var(--font-accent)]}
 
 ## Step 15: Prepare to solder IR LED PCB V2s
 

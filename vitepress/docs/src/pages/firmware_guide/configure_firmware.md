@@ -5,7 +5,7 @@ import { image_settings } from '../../static/image_settings'
 import { alerts } from '../../static/alerts'
 </script>
 
-# Configuring the firmware {.text-[#ab5ac7]}
+# Configuring the firmware {.text-[var(--font-accent)]}
 
 ## Once you have opened the project, you should see something on the left side like this
 

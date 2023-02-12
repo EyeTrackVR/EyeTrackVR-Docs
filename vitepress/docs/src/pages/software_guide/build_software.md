@@ -7,7 +7,7 @@ import { alerts } from '../../static/alerts'
 import { Requirements } from '../../static/app_build_requirements'
 </script>
 
-# Build the app from source {.text-[#ab5ac7]}
+# Build the app from source {.text-[var(--font-accent)]}
 
 ## This guide will show how to build the app from source
 

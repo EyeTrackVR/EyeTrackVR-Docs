@@ -7,7 +7,7 @@ import { alerts } from '../../static/alerts'
 import { Requirements } from '../../static/app_build_requirements'
 </script>
 
-# How to install, run and adjust the EyeTrackVR app. {.text-[#ab5ac7]}
+# How to install, run and adjust the EyeTrackVR app. {.text-[var(--font-accent)]}
 
 ### Step 1: Download the EyeTrackVR Installer and install the EyeTrackVR app
 

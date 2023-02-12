@@ -4,7 +4,7 @@ import { alerts } from '../../static/alerts'
 import PartsList from '../../vue/parts_list/PartsList.vue'
 </script>
 
-# Parts List {.text-[#ab5ac7]}
+# Parts List {.text-[var(--font-accent)]}
 
 <Alerts :options="alerts.parts_list_one">
     <template v-slot:content>
@@ -110,7 +110,6 @@ If you are a Patreon please check out discount codes available to you, and also 
 Mounts with a `★` next to them are the reccomended mounts for the respected hmd. This is based user feedback on what works best for the most people.
 
 <PartsList />
-
 
 ### Other Headsets
 

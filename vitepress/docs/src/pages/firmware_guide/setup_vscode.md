@@ -3,7 +3,7 @@ import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'
 </script>
 
-# Setting up the environment {.text-[#ab5ac7]}
+# Setting up the environment {.text-[var(--font-accent)]}
 
 This procedure will show how to prepare your system for uploading the firmware to your tracker.
 

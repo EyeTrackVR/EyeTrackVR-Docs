@@ -1,4 +1,4 @@
-# REST API {.text-[#ab5ac7]}
+# REST API {.text-[var(--font-accent)]}
 
 ## What is it?
 
