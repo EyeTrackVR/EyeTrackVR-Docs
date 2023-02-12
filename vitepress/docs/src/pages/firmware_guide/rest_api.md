@@ -26,6 +26,10 @@ http://{device_name}.local:81/control/builtin/command/{endpoint}?{param}={value}
 
 ### Endpoints
 
+::: info Note
+Any endpoint marked with `**` is currently not implemented, and will be implemented in the future.
+:::
+
 The REST API has the following endpoints:
 
 | Endpoint | Method | Description |
@@ -40,8 +44,11 @@ The REST API has the following endpoints:
 | /setDevice | POST | Sets the `OTA` and `mDNS` settings |
 | /setCamera | POST | Sets all of the wifi settings |
 | /wifi | POST | Adds a new wifi network, or writes over an existing one |
-| /wifi | DELETE | Deletes a wifi network |
-| /wifi | GET | Returns a _JSON_ object of all of the wifi networks |
+| /wifi | DELETE | Deletes a wifi network `**` |
+
+::: info Note
+`/wifi` uses the `POST` method to add a new wifi network, and the `DELETE` method to delete a wifi network.
+:::
 
 ### Params
 
