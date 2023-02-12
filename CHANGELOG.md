@@ -3,6 +3,18 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.1.6](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.5...v1.1.6) (2023-02-12)
+
+
+### 📝 Documentation
+
+* add some vrc avatar info ([609d24f](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/609d24f8e44633f7c9c302d6052938f50c4ba024))
+
+
+### 🐛 Bug Fixes
+
+* typo in rest api endpoint ([43ae2b1](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/43ae2b1fb24552404a120f91f4af77578984ebfb))
+
 ## [1.1.5](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.4...v1.1.5) (2023-02-10)
 
 
