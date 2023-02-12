@@ -19,10 +19,10 @@ For basic `GET` requests, you can use your browser of choice.
 The REST API follows the following standard:
 
 ```txt
-http://{device_name}.local:81/control/command/{endpoint}?{param}={value}&{param}={value}
+http://{device_name}.local:81/control/builtin/command/{endpoint}?{param}={value}&{param}={value}
 ```
 
-> For example, if the name of the device is `esp32`, you can connect to the device using `http://esp32.local:81/control/command/<endpoint>`.
+> For example, if the name of the device is `esp32`, you can connect to the device using `http://esp32.local:81/control/builtin/command/<endpoint>`.
 
 ### Endpoints
 
@@ -55,7 +55,7 @@ If you do not supply a param, that param will be set to default settings.
 
 URL params are passed in the URL as a query string, using the following format:
 
-`http://<device_name>.local:81/control/command/<endpoint>?<param>=<value>&<param>=<value>`
+`http://<device_name>.local:81/control/builtin/command/<endpoint>?<param>=<value>&<param>=<value>`
 
 #### /wifi
 
