@@ -91,7 +91,7 @@ Keep in mind while testing and getting set up, the ESP can only have one client,
 
 ## Troubleshooting
 
-If you encountered an issue while following these steps check the [FAQ.](/misc/faq.html)
+If you encountered an issue while following these steps check the [FAQ.](../misc/faq)
 
 If you don't find an answer to your question there ask in **#questions** channel in [the discord](https://discord.gg/kkXYbVykZX), we will be happy to help.
 

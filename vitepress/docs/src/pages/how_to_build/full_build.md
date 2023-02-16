@@ -15,7 +15,7 @@ import { alerts } from '../../static/alerts'
 
 This will give you a basic overview of the project's status and what to expect currently.
 
-## Step 2: Order all the parts listed on our [Parts list](../parts_list)
+## Step 2: Order all the parts listed on our [Parts list](./parts_list)
 
 Please take note of the fact that hardware still may change, although with more developments it seems like we are going to stick with current hardware.
 
@@ -86,13 +86,13 @@ Slide your ESP into the programmer, and note the USB port goes away from the ESP
 
 ## Step 8: Configure Visual Studio Code and prepare to flash the firmware
 
-Check out our guide on [Setting up VS Code](../firmware_guide/setup_vscode/)
+Check out our guide on [Setting up VS Code](../firmware_guide/setup_vscode)
 
 Once VS Code is set up, move on to the next step.
 
 ## Step 9: Plug in your ESP and flash the firmware
 
-Our guide, [Building and uploading the firmware manually](../firmware_guide/upload_firmware/) has steps on how to do this.
+Our guide, [Building and uploading the firmware manually](../firmware_guide/upload_firmware) has steps on how to do this.
 After it has flashed, make sure you get a video stream in your browser, then power it down and flash your next ESP.
 
 ## Step 10: Connect your power wires to a USB Type-A board
@@ -242,7 +242,7 @@ Use the following diagram:
 
 ## Step 19: 3D print mounts
 
-Head to the 3D printed parts section of the parts list [here.](/how_to_build/parts_list#other-parts)
+Head to the 3D printed parts section of the parts list [here.](./parts_list#other-parts)
 
 Find which parts are for your headset and print them.
 Some may work better or worse, it is recommended to test all of them if there are multiple, print one of each kind.
