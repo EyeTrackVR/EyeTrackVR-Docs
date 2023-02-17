@@ -115,7 +115,7 @@ Mounts with a `★` next to them are the reccomended mounts for the respected hm
 
 If you own another headset not listed above, that means there are no mounts designed for them yet. If you have basic skills in modeling or think up a solution to mount cams and emitters, please try to make a mount and then let us in the discord know so it can be added here. Any headset that can fit the camera is potentially compatible. If you are willing, give it a shot to design a mount for the rest of the community.
 
-Check out our basic guide on making your own mount [here.](https://docs.eyetrackvr.dev/creating_your_own_camera_mount/)
+Check out our basic guide on making your own mount [here.](./creating_your_own_mount)
 
 <Alerts :options="alerts.parts_list_six">
     <template v-slot:content>

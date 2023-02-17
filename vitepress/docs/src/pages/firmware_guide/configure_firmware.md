@@ -45,7 +45,7 @@ Double check that you have correctly entered your WiFi credentials and that said
 
 #### `mDNS`
 
-If you do not wish to manually keep track of the ESPs IP addresses and ports, you can enable the mDNS feature. This will allow you to connect to the ESPs using the following format: `http://<some_name>.local`. This will only work if you are connected to the same network as the ESPs, and if you have enabled mDNS on your computer. If you are using Windows, you can enable mDNS by following [this guide](/firmware_guide/mdns.html).
+If you do not wish to manually keep track of the ESPs IP addresses and ports, you can enable the mDNS feature. This will allow you to connect to the ESPs using the following format: `http://<some_name>.local`. This will only work if you are connected to the same network as the ESPs, and if you have enabled mDNS on your computer. If you are using Windows, you can enable mDNS by following [this guide](./mdns).
 
 #### `OTA`
 

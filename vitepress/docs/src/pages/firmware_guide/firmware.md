@@ -8,4 +8,4 @@ Current testing has been on our own solution called OpenIris, [found here](https
 
 ## How do download this?
 
-[Follow the steps described here](/firmware_guide/setup_vscode)
+[Follow the steps described here](./setup_vscode)
