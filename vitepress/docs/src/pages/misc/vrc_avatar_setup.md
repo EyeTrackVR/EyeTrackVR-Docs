@@ -12,7 +12,7 @@ Here is an avatar setup video created by a contributor:
 </div>
 
 Another good resource is the [VRC Face Tracking Wiki](https://github.com/benaclejames/VRCFaceTracking/wiki/Eye-Tracking-Setup) and their [Discord](https://discord.gg/Fh4FNehzKn).
-
+ 
 
 ### We currently use the following paramaters
 
