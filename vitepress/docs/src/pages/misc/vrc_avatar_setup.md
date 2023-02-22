@@ -5,10 +5,14 @@ import { alerts } from '../../static/alerts'
 
 # How to set up your avatar for eye tracking: {.text-[var(--font-accent)]}
 
-Currently, the best resource is the [VRC Face Tracking Wiki](https://github.com/benaclejames/VRCFaceTracking/wiki/Eye-Tracking-Setup) and [Discord](https://discord.gg/Fh4FNehzKn).
+Here is an avatar setup video created by a contributor:
 
-I hope to have a good video available from a community member that shows and explains the process eventually.
-If you have the skills to make one, please do.
+<div align="center">
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/Dfm-tkaruq0" title="Add eye tracking support to your VRChat avatar" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+Another good resource is the [VRC Face Tracking Wiki](https://github.com/benaclejames/VRCFaceTracking/wiki/Eye-Tracking-Setup) and their [Discord](https://discord.gg/Fh4FNehzKn).
+
 
 ### We currently use the following paramaters
 
