@@ -258,12 +258,12 @@ const image_settings = {
         max_width: "max-width: 500px;"
     },
     configure_firmware_one: {
-        url: "https://i.imgur.com/VZeI39I.png",
+        url: "https://i.imgur.com/1Ficr7f.png",
         alt: "'img'",
         max_width: "max-width: 500px;"
     },
     configure_firmware_two: {
-        url: "https://i.imgur.com/ySzUMPO.png",
+        url: "https://i.imgur.com/Sq4iQJe.png",
         alt: "'img'",
         max_width: "max-width: 500px;"
     },
