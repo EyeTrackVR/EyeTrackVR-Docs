@@ -53,9 +53,3 @@ This is the documentation for the EyeTrackVR Docs site. It is built using [ViteP
 - Do not make naming changes to the `vitepress` folder.
 - Do not make major changes to the `vitepress` folder structure without proir consultation of team members.
 - For Vue componentes, follow the [Vue3 docs](https://vuejs.org/guide/introduction.html).
-
-### Project Specific Documentation
-
-::: tip
-COMING SOON
-:::

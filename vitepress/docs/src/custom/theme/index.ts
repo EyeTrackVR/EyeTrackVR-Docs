@@ -74,6 +74,8 @@ const theme = {
             collapsible: true,
             items: [
                 { text: "Docs", link: "/development/docs/dev_docs" },
+                { text: "Edit Docs", link: "/development/docs/pages" },
+                { text: "Standards", link: "/development/docs/standards" },
             ],
         },
         {
