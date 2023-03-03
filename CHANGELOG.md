@@ -3,6 +3,20 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.2.0](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.12...v1.2.0) (2023-03-03)
+
+
+### 📝 Documentation
+
+* add avi setup video ([a210405](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/a21040512c4d804f4591a199c8f44e106508dfef))
+* fix up parts list ([5421629](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/5421629d6ef4a290b575fba306d202f8ef3e23b4))
+* update FW images ([92e82f3](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/92e82f344a48559f1f75a42f5413a67c3ff5ef0f))
+
+
+### 🍕 Features
+
+* add contribution docs ([903e3c6](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/903e3c6065b028ab070a94453de0a2be64444e81))
+
 ## [1.1.12](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.1.11...v1.1.12) (2023-02-12)
 
 
