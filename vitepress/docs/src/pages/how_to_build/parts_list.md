@@ -58,9 +58,18 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
 [28 AWG gauge wire from AliExpress](https://a.aliexpress.com/_mK72cy6)  
 [28 AWG Amazon](https://www.amazon.com/Fermerry-Silicone-Stranded-Copper-Electrical/dp/B089CTT5X1/)  
 
-- ### 2x External antennas for ESPs  
+- ### 2x External antennas for ESPs 
+Small:  
+[AliExpress](https://a.aliexpress.com/_ms1TzXc)
+
+Large:  
 [AliExpress](https://www.aliexpress.com/item/2255800868378357.html)  
 [Amazon](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
+
+## Recommended:
+
+- ### 2x-4x Heatsinks
+[AliExpress](https://www.aliexpress.us/item/3256803892794950.html)
 
 ## IR Emitters
 
