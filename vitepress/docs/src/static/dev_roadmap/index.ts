@@ -6,11 +6,12 @@ const Completed: IDevRoadMap = {
         { label: 'Tracking algorithm' },
         { label: 'Calibration' },
         { label: 'GUI' },
-        { label: 'PCB Designfor IR emitters' },
+        { label: 'PCB Design for IR emitters' },
         { label: 'Dual Eye support' },
         { label: 'Firmware' },
         { label: 'Better documentation over things (setup, wiring etc.)' },
         { label: 'Setup dynamic WiFi credentials at runtime' },
+        { label: 'OTA using Platformio' },
     ]
 }
 
