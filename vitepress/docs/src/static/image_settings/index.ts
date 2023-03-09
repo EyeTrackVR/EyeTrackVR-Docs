@@ -222,6 +222,46 @@ const image_settings = {
         alt: "'img of platformio serial monitor'",
         max_width: "max-width: 600px;"
     },
+    ant_logo_platformio:{
+        url: "https://i.imgur.com/B6zK6n8.png",
+        alt: "Platformio logo button",
+        max_width: "max-width: 600px;"
+    },
+    platformio_quick_access:{
+        url: "https://i.imgur.com/94Xgg9k.png",
+        alt: "Platformio logo Quick Access Section",
+        max_width: "max-width: 600px;"
+    },
+    platformio_quick_access_miscellaneous:{
+        url: "https://i.imgur.com/Zoolr2M.png",
+        alt: "Platformio miscellaneous section",
+        max_width: "max-width: 600px;"
+    },
+    platformio_quick_access_upgrade_core:{
+        url: "https://i.imgur.com/nOF817M.png",
+        alt: "Platformio upgrade core button",
+        max_width: "max-width: 600px;"
+    },
+    platformio_pio_home:{
+        url: "https://i.imgur.com/M7ZYAtU.png",
+        alt: "Platformio open home",
+        max_width: "max-width: 600px;"
+    },
+    platformio_pio_sidebar_platforms:{
+        url: "https://i.imgur.com/LgnU4HG.png",
+        alt: "Platformio platforms sidebar",
+        max_width: "max-width: 600px;"
+    },
+    platformio_pio_sidebar_platforms_updates:{
+        url: "https://i.imgur.com/ZsKos2E.png",
+        alt: "Platformio platforms sections",
+        max_width: "max-width: 600px;"
+    },
+    platformio_pio_espressif32:{
+        url: "https://i.imgur.com/mQdM6X2.png",
+        alt: "Platformio platforms update view",
+        max_width: "max-width: 600px;"
+    },
     setup_vscode_image_one: {
         url: "https://i.imgur.com/jXPXIFz.gif",
         alt: "'img'",
@@ -398,6 +438,11 @@ const image_settings = {
         alt: "'drawing'",
         max_width: "max-width: 500px;"
     },
+    pio_upgrade_command: {
+        url: "https://i.imgur.com/taDa3vj.png",
+        alt: "pio upgrade command in the terminal",
+        max_width: "max-width: 500px;"
+    }
 };
 
 export { image_settings }

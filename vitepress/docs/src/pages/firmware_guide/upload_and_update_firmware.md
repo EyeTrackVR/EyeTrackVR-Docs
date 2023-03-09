@@ -114,6 +114,29 @@ The text, highlighted in green for demonstration, is the stream address of the c
 
 Keep in mind while testing and getting set up, the ESP can only have one client, to use the camera in the app, make sure you close the browser tab you tested it in.
 
+# Updating the firmware to the newest version
+
+To update the firmware you'll need to follow a couple of steps.
+
+1. Open a terminal and enter the directory you've cloned OpenIris into, for example `cd D:/OpenIris/`
+
+2. Save your current changes to the config using `git stash`
+
+3. Download the newest changes from the repo using `git pull`
+
+4. Apply your saved changes so that you don't have to retype your WI-FI credentials using `git stash apply`
+  <Alerts :options="alerts.user_warning">
+      <template v-slot:content>
+          <p>
+          Skip this step if the update message denotes that the config had changed. If it does so, retype your credentials in the updated files.
+          </p>
+      </template>
+  </Alerts>
+
+4.1. If anything went wrong, you can reset everything to the default state using `git reset --hard` and then retyping your credentials
+
+5. Upload your firmware [following steps from the uploading section](./update_platformio.md)
+
 ## Troubleshooting
 
 If you encountered an issue while following these steps check the [FAQ.](../misc/faq)

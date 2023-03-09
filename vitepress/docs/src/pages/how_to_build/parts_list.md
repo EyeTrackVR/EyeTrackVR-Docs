@@ -68,6 +68,11 @@ Large:
 
 ## Recommended:
 
+- ### Antennas
+Optional but recommended if you're running vive full body tracking or having issues with streaming:
+- 2x External antennas for ESPs [AliExpress here](https://www.aliexpress.com/item/2255800868378357.html) or [Amazon here](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
+- 2x External Diymore antennas for ESPs [AliExpress link](https://pl.aliexpress.com/item/32986748472.htmli) - currently in use by @Prohurtz#0001 
+
 - ### 2x-4x Heatsinks
 [AliExpress](https://www.aliexpress.us/item/3256803892794950.html)
 
