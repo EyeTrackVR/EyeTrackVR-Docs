@@ -92,7 +92,7 @@ Once VS Code is set up, move on to the next step.
 
 ## Step 9: Plug in your ESP and flash the firmware
 
-Our guide, [Building and uploading the firmware manually](../firmware_guide/upload_firmware) has steps on how to do this.
+Our guide, [Building and uploading the firmware manually](../firmware_guide/upload_and_update_firmware) has steps on how to do this.
 After it has flashed, make sure you get a video stream in your browser, then power it down and flash your next ESP.
 
 ## Step 10: Connect your power wires to a USB Type-A board

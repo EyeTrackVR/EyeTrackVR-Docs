@@ -91,4 +91,4 @@ Want to help? [Submit a PR](https://github.com/RedHawk989/EyeTrackVR-Docs) to ad
 We are working on a new app that will allow you to configure the firmware, flash the boards, and connect to Social VR Games using a GUI. This will make it easier to configure the firmware, and will allow you to configure the firmware without having to use/download `VSCode` or our `platformio` project. We are hard at work on this, but do not currently have a release date. Please check back frequently.
 :::
 
-## [Now, move on to uploading the firmware](/firmware_guide/upload_firmware.html)
+## [Now, move on to uploading the firmware](/firmware_guide/upload_and_update_firmware.html)

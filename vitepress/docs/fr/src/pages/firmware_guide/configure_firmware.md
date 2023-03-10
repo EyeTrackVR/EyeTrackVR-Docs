@@ -27,4 +27,4 @@ Sur les lignes 17 et 18, remplacez le texte bidon avec votre SSID (WiFi access p
 
 Re-verifiez que vous avez bien renté vos identifiants WiFi et que ce réseau WiFi ait bien une bande 2.4Ghz.
 
-## [Maintenant vous pouvez aller téléverser le firmware](/firmware_guide/upload_firmware.html)
+## [Maintenant vous pouvez aller téléverser le firmware](/firmware_guide/upload_and_update_firmware.html)

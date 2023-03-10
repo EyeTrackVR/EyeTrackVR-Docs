@@ -48,7 +48,7 @@ const theme = {
                 { text: "Introduction", link: "/firmware_guide/firmware" },
                 { text: "Mettre en place l'environement Visual Studio Code", link: "/firmware_guide/setup_vscode" },
                 { text: "Configurer le Firmware", link: "/firmware_guide/configure_firmware" },
-                { text: "téléverser le Firmare", link: "/firmware_guide/upload_firmware" },
+                { text: "téléverser le Firmare", link: "/firmware_guide/upload_and_update_firmware" },
                 { text: "MDNS", link: "/firmware_guide/mdns" },
                 { text: "API de REST", link: "/firmware_guide/rest_api" },
             ],

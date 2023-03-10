@@ -6,7 +6,7 @@ A firmware environment is a way to store the custom firmware config for a specif
 
 We use environments to store the firmware config for each device, so that you can easily switch between them.
 
-Envrionments are broken up into two distinct parts:
+Environments are broken up into two distinct parts:
 
 - The `build type` (e.g. `debug`, `release`)
 - The `board type` (e.g. `espaithinker`, `esp32cam`)
