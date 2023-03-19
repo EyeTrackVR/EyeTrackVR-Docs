@@ -85,7 +85,11 @@ const printed_parts = {
                 {
                     url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Vive_Pro_2/StormFox",
                     desc: "★ Camera and IR emitter mount by StormFox"
-                }
+                },
+                {
+                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Vive_Pro_2/cat_who_loves_pie/Vive_Pro_2_VROptician_by_cat_who_loves_pie.stl",
+                    desc: "VROptician camera and IR emitter mount by cat_who_loves_pie"
+                }  
             ],
             link_id: 5
         },
