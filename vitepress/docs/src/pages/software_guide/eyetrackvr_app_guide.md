@@ -11,26 +11,9 @@ import { Requirements } from '../../static/app_build_requirements'
 
 ### Step 1: Download the EyeTrackVR Installer and install the EyeTrackVR app
 
-Go to the latest [GitHub release here](https://github.com/RedHawk989/EyeTrackVR-Installer/releases/latest) and download the .zip
+Go to the latest [GitHub release here](https://github.com/RedHawk989/EyeTrackVR/releases/latest) and download the Setup.exe file.
 
-Extract the zip file and then run the .exe as administrator.
-You will be greeted with a window that looks like this:
-<ImageCard :options="image_settings.eyetrack_vr_guide_one"/>
-
-By default, it will install to `C:\Program Files\EyeTrackVR` and create a shortcut on your desktop.
-Pressing the `Change Install Path` button will open up a window where you can navigate to an alternate install path.
-
-Press `Install` to install the app.
-<Alerts :options="alerts.eyetrack_vr_guide_one">
-    <template v-slot:content>
-        <p>
-           The installer can also be used to update the app, just go through the install process again.
-        </p>
-    </template>
-</Alerts>
-
-If it has been successfully installed it should change to look like this:
-<ImageCard :options="image_settings.eyetrack_vr_guide_two"/>
+Follow the prompts and the app should be installed.
 
 ## Step 2: Run the EyeTrackVR app
 
