@@ -63,25 +63,60 @@ OTA stands for `Over The Air`, and it is a way to update your firmware without h
 
 ### How do I use it?
 
-To use OTA, you need to have working firmware on your ESPs first.
+To use OTA, you need to have working firmware on your ESPs first. Follow [the manual building guide](#Building-and-uploading-the-firmware-manually)
 
-Once you have mnually flashed the firmware at least once, you can use the `OTA` environment to upate your ESPs.
+Once you have manually flashed the firmware at least once, you can use the `OTA` environment to upate your ESPs.
 
 ::: tip Coming Soon
-Currently, we only support OTA using `platformio` and `Visual Studio Code`. We are working on a new app, where you can upload your firmware to your ESPs over WiFi straight from the app.
+Currently, we only support OTA using the provided web interface, but we are working on a new app, where you will be able to upload your firmware to your ESPs over WiFi straight from the app.
 :::
 
-To do this, you need to change your environment to the `OTA` version of your working environment.
+#### For firmware versions 1.1.0 and up:
+  
+Since version 1.1.0 we've switched from using OTA via platformio to a more user friendly approach: 
 
-For example, if you have a working `esp32AIThinker` environment, you would change your environment to `esp32AIThinker_OTA`.
+Note: You **don't** have to have the trackers connected to your pc for any of these steps, just powered on and connected to the Wi-Fi. 
 
-Once you have changed your environment, you can upload your firmware to your ESPs using the upload button, as you would normally.
 
-Once you have successfully connected your trackers to your WiFi, you can use OTA to handle all future firmware updates.
+1. Build the firmware using your current environment, if you've switched to an OTA env in the past - repeat those steps but select the environment without the `_OTA` suffix. Next, press the checkmark button to build it without uploading. 
+
+<ImageCard :options="image_settings.upload_firmware_build_button" />
+
+2. Turn on your trackers and wait for them to connect to Wi-Fi
+
+3. Locate their ip or their mDNS name, the default one is: [http://openiristracker.local/](http://openiristracker.local/)
+
+4. Having done that, open [http://\<your-up-or-mdns-name\>:81/update](http://openiristracker.local:81/update)
+
+for example: [http://openiristracker.local/](http://openiristracker.local:81/update) 
+
+This should open a page similar to this: 
+
+<ImageCard :options="image_settings.upload_firmware_webpage" />
+
+Click on the select file button, and navigate to your `Openiris/ESP` directory. 
+
+Once there, open `.pio\build\your-environment` like so: 
+
+<ImageCard :options="image_settings.upload_firmware_webpage_directory" />
+
+You'll find a couple files in there, select the one named `your-environment-vVersion-feature`. 
+
+like this one: 
+
+<ImageCard :options="image_settings.upload_firmware_webpage_directory_file" />
+
+5. Press upload and wait for it to finish. Done!
+
+<ImageCard :options="image_settings.upload_firmware_webpage_upload_finished" />
+
+#### For firmware versions of 1.0.0 and under:
 
 1. Retrieve the IP or mDNS name of the tracker you wish to flash. The IP can be found through network monitoring applications, or by viewing tracker output in a serial monitor.
 2. In the `ini/user_config.ini` file:
    - Put IP or hostname of device into config file
+
+Like so: 
 
 ```ini
 [ota]
@@ -92,6 +127,19 @@ otaserverport = 3232
 ```
 
 3. Change to OTA env
+
+To do that, in visual studio code, locate the uplaod button, next to it will be listed a couple of buttons and your current environment.
+
+ For example, if you have a working `esp32AIThinker` environment, you would change your environment to `esp32AIThinker_OTA`. 
+
+ Click on it.
+
+<ImageCard :options="image_settings.upload_firmware_select_env" />
+
+This will open a list of all avaible environments, select the one that matches your board and has a _OTA part as a suffix 
+
+<ImageCard :options="image_settings.upload_firmware_select_env_dropdown" />
+
 4. Restart the ESPs, they **_must_** be power cycled
 5. Press the upload button to upload the firmware.<br>  
    ![img](https://i.imgur.com/lI3PFVC.png)
