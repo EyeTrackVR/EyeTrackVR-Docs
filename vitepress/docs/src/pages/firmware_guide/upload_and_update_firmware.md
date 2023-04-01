@@ -25,7 +25,7 @@ In the case of an FTDI programmer, the steps aren't as easy, so grab [this guide
 
 ## 3. Upload your firmware
 
-- If you are using the OTA method, first make sure the tracker you wish to flash is turned on and connected to your network, then skip to the [OTA section below](#how-do-i-use-it).
+- If you are using the OTA method, skip to the [OTA section below](#how-do-i-use-it).
 
 - Once the firmware has been built, press the upload button to upload the firmware.
 
@@ -73,10 +73,15 @@ Currently, we only support OTA using the provided web interface, but we are work
 
 #### For firmware versions 1.1.0 and up:
   
-Since version 1.1.0 we've switched from using OTA via platformio to a more user friendly approach: 
+Since version 1.1.0 we've switched from using OTA via platformio to a more user-friendly approach.
 
-Note: You **don't** have to have the trackers connected to your pc for any of these steps, just powered on and connected to the Wi-Fi. 
-
+<Alerts :options="alerts.upload_firmware_one">
+    <template v-slot:content>
+        <p>
+           You don't have to have the trackers connected to your pc for any of these steps, just powered on and connected to the Wi-Fi. 
+        </p>
+    </template>
+</Alerts>  
 
 1. Build the firmware using your current environment, if you've switched to an OTA env in the past - repeat those steps but select the environment without the `_OTA` suffix. Next, press the checkmark button to build it without uploading. 
 
@@ -84,9 +89,9 @@ Note: You **don't** have to have the trackers connected to your pc for any of th
 
 2. Turn on your trackers and wait for them to connect to Wi-Fi
 
-3. Locate their ip or their mDNS name, the default one is: [http://openiristracker.local/](http://openiristracker.local/)
+3. Locate their ip or mDNS name. For mDNS, the default is: [http://openiristracker.local/](http://openiristracker.local/)
 
-4. Having done that, open [http://\<your-up-or-mdns-name\>:81/update](http://openiristracker.local:81/update)
+4. Having done that, open [http://\<your-up-or-mdns-name\>:81/update](http://openiristracker.local:81/update) in your browser
 
 for example: [http://openiristracker.local/](http://openiristracker.local:81/update) 
 
@@ -94,9 +99,11 @@ This should open a page similar to this:
 
 <ImageCard :options="image_settings.upload_firmware_webpage" />
 
-Click on the select file button, and navigate to your `Openiris/ESP` directory. 
+Click on the select file button, and navigate to where you cloned the project and then to the `ESP/` directory. 
 
-Once there, open `.pio\build\your-environment` like so: 
+Once there, open `.pio\build\your-environment` like so:
+
+> By default, windows treats files and directories with a dot in front of their name as hidden. To change that - [see here](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5)
 
 <ImageCard :options="image_settings.upload_firmware_webpage_directory" />
 
@@ -136,7 +143,7 @@ To do that, in visual studio code, locate the uplaod button, next to it will be 
 
 <ImageCard :options="image_settings.upload_firmware_select_env" />
 
-This will open a list of all avaible environments, select the one that matches your board and has a _OTA part as a suffix 
+This will open a list of all available environments, select the one that matches your board and has a _OTA suffix 
 
 <ImageCard :options="image_settings.upload_firmware_select_env_dropdown" />
 
@@ -183,7 +190,7 @@ To update the firmware you'll need to follow a couple of steps.
 
 4.1. If anything went wrong, you can reset everything to the default state using `git reset --hard` and then retyping your credentials
 
-5. Upload your firmware [following steps from the uploading section](./update_platformio.md)
+5. Upload your firmware [following steps from the uploading section](#Building-and-uploading-the-firmware-manually)
 
 ## Troubleshooting
 
