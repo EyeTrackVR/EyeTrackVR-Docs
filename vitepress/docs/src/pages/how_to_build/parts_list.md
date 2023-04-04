@@ -58,23 +58,29 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
 [28 AWG gauge wire from AliExpress](https://a.aliexpress.com/_mK72cy6)  
 [28 AWG Amazon](https://www.amazon.com/Fermerry-Silicone-Stranded-Copper-Electrical/dp/B089CTT5X1/)  
 
+
+## Recommended:
+
+- ### Antennas
+Needed if you're running vive/tundra full body tracking or having issues with streaming:
 - ### 2x External antennas for ESPs 
-Small:  
+Small (what prohurtz uses):  
 [AliExpress](https://a.aliexpress.com/_ms1TzXc)
 
 Large:  
 [AliExpress](https://www.aliexpress.com/item/2255800868378357.html)  
 [Amazon](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
 
-## Recommended:
-
-- ### Antennas
-Optional but recommended if you're running vive full body tracking or having issues with streaming:
-- 2x External antennas for ESPs [AliExpress here](https://www.aliexpress.com/item/2255800868378357.html) or [Amazon here](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
-- 2x External Diymore antennas for ESPs [AliExpress link](https://pl.aliexpress.com/item/32986748472.html) - currently in use by @Prohurtz#0001 
-
 - ### 2x-4x Heatsinks
 [AliExpress](https://www.aliexpress.us/item/3256803892794950.html)
+
+- ### 2x Camera cable extensions
+To extend the camera length, you will need a cable and a connector for each camera.
+
+Cables (select 0.5mm pitch type A) [AliExpress](https://a.aliexpress.com/_mqVcK8a)
+
+Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/3256804096715690.html)
+
 
 ## IR Emitters
 
