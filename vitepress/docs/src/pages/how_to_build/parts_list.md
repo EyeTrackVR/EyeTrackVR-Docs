@@ -58,6 +58,9 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
 [28 AWG gauge wire from AliExpress](https://a.aliexpress.com/_mK72cy6)  
 [28 AWG Amazon](https://www.amazon.com/Fermerry-Silicone-Stranded-Copper-Electrical/dp/B089CTT5X1/)  
 
+- ### 1x Higher gauge wire to power IR emitters  
+[34 AWG AliExpress](https://www.aliexpress.com/item/3256804720067942.html)  
+
 
 ## Recommended:
 
