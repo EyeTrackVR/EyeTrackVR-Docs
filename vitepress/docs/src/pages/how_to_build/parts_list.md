@@ -41,7 +41,7 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
 
 - ### 2x ov2640 160° FOV IR / Night vers 75mm (850nm)  
 [AliExpress](https://a.aliexpress.com/_mrNbZww)  
-[Amazon alternative](https://www.amazon.com/Camera-Aideepen-Wide-Angle-Megapixel-Support/dp/B09XXPX4SP/) (note that you will have to manually remove the IR filter)
+[Amazon alternative](https://www.amazon.com/Camera-Aideepen-Wide-Angle-Megapixel-Support/dp/B09XXPX4SP/) (note that you will have to [manually remove the IR filter](https://www.youtube.com/watch?v=QYH-FWvDbDc))
 
 - ### 1x ESP-CAM programmer / MB  
 [AliExpress](https://a.aliexpress.com/_mPaPgPu)  
