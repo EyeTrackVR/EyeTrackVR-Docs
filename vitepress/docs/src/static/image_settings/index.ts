@@ -222,6 +222,41 @@ const image_settings = {
         alt: "'img of platformio serial monitor'",
         max_width: "max-width: 600px;"
     },
+    upload_firmware_build_button: {
+        url: "https://i.imgur.com/5E5u5Jz.png",
+        alt: "'Selecting platformio environment'",
+        max_width: "max-width: 600px;"
+    },
+    upload_firmware_webpage: {
+        url: "https://i.imgur.com/wMXdZcJ.png",
+        alt: "'Firmware uploading web page'",
+        max_width: "max-width: 600px;"
+    },
+    upload_firmware_webpage_directory: {
+        url: "https://i.imgur.com/KnnB28z.png",
+        alt: "'An example of how the bin file directory looks like'",
+        max_width: "max-width: 600px;"
+    },
+    upload_firmware_webpage_directory_file: {
+        url: "https://i.imgur.com/Ujx3iaG.png",
+        alt: "'An example of how the bin file looks like'",
+        max_width: "max-width: 600px;"
+    },
+    upload_firmware_webpage_upload_finished: {
+        url: "https://i.imgur.com/O2KzHAN.png",
+        alt: "'A finished OTA upload'",
+        max_width: "max-width: 600px;"
+    },
+    upload_firmware_select_env: {
+        url: "https://i.imgur.com/8sn6FSe.png",
+        alt: "'An example of how the popup list of envs looks like'",
+        max_width: "max-width: 600px;"
+    },
+    upload_firmware_select_env_dropdown: {
+        url: "https://i.imgur.com/nRpuBSI.png",
+        alt: "'An example of how the button for selecting env looks like'",
+        max_width: "max-width: 600px;"
+    },
     ant_logo_platformio:{
         url: "https://i.imgur.com/B6zK6n8.png",
         alt: "Platformio logo button",
