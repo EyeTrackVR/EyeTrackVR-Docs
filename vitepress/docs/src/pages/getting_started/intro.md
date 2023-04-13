@@ -12,7 +12,7 @@ Open source and *affordable* VR eye tracker platform for Social VR Games via `OS
 ### Welcome to the EyetrackVR documentation website. Here you will find all avalable documentation regauding building, development, and other resources related to this project.
 
 
-Want to get started? Check out the [getting started page](../getting_started/things_to_know) and then the [full build guide.](../how_to_build/full_build)
+Want to get started? Check out the [getting started page](https://docs.eyetrackvr.dev/getting_started/things_to_know) and then the [full build guide.](https://docs.eyetrackvr.dev/how_to_build/full_build)
 
 
 
@@ -52,16 +52,16 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 </Alerts>
 
 ::: details Want to see the safety data sheets?
-[Effect of infrared radiation on the lens](../saftey/effect_of_ir_on_the_lens.pdf)
+[Effect of infrared radiation on the lens](https://docs.eyetrackvr.dev/saftey/effect_of_ir_on_the_lens.pdf)
 
-[AN002_Details on photobiological safety of LED light sources](../saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
+[AN002_Details on photobiological safety of LED light sources](https://docs.eyetrackvr.dev/saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
 
-[Training-library Nir Stds](../saftey/training-library_nir_stds_20021011.pdf)
+[Training-library Nir Stds](https://docs.eyetrackvr.dev/saftey/training-library_nir_stds_20021011.pdf)
 :::
 
 ## Hardware
 
-Please check out our [parts list](../how_to_build/parts_list) and [hardware repo.](https://github.com/RedHawk989/EyeTrackVR-Hardware) for information regauring hardware.
+Please check out our [parts list](https://docs.eyetrackvr.dev/how_to_build/parts_list) and [hardware repo.](https://github.com/RedHawk989/EyeTrackVR-Hardware) for information regauring hardware.
 
 ## Firmware
 
@@ -70,7 +70,7 @@ Our firmware called OpenIris is made by `lorow` found [here](https://github.com/
 ## Headset support
 
 In theory, we are compatible with every VR headset. However, mounts may not have been made yet.
-Please take a look at our list of [3d printable mounts](../how_to_build/parts_list#other-parts) and see if your headset is on the list.
+Please take a look at our list of [3d printable mounts](https://docs.eyetrackvr.dev/how_to_build/parts_list#_3d-printed-mounts) and see if your headset is on the list.
 If it is not listed, It is recommended that you try to make a mount, or wait for a skilled community member to create one.
 
 #### Contact
