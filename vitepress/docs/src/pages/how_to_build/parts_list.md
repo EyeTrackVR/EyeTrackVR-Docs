@@ -75,12 +75,14 @@ Large:
 [Amazon](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
 
 - ### 2x-4x Heatsinks
-[AliExpress](https://www.aliexpress.us/item/3256803892794950.html)
+[AliExpress](https://www.aliexpress.us/item/3256803892794950.html) (14mm for ESP, 8mm for voltage regulator)
 
 - ### 2x Camera cable extensions
-To extend the camera length, you will need a cable and a connector for each camera.
+Certain mounts may require a cable extension (MUTE's frunk mod)
+To use a mount like that you will need a cable and a connector for each camera.
+Headsets like the Quest 2 do not require extensions.
 
-Cables (select 0.5mm pitch type A) [AliExpress](https://a.aliexpress.com/_mqVcK8a)
+Cables (select 0.5mm pitch type A) [AliExpress](https://a.aliexpress.com/_mqVcK8a) (200mm for MUTE's)
 
 Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/3256804096715690.html)
 

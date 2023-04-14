@@ -37,7 +37,7 @@ Make sure you close any current projects you have open or open a new window befo
    2. Open Git Bash.
 <ImageCard :options="image_settings.setup_vscode_image_four"/>
 
-   1. Change the directory to the directory that you want the firmware to be cloned. Ex: `cd C:\`
+   1. Change the directory to the directory that you want the firmware to be cloned. Ex: `cd C:/`
 
 <ImageCard :options="image_settings.setup_vscode_image_five"/>
 

@@ -11,7 +11,7 @@ const printed_parts = {
                     desc: "Camera and IR emitter mount by Arkfall"
                 },
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Prohurtz/EyeTrack_Arkfall_Quest_2_Mount_Edit_By_Prourtz.stl",
+                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Quest_2/Prohurtz",
                     desc: "★ Camera and IR emitter mount by Prohurtz"
                 },
                 

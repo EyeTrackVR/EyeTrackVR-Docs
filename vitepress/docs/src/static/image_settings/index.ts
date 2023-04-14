@@ -318,7 +318,7 @@ const image_settings = {
         max_width: "max-width: 500px;"
     },
     setup_vscode_image_five: {
-        url: "https://i.imgur.com/mWAVxtF.png",
+        url: "https://i.imgur.com/fJs4GJR.png",
         alt: "'img'",
         max_width: "max-width: 500px;"
     },
