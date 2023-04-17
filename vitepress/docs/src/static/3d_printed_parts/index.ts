@@ -105,7 +105,7 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/General_ESP32-CAM_Mounts/ESPCAMshellv7_by_G0LDJAY.stl",
+                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/General_ESP32-CAM_Mounts",
                     desc: "★ ESP mount by G0LDJAY for general HMD use (use if there are no specific HMD mounts available)"
                 }
             ],
