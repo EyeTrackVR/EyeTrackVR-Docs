@@ -47,8 +47,9 @@ Below is an example of bridging the connections and attaching an antenna.
 <ImageCard :options="image_settings.external_antenna_resistors" />
 
 <div align="center">
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/r4PsuWTFRBg" title="How to add an external antenna to ESP32-CAM board" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/aBTZuvg5sM8" title="How to add an external antenna to an ESP32-CAM (2 methods)" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
 
 The second option is to cover the ESP's antenna with an antistatic bag.
 This can help aid problems, and can completely solve them in some cases. Best of all, it is completely free! However, it should be noted that it performs worse than an external antenna and in certain cases will not solve the issue like if you have Vive trackers.
