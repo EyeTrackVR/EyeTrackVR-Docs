@@ -11,6 +11,10 @@ import { alerts } from '../../static/alerts'
 
 ## This page will contain a step-by-step assembly guide
 
+This guide provides a walkthrough on the assembly of a **wireless** eye tracking.
+
+Nevertheless, it's worth noting that these instructions are also mostly applicable to those who are using wired trackers.
+
 ## Step 1: Make sure your have read the [Things to know before you start](https://docs.eyetrackvr.dev/getting_started/things_to_know) guide
 
 This will give you a basic overview of the project's status and what to expect currently.

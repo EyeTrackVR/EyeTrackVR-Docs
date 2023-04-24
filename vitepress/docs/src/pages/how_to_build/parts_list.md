@@ -36,46 +36,105 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
 
 ## Camera setup
 
-- ### 2x ESP-CAM-32 modules  
+::: danger
+There are two primary categories of trackers supported: wireless and wired.
+
+It's super important that you really look at all your options and consider what you have before making a decision.
+:::
+
+### Option 1: Wireless over WiFi 2.4 GHz (recommended)
+
+Our current suggestion is that this serves as an excellent starting point.
+
+Recommended for most users.
+
+**Pros:**
+- Wider user adoption and greater support
+- Lower weight, less cables, easier to manage
+
+**Cons:**
+- Requires two external antennas for optimal streaming quality
+- Requires WiFi 2.4 GHz router or access point in reasonable proximity
+- Risk of radio interference with FBT and other WiFi 2.4 GHz devices
+- ESP32-CAM uses more power and heats up due to radio module power needs
+
+**Parts:**
+- #### 2x ESP-CAM-32 modules
 [AliExpress](https://a.aliexpress.com/_mKjL9Cq)
-
-- ### 2x ov2640 160° FOV IR / Night vers 75mm (850nm)  
-[AliExpress](https://a.aliexpress.com/_mrNbZww)  
-[Amazon alternative](https://www.amazon.com/Camera-Aideepen-Wide-Angle-Megapixel-Support/dp/B09XXPX4SP/) (note that you will have to [manually remove the IR filter](https://www.youtube.com/watch?v=QYH-FWvDbDc))
-
-- ### 1x ESP-CAM programmer / MB  
+- #### 1x ESP-CAM programmer / MB
 [AliExpress](https://a.aliexpress.com/_mPaPgPu)  
 [Amazon](https://www.amazon.com/DORHEA-Bluetooth-Development-4-75V-5-25V-Raspberry/dp/B08ZS5YWCG/)
  for 3 ESP32-Cams and programmers without the proper cameras
-
-- ### 1x USB type-A male port to power both ESPs  
+- #### 1x USB type-A male port to power both ESPs  
 [Bare breakout on AliExpress](https://www.aliexpress.com/item/2255801092919590.html)  
 [Amazon](https://www.amazon.com/10Gtek-DIP-Breakout-Adapter-2-54mm/dp/B09LC8WQCD/)  
 \
 [Or one with a cover on AliExpress](https://www.aliexpress.com/item/2251832820552545.html)  
 [Amazon](https://www.amazon.com/Pigtail-Extension-Cables-Connector-Replacement/dp/B09ZQNJ2DJ/)  
-- ### 1x Lower gauge wire to power ESPs  
+- #### 1x Lower gauge wire to power ESPs  
 [28 AWG gauge wire from AliExpress](https://a.aliexpress.com/_mK72cy6)  
 [28 AWG Amazon](https://www.amazon.com/Fermerry-Silicone-Stranded-Copper-Electrical/dp/B089CTT5X1/)  
+- #### 2x External antennas for ESPs
+Needed if you're running vive/tundra full body tracking or having issues with streaming.
 
-- ### 1x Higher gauge wire to power IR emitters  
-[34 AWG AliExpress](https://www.aliexpress.com/item/3256804720067942.html)  
-
-
-## Recommended:
-
-- ### Antennas
-Needed if you're running vive/tundra full body tracking or having issues with streaming:
-- ### 2x External antennas for ESPs 
-Small (what prohurtz uses):  
+Small (what Prohurtz uses):
 [AliExpress](https://a.aliexpress.com/_ms1TzXc)
 
-Large:  
+Large:
 [AliExpress](https://www.aliexpress.com/item/2255800868378357.html)  
 [Amazon](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
-
-- ### 2x-4x Heatsinks
+- #### 2x-4x Heatsinks
 [AliExpress](https://www.aliexpress.us/item/3256803892794950.html) (14mm for ESP, 8mm for voltage regulator)
+
+
+### Option 2: Wired over USB Serial (experimental)
+
+This is our latest setup recommended for advanced users who already
+possess multiple FBT trackers (high risk of radio interference on WiFi)
+and a headset with a dedicated USB port i.e. Valve Index.
+
+**Pros:**
+- Much better performance and higher framerates up to 70 FPS without latency
+- No conflicts with advanced FBT setups such as Vive or Tundra Trackers
+- No heatsinks required due to lower power consumption and heat emission
+
+**Cons:**
+- Requires USB port i.e. on Valve Index and USB hub mounted on your headset
+- The weight is notably higher due to no compact PCB solution developed yet
+
+**Parts:**
+- #### 2x ESP32-S3 modules
+[Amazon](https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN)
+- #### 1x USB 3.0+ hub
+Ensure that it is of good quality, lightweight, compact in size, and I suggest including three ports - one for the face tracker and two for ESP32-S3 boards.
+Ensure that you acquire appropriate USB-A to USB-C adapters wherever required, such as for the Valve Index which has only one USB-A port.
+- #### 2x USB C cables (as short as possible) to connect both ESPs
+As the ESP32-S3 has USB-C connectors, you may require some USB-C to USB-A cables depending on your USB hub.
+It's worth noting that the HTC Face Tracker requires a USB-C port, so you may need to consider this requirement as well.
+
+::: danger
+Irrespective of whether you opt for a wired or wireless setup, additional components
+will be required to set up eye tracking cameras around your headset's lenses.
+
+The list below remains the same for both wired and wireless setups.
+:::
+
+## Camera Parts:
+
+If the cameras are Dead on Arrival (DOA), keep in mind that you can swap the lenses with the ones that come with the stock cameras that were included with the ESP32 boards.
+
+There is an experimental option to purchase OV2640 120° FOV cameras and manually remove the IR filters. This can result in a clearer view of the eye, but it's not a default recommendation.
+
+- #### 2x OV2640 160° FOV IR / Night vers 75mm (850nm)
+[AliExpress](https://a.aliexpress.com/_mrNbZww)
+
+[Amazon alternative](https://www.amazon.com/Camera-Aideepen-Wide-Angle-Megapixel-Support/dp/B09XXPX4SP/) (note that you will have to [manually remove the IR filter](https://www.youtube.com/watch?v=QYH-FWvDbDc))
+
+
+- #### 1x Higher gauge wire to power IR emitters  
+[34 AWG AliExpress](https://www.aliexpress.com/item/3256804720067942.html)  
+
+## Recommended:
 
 - ### 2x Camera cable extensions
 Certain mounts may require a cable extension (MUTE's frunk mod)
@@ -89,7 +148,7 @@ Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/32568040967
 
 ## IR Emitters
 
-### IR LED kit
+### IR LED kit (recommended)
 If you do not want to source things from multiple places or save money or time on assembly, you can buy a LED kit from me.  
 [Pre soldered kit](https://www.tindie.com/products/27837/)  
 [Raw component kit](https://www.tindie.com/products/27736/)
@@ -107,15 +166,13 @@ The difference between them is the ones from LCSC are rated for lower power, whi
     </template>
 </Alerts>
 
-<Alerts :options="alerts.parts_list_five">
-    <template v-slot:content>
-        <p>
-           <text class="font-bold">DO NOT BUY FOCUSED ONES!</text>
-           <br>
-           If they look like something you would find in a TV remote, do not use them. If you aren't exactly sure what you are doing, buy them from the LCSC or Digikey link.
-        </p>
-    </template>
-</Alerts>
+
+::: danger
+If they look like something you would find in a TV remote, do not use them. If you aren't exactly sure what you are doing, buy them from the LCSC or Digikey link.
+
+**DO NOT BUY FOCUSED ONES!**
+:::
+
 
 - 4x IR emitter PCBs (highly recommended) Gerber files and schematics located [here.](https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
 

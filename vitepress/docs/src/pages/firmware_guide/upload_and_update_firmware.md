@@ -9,11 +9,25 @@ import { alerts } from '../../static/alerts'
 
 Uploading your firmware must initially be done over cable. Once you have the tracker connected to your WiFi after your first firmware update, you can opt to use [OTA](#how-do-i-use-it) in the future.
 
-## 1. Connect your tracker to your PC via the programmer
+## 1. Connect your tracker to your PC
 
-First, connect your ESP32-Cam to your programmer. In the case of the ESP32-Cam-MB board, it's as simple as sticking it into the socket the way it came in the package and then connecting it to your PC with a micro-USB cable. In some cases, there is a button labeled `IOO` on the programmer. If that button exists make sure to hold it in while you plug the programmer into your PC, once plugged in you can release the button.
+### Option 1: Connect ESP32-CAM via the programmer
+
+First, connect your ESP32-Cam to your programmer. In the case of the ESP32-Cam-MB board, it's as simple as sticking it into the socket the way it came in the package and then connecting it to your PC with a micro-USB cable.
+
+In some cases, there is a button labeled `IOO` on the programmer. If that button exists make sure to hold it in while you plug the programmer into your PC, once plugged in you can release the button.
 
 In the case of an FTDI programmer, the steps aren't as easy, so grab [this guide](https://randomnerdtutorials.com/program-upload-code-esp32-cam/) for how to set it up.
+
+### Option 2: Connect ESP32-S3 via USB-C directly
+
+To begin, connect your ESP32-S3 board directly to your PC.
+
+On the initial attempt, you may have to adjust the USB mode by pressing the BOOT button and holding it down,
+then pressing the RESET button while still holding down BOOT, and finally releasing the BOOT button.
+This will produce a sound indicating the connection of a new device.
+
+Once completed, you should be all set to proceed.
 
 ## 2. Build your firmware
 
