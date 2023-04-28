@@ -90,9 +90,9 @@ Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/32568040967
 ## IR Emitters
 
 ### IR LED kit
-If you do not want to source things from multiple places or save money or time on assembly, you can buy a LED kit from me.  
-[Pre soldered kit](https://www.tindie.com/products/27837/)  
-[Raw component kit](https://www.tindie.com/products/27736/)
+If you do not want to source things from multiple places or save money and time on assembly, you can buy an offical LED kit on our store:  
+[Pre soldered kit](https://store.eyetrackvr.dev/products/assembled-eyetrackvr-ir-led-kit)  
+[Raw component kit](https://store.eyetrackvr.dev/products/eyetrackvr-pcbs-components-kit)
 
 ### Alternatively you can source the parts yourself:
 - 4x Unfocused SMD IR emitters  
