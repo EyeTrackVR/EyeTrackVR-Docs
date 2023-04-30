@@ -477,6 +477,31 @@ const image_settings = {
         url: "https://i.imgur.com/taDa3vj.png",
         alt: "pio upgrade command in the terminal",
         max_width: "max-width: 500px;"
+    },
+    unity_vrc_expressions: {
+        url: "https://i.imgur.com/hdbJQ0h.png",
+        alt: "Screenshot showing expressions section of vrc avatar descriptor",
+        max_width: "max-width: 600px;"
+    },
+    unity_vrc_expressions_add_fields: {
+        url: "https://i.imgur.com/VGA0zqb.png",
+        alt: "Screenshot showing adding parameters to parameter menu",
+        max_width: "max-width: 600px;"
+    },
+    unity_vrc_expressions_fields: {
+        url: "https://i.imgur.com/hkcT013.png",
+        alt: "Screenshot showing the params that need to be added",
+        max_width: "max-width: 600px;"
+    },
+    unity_vrc_empty_control: {
+        url: "https://i.imgur.com/PluHjmI.png",
+        alt: "Screenshot showing the the empty controls field",
+        max_width: "max-width: 600px;"
+    },
+    unity_vrc_control_setup: {
+        url: "https://i.imgur.com/XgN2230.png",
+        alt: "Screenshot showing the the controls setup",
+        max_width: "max-width: 600px;"
     }
 };
 
