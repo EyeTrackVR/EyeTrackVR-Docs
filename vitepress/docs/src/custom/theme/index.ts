@@ -61,6 +61,7 @@ const theme = {
             items: [
                 { text: "Installing and setting up the ETVR App", link: "/software_guide/eyetrackvr_app_guide" },
                 { text: "Building the app from source", link: "/software_guide/build_software" },
+                { text: "Setting up OSC recenter/recalibrate", link: "/software_guide/osc_setup" },
             ],
         },
         {
