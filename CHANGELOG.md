@@ -3,6 +3,36 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.4.0](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.3.0...v1.4.0) (2023-06-04)
+
+
+### 🐛 Bug Fixes
+
+* recommended mounts should be listed first ([d9efad8](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/d9efad8bd6bd8d878130e953c12e3cbbae1ab603))
+
+
+### 🍕 Features
+
+* docs for wired setup over usb serial ([3f287e5](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/3f287e5bcee1ebbedab89abfc273693568eeb88b))
+
+
+### 📝 Documentation
+
+* add camera cables ([d582a94](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/d582a9496cbbb02f15e514ff3c9fdbb3eb27502b))
+* add link for IR wire ([6d7eeb6](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/6d7eeb6dae5a8cc18902d736eea80a40a87d91d1))
+* add lordnathan esp mounts ([fff289a](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/fff289a7ec0c21afb5d411f5d277c6df5b5a2184))
+* add small antennas and heatsinks ([b2bb5dd](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/b2bb5dde2093c0f41ed2aa0f0a48644f073aa908))
+* add video link to IR cam removal ([f60da1b](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/f60da1ba569c213f06e1c079e6aea55e73b2544e))
+* add VROptician VP2 mount ([c66b1d8](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/c66b1d8e06b65eca3009915caf1193640dc5d790))
+* Merge pull request [#7](https://github.com/RedHawk989/EyeTrackVR-Docs/issues/7) from lorow/feature/osc-communication ([3450ebc](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/3450ebcd6a527867792d4f245a3173360fea61de))
+* remove old installer ([324b032](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/324b0329331190103821b51ed98b975754bef28f))
+* smol things ([0115b9e](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/0115b9e2aec86814f5c00b6c6660be857772e07a))
+* update antenna vid ([66d0658](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/66d0658fe1ad2961af7527135869b8bafa47005c))
+* update link to G0LDJAY's ESP mounts ([83b8374](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/83b8374e5664eb42bf82142fec351ebbd3e6d8ab))
+* update links ([23a97f1](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/23a97f1d14e06e76c8a8aa7a48ffa5f741f85b24))
+* update vid ([c56b1d7](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/c56b1d73ab98554016e01f3ed551dc84de9989c9))
+* update wordage + links ([09cb9e0](https://github.com/RedHawk989/EyeTrackVR-Docs/commit/09cb9e0aff58f439d425ebcf4c48bae2fed4d557))
+
 ## [1.3.0](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.2.0...v1.3.0) (2023-03-05)
 
 
