@@ -15,11 +15,11 @@ export default defineConfig({
         // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     ], */
     markdown: {
-        theme: 'material-palenight',
+        theme: 'material-theme-palenight',
         lineNumbers: true
     },
     lastUpdated: true,
     title: 'EyeTrackVR Docs',
-    description: 'Official documentation for EyeTrackVR. Fully opensource and affordable VR eye tracking platform.',
+    description: 'Official documentation for EyeTrackVR. Fully open-source and affordable VR eye tracking platform.',
     themeConfig: theme,
 })
