@@ -72,11 +72,25 @@ This will recenter your eye to whatever point you are looking at.
 
 ## Step 4: Adding your cameras to the software and configuring them
 
+### Wireless configuration
+
 Power your ESPs and find what the IP address is for your right eye. This can be done by opening both Cameras in a browser and then holding your finger over your right eye camera.
 
 Copy that IP address and then close the browser tab with it open.
 
-Enter that IP address into the app's `Camera Address` field and press the `Save and Restart Tracking` button.
+Enter that IP address into the app's `Camera Address` field.
+
+Press the `Save and Restart Tracking` button.
+
+### Wired configuration (experimental)
+
+Find your ESPs in Device Manager and figure out their COM port numbers i. e. ``COM4``.
+
+Enter that COM port number into the app's `Camera Address` field.
+
+Press the `Save and Restart Tracking` button.
+
+### Setting up ROI
 
 Don't see your camera feed? That's because we haven't set an ROI.
 <ImageCard :options="image_settings.eyetrack_vr_guide_four"/>

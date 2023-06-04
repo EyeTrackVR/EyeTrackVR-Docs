@@ -72,7 +72,12 @@ The firmware supports multiple environments. This means that we have full suppor
 - `esp32M5Stack` - This is for ESP32M5Stack.
 - `esp32WRover` - This is for the ESP32WRover.
 - `esp-eye` - This is for the ESP-EYE (not the S3 variant).
-
+- `wrooms3` - For FREENOVE-ESP32-S3 (*wireless mode*)
+- `wrooms3QIO` - For FREENOVE-ESP32-S3 (*wireless mode*, for boards with octal flash)
+- `wrooms3USB` - For FREENOVE-ESP32-S3 (*wired mode*)
+- `wrooms3QIOUSB` - For FREENOVE-ESP32-S3 (*wired mode*, for boards with octal flash)
+- `xiaosenses3_release` - For SeedStudio's XAIO ESP32-S3 Sense (*wireless mode*)
+- `xiaosenses3_USB_release` - For SeedStudio's XAIO ESP32-S3 Sense (*wired mode*)
 Each environment has a `debug` and `release` configuration. The `debug` configuration is for debugging, and the `release` configuration is for production. The `debug` configuration is not recommended for production, as it will use more memory, and will be slower. However we recommend using the `debug` configuration for initial configuration and testing, as it will be easier to debug, for you and for us. Once you are confident that the firmware is working correctly, you can switch to the `release` configuration.
 
 The `debug` configuration will print out debug messages to the serial port. The `release` configuration will not print out debug messages to the serial port, and will only print errors. This will save memory, and will make the firmware faster.

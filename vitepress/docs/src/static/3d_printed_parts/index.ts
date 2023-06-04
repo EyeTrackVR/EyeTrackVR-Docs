@@ -7,10 +7,6 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Arkfall/EyeTrack_Quest_2_Mount_v10_By_Arkfall.stl",
-                    desc: "Camera and IR emitter mount by Arkfall"
-                },
-                {
                     url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Quest_2/Prohurtz",
                     desc: "★ Camera and IR emitter mount by Prohurtz"
                 },
@@ -18,6 +14,10 @@ const printed_parts = {
                 {
                     url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Quest_2/lordnathan",
                     desc: "★ ESP mount by lordnathan"
+                },
+                {
+                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Arkfall/EyeTrack_Quest_2_Mount_v10_By_Arkfall.stl",
+                    desc: "Camera and IR emitter mount by Arkfall"
                 },
                 {
                     url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Arkfall/Quest_2_ESP_Mount_v2_By_Arkfall.stl",
@@ -41,16 +41,16 @@ const printed_parts = {
                     desc: "★ High IPD compatible 160 and 120 degree camera and IR emitter mounts by Seaweed"
                 },
                 {
+                    url: "https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii)",
+                    desc: "★ ESP frunk mod by MUTE the Cyberwolf"
+                },
+                {
                     url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/qdot",
                     desc: "Camera and IR emitter mount by Qdot"
                 },
                 {
                     url: "https://github.com/rrazgriz/IndexEyeTrackVR/tree/main/hardware",
                     desc: "Camera mount by Razgriz"
-                },
-                {
-                    url: "https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii)",
-                    desc: "★ ESP frunk mod by MUTE the Cyberwolf"
                 },
             ],
             link_id: 2
