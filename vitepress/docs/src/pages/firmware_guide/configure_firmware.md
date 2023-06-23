@@ -15,7 +15,8 @@ import { alerts } from '../../static/alerts'
 
 <ImageCard :options="image_settings.configure_firmware_two"/>
 
-> **Note**: These settings are applicable only when using Wi-Fi for communication with your computer. If you are using USB, you can skip to reading about [Environments](#environments).
+::: info
+These settings are applicable only when using Wi-Fi for communication with your computer. If you are using USB, you can skip to reading about [Environments](#environments).
 :::
 
 Replace the placeholder text with your correct SSID (WiFi access point name), and password respectfully.
