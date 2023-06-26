@@ -50,13 +50,19 @@ However, they can be a bit more temperamental and if you are using a wired heads
 
 **Parts:**
 - #### 2x ESP-CAM-32 modules
-[AliExpress](https://a.aliexpress.com/_mKjL9Cq)
-- #### 1x ESP-CAM programmer / MB
-[AliExpress](https://a.aliexpress.com/_mPaPgPu)  
+XIAO ESP32-S3 Sense Modules (Recommended)  
+Very small size, wireless and wired support, no soldering for external antennas.
+[SeedStudio](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
+
+OR
+ESPCAM32 Modules (cheaper, bigger)  
+[AliExpress](https://a.aliexpress.com/_mKjL9Cq)  
+Also need programmer boards:
+[AliExpress](https://a.aliexpress.com/_mPaPgPu) for just programmers or
 [Amazon](https://www.amazon.com/DORHEA-Bluetooth-Development-4-75V-5-25V-Raspberry/dp/B08ZS5YWCG/)
  for 3 ESP32-Cams and programmers without the proper cameras
 
- - #### 1x USB type-A male port to power both ESPs  
+ - #### 1x USB type-A male port to power both ESPs/or LEDs  
 [Bare breakout on AliExpress](https://www.aliexpress.com/item/2255801092919590.html)  
 [Amazon](https://www.amazon.com/10Gtek-DIP-Breakout-Adapter-2-54mm/dp/B09LC8WQCD/)  
 \
@@ -87,7 +93,6 @@ This is our latest setup recommended for users with wired headsets such as the V
 **Pros:**
 - Much better performance and higher framerates up to 70 FPS with lower latency
 - No conflicts with advanced FBT setups such as Vive or Tundra Trackers
-- No heatsinks required due to lower power consumption and heat emission
 - Can be wireless or wired
 - Less soldering required
 
@@ -97,7 +102,7 @@ This is our latest setup recommended for users with wired headsets such as the V
 
 **Parts:**
 - #### 2x ESP32-S3 modules
-2x SeedStudio XIAO ESP32-S3 Sense Modules (Recommended)
+2x SeedStudio XIAO ESP32-S3 Sense Modules (Recommended)  
 Very small size, lower price in some cases.
 [SeedStudio](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
 
