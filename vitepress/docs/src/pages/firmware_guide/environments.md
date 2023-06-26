@@ -26,23 +26,13 @@ We now have a couple of options letting us decide how we want to build the firmw
 
 - `_release` - Has a lot less debugging, may also be missing some things available only in debug for debug purposes, this should be flashed when everything is working.
 
-- `_OTA` - Just like release, but it will upload your firmware to your esp wirelessly.
-
 Examples:  
 `xiaosenses3` - This is the debug environment.  
 `xiaosenses3_release` - This is the release environment for daily use.  
-`xiaosenses3_OTA` - This is the the environment to upload release wirelessly via OTA.  
+ 
 
 ::: tip Tip
 We recommend starting with a debug environment, and then switching to release once everything is working. A debug environnement should not be used permanently. 
-:::
-
-::: warning Warning
-You need to change the IP to which board we should upload to, the setting is called the `otaserverip` and can be found in the `user_config.ini` file.
-
-The `otaserverip` setting supports both `IPv4` and `mDNS` names, as long as the `mDNS` name is resolvable on your network (i.e: you have bonjour installed on your computer).
-
-You can also change the port and password, but it's not recommended.
 :::
 
 ## Board Types
