@@ -50,7 +50,7 @@ You can also change the port and password, but it's not recommended.
 We currently support for several different boards, and we are working on adding more.
 
 ::: warning Warning
-It is important to note that the `esp32AIThinker` environment is the default environment. Only switch your environment if you have another board or that one is not working.
+It is important to note that the `esp32AIThinker` environment is the default environment. Only switch your environment if you have another board or an environment is not working.
 
 Most esp32Cams from Aliexpress will work with the `esp32AIThinker` environment, but some may require the `esp32cam` environment. Test the default environment first, and if it does not work, try the `esp32cam` environment.
 :::
