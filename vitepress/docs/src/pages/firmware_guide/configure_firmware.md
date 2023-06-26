@@ -69,33 +69,10 @@ The full REST API is documented [here](/firmware_guide/rest_api.html).
 
 #### `Environments`
 
-The firmware supports multiple environments. This means that we have full support for multiple types of esps. Each ESP is configured to be in a different environment. If you are using a different ESP, you will need to change the environment to the correct one. The environments are as follows:
+The firmware supports multiple environments. This means that we have full support for multiple types of ESPs. Each ESP is configured to be in a different environment. If you are using a different ESP, you will need to change the environment to the correct one.
 
-- `esp32AIThinker` - This is the default environment. This is for the ESP32-AI-THINKER and generic alibaba/aliexpress/amazon esp cam boards.
-- `esp32Cam` - This is for the special ESP32-CAM, it is unlikely that you will need to use this environment.
-- `esp32M5Stack` - This is for ESP32M5Stack.
-- `esp32WRover` - This is for the ESP32WRover.
-- `esp-eye` - This is for the ESP-EYE (not the S3 variant).
-- `wrooms3` - For FREENOVE-ESP32-S3 (*wireless mode*)
-- `wrooms3QIO` - For FREENOVE-ESP32-S3 (*wireless mode*, for boards with octal flash)
-- `wrooms3USB` - For FREENOVE-ESP32-S3 (*wired mode*)
-- `wrooms3QIOUSB` - For FREENOVE-ESP32-S3 (*wired mode*, for boards with octal flash)
-- `xiaosenses3_release` - For SeedStudio's XAIO ESP32-S3 Sense (*wireless mode*)
-- `xiaosenses3_USB_release` - For SeedStudio's XAIO ESP32-S3 Sense (*wired mode*)
+Please reference the [Firmware Enviroments Page](../firmware_guide/environments) for more information.
 
-Each environment has a `debug` and `release` configuration. The `debug` configuration is for debugging, and the `release` configuration is for production. The `debug` configuration is not recommended for production, as it will use more memory, and will be slower. However we recommend using the `debug` configuration for initial configuration and testing, as it will be easier to debug, for you and for us. Once you are confident that the firmware is working correctly, you can switch to the `release` configuration.
-
-The `debug` configuration will print out debug messages to the serial port. The `release` configuration will not print out debug messages to the serial port, and will only print errors. This will save memory, and will make the firmware faster.
-
-The default configutration is `debug` for the `espAIThinker` environment. If you are using a different ESP, please follow the GIF(s) below to change the environment.
-
-<!-- Place gif here -->
-
-::: tip Coming Soon
-GIF(s) for changing the environment will be added soon.
-
-Want to help? [Submit a PR](https://github.com/RedHawk989/EyeTrackVR-Docs) to add the GIF(s).
-:::
 
 ::: tip Coming Soon
 We are working on a new app that will allow you to configure the firmware, flash the boards, and connect to Social VR Games using a GUI. This will make it easier to configure the firmware, and will allow you to configure the firmware without having to use/download `VSCode` or our `platformio` project. We are hard at work on this, but do not currently have a release date. Please check back frequently.

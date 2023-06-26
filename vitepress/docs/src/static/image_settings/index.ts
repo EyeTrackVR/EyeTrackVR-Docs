@@ -502,6 +502,11 @@ const image_settings = {
         url: "https://i.imgur.com/XgN2230.png",
         alt: "Screenshot showing the the controls setup",
         max_width: "max-width: 600px;"
+    },
+    esp_board_env: {
+        url: "https://i.imgur.com/5BbQmCE.gif",
+        alt: "GIF showing a switch of board enviroments.",
+        max_width: "max-width: 600px;"
     }
 };
 
