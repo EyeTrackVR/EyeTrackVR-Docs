@@ -2,7 +2,7 @@ const faq = {
     faq: [
         {
             question: "What is the goal of this project?",
-            answer: "To provide an open source, affordable VR eyetracker for Socail games like VRChat as well as provide an open eyetracking platform.",
+            answer: "To provide an open source, affordable VR eye tracker for Social games like VRChat as well as provide an open eye tracking platform.",
             hyper_link: "",
             link_description: "",
         },
@@ -38,7 +38,7 @@ const faq = {
         },
         {
             question: "How expensive will this be?",
-            answer: "My goal is to keep it as cheap as possible with around $75 as the absolute max, with current setups being around $25-40. aaaa",
+            answer: "My goal is to keep it as cheap as possible with around $75 as the absolute max, with current setups being around $30-80. aaaa",
             hyper_link: "",
             link_description: ""
         },
@@ -50,7 +50,7 @@ const faq = {
         },
         {
             question: "What hardware does this use / How do I build?",
-            answer: "Testing is still being done to validate our current hardware choice, no hardware has been fully confirmed therefore I cannot recommend you buy parts and assemble one yourself unless you are good with losing money and are going to be actively contributing to the project. This stands true still as of 5/3.",
+            answer: "Checkout our build guides on this site for specific information, hardware may change and evolve over time.",
             hyper_link: "",
             link_description: ""
         },
