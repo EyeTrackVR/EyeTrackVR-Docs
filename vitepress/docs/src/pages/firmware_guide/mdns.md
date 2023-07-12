@@ -34,7 +34,7 @@ To connect to the device, you need to use the name of the device followed by `.l
 
 `Bonjour` is required to use the `mDNS` protocol _for windows and mac only_. If you are using Windows, you can download Bonjour from [here](https://support.apple.com/kb/DL999?locale=en_US). If you are using macOS, Bonjour is already installed.
 
-You can also get the fully tested Bonjour package from us [here](https://github.com/RedHawk989/EyeTrackVR/tree/GUI/GUI/assets/3rdParty) (for Windows only).
+You can also get the fully tested Bonjour package from us [here](https://github.com/EyeTrackVR/EyeTrackVR/tree/GUI/GUI/assets/3rdParty) (for Windows only).
 
 ## Troubleshooting
 

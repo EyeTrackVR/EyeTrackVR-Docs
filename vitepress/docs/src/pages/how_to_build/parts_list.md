@@ -181,7 +181,7 @@ If they look like something you would find in a TV remote, do NOT use them. Even
 :::
 
 
-- 4x IR emitter PCBs (highly recommended) Gerber files and schematics located [here.](https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
+- 4x IR emitter PCBs (highly recommended) Gerber files and schematics located [here.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
 
 - 4x 350ohm 1206 SMD resistors for IR emitters (If you are not using PCBs for the emitters then buying regular  through-hole resistors is acceptable)
   

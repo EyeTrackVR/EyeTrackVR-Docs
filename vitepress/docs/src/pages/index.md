@@ -14,7 +14,7 @@ hero:
       link: /getting_started/intro
     - theme: alt
       text: View on GitHub
-      link: https://github.com/RedHawk989/EyeTrackVR
+      link: https://github.com/EyeTrackVR/EyeTrackVR
 features:
   - icon: ⚡️
     title: Open Source

@@ -20,7 +20,7 @@ Une plateforme de suivi des yeux open source et *abordable* pour les jeux sociau
 
 ## Matériel
 
-Merci de regarder notre [Liste de pièces](../how_to_build/parts_list/) et notre [guide d'assemblage](../how_to_build/full_build/) ainci que notre [référentiel matériel.](https://github.com/RedHawk989/EyeTrackVR-Hardware)
+Merci de regarder notre [Liste de pièces](../how_to_build/parts_list/) et notre [guide d'assemblage](../how_to_build/full_build/) ainci que notre [référentiel matériel.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware)
 
 ## par rapport à la sécurité des émeteurs infrarouges
 
@@ -68,7 +68,7 @@ Merci de rejoindre notre discord pour plus d'info et pour poser tes questions.
 
 # Licences
 
-[![GitHub license](https://img.shields.io/github/license/RedHawk989/EyeTrackVR?style=plastic)](https://github.com/RedHawk989/EyeTrackVR/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/EyeTrackVR/EyeTrackVR?style=plastic)](https://github.com/EyeTrackVR/EyeTrackVR/blob/main/LICENSE)
 
 ***Tout logiciel est sous une [Licence MIT](http://opensource.org/licenses/MIT).
-toute les doccumentations, y compris le [Wiki](https://github.com/RedHawk989/EyeTrackVR/wiki), est sous une licence Creative Commons CC-BY-SA-4.0***.
+toute les doccumentations, y compris le [Wiki](https://github.com/EyeTrackVR/EyeTrackVR/wiki), est sous une licence Creative Commons CC-BY-SA-4.0***.

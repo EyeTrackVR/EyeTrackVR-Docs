@@ -2,7 +2,7 @@
   "name": "etvr_docs",
   "version": "1.5.0",
   "description": "Official Docs for ETVR",
-  "repository": "https://github.com/RedHawk989/EyeTrackVR",
+  "repository": "https://github.com/EyeTrackVR/EyeTrackVR",
   "author": "DaOfficialWizard",
   "license": "MIT",
   "private": true,

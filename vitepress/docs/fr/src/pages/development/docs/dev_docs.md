@@ -16,7 +16,7 @@ This is the documentation for the EyeTrackVR Docs site. It is built using [ViteP
 1. Clone the repo
 
    ```sh
-   git clone https://github.com/RedHawk989/EyeTrackVR-Docs.git
+   git clone https://github.com/EyeTrackVR/EyeTrackVR-Docs.git
    ```
 
 2. Navigate to the `vitepress` folder

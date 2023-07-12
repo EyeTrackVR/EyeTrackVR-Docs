@@ -61,7 +61,7 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 
 ## Hardware
 
-Please check out our [parts list](https://docs.eyetrackvr.dev/how_to_build/parts_list) and [hardware repo.](https://github.com/RedHawk989/EyeTrackVR-Hardware) for information regauring hardware.
+Please check out our [parts list](https://docs.eyetrackvr.dev/how_to_build/parts_list) and [hardware repo.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware) for information regauring hardware.
 
 ## Firmware
 
@@ -81,7 +81,7 @@ Please join our discord for updates and any questions. We hope to see you there!
 
 # Licenses
 
-[![GitHub license](https://img.shields.io/github/license/RedHawk989/EyeTrackVR?style=plastic)](https://github.com/RedHawk989/EyeTrackVR/blob/main/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/EyeTrackVR/EyeTrackVR?style=plastic)](https://github.com/EyeTrackVR/EyeTrackVR/blob/main/LICENSE)
 
 ***All software is under the [MIT License](http://opensource.org/licenses/MIT).
-All documentation, including the [Wiki](https://github.com/RedHawk989/EyeTrackVR/wiki), is under the Creative Commons CC-BY-SA-4.0 license***.
+All documentation, including the [Wiki](https://github.com/EyeTrackVR/EyeTrackVR/wiki), is under the Creative Commons CC-BY-SA-4.0 license***.
