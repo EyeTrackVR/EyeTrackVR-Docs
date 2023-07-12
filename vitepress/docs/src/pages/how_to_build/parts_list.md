@@ -156,9 +156,10 @@ Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/32568040967
 ## IR Emitters
 
 ### IR LED kit (recommended)
-If you do not want to source things from multiple places or save money and time on assembly, you can buy an official LED kit on our store:  
-[Solder-less V4 kit](https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit)  
-[Solder wires V4 kit](https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required)
+If you do not want to source things from multiple places or save money and time on assembly, you can buy an official V4 LED kit on our store:  
+[Solder-less V4 kit](https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit) requires no soldering.  
+[Solder wires V4 kit](https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required) requires you to solder your own wires to the LED boards.  
+
 
 ### Alternatively you can source the parts for V3 yourself:
 - 4x Unfocused SMD IR emitters  
