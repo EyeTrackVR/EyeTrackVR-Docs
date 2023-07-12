@@ -15,3 +15,5 @@ cache
 .cache
 dist
 out
+vitepress/yarn.lock
+yarn.lock

@@ -157,10 +157,10 @@ Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/32568040967
 
 ### IR LED kit (recommended)
 If you do not want to source things from multiple places or save money and time on assembly, you can buy an official LED kit on our store:  
-[Pre soldered kit](https://store.eyetrackvr.dev/products/assembled-eyetrackvr-ir-led-kit)  
-[Raw component kit](https://store.eyetrackvr.dev/products/eyetrackvr-pcbs-components-kit)
+[Solder-less V4 kit](https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit)  
+[Solder wires V4 kit](https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required)
 
-### Alternatively you can source the parts yourself:
+### Alternatively you can source the parts for V3 yourself:
 - 4x Unfocused SMD IR emitters  
 [(Recomended) from LCSC here](https://www.lcsc.com/product-detail/Infrared-IR-LEDs_XINGLIGHT-XL-3216HIRC-850_C965891.html).  
 [(Alternative) from Digikey here](https://www.digikey.com/en/products/detail/inolux/IN-P32ZTIR/10384796).  
