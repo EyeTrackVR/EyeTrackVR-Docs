@@ -80,7 +80,7 @@ Une alternative vennant [de Digikey ici](https://www.digikey.com/en/products/det
     </template>
 </Alerts>
 
-- 4x PCB pour les émeteurs infrarouges (hautement recommandé ) Les fichiers Gerber et les shemas ce trouves [ici.](https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
+- 4x PCB pour les émeteurs infrarouges (hautement recommandé ) Les fichiers Gerber et les shemas ce trouves [ici.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
 
 - 2x résistances de 698 à 710ohm ou alors la version recomandé avec 4x résistances CMS 1206 de 350ohm pour les émeteurs infrarouges (si vous n'utilisez pas de PCB pour vos émeteurs vous pouvez acheter des résistances traversantes)
   

@@ -12,7 +12,7 @@ Exemple: Voici une lentille de protection pour le Quest 1/2 et le Rift S [https:
 
 ## Étape 2: Trouver Une support de caméra
 
-Maintenant que vous avez votre monture de lentille, il vous faut trouver un moyen d'attacher les caméras. Nous avons un design basique que qdot a créer (extrait de sa monture) sur le GitHub Matériel [ici](https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Basic_Mount_Components/basic_ETVR_camera_mount.stl)
+Maintenant que vous avez votre monture de lentille, il vous faut trouver un moyen d'attacher les caméras. Nous avons un design basique que qdot a créer (extrait de sa monture) sur le GitHub Matériel [ici](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Basic_Mount_Components/basic_ETVR_camera_mount.stl)
 
 Sinon, Si vous êtes assez experimenté vous pouvez créer votre propre support de caméra.
 
@@ -20,7 +20,7 @@ Sinon, Si vous êtes assez experimenté vous pouvez créer votre propre support 
 
 Le placement "idéal" est un endroit où la la caméra auroit uen bonne vue de votre pupille quand vous êtes dans regardez à des angles extrêmes. Les coins inférieurs sont généralement assez propice à obtenir de tels résultats.
 
-Il est recomandé d'avoir les caméras au plus proche de la lentille de votre casque afin que votre œil prennes le plus de place dans le champ de vision de la caméra. Je vous insite à regarder les autres montures pour vous en [inspiréer.](https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts)
+Il est recomandé d'avoir les caméras au plus proche de la lentille de votre casque afin que votre œil prennes le plus de place dans le champ de vision de la caméra. Je vous insite à regarder les autres montures pour vous en [inspiréer.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts)
 
 ## Étape 4: Support pour vos LEDs
 

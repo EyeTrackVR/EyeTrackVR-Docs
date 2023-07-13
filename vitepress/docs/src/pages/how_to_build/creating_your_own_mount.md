@@ -13,7 +13,7 @@ Example: Here is a lens protector for the Quest 1/2 and Rift S [https://www.thin
 
 ## Step 2: Find a camera mount
 
-Now, you need a way to attach the camera. We have a basic design that qdot created (taken from his mount) on the hardware GitHub [here](https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Basic_Mount_Components/basic_ETVR_camera_mount.stl)
+Now, you need a way to attach the camera. We have a basic design that qdot created (taken from his mount) on the hardware GitHub [here](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Basic_Mount_Components/basic_ETVR_camera_mount.stl)
 
 Alternatively, you can create your own mount if you have the skills.
 
@@ -22,7 +22,7 @@ Alternatively, you can create your own mount if you have the skills.
 The "Ideal" location is a place that gives a good view of the pupil when looking to all extremes, the lower corners do a good job at getting there, or nearly there.
 
 You want to put the camera as close to the headset's lens as possible to achieve the biggest view of the eye.
-I recommend looking at other headset mounts for [inspiration.](https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts)
+I recommend looking at other headset mounts for [inspiration.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts)
 
 ## Step 4: Mount your LEDs
 

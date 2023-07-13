@@ -11,7 +11,7 @@ import { Requirements } from '../../static/app_build_requirements'
 
 ### Step 1: Download the EyeTrackVR Installer and install the EyeTrackVR app
 
-Go to the latest [GitHub release here](https://github.com/RedHawk989/EyeTrackVR/releases/latest) and download the Setup.exe file.
+Go to the latest [GitHub release here](https://github.com/EyeTrackVR/EyeTrackVR/releases/latest) and download the Setup.exe file.
 
 Follow the prompts and the app should be installed.
 

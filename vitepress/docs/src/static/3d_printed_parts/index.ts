@@ -7,24 +7,24 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Quest_2/Prohurtz",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Quest_2/Prohurtz",
                     desc: "★ Camera and IR emitter mount by Prohurtz"
                 },
                 
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Quest_2/lordnathan",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Quest_2/lordnathan",
                     desc: "★ ESP mount by lordnathan"
                 },
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Arkfall/EyeTrack_Quest_2_Mount_v10_By_Arkfall.stl",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Arkfall/EyeTrack_Quest_2_Mount_v10_By_Arkfall.stl",
                     desc: "Camera and IR emitter mount by Arkfall"
                 },
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Arkfall/Quest_2_ESP_Mount_v2_By_Arkfall.stl",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Arkfall/Quest_2_ESP_Mount_v2_By_Arkfall.stl",
                     desc: "ESP mount by Arkfall"
                 },
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Prohurtz/Quest_2_ESP_Mounts_By_Prohurtz.stl",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_2/Prohurtz/Quest_2_ESP_Mounts_By_Prohurtz.stl",
                     desc: "ESP mount by Prohurtz"
                 },
             ],
@@ -37,7 +37,7 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/Seaweed",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/Seaweed",
                     desc: "★ High IPD compatible 160 and 120 degree camera and IR emitter mounts by Seaweed"
                 },
                 {
@@ -45,7 +45,7 @@ const printed_parts = {
                     desc: "★ ESP frunk mod by MUTE the Cyberwolf"
                 },
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/qdot",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/qdot",
                     desc: "Camera and IR emitter mount by Qdot"
                 },
                 {
@@ -62,7 +62,7 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Samsung_Odyssey%2B/Breakdown/Samsung%20Odyssey%2B%20Left%20by%20Breakdown.stl",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Samsung_Odyssey%2B/Breakdown/Samsung%20Odyssey%2B%20Left%20by%20Breakdown.stl",
                     desc: "★ Camera and IR emitter mount by Breakdown"
                 }
             ],
@@ -75,7 +75,7 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_1/G0LDJAY/Quest_1_Cam_mount_v5_By_G0LDJAY.stl",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Quest_1/G0LDJAY/Quest_1_Cam_mount_v5_By_G0LDJAY.stl",
                     desc: "★ Camera and IR emitter mount by G0LDJAY"
                 }
             ],
@@ -88,11 +88,11 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Vive_Pro_2/StormFox",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Vive_Pro_2/StormFox",
                     desc: "★ Camera and IR emitter mount by StormFox"
                 },
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Vive_Pro_2/cat_who_loves_pie/Vive_Pro_2_VROptician_by_cat_who_loves_pie.stl",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Vive_Pro_2/cat_who_loves_pie/Vive_Pro_2_VROptician_by_cat_who_loves_pie.stl",
                     desc: "VROptician camera and IR emitter mount by cat_who_loves_pie"
                 }  
             ],
@@ -105,7 +105,7 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/RedHawk989/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/General_ESP32-CAM_Mounts",
+                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/General_ESP32-CAM_Mounts",
                     desc: "★ ESP mount by G0LDJAY for general HMD use (use if there are no specific HMD mounts available)"
                 }
             ],

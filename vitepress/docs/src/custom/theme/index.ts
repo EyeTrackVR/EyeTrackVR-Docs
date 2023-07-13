@@ -90,7 +90,7 @@ const theme = {
         },
     ],
     socialLinks: [
-        { icon: 'github', link: 'https://github.com/RedHawk989/EyeTrackVR' },
+        { icon: 'github', link: 'https://github.com/EyeTrackVR/EyeTrackVR' },
         { icon: 'discord', link: 'https://discord.gg/kkXYbVykZX' }
     ]
 }

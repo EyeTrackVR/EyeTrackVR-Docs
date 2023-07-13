@@ -34,7 +34,7 @@ Pour vous connecter à votre appareil, vous devez utiliser le nom de lappareil s
 
 `Bonjour` est requis pour utiliser le protocole `mDNS` _sur windows et mac uniquement_. Si vous êtes sur Windows, vous pouvez télécharger Bonjour [ici](https://support.apple.com/kb/DL999?locale=en_US). Si vous utilisez macOS, Bonjour est déjà installé.
 
-Vous pouvez également récupèrer un package totalement testé [ici](https://github.com/RedHawk989/EyeTrackVR/tree/GUI/GUI/assets/3rdParty) (pour Windows uniquement).
+Vous pouvez également récupèrer un package totalement testé [ici](https://github.com/EyeTrackVR/EyeTrackVR/tree/GUI/GUI/assets/3rdParty) (pour Windows uniquement).
 
 ## Dépanage
 
