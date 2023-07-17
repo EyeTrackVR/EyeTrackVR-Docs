@@ -22,7 +22,7 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
     </template>
 </Alerts>
 
-## ESP setup options
+## ESP setup options:
 ::: danger
 There are two primary categories of trackers supported: wireless and wired.
 It's super important that you really look at all your options and consider your use case before making a decision.
@@ -144,13 +144,13 @@ It's worth noting that the HTC Face Tracker requires a USB-C port, so you may ne
 [28 AWG gauge wire from AliExpress](https://a.aliexpress.com/_mK72cy6)  
 [28 AWG Amazon](https://www.amazon.com/Fermerry-Silicone-Stranded-Copper-Electrical/dp/B089CTT5X1/)  
 
-- 1x Higher gauge wire to power IR emitters  
+- 1x Higher gauge wire to power IR emitters (V3 or V4 some assembly required)  
 [34 AWG AliExpress](https://www.aliexpress.com/item/3256804720067942.html)  
 
-### IR emmiters 
+### IR emitters  
 
 #### Recommended: 
-We recommend getting the oficial kits: 
+We recommend getting the official kits: 
 
 - [Solder-less V4 kit](https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit) - requires no soldering.  
 
@@ -211,9 +211,11 @@ Mounts with a `★` next to them are the recommended mounts for the respected hm
 [AliExpress](https://www.aliexpress.com/item/3256803968572059.html)  
 [Amazon](https://www.amazon.com/Assark-Sticks-School-Repairs-20W/dp/B09FYWQ44L/)
 
-- 1x Soldering iron and solder  
-[AliExpress](https://www.aliexpress.com/item/3256801448141079.html)  
-[Amazon](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
+- 1x Soldering iron and solder:
+[Pin64 Pinecil (Recommended)](https://www.pine64.org/pinecil/) + [Amazon Solder](https://www.amazon.com/Rosin-Solder-Electronics-Components-repair/dp/B08M5YP6BN/)
+
+[AliExpress (Generic)](https://www.aliexpress.com/item/3256801448141079.html)  
+[Amazon (Generic)](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
 
 - 2x-4x Heatsinks (Optional) - for the ESP32-CAM
 [AliExpress](https://www.aliexpress.us/item/3256803892794950.html) (14mm for ESP, 8mm for voltage regulator) 

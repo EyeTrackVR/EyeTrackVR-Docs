@@ -46,7 +46,7 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 <Alerts :options="alerts.led_power_warning">
     <template v-slot:content>
         <p>
-            Make sure you are using <ins class="text-red-400 dark:text-red-500">non-focused</ins> emitters and at around <ins class="font-bold">5ma</ins> total power.
+            Make sure you are using <ins class="text-red-400 dark:text-red-500">non-focused</ins> emitters and no more than <ins class="font-bold">5 mW/sr</ins> total power.
         </p>
     </template>
 </Alerts>
