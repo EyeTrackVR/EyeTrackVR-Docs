@@ -21,17 +21,23 @@ Download the [latest Visual Studio Code](https://code.visualstudio.com/download)
 <br>
 <ImageCard :options="image_settings.setup_vscode_image_two"/>
 
-## 2. Install PlatformIO IDE
+## 2. Install the drivers
+
+In order to flash the firmware, you'll need some drivers, mainly the  CH340 drivers, here's where to get them from: 
+
+https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all
+
+## 3. Install PlatformIO IDE
 
 Once Visual Studio Code is installed, open it and install [PlatformIO IDE for VSCode](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide), an extension that will allow you to connect to the tracker, build and upload the firmware.
 
 <ImageCard :options="image_settings.setup_vscode_image_three"/>
 
-## 3. Clone the firmware project
+## 4. Clone the firmware project
 
 Make sure you close any current projects you have open or open a new window before moving forward with these steps.
 
-1. Go to [https://github.com/lorow/OpenIris](https://github.com/lorow/OpenIris) and `clone` the latest version from the `main` branch.
+1. Go to [https://github.com/EyeTrackVR/OpenIris](https://github.com/EyeTrackVR/OpenIris) and `clone` the latest version from the `main` branch.
    1. If you do not have `git` installed please install it from [here](https://git-scm.com/download/win).
 
    2. Open Git Bash.
@@ -41,7 +47,7 @@ Make sure you close any current projects you have open or open a new window befo
 
 <ImageCard :options="image_settings.setup_vscode_image_five"/>
 
-   1. Clone the repository by entering the command: `git clone https://github.com/lorow/OpenIris.git`
+   1. Clone the repository by entering the command: `git clone https://github.com/EyeTrackVR/OpenIris.git`
 
 <ImageCard :options="image_settings.setup_vscode_image_six"/>
 

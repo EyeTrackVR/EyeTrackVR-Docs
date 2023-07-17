@@ -14,8 +14,6 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
     </template>
 </Alerts>
 
-## This page will include a basic part list for building an EyeTrackVR setup
-
 <Alerts :options="alerts.parts_list_three">
     <template v-slot:content>
         <p>
@@ -24,11 +22,9 @@ import PartsList from '../../vue/parts_list/PartsList.vue'
     </template>
 </Alerts>
 
-## ESP setup
-
+## ESP setup options:
 ::: danger
 There are two primary categories of trackers supported: wireless and wired.
-
 It's super important that you really look at all your options and consider your use case before making a decision.
 :::
 
@@ -36,7 +32,6 @@ It's super important that you really look at all your options and consider your 
 
 This offers a good starting point as the ESP boards are cheaper than wired capable trackers. 
 However, they can be a bit more temperamental and if you are using a wired headset, they start to make less sense.
-
 
 **Pros:**
 - Wider user adoption and greater support
@@ -47,44 +42,6 @@ However, they can be a bit more temperamental and if you are using a wired heads
 - Requires WiFi 2.4 GHz router or access point in reasonable proximity
 - Risk of radio interference with FBT and other WiFi 2.4 GHz devices
 - ESP32-CAM uses more power and heats up due to radio module power needs
-
-**Parts:**
-- #### 2x ESP-CAM-32 modules
-XIAO ESP32-S3 Sense Modules (Recommended)  
-Very small size, wireless and wired support, no soldering for external antennas.
-[SeedStudio](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
-
-OR
-ESPCAM32 Modules (cheaper, bigger)  
-[AliExpress](https://a.aliexpress.com/_mKjL9Cq)  
-Also need programmer boards:
-[AliExpress](https://a.aliexpress.com/_mPaPgPu) for just programmers or
-[Amazon](https://www.amazon.com/DORHEA-Bluetooth-Development-4-75V-5-25V-Raspberry/dp/B08ZS5YWCG/)
- for 3 ESP32-Cams and programmers without the proper cameras
-
- - #### 1x USB type-A male port to power both ESPs/or LEDs  
-[Bare breakout on AliExpress](https://www.aliexpress.com/item/2255801092919590.html)  
-[Amazon](https://www.amazon.com/10Gtek-DIP-Breakout-Adapter-2-54mm/dp/B09LC8WQCD/)  
-\
-[Or one with a cover on AliExpress](https://www.aliexpress.com/item/2251832820552545.html)  
-[Amazon](https://www.amazon.com/Pigtail-Extension-Cables-Connector-Replacement/dp/B09ZQNJ2DJ/)  
-- #### 1x Lower gauge wire to power ESPs  
-[28 AWG gauge wire from AliExpress](https://a.aliexpress.com/_mK72cy6)  
-[28 AWG Amazon](https://www.amazon.com/Fermerry-Silicone-Stranded-Copper-Electrical/dp/B089CTT5X1/)  
-
-- #### 2x External antennas for ESPs
-Required if you're running vive/tundra full body tracking or having issues with streaming. See the full build guide on how to configure the ESP board for antenna use.
-
-Small (what Prohurtz uses):
-[AliExpress](https://a.aliexpress.com/_ms1TzXc)
-
-Large:
-[AliExpress](https://www.aliexpress.com/item/2255800868378357.html)  
-[Amazon](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
-
-- #### 2x-4x Heatsinks (Optional)
-[AliExpress](https://www.aliexpress.us/item/3256803892794950.html) (14mm for ESP, 8mm for voltage regulator)
-
 
 ### Option 2: Wired over USB Serial (in beta)
 
@@ -100,80 +57,107 @@ This is our latest setup recommended for users with wired headsets such as the V
 - Requires USB port i.e. on Valve Index and USB hub mounted on your headset
 - Can be more costly
 
-**Parts:**
-- #### 2x ESP32-S3 modules
-2x SeedStudio XIAO ESP32-S3 Sense Modules (Recommended)  
-Very small size, lower price in some cases.
-[SeedStudio](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
+## Required parts
+With that in mind, here are the required parts for the setup. 
 
-OR  
-  
-2x Freenove ESP 32-S3 WROOM  
-Much larger, price may be higher than the XIAOs
-[Amazon](https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN)
+### Tracker boards: 
+- #### Recommended 
+    - 2x XIAO ESP32-S3 Sense Modules  
+    Very small size, wireless and wired support, does not require an additional programmer or separate antennas:
+    [SeedStudio](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
+    
+    alternatively: 
+    - 2x Freenove ESP 32-S3 WROOM  
+    Much larger, price may be higher than the XIAOs, supports wired and wireless as well, does not need a separate programmer, **does not support a separate antenna**.
+    [Amazon](https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN)
 
-- #### 1x USB 3.0+ hub
-Ensure that it is of good quality, lightweight, compact in size, and I suggest including three ports - one for the face tracker and two for ESP32-S3 boards.
-Ensure that you acquire appropriate USB-A to USB-C adapters wherever required, such as for the Valve Index which has only one USB-A port.
-- #### 2x USB C cables (as short as possible) to connect both ESPs
-As the ESP32-S3 has USB-C connectors, you may require some USB-C to USB-A cables depending on your USB hub.
-It's worth noting that the HTC Face Tracker requires a USB-C port, so you may need to consider this requirement as well.
+- #### A cheaper, wireless only alternative:
+    - 2x ESPCAM32 Modules - They are cheaper, requires a separate programmer board, supports only wireless streaming and may require some soldering for attaching separate antennas:
+    [AliExpress](https://a.aliexpress.com/_mKjL9Cq)  
+    This board also requires a special programmer board in order to flash the firmware. You'll need only one:
+    [AliExpress](https://a.aliexpress.com/_mPaPgPu) for just programmers or
+    [Amazon](https://www.amazon.com/DORHEA-Bluetooth-Development-4-75V-5-25V-Raspberry/dp/B08ZS5YWCG/)
+    for 3 ESP32-Cams and programmers without the proper cameras
+
+    -  2x External antennas for ESPs
+    Required if you're running vive/tundra full body tracking or having issues with streaming. See the full build guide on how to configure the ESP board for antenna use.
+
+        - Small (what Prohurtz uses):
+        [AliExpress](https://a.aliexpress.com/_ms1TzXc)
+
+        - Large:
+        [AliExpress](https://www.aliexpress.com/item/2255800868378357.html)  
+        [Amazon](https://www.amazon.com/gp/product/B09K3ZPY5Z/)
+
+### Cameras
+#### Camera modules: 
+
+The cameras that come with the boards will not work, they have an IR filter inside.
+
+The filter can be removed, but doing so may break your cameras. 
+Here's how to do it: https://www.youtube.com/watch?v=QYH-FWvDbDc
 
 ::: danger
-Irrespective of whether you opt for a wired or wireless setup, additional components
-will be required to set up eye tracking cameras around your headset's lenses.
-
-The list below remains the same for both wired and wireless setups.
+If you decide to remove the filter, wear eye protection while doing so, the removal of the filter will shatter it. 
 :::
 
-## Camera Parts:
-
-If the cameras are Dead on Arrival (DOA), keep in mind that you can swap the lenses with the ones that come with the stock cameras that were included with the ESP32 boards.
-
-There is an experimental option to purchase OV2640 120° FOV cameras and manually remove the IR filters. This can result in a clearer view of the eye, but it's not a default recommendation.
-
 - #### 2x OV2640 160° FOV IR / Night vers 75mm (850nm)
+
 [AliExpress](https://a.aliexpress.com/_mrNbZww)
 
-[Amazon alternative](https://www.amazon.com/Camera-Aideepen-Wide-Angle-Megapixel-Support/dp/B09XXPX4SP/) (note that you will have to [manually remove the IR filter](https://www.youtube.com/watch?v=QYH-FWvDbDc))
+[Amazon alternative](https://www.amazon.com/Camera-Aideepen-Wide-Angle-Megapixel-Support/dp/B09XXPX4SP/) (note that you 
+will have to [manually remove the IR filter](https://www.youtube.com/watch?v=QYH-FWvDbDc))
 
+Things worth noting:
 
-- #### 1x Higher gauge wire to power IR emitters  
-[34 AWG AliExpress](https://www.aliexpress.com/item/3256804720067942.html)  
+- There is an experimental option to purchase OV2640 120° FOV cameras and manually remove the IR filters. This can result in a clearer view of the eye, but it's not a default recommendation.
 
-## Recommended:
+- If the cameras are Dead on Arrival (DOA), keep in mind that you can swap the lenses with the ones that come with the stock cameras that were included with the ESP32 boards though, they do require extension cables.
 
-- ### 2x Camera cable extensions
+- #### Optional Ribbon extensions:
+
 Certain mounts may require a cable extension (ex: MUTE's frunk mod)
 To use a mount like that you will need a cable and a connector for each camera.
-Headsets like the Quest 2 do not require extensions.
+Headsets like the Quest 2 do not require extensions if the camera boards are mounted at the bottom of the headset, near the facial interface.
 
-Cables (select 0.5mm pitch type A) [AliExpress](https://a.aliexpress.com/_mqVcK8a) (200mm for MUTE's)
+Extensions (select 0.5mm pitch type A) [AliExpress](https://a.aliexpress.com/_mqVcK8a) (200mm for MUTE's)
 
 Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/3256804096715690.html)
 
+### USB Hubs - for if you are building the wired version 
+-  1x USB 3.0+ hub
+Ensure that it is of good quality, lightweight, compact in size, and I suggest including three ports - one for the face tracker and two for ESP32-S3 boards.
+Ensure that you acquire appropriate USB-A to USB-C adapters wherever required, such as for the Valve Index which has only one USB-A port.
 
-## IR Emitters
+- 2x USB C cables (as short as possible) to connect both ESPs
+As the ESP32-S3 has USB-C connectors, you may require some USB-C to USB-A cables depending on your USB hub.
+It's worth noting that the HTC Face Tracker requires a USB-C port, so you may need to consider this requirement as well.
 
-### IR LED kit (recommended)
-If you do not want to source things from multiple places or save money and time on assembly, you can buy an official V4 LED kit on our store:  
-[Solder-less V4 kit](https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit) requires no soldering.  
-[Solder wires V4 kit](https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required) requires you to solder your own wires to the LED boards.  
+### Wires and adapters
+ - 1x USB type-A male port to power both ESPs/or LEDs  
+[Bare breakout on AliExpress](https://www.aliexpress.com/item/2255801092919590.html)  
+[Amazon](https://www.amazon.com/10Gtek-DIP-Breakout-Adapter-2-54mm/dp/B09LC8WQCD/)  
+\
+[Or one with a cover on AliExpress](https://www.aliexpress.com/item/2251832820552545.html)  
+[Amazon](https://www.amazon.com/Pigtail-Extension-Cables-Connector-Replacement/dp/B09ZQNJ2DJ/)  
+- 1x Lower gauge wire to power ESPs  
+[28 AWG gauge wire from AliExpress](https://a.aliexpress.com/_mK72cy6)  
+[28 AWG Amazon](https://www.amazon.com/Fermerry-Silicone-Stranded-Copper-Electrical/dp/B089CTT5X1/)  
+
+- 1x Higher gauge wire to power IR emitters (V3 or V4 some assembly required)  
+[34 AWG AliExpress](https://www.aliexpress.com/item/3256804720067942.html)  
+
+### IR emitters  
+
+#### Recommended: 
+We recommend getting the official kits: 
+
+- [Solder-less V4 kit](https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit) - requires no soldering.  
+
+- [Solder wires V4 kit](https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required) - requires you to solder your own wires to the LED boards.
 
 
-### Alternatively you can source the parts for V3 yourself:
-- 4x Unfocused SMD IR emitters  
-[(Recomended) from LCSC here](https://www.lcsc.com/product-detail/Infrared-IR-LEDs_XINGLIGHT-XL-3216HIRC-850_C965891.html).  
-[(Alternative) from Digikey here](https://www.digikey.com/en/products/detail/inolux/IN-P32ZTIR/10384796).  
-The difference between them is the ones from LCSC are rated for lower power, which means in the event of a short or mishap they should be safer, as well as being smaller in footprint, hence why they are recommended.
-<Alerts :options="alerts.parts_list_four">
-    <template v-slot:content>
-        <p>
-           The smaller ones can not be soldered at temps above 245C or they will burn. Low temp solder is recommended.
-        </p>
-    </template>
-</Alerts>
-
+#### Alternatively you can source the parts for V3 yourself:
 
 ::: danger
 If they look like something you would find in a TV remote, do NOT use them. Even if you think you can alter them THEY WILL NOT WORK AND PUT YOU AT RISK. If you aren't exactly sure what you are doing, buy them from the LCSC or Digikey link.
@@ -181,6 +165,18 @@ If they look like something you would find in a TV remote, do NOT use them. Even
 **DO NOT BUY FOCUSED ONES!**
 :::
 
+- 4x Unfocused SMD IR emitters
+    <Alerts :options="alerts.parts_list_four">
+        <template v-slot:content>
+            <p>
+            The smaller ones can not be soldered at temps above 245C or they will burn. Low temp solder is recommended.
+            </p>
+        </template>
+    </Alerts>
+
+    - [(Recommended) from LCSC here](https://www.lcsc.com/product-detail/Infrared-IR-LEDs_XINGLIGHT-XL-3216HIRC-850_C965891.html).  
+    - [(Alternative) from Digikey here](https://www.digikey.com/en/products/detail/inolux/IN-P32ZTIR/10384796).  
+The difference between them is the ones from LCSC are rated for lower power, which means in the event of a short or mishap they should be safer, as well as being smaller in footprint, hence why they are recommended.
 
 - 4x IR emitter PCBs (highly recommended) Gerber files and schematics located [here.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/IR%20Emmitter)
 
@@ -195,21 +191,34 @@ If you are a Patreon please check out discount codes available to you, and also 
 - 1x Wire to power IR emitters  
 [34 AWG AliExpress](https://www.aliexpress.com/item/3256804720067942.html)  
 
+## 3D Printed Mounts
+
+Mounts with a `★` next to them are the recommended mounts for the respected hmd. This is based on user feedback on what works best for most people.
+
+<Alerts :options="alerts.parts_list_three">
+    <template v-slot:content>
+        <p>
+        You'll need both - a mount for the IR emitters and a mount for the camera boards, some files include both, some don't. 
+        </p>
+    </template>
+</Alerts>
+
+<PartsList />
+
 ## Misc parts/tools
 
 - 1x Hot glue or another form of glue.   
 [AliExpress](https://www.aliexpress.com/item/3256803968572059.html)  
 [Amazon](https://www.amazon.com/Assark-Sticks-School-Repairs-20W/dp/B09FYWQ44L/)
 
-- 1x Soldering iron and solder  
-[AliExpress](https://www.aliexpress.com/item/3256801448141079.html)  
-[Amazon](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
+- 1x Soldering iron and solder:
+[Pin64 Pinecil (Recommended)](https://www.pine64.org/pinecil/) + [Amazon Solder](https://www.amazon.com/Rosin-Solder-Electronics-Components-repair/dp/B08M5YP6BN/)
 
-## 3D Printed Mounts
+[AliExpress (Generic)](https://www.aliexpress.com/item/3256801448141079.html)  
+[Amazon (Generic)](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
 
-Mounts with a `★` next to them are the recommended mounts for the respected hmd. This is based on user feedback on what works best for most people.
-
-<PartsList />
+- 2x-4x Heatsinks (Optional) - for the ESP32-CAM
+[AliExpress](https://www.aliexpress.us/item/3256803892794950.html) (14mm for ESP, 8mm for voltage regulator) 
 
 ### Other Headsets
 
