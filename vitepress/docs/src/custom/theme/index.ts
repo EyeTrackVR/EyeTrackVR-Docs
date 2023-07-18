@@ -30,6 +30,7 @@ const theme = {
             items: [
                 { text: "Introduction", link: "/getting_started/intro" },
                 { text: "Things to know before you start", link: "/getting_started/things_to_know" },
+                { text: "LED Safety", link: "/misc/led_safety" },
             ],
         },
         {
@@ -70,7 +71,6 @@ const theme = {
             items: [
                 { text: "VR Chat Avatar Setup", link: "/misc/vrc_avatar_setup" },
                 { text: "FAQ", link: "/misc/faq" },
-                { text: "LED Safety", link: "/misc/led_safety" },
             ],
         },
         {

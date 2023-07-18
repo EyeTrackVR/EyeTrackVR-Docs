@@ -87,6 +87,6 @@ Now, we need to account for distance. My number is based on a worst case scenari
 Now, this is only for 1 LED, in the case of V4 we have 4 so we can:
 > 0.6 mW/cm2 * 4 = 2.4 mW/cm2
 
-This value is well below the limit, and close to normal sun exposure outside.
-If the LEDs were further than 1cm (which they typically are) the exposure would be even less.
+This value is well below the limit, and not far from sun exposure.
+If the LEDs were further than 1cm (which they typically are) the exposure would be even less. And with typical eye movement they are less.
 
