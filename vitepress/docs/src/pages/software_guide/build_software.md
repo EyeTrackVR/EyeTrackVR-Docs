@@ -25,7 +25,7 @@ import { Requirements } from '../../static/app_build_requirements'
 
 ## Install Python
 
-EyetrackVR is currently using [Python 3.11.0](https://www.python.org/downloads/release/python-3110/) Before you continue, please install it.
+EyeTrackVR is currently using [Python 3.11.0](https://www.python.org/downloads/release/python-3110/) Before you continue, please install it.
 
 ## Installing Poetry
 
