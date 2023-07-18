@@ -57,6 +57,8 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 [AN002_Details on photobiological safety of LED light sources](https://docs.eyetrackvr.dev/saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
 
 [Training-library Nir Stds](https://docs.eyetrackvr.dev/saftey/training-library_nir_stds_20021011.pdf)
+
+[ICNIRP: Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](https://docs.eyetrackvr.dev/saftey/ICNIRP_optical_radiation.pdf)
 :::
 
 ## Hardware

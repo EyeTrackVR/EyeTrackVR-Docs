@@ -70,6 +70,7 @@ const theme = {
             items: [
                 { text: "VR Chat Avatar Setup", link: "/misc/vrc_avatar_setup" },
                 { text: "FAQ", link: "/misc/faq" },
+                { text: "LED Safety", link: "/misc/led_safety" },
             ],
         },
         {
