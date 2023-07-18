@@ -41,7 +41,7 @@ It is known that when outside and not directly looking at the sun, your eyes get
 <Alerts :options="alerts.build_software_one">
     <template v-slot:content>
         <p>
-           This math is assuming the LED is directly in front of your pupil, and your pupil is not moving. In real world this is not the case. We have multiple LEDs around your eye, and your eye moves. When you look to the side, your pupil is not receiving all of the light from all LEDs and the distance grows as well. Properly calculating for this is hard and not worth the time. I Choose to show that the "worst case scenario" is still well withing safety margins.
+           This math is assuming the LED is directly in front of your pupil, and your pupil is not moving. In real world this is not the case. We have multiple LEDs around your eye, and your eye moves. When you look to the side, your pupil is not receiving all of the light from all LEDs and the distance grows as well. Properly calculating for this is hard and not worth the time. I chose to show that the "worst case scenario" is still well withing safety margins.
         </p>
     </template>
 </Alerts>

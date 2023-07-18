@@ -22,5 +22,6 @@ Important steps may be missing.
 ### You will need to set up your avatar to use this
 
 This will require some basic Unity knowledge and owning your own avatar.
+Note: 2.0 beta app uses VRC's Native eye tracking which does **NOT** require a special avatar
 
 ### Once you have acknowledged the items above, move on to the [Full Build Guide](https://docs.eyetrackvr.dev/how_to_build/full_build)
