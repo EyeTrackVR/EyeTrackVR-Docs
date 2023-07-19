@@ -25,7 +25,7 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 ### What we care about:
 
 We care about power exposure "W" to the cornea, which we can normalize over the exposed area to Irradiance "mW/cm^2"
-This number gives us the amount of IR radiation being released into the normalized area. We don't really care about "mA", or "V" as alone, these do not give us the exposure levels which we need to ensure safety.
+This number gives us the amount of IR radiation being released into the normalized area. We don't really care about "mA", or "V" alone, as by themselves these do not give us the exposure levels which we need to ensure safety.
 
 Irradiance also needs to take in to account distance of the light source (LED) as the further away you get from a source the weaker the intensity gets. (You can test this by looking at a light source from far away, and as you move closer, the brighter and more painful it is to look at) We do this by using Radiance "mW/cm2/sr" to normalize for the distance. The "sr" is a steradian. Think of it like a cone shape, getting bigger and broader as we move away from the source object.
 
@@ -47,7 +47,7 @@ It is known that when outside and not directly looking at the sun, your eyes get
 </Alerts>
 
 
-# V3 Hardware Safety Outline an Exposure Numbers:
+# V3 Hardware Safety Outline and Exposure Numbers:
 For all of this math we will assume the "worst" to ensure we are well within safety. 
 
 if powered with 5V, using 700 ohms of resistance, V3 Hardware will draw 0.00314... Amps. We will round up and convert this to 3.2mA.
@@ -71,7 +71,7 @@ If the LEDs were further than 1cm (which they typically are) the exposure would 
 
 
 
-# V4 Hardware Safety Outline an Exposure Numbers:
+# V4 Hardware Safety Outline and Exposure Numbers:
 For all of this math we will assume the "worst" to ensure we are well within safety. 
 
 V4 hardware is actively limited to ~2.4 mA
