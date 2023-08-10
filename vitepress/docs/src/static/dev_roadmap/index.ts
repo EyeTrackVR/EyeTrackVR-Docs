@@ -12,20 +12,23 @@ const Completed: IDevRoadMap = {
         { label: 'Better documentation over things (setup, wiring etc.)' },
         { label: 'Setup dynamic WiFi credentials at runtime' },
         { label: 'OTA using Platformio' },
+        { label: 'Auto threshold\'s' },
+        { label: 'New LED Power regulator board (V4)' },
+        { label: 'New IR LED PCB (only for the power reg board) (V4)' },
     ]
 }
 
 const InProgress: IDevRoadMap = {
     state: false,
     object: [
-        { label: 'Variable eye openness tracking' },
+        { label: 'Variable eye openness tracking (being improved)' },
         { label: 'Release of V1 to the masses' },
         { label: 'Auto ROI cropping' },
-        { label: 'Auto threshold\'s' },
         { label: 'Setup flashing of ESPs through anything other than VSC' },
         { label: 'New GUI' },
-        { label: 'Power regulator board' },
-        { label: 'New IR LED PCB (only for the power reg board)' },
+        { label: 'New backend for GUI' },
+        { label: 'V5 hardware (focus on wired usage)' },
+        
     ]
 }
 
@@ -33,9 +36,9 @@ const InProgress: IDevRoadMap = {
 const Planned: IDevRoadMap = {
     state: false,
     object: [
-        { label: 'Support for binary parameters' },
-        { label: 'Dynamic foveated rendering via OpenXR (not a guarantee)' },
-        { label: 'Custom ESP-CAM boards' },
+        { label: 'HELP NEEDED: Dynamic foveated rendering via OpenXR (not a guarantee)' },
+        { label: 'HELP NEEDED: 3D point calibration via OpenXR/SteamVR overlay' },
+        { label: 'Custom cam boards/cameras?' },
     ]
 }
 
