@@ -503,6 +503,16 @@ const image_settings = {
         alt: "Screenshot showing the the controls setup",
         max_width: "max-width: 600px;"
     },
+    V4_wire_sketch: {
+        url: "https://i.imgur.com/OWSh6WM.png",
+        alt: "Sketch of V4 wireing",
+        max_width: "max-width: 600px;"
+    },
+    V4_solder_wire: {
+        url: "https://i.imgur.com/yB9e92o.jpg",
+        alt: "Sketch of V4 wire",
+        max_width: "max-width: 400px;"
+    },
     esp_board_env: {
         url: "https://i.imgur.com/5BbQmCE.gif",
         alt: "GIF showing a switch of board enviroments.",

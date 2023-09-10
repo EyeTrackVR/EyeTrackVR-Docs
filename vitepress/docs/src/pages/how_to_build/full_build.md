@@ -11,9 +11,21 @@ import { alerts } from '../../static/alerts'
 
 ## This page will contain a step-by-step assembly guide
 
-This guide provides a walkthrough on the assembly of a **wireless** eye tracking.
+This guide provides a walkthrough on the assembly of a **wireless** V3 eye tracking.
+V4 specific final docs are WIP:
+[V4 LED Solderless assemblly rough edit:](https://www.youtube.com/watch?v=AVUbDNe7uNU)
+<iframe width="500" height="300" src="https://www.youtube.com/embed/AVUbDNe7uNU" title="EyeTrackVR V4 Solder-less Assembly ROUGH EDIT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Nevertheless, it's worth noting that these instructions are also mostly applicable to those who are using wired trackers.
+
+Sketch of V4 solderless wiring:
+<ImageCard :options="image_settings.V4_wire_sketch" />
+Credit: @seniorpringles, @g0ldjay via [Discord](https://discord.gg/kkXYbVykZX)
+
+Sketch of solder assembbly of V4:
+<ImageCard :options="image_settings.V4_solder_wire" />
+
+
+Nevertheless, it's worth noting that these instructions are also mostly applicable to those who are using wired or V4 trackers.
 
 ## Step 1: Make sure your have read the [Things to know before you start](https://docs.eyetrackvr.dev/getting_started/things_to_know) guide
 
