@@ -13,25 +13,25 @@ Please visit the [documentation site](https://docs.eyetrackvr.dev/) for more inf
 ### install dependencies
 
 ```bash
-cd vitepress && yarn
+cd vitepress && pnpm install
 ```
 
 ### start dev server
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ### Build
 
 ```bash
-yarn build
+pnpm build
 ```
 
 ### Serve
 
 ```bash
-yarn serve
+pnpm serve
 ```
 
 ## Contribute
