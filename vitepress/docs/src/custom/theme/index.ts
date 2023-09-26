@@ -14,6 +14,7 @@ const theme = {
   search: {
     provider: "local",
   },
+  outline: "deep",
   footer: {
     message: "Released under the MIT License.",
     copyright: "Copyright © 2022-present ETVR",
@@ -131,6 +132,6 @@ const theme = {
   ],
 };
 
-const ThemeSettings = {}
+const ThemeSettings = {};
 
-export { theme, ThemeSettings }
+export { theme, ThemeSettings };

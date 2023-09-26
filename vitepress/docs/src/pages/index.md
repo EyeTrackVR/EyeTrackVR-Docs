@@ -1,12 +1,15 @@
 ---
 layout: home
-
+head:
+  - - meta
+    - name: keywords
+      content: EyeTrackVR ETVR VR Virtual Reality Eye Tracking VRChat Social VR Games VR Game VR Games VRChat Avatar VRChat Avatars VRChat Eye Tracking VRChat Eye Tracking Avatar VRChat Eye Tracking Avatars
 hero:
   name: EyeTrackVR Docs
-  text: Opensource and affordable VR eye tracking.
+  text: Open-source and affordable VR eye tracking.
   image:
     src: /logo_light.png
-    alt: ETRVR logo
+    alt: ETVR logo
   tagline: For Social VR Games via OSC and UDP protocol.
   actions:
     - theme: brand
