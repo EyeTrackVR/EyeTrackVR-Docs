@@ -59,23 +59,7 @@ const theme = {
       collapsible: true,
       items: [
         { text: "Introduction", link: "/firmware_guide/firmware" },
-        {
-          text: "Setup Visual Studio Code environment",
-          link: "/firmware_guide/setup_vscode",
-        },
-        {
-          text: "Configuring Firmware",
-          link: "/firmware_guide/configure_firmware",
-        },
-        {
-          text: "Uploading and Updating the Firmware",
-          link: "/firmware_guide/upload_and_update_firmware",
-        },
-        {
-          text: "Updating PlatformIO",
-          link: "/firmware_guide/update_platformio",
-        },
-        { text: "Firmware Environments", link: "/firmware_guide/environments" },
+        { text: "Flashing Tool", link: "/firmware_guide/flashing_tool.md" },
         { text: "MDNS", link: "/firmware_guide/mdns" },
         { text: "REST API", link: "/firmware_guide/rest_api" },
       ],
@@ -120,6 +104,23 @@ const theme = {
       collapsible: true,
       items: [
         {
+          text: "Setup Visual Studio Code environment",
+          link: "/firmware_guide/setup_vscode",
+        },
+        {
+          text: "Configuring Firmware",
+          link: "/firmware_guide/configure_firmware",
+        },
+        { text: "Firmware Environments", link: "/firmware_guide/environments" },
+        {
+          text: "Uploading and Updating the Firmware",
+          link: "/firmware_guide/upload_and_update_firmware",
+        },
+        {
+          text: "Updating PlatformIO",
+          link: "/firmware_guide/update_platformio",
+        },
+        {
           text: "Prepare to solder IR LED PCB V2's",
           link: "/archive/fox_ir_v2_build_instructions",
         },
@@ -127,7 +128,7 @@ const theme = {
     },
   ],
   socialLinks: [
-    { icon: "github", link: "https://github.com/EyeTrackVR/EyeTrackVR" },
+    { icon: "github", link: "https://github.com/EyeTrackVR" },
     { icon: "discord", link: "https://discord.gg/kkXYbVykZX" },
   ],
 };

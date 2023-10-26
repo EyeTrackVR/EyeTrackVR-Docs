@@ -45,7 +45,7 @@ You can choose to leave the `ap_ssid` and `ap_password` as defaults, but you wil
 
 Double check that you have correctly entered your WiFi credentials and that said wifi network has a 2.4GHz band.
 
-### Additonal configuration
+### Additional configuration
 
 #### `mDNS`
 
@@ -72,10 +72,5 @@ The full REST API is documented [here](/firmware_guide/rest_api.html).
 The firmware supports multiple environments. This means that we have full support for multiple types of ESPs. Each ESP is configured to be in a different environment. If you are using a different ESP, you will need to change the environment to the correct one.
 
 Please reference the [Firmware Enviroments Page](../firmware_guide/environments) for more information.
-
-
-::: tip Coming Soon
-We are working on a new app that will allow you to configure the firmware, flash the boards, and connect to Social VR Games using a GUI. This will make it easier to configure the firmware, and will allow you to configure the firmware without having to use/download `VSCode` or our `platformio` project. We are hard at work on this, but do not currently have a release date. Please check back frequently.
-:::
 
 ## [Now, move on to uploading the firmware](/firmware_guide/upload_and_update_firmware.html)

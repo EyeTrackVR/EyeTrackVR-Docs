@@ -11,14 +11,7 @@ Open source and *affordable* VR eye tracker platform for Social VR Games via `OS
 
 ### Welcome to the EyetrackVR documentation website. Here you will find all avalable documentation regauding building, development, and other resources related to this project.
 
-
 Want to get started? Check out the [getting started page](https://docs.eyetrackvr.dev/getting_started/things_to_know) and then the [full build guide.](https://docs.eyetrackvr.dev/how_to_build/full_build)
-
-
-
-
-
-
 
 <Alerts :options="alerts.user_warning">
     <template v-slot:content>
@@ -28,7 +21,6 @@ Want to get started? Check out the [getting started page](https://docs.eyetrackv
         </p>
     </template>
 </Alerts>
-
 
 ## About IR Emitter Safety
 

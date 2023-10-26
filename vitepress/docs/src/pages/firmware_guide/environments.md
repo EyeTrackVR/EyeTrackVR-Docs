@@ -29,10 +29,9 @@ We now have a couple of options letting us decide how we want to build the firmw
 Examples:  
 `xiaosenses3` - This is the debug environment.  
 `xiaosenses3_release` - This is the release environment for daily use.  
- 
 
 ::: tip Tip
-We recommend starting with a debug environment, and then switching to release once everything is working. A debug environnement should not be used permanently. 
+We recommend starting with a debug environment, and then switching to release once everything is working. A debug environnement should not be used permanently.
 :::
 
 ## Board Types
