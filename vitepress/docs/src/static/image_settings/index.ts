@@ -523,12 +523,12 @@ const image_settings = {
     max_width: "max-width: 600px;",
   },
   flashing_tool: {
-    url: "https://docs.eyetrackvr.dev/imgs/flashing_tool.png",
+    url: "https://docs.eyetrackvr.dev/imgs/flashingtool.png",
     alt: "Flashing Tool ui",
     max_width: "max-width: 600px;",
   },
   flashing_tool_1: {
-    url: "https://docs.eyetrackvr.dev/imgs/flashing_tool_1.png",
+    url: "https://docs.eyetrackvr.dev/imgs/flashingtool_1.png",
     alt: "Flashing Tool ui lower half",
     max_width: "max-width: 600px;",
   },
