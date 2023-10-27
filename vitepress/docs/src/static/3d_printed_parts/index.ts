@@ -40,8 +40,8 @@ const printed_parts = {
             ],
             hyper_links: [
                 {
-                    url: "https://github.com/bitbyt3r/index-eyetrackvr/blob/main/Index-EyetrackVRv4.stl",
-                    desc: "★ V4 IR and Camera mount by bitbyt3r"
+                    url: "https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/blob/main/ETVR%20ValveIndex%20Cam-LED%20Mount%20Rings/Index-EyetrackVRv4%20v18%20Print%20Me.stl",
+                    desc: "★ V4 IR and Camera mount by Physics Dude and bitbyt3r"
                 },
                 {
                     url: "https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii)/Gen%203%20Prohurtz%20V2%20Mounts%20(VROptician)",
@@ -50,6 +50,10 @@ const printed_parts = {
                 {
                     url: "https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii)",
                     desc: "★ ESP frunk mod by MUTE the Cyberwolf"
+                },
+                {
+                    url: "https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/tree/main",
+                    desc: "Gum Stick USB Hub Dongle by Physics Dude"
                 },
                 {
                     url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/Seaweed",
