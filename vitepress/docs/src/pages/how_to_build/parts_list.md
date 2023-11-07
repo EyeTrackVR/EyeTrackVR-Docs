@@ -110,9 +110,9 @@ will have to [manually remove the IR filter](https://www.youtube.com/watch?v=QYH
 
 Things worth noting:
 
-- There is an experimental option to purchase OV2640 120° FOV cameras and manually remove the IR filters. This can result in a clearer view of the eye, but it's not a default recommendation.
+- There is an experimental option to purchase OV2640 130° FOV cameras and manually remove the IR filters. This can result in a clearer view of the eye and is smaller so it allows for HMDs like the Bigscreen Beyond, but it's not a default recommendation just yet. Checkout the listing "75MM-130 Degree" [AliEXpress](https://www.aliexpress.us/item/3256804332354572.html)
 
-- If the cameras are Dead on Arrival (DOA), keep in mind that you can swap the lenses with the ones that come with the stock cameras that were included with the ESP32 boards though, they do require extension cables.
+- If the cameras are Dead on Arrival (DOA), keep in mind that you can swap the lenses with the ones that come with the stock cameras that were included with the ESP32 boards though, they do require extension cables. I reccomend just buying more (3-4 instead of just 2).
 
 - #### Optional Ribbon extensions:
 
@@ -126,14 +126,20 @@ Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/32568040967
 
 ### USB Hubs - for if you are building the wired version 
 -  1x USB 3.0+ hub
-Ensure that it is of good quality, lightweight, compact in size, and I suggest including three ports - one for the face tracker and two for ESP32-S3 boards.
-Ensure that you acquire appropriate USB-A to USB-C adapters wherever required, such as for the Valve Index which has only one USB-A port.
+The hub needs to support MTT if you wish to use a vive face tracker with the ESPs. Here is a hub that supports MTT and is not expensive [Amazon](https://www.amazon.com/dp/B09NDQGSPR)
+
+Ensure that it is of good quality, lightweight, compact in size, and I suggest a minimum of three ports - one for the face tracker and two for ESP32-S3 boards.
+Ensure that you acquire appropriate USB-A to USB-C adapters wherever required, such as for the Valve Index which has only one USB-A port. 
+Such adapter [Amazon.](https://a.co/d/gSWydCY)
 
 - 2x USB C cables (as short as possible) to connect both ESPs
 As the ESP32-S3 has USB-C connectors, you may require some USB-C to USB-A cables depending on your USB hub.
 It's worth noting that the HTC Face Tracker requires a USB-C port, so you may need to consider this requirement as well.
+You may also make custom cables using USB breakout boards of your choice and wire.
 
 ### Wires and adapters
+If you are soldering and using custom cables:
+
  - 1x USB type-A male port to power both ESPs/or LEDs  
 [Bare breakout on AliExpress](https://www.aliexpress.com/item/2255801092919590.html)  
 [Amazon](https://www.amazon.com/10Gtek-DIP-Breakout-Adapter-2-54mm/dp/B09LC8WQCD/)  
@@ -212,7 +218,7 @@ Mounts with a `★` next to them are the recommended mounts for the respected hm
 [Amazon](https://www.amazon.com/Assark-Sticks-School-Repairs-20W/dp/B09FYWQ44L/)
 
 - 1x Soldering iron and solder:
-[Pin64 Pinecil (Recommended)](https://www.pine64.org/pinecil/) + [Amazon Solder](https://www.amazon.com/Rosin-Solder-Electronics-Components-repair/dp/B08M5YP6BN/)
+[Pin64 Pinecil (Highly Recommended)](https://www.pine64.org/pinecil/) + [Amazon Solder](https://www.amazon.com/Rosin-Solder-Electronics-Components-repair/dp/B08M5YP6BN/)
 
 [AliExpress (Generic)](https://www.aliexpress.com/item/3256801448141079.html)  
 [Amazon (Generic)](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
