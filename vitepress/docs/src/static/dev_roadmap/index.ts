@@ -15,6 +15,7 @@ const Completed: IDevRoadMap = {
         { label: 'Auto threshold\'s' },
         { label: 'New LED Power regulator board (V4)' },
         { label: 'New IR LED PCB (only for the power reg board) (V4)' },
+        { label: 'Setup flashing of ESPs through anything other than VSC' },
     ]
 }
 
@@ -22,12 +23,12 @@ const InProgress: IDevRoadMap = {
     state: false,
     object: [
         { label: 'Variable eye openness tracking (being improved)' },
-        { label: 'Release of V1 to the masses' },
-        { label: 'Auto ROI cropping' },
-        { label: 'Setup flashing of ESPs through anything other than VSC' },
+        { label: 'Auto ROI cropping/better cropping' },
         { label: 'New GUI' },
-        { label: 'New backend for GUI' },
+        { label: 'New backend for new GUI' },
         { label: 'V5 hardware (focus on wired usage)' },
+        { label: 'HELP WANTED: Dynamic foveated rendering via OpenXR' },
+        { label: '3D, 9-point calibration via OpenXR/SteamVR overlay' },
         
     ]
 }
@@ -36,9 +37,9 @@ const InProgress: IDevRoadMap = {
 const Planned: IDevRoadMap = {
     state: false,
     object: [
-        { label: 'HELP NEEDED: Dynamic foveated rendering via OpenXR (not a guarantee)' },
-        { label: 'HELP NEEDED: 3D point calibration via OpenXR/SteamVR overlay' },
         { label: 'Custom cam boards/cameras?' },
+        { label: 'Game interaction SDK' },
+        { label: 'Game developer integration program' },
     ]
 }
 
