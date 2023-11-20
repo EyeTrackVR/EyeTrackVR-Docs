@@ -9,7 +9,7 @@ import { image_settings } from '../../static/image_settings'
 
 Open source and *affordable* VR eye tracker platform for Social VR Games via `OSC` and `UDP` protocol.
 
-### Welcome to the EyetrackVR documentation website. Here you will find all avalable documentation regauding building, development, and other resources related to this project.
+### Welcome to the EyetrackVR documentation website. Here you will find all available documentation regarding building, development, and other resources related to this project.
 
 Want to get started? Check out the [getting started page](https://docs.eyetrackvr.dev/getting_started/things_to_know) and then the [full build guide.](https://docs.eyetrackvr.dev/how_to_build/full_build)
 
@@ -27,7 +27,7 @@ Want to get started? Check out the [getting started page](https://docs.eyetrackv
 Please *exercise caution* when messing around with IR emitters.
 
 IR can be dangerous to your eyes once at a certain power level. It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes.
-If you doubt yourself, just do exactly what we do. Don't use different emitters, dont use differnt means of power, etc.
+If you doubt yourself, just do exactly what we do. Don't use different emitters, don't use different means of power, etc.
 
 ::: danger
 It is important that you <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE**</ins>. This can result in irreversible bodily harm.
@@ -44,18 +44,18 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 </Alerts>
 
 ::: details Want to see the safety data sheets?
-[Effect of infrared radiation on the lens](https://docs.eyetrackvr.dev/saftey/effect_of_ir_on_the_lens.pdf)
+[Effect of infrared radiation on the lens](../safety/effect_of_ir_on_the_lens.pdf)
 
-[AN002_Details on photobiological safety of LED light sources](https://docs.eyetrackvr.dev/saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
+[AN002_Details on photobiological safety of LED light sources](../safety/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
 
-[Training-library Nir Stds](https://docs.eyetrackvr.dev/saftey/training-library_nir_stds_20021011.pdf)
+[Training-library Nir Stds](../safety/training-library_nir_stds_20021011.pdf)
 
-[ICNIRP: Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](https://docs.eyetrackvr.dev/saftey/ICNIRP_optical_radiation.pdf)
+[ICNIRP: Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf)
 :::
 
 ## Hardware
 
-Please check out our [parts list](https://docs.eyetrackvr.dev/how_to_build/parts_list) and [hardware repo.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware) for information regauring hardware.
+Please check out our [parts list](https://docs.eyetrackvr.dev/how_to_build/parts_list) and [hardware repo.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware) for information regarding hardware.
 
 ## Firmware
 

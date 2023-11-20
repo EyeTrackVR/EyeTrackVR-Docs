@@ -19,14 +19,14 @@ import { alerts } from '../../static/alerts'
 These settings are applicable only when using Wi-Fi for communication with your computer. If you are using USB, you can skip to reading about [Environments](#environments).
 :::
 
-Replace the placeholder text with your correct SSID (WiFi access point name), and password respectfully.
+Replace the placeholder text with your correct SSID (WiFi access point name), and password respectively.
 
 ::: info
 Special characters such as `!` and `@` are not supported. If you have a special character in your password or ssid, you will need to change it.
 
-Spaces are not supported either. If you have a space in either, you will need to change it.
+Similarly, spaces are not supported in the SSID and password. If you have a space in either, you will need to change it.
 
-The firmware supports AP mode, but it is not recommended. If you are using AP mode, you will need to set the `enableadhoc` to `1`.
+The firmware supports AP mode, however it is not recommended. If you wish to use AP mode, you will need to set the `enableadhoc` to `1`.
 
 Then, you will need to set the `ap_ssid` to the name of your AP, and `ap_password` to the password of your AP.
 
@@ -38,7 +38,7 @@ You can choose to leave the `ap_ssid` and `ap_password` as defaults, but you wil
 <Alerts :options="alerts.parts_list_one">
     <template v-slot:content>
         <p>
-           Make sure your wifi router has a 2.4 GHz band. While most do, this is not always the case. Setting each band (5GHz, and 2.4GHz) to different SSIDs is recommended, though not required.
+           Make sure your WiFi router has a 2.4 GHz band. While most do, this is not always the case. Setting each band (5GHz, and 2.4GHz) to different SSIDs is recommended, though not required.
         </p>
     </template>
 </Alerts>
@@ -49,7 +49,7 @@ Double check that you have correctly entered your WiFi credentials and that said
 
 #### `mDNS`
 
-If you do not wish to manually keep track of the ESPs IP addresses and ports, you can enable the mDNS feature. This will allow you to connect to the ESPs using the following format: `http://<some_name>.local`. This will only work if you are connected to the same network as the ESPs, and if you have enabled mDNS on your computer. If you are using Windows, you can enable mDNS by following [this guide](./mdns).
+If you do not wish to manually keep track of the ESPs IP addresses and ports, you can enable the mDNS feature. This will allow you to connect to the ESPs using the following format: `http://<some_name>.local`. This feature only works when you are on the same network as the ESPs and have mDNS enabled on your computer. If you are using Windows, you can enable mDNS by following [this guide](./mdns).
 
 #### `OTA`
 

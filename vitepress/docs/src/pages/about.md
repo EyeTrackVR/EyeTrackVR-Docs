@@ -40,7 +40,7 @@ import { members, contributors } from '../static/members'
   <VPTeamPageSection>
     <template #title>Philosophy</template>
     <template #lead>
-        The <a class="custom-links" href="/intro" target="_blank">guides</a> on this website include some of our teams own notes (not all of them are polished) that we disclose for other people to use.<br>
+        The <a class="custom-links" href="/intro" target="_blank">guides</a> on this website include some of our team's own notes (not all of them are polished) that we disclose for other people to use.<br>
         <br>
         Here, we hope you may find something useful to you.<br>
         <br>
