@@ -4,16 +4,16 @@
 
 So, you have a headset that does not have any mounts or none that work well for you. Here I will show some simple steps to get some form of a mount working.
 
-## Step 1: Find a way to mount to your headsets lens
+## Step 1: Find a way to mount to your headset's lens
 
 The easiest way to get started is to find a lens protector for your headset.
-Either go to a website like [Thingiverse](https://www.thingiverse.com/) or just do a search for "3d printed lens protector for {your headset here}"
+You can visit a website like [Thingiverse](https://www.thingiverse.com/) or  do a search for "3d printed lens protector for {your headset here}"
 
 Example: Here is a lens protector for the Quest 1/2 and Rift S [https://www.thingiverse.com/thing:3653631](https://www.thingiverse.com/thing:3653631)
 
 ## Step 2: Find a camera mount
 
-Now, you need a way to attach the camera. We have a basic design that qdot created (taken from his mount) on the hardware GitHub [here](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Basic_Mount_Components/basic_ETVR_camera_mount.stl)
+Now, you need a way to attach the camera. We have a basic design created by qdot, based on his mount on the hardware GitHub [here](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Basic_Mount_Components/basic_ETVR_camera_mount.stl)
 
 Alternatively, you can create your own mount if you have the skills.
 
@@ -21,7 +21,7 @@ Alternatively, you can create your own mount if you have the skills.
 
 The "Ideal" location is a place that gives a good view of the pupil when looking to all extremes, the lower corners do a good job at getting there, or nearly there.
 
-You want to put the camera as close to the headset's lens as possible to achieve the biggest view of the eye.
+It is recommended to place the camera as close as possible to the headset's lens to maximize the view of the eye.
 I recommend looking at other headset mounts for [inspiration.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts)
 
 ## Step 4: Mount your LEDs

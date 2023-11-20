@@ -8,11 +8,11 @@ Please look at other pages to see how they are formatted, and for examples of ho
 
 ## Adding a Page
 
-To add a page, you will need to create a new Markdown file in the `vitepress/docs/src/pages` folder. The file name will be the URL of the page. For example, if you create a file called `my_page.md`, the URL will be `https://docs.eyetrackvr.dev//my_page`.
+To add a page, you will need to create a new Markdown file in the `vitepress/docs/src/pages` folder. The file name will be the URL of the page. For example, if you create a file called `my_page.md`, the URL will be `https://docs.eyetrackvr.dev/my_page`.
 
 ### Sub-directories
 
-You can also create sub-directories in the `vitepress/docs/src/pages` folder. For example, if you create a file called `my_page.md` in a folder called `my_folder`, the URL will be `https://docs.eyetrackvr.dev//my_folder/my_page`.
+You can also create sub-directories in the `vitepress/docs/src/pages` folder. For example, if you create a file called `my_page.md` in a folder called `my_folder`, the URL will be `https://docs.eyetrackvr.dev/my_folder/my_page`.
 
 This is useful for organizing pages into categories.
 

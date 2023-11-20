@@ -45,11 +45,13 @@ Ces mesures de sécurité ont été mises en places pour RÉDUIRE les risques po
 </Alerts>
 
 ::: Vous voulez voir nos resources lié à la sureté?
-[Effect of infrared radiation on the lens](../saftey/effect_of_ir_on_the_lens.pdf)
+[Effect of infrared radiation on the lens](../safety/effect_of_ir_on_the_lens.pdf)
 
-[AN002_Details on photobiological safety of LED light sources](../saftey/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
+[AN002_Details on photobiological safety of LED light sources](../safety/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
 
-[Training-library Nir Stds](../saftey/training-library_nir_stds_20021011.pdf)
+[Training-library Nir Stds](../safety/training-library_nir_stds_20021011.pdf)
+
+[ICNIRP: Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf)
 :::
 
 ## Firmware
