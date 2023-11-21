@@ -85,7 +85,7 @@ Press the `Save and Restart Tracking` button.
 ### Wired configuration (experimental)
 #### Note this is a Beta app feature only. Please use the latest Open Beta in the Discord.
 
-Find your ESPs in Device Manager and figure out their COM port numbers i.e., ``COM4``.
+Find your ESPs in Device Manager and figure out their COM port numbers, e.g. ``COM4``.
 
 Enter that COM port number into the app's `Camera Address` field.
 

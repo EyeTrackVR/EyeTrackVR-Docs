@@ -27,7 +27,7 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 We care about power exposure "W" to the cornea, which we can normalize over the exposed area to Irradiance "mW/cm^2"
 This number gives us the amount of IR radiation being released into the normalized area. We don't really care about "mA", or "V" alone, as by themselves these do not give us the exposure levels which we need to ensure safety.
 
-Irradiance also needs to take into account distance of the light source (LED) as the further away you get from a source the weaker the intensity gets. (You can test this by looking at a light source from far away, and as you move closer, the brighter and more painful it is to look at) We do this by using Radiance "mW/cm2/sr" to normalize for the distance. The 'sr' stands for steradian, which can be thought of as a cone shape expanding as it moves away from the source
+Irradiance also needs to take into account distance of the light source (LED) as the further away you get from a source the weaker the intensity gets. (You can test this by looking at a light source from far away, and as you move closer, the brighter and more painful it is to look at) We do this by using Radiance "mW/cm2/sr" to normalize for the distance. The 'sr' stands for steradian, which can be thought of as a cone shape expanding as it moves away from the source.
 
 
 The International Commission on Non-Ionizing Radiation Protection's [Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf) states:

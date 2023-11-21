@@ -30,7 +30,7 @@ To do this, in Unity, select your avatar on the scene and find Avatar Descriptor
 
 <ImageCard :options="image_settings.unity_vrc_expressions" />
 
-Clicking on it will highlight the associated asset in the asset browser, click on the highlighted file to get its content to show in the inspector panel. Now, in the inspector, click on the `Add` button to add the parameters mentioned above, both of them need to be of type Bool, they don't need to be synced nor saved. 
+Clicking on it will highlight the associated asset in the asset browser. Click on the highlighted file to get its content to show in the inspector panel. Now, in the inspector, click on the `Add` button to add the parameters mentioned above. Both of them need to be of type Bool, but they don't need to be synced nor saved. 
 
 <ImageCard :options="image_settings.unity_vrc_expressions_add_fields"/>
 <ImageCard :options="image_settings.unity_vrc_expressions_fields"/>
@@ -66,7 +66,7 @@ And that's it, you now should be able to recenter and recalibrate your tracking 
 
 ## Resetting the OSC config in case the parameters don't work
 
-Sometimes VRChat won't regenerate the config files that it to communicate the changes to anyone that's listening, to fix this it's enough to simply delete the auto generated configuration files and let VRC remake them. 
+Sometimes VRChat won't regenerate the config files that it uses to communicate the changes to anyone that's listening. To fix this, it's enough to simply delete the auto generated configuration files and let VRC remake them.
 
 They are stored under 
 

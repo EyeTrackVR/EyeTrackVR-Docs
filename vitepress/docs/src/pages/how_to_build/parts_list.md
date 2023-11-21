@@ -112,7 +112,7 @@ Things worth noting:
 
 - There is an experimental option to purchase OV2640 130° FOV cameras and manually remove the IR filters. This can result in a clearer view of the eye and is smaller so it allows for HMDs like the Bigscreen Beyond, but it's not a default recommendation just yet. Checkout the listing "75MM-130 Degree" [AliEXpress](https://www.aliexpress.us/item/3256804332354572.html)
 
-- If the cameras are Dead on Arrival (DOA), keep in mind that you can swap the lenses with the ones that come with the stock cameras that were included with the ESP32 boards though, they do require extension cables. I recommend just buying more (3-4 instead of just 2).
+- If the cameras are Dead on Arrival (DOA), keep in mind that you can swap the lenses with the ones that come with the stock cameras that were included with the ESP32 boards, though they do require extension cables. I recommend just buying more (3-4 instead of just 2).
 
 - #### Optional Ribbon extensions:
 

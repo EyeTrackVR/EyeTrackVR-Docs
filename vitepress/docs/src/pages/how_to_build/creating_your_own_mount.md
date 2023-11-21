@@ -7,7 +7,7 @@ So, you have a headset that does not have any mounts or none that work well for 
 ## Step 1: Find a way to mount to your headset's lens
 
 The easiest way to get started is to find a lens protector for your headset.
-You can visit a website like [Thingiverse](https://www.thingiverse.com/) or  do a search for "3d printed lens protector for {your headset here}"
+You can visit a website like [Thingiverse](https://www.thingiverse.com/) or do a search for "3d printed lens protector for {your headset here}"
 
 Example: Here is a lens protector for the Quest 1/2 and Rift S [https://www.thingiverse.com/thing:3653631](https://www.thingiverse.com/thing:3653631)
 
