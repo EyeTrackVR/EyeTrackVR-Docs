@@ -12,7 +12,7 @@ import { alerts } from '../../static/alerts'
 ## This page will contain a step-by-step assembly guide
 
 This guide provides a walkthrough on the assembly of a **wireless** V3 eye tracking.
-V4 specific final docs are WIP:
+V4 specific final docs are Work In Progress:
 [V4 LED Solderless assemblly rough edit:](https://www.youtube.com/watch?v=AVUbDNe7uNU)
 <iframe width="500" height="300" src="https://www.youtube.com/embed/AVUbDNe7uNU" title="EyeTrackVR V4 Solder-less Assembly ROUGH EDIT" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -21,17 +21,17 @@ Sketch of V4 solderless wiring:
 <ImageCard :options="image_settings.V4_wire_sketch" />
 Credit: @seniorpringles, @g0ldjay via [Discord](https://discord.gg/kkXYbVykZX)
 
-Sketch of solder assembbly of V4:
+Sketch of solder assembly of V4:
 <ImageCard :options="image_settings.V4_solder_wire" />
 
 
 Nevertheless, it's worth noting that these instructions are also mostly applicable to those who are using wired or V4 trackers.
 
-## Step 1: Make sure your have read the [Things to know before you start](https://docs.eyetrackvr.dev/getting_started/things_to_know) guide
+## Step 1: Make sure your have read the [Things to know before you start](../getting_started/things_to_know) guide
 
 This will give you a basic overview of the project's status and what to expect currently.
 
-## Step 2: Order all the parts listed on our [Parts list](https://docs.eyetrackvr.dev/how_to_build/parts_list)
+## Step 2: Order all the parts listed on our [Parts list](../how_to_build/parts_list)
 
 Please take note of the fact that hardware still may change, although with more developments it seems like we are going to stick with current hardware.
 
@@ -54,7 +54,7 @@ Some ESP-CAM boards have issues with signal integrity, there are 2 things you ca
 
 The first option is to use an external antenna.
 
-This is the best solution when it comes to the final result. If you have Vive/Tundra trackers, this is a **REQUIRED** step. The interference from the trackers will make your ESP stream unusable. An antistatic bag does not help in this case. Unfortunately, removing the antenna is not super easy, you have to either move a resistor or, remove it and bridge 2 solder pads. The image attached below shows the orientation of the pads that need to be connected for which mode. You can not bridge all connections and have both antennas active at the same time. The 0-ohm resistor does not need to be on the board, you can simply bridge the connections.
+This is the best solution when it comes to the final result. If you have Vive/Tundra trackers, this is a **REQUIRED** step. The interference from the trackers will make your ESP stream unusable. An antistatic bag does not help in this case. Unfortunately, removing the antenna is not super easy, you have to either move a resistor or, remove it and bridge 2 solder pads. The attached image below shows the orientation of the pads that need to be connected, depending on the mode You can not bridge all connections and have both antennas active at the same time. The 0-ohm resistor does not need to be on the board, you can simply bridge the connections.
 
 <ImageCard :options="image_settings.external_antenna" />
 
@@ -102,19 +102,19 @@ Slide your ESP into the programmer, and note the USB port goes away from the ESP
 
 ## Step 8: Configure Visual Studio Code and prepare to flash the firmware
 
-Check out our guide on [Setting up VS Code](https://docs.eyetrackvr.dev/firmware_guide/setup_vscode)
+Check out our guide on [Setting up VS Code](../firmware_guide/setup_vscode)
 
 Once VS Code is set up, move on to the next step.
 
 ## Step 9: Plug in your ESP and flash the firmware
 
-Our guide, [Building and uploading the firmware manually](https://docs.eyetrackvr.dev/firmware_guide/upload_and_update_firmware) has steps on how to do this.
+Our guide, [Building and uploading the firmware manually](../firmware_guide/upload_and_update_firmware) has steps on how to do this.
 After it has flashed, make sure you get a video stream in your browser, then power it down and flash your next ESP.
 
 ## Step 10: Connect your power wires to a USB Type-A board
 
 ::: warning
-Powering from the programmer board **will not work correctly**. This delivers a lower voltage which results in dim LEDs and video artifacts. These are highly likely mess up tracking.
+Powering from the programmer board **will not work correctly**. This delivers a lower voltage which results in dim LEDs and video artifacts. These are highly likely to mess up tracking.
 :::
 
 Get two pairs of wire, preferably two different colors, Cut them to length (56mm in my case) and twist together two for ground and two for 5V.
@@ -150,7 +150,7 @@ Repeat [Step 12](#step-12-twist-the-positive-usb-wire-and-positive-ir-led-wires-
 As a user in our discord has learned, you can short the `IO12` pin with the ground pin `(GND)` without issues.
 :::
 
-In the below example I put it on the top of the pin, It will be a week-ish joint but that's where glue comes in handy.
+In the below example I put it on the top of the pin, It will be a weak-ish joint but that's where glue comes in handy.
 
 <ImageCard :options="image_settings._13_18_two"/>
 
@@ -258,7 +258,7 @@ Use the following diagram:
 
 ## Step 19: 3D print mounts
 
-Head to the 3D printed parts section of the parts list [here.](https://docs.eyetrackvr.dev/how_to_build/parts_list#_3d-printed-mounts)
+Head to the 3D printed parts section of the parts list [here.](../how_to_build/parts_list#_3d-printed-mounts)
 
 Find which parts are for your headset and print them.
 Some may work better or worse, it is recommended to test all of them if there are multiple, print one of each kind.
@@ -296,7 +296,7 @@ Slowly apply pressure inwards until the camera snaps into place.
 
 <ImageCard :options="image_settings.end_twelve"/>
 
-This uses the method of gluing the camera.
+This method involves gluing the camera in place.
 
 Apply a bit of glue to the bottom of the camera mount.
 

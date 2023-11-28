@@ -29,7 +29,7 @@ EyeTrackVR is currently using [Python 3.11.0](https://www.python.org/downloads/r
 
 ## Installing Poetry
 
-Since version `0.1.7` of EyeTrackVR, we have been using Poetry to manage app dependencies. To build the app, you must first install Poetry to fetch the required dependencies.
+Starting with version `0.1.7`, EyeTrackVR uses Poetry to manage app dependencies. To build the app, you must first install Poetry to fetch the required dependencies.
 
 To install Poetry open Windows Powershell and run the following command `(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -`
 

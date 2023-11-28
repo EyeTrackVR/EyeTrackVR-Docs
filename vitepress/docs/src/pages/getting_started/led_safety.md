@@ -13,7 +13,7 @@ import { image_settings } from '../../static/image_settings'
 Please *exercise caution* when messing around with IR emitters.
 
 IR can be dangerous to your eyes once at a certain power level. It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes.
-If you doubt yourself or are not understand something, just do exactly what we do. Don't use different emitters, don't use different means of power, etc.
+If you doubt yourself or do not understand something, just do exactly what we do. Don't use different emitters, don't use different means of power, etc.
 
 ::: danger
 It is important that you <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE**</ins>. This can result in irreversible bodily harm.
@@ -27,10 +27,10 @@ The safety measures were put in place to REDUCE the potential failure risk. All 
 We care about power exposure "W" to the cornea, which we can normalize over the exposed area to Irradiance "mW/cm^2"
 This number gives us the amount of IR radiation being released into the normalized area. We don't really care about "mA", or "V" alone, as by themselves these do not give us the exposure levels which we need to ensure safety.
 
-Irradiance also needs to take in to account distance of the light source (LED) as the further away you get from a source the weaker the intensity gets. (You can test this by looking at a light source from far away, and as you move closer, the brighter and more painful it is to look at) We do this by using Radiance "mW/cm2/sr" to normalize for the distance. The "sr" is a steradian. Think of it like a cone shape, getting bigger and broader as we move away from the source object.
+Irradiance also needs to take into account distance of the light source (LED) as the further away you get from a source the weaker the intensity gets. (You can test this by looking at a light source from far away, and as you move closer, the brighter and more painful it is to look at) We do this by using Radiance "mW/cm2/sr" to normalize for the distance. The 'sr' stands for steradian, which can be thought of as a cone shape expanding as it moves away from the source.
 
 
-The International Commission on Non-Ionizing Radiation Protection's [Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](https://docs.eyetrackvr.dev/saftey/ICNIRP_optical_radiation.pdf) states:
+The International Commission on Non-Ionizing Radiation Protection's [Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf) states:
 > "To avoid thermal injury of the cornea and possible delayed effects on the lens of the eye (cataractogenesis), infrared radiation (780nm < > λ < > 3μm) should be limited to 100 W m⁻² (10 mW cm⁻²) for lengthy exposures (> 1000 s)" 
 
 So 10 mW/cm2 is the **max** recommended limit given by this source. In my opinion this is still quite high, you will definitely feel some warmth and likely eyestrain after a while.

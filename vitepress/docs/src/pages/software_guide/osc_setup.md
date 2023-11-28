@@ -6,7 +6,7 @@ import { alerts } from '../../static/alerts'
 </script>
 
 # Setting up recalibration and recentering from VRChat.
-ETVR has a mechanism that allows you to recalibrate and recenter your tracking without the need to interact with the app directly, here's how to setup your avatar to make use of OSC to trigger this from within VRC itself. 
+ETVR has a mechanism that allows you to recalibrate and recenter your tracking without the need to interact with the app directly, here's how to set up your avatar to make use of OSC to trigger this from within VRC itself. 
 
 <Alerts :options="alerts.parts_list_two">
     <template v-slot:content>
@@ -30,7 +30,7 @@ To do this, in Unity, select your avatar on the scene and find Avatar Descriptor
 
 <ImageCard :options="image_settings.unity_vrc_expressions" />
 
-Clicking on it will highligh the associated asset in the asset browser, click on the highlighted file to get its content to show in the inspector panel. Now, in the inspector click on the `Add` button to add the parameters mentioned above, both of them need to be of type Bool, they don't need to be synced nor saved. 
+Clicking on it will highlight the associated asset in the asset browser. Click on the highlighted file to get its content to show in the inspector panel. Now, in the inspector, click on the `Add` button to add the parameters mentioned above. Both of them need to be of type Bool, but they don't need to be synced nor saved. 
 
 <ImageCard :options="image_settings.unity_vrc_expressions_add_fields"/>
 <ImageCard :options="image_settings.unity_vrc_expressions_fields"/>
@@ -64,9 +64,9 @@ Once done simply build and upload the updated version of your avatar.
 And that's it, you now should be able to recenter and recalibrate your tracking form inside of VRC! 
 
 
-## Reseting the OSC config in case the parameters don't work
+## Resetting the OSC config in case the parameters don't work
 
-Sometimes VRChat won't regenerate the config files that it to communicate the changes to anyone that's listening, to fix this it's enough to simply delete the auto generated configuration files and let VRC remake them. 
+Sometimes VRChat won't regenerate the config files that it uses to communicate the changes to anyone that's listening. To fix this, it's enough to simply delete the auto generated configuration files and let VRC remake them.
 
 They are stored under 
 
@@ -85,4 +85,4 @@ The app itself listens to OSC messages sent on port `9001` to two addresses:
 
 It only needs to receive a `Bool` value of `True` to trigger the recenter and calibration. 
 
-The port and the adresses can be changed in the app settings, if need be. 
+The port and the addresses can be changed in the app settings, if need be. 

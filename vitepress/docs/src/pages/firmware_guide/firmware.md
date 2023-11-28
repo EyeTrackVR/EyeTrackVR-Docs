@@ -10,7 +10,7 @@ You can access the firmware, as well as flash your boards, using our new [Firmwa
 This tool is currently in beta.
 :::
 
-We are working on adding support for OTA and configuring network settings. If you have any issues, please let us know by opening an issue on the repository.
+We are working on adding support for Over-The-Air (OTA) and configuring network settings. If you have any issues, please let us know by opening an issue on the repository.
 
 This tool relies on our own solution called `OpenIris`, [found here](https://github.com/EyeTrackVR/OpenIris).
 

@@ -62,7 +62,7 @@ This is used to cut out things that aren't dark like your pupil.
 For our method to work best, you want your eye to be level.
 Use this slider to adjust it to where that is the case.
 
-### `Restart Calibrationn`
+### `Restart Calibration`
 
 This will start a calibration mode for your eye where you look to all extremes.
 
@@ -85,7 +85,7 @@ Press the `Save and Restart Tracking` button.
 ### Wired configuration (experimental)
 #### Note this is a Beta app feature only. Please use the latest Open Beta in the Discord.
 
-Find your ESPs in Device Manager and figure out their COM port numbers i. e. ``COM4``.
+Find your ESPs in Device Manager and figure out their COM port numbers, e.g. ``COM4``.
 
 Enter that COM port number into the app's `Camera Address` field.
 
@@ -93,7 +93,7 @@ Press the `Save and Restart Tracking` button.
 
 ### Setting up ROI
 
-Don't see your camera feed? That's because we haven't set an ROI.
+Don't see your camera feed? That's because an ROI hasn't been set yet.
 <ImageCard :options="image_settings.eyetrack_vr_guide_four"/>
 
 Now press the `Cropping Mode` button.
@@ -104,7 +104,7 @@ Put your headset on and use an application to see your desktop. (Virtual desktop
 You should see something like this:
 <ImageCard :options="image_settings.eyetrack_vr_guide_five"/>
 
-Now, Draw a rectangle that selects your eye.
+Now, draw a rectangle that selects your eye.
 
 A good example of an ROI
 <ImageCard :options="image_settings.eyetrack_vr_guide_six"/>
