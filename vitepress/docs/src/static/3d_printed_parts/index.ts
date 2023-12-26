@@ -41,7 +41,7 @@ const printed_parts = {
             hyper_links: [
                 {
                     url: "https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/blob/main/ETVR%20ValveIndex%20Cam-LED%20Mount%20Rings/Index-EyetrackVRv4%20v18%20Print%20Me.stl",
-                    desc: "★ V4 IR and Camera mount by Physics Dude and bitbyt3r"
+                    desc: "★ V4 IR and Camera mount by Physics Dude and bitbyt3r. Will require extra 110mm cables for solder-less"
                 },
                 {
                     url: "https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii)/Gen%203%20Prohurtz%20V2%20Mounts%20(VROptician)",
