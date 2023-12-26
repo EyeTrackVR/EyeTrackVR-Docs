@@ -121,7 +121,7 @@ Certain mounts may require a cable extension (ex: MUTE's frunk mod)
 To use a mount like that you will need a cable and a connector for each camera.
 Headsets like the Quest 2 do not require extensions if the camera boards are mounted at the bottom of the headset, near the facial interface.
 
-Extensions (select 0.5mm pitch type A) [AliExpress](https://www.aliexpress.com/item/3256802223169786.html) (200mm for MUTE's)
+Extensions (select 0.5mm, A-Forward Direction, 24P) [AliExpress](https://www.aliexpress.com/item/3256802223169786.html) (200mm for MUTE's)
 
 Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/3256804096715690.html)
 
@@ -130,10 +130,10 @@ Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/32568040967
 The hub needs to support MTT if you wish to use a vive face tracker with the ESPs. Here is a hub that supports MTT and is not expensive [Amazon](https://www.amazon.com/dp/B09NDQGSPR)
 
 Ensure that it is of good quality, lightweight, compact in size, and I suggest a minimum of four ports - one for the face tracker, one for the LED kit, and two for ESP32-S3 boards.
-Ensure that you acquire appropriate USB-A to USB-C adapters wherever required. For example the Valve Index only has one USB-A port. Be wary that mini adapters with the short ends may not work with wired properly. Ensure the adapter has a long end.
+Ensure that you acquire appropriate USB-A to USB-C adapters wherever required. For example the Valve Index only has one USB-A port. Be wary that "mini" adapters with the short ends may not work properly. Ensure the adapter has a long end.
 Such adapter [Amazon.](https://a.co/d/e5C2u82)
 
-- 2x USB C cables (as short as possible) to connect both ESPs (select 0.05m/5cm) [AliExpress](https://www.aliexpress.us/item/3256804171454889.html) or [AliExpress](https://www.aliexpress.us/item/3256805789406634.html)
+- 2x USB C cables (as short as possible) to connect both ESPs (select 0.05m/5cm) [AliExpress](https://www.aliexpress.com/item/3256804171454889.html) or [AliExpress USB C to USB A](https://www.aliexpress.com/item/3256805789406634.html)
 As the ESP32-S3 has USB-C connectors, you may require some USB-C to USB-A cables depending on your USB hub.
 It's worth noting that the HTC Face Tracker requires a USB-C port, so you may need to consider this requirement as well.
 You may also make custom cables using USB breakout boards of your choice and wire.
