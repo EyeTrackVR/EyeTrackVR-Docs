@@ -144,7 +144,7 @@ If you are soldering and using custom cables:
  - 1x USB type-A male port to power both ESPs or LEDs  
 [Bare breakout on AliExpress](https://www.aliexpress.com/item/2255801092919590.html)  
 [Amazon](https://www.amazon.com/10Gtek-DIP-Breakout-Adapter-2-54mm/dp/B09LC8WQCD/)  
-
+\
 [Or one with a cover on AliExpress](https://www.aliexpress.com/item/2251832820552545.html)  
 [Amazon](https://www.amazon.com/Pigtail-Extension-Cables-Connector-Replacement/dp/B09ZQNJ2DJ/)  
 - 1x Lower gauge wire to power ESPs  
