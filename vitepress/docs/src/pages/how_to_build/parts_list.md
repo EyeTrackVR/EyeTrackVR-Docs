@@ -65,6 +65,7 @@ With that in mind, here are the required parts for the setup.
     - 2x XIAO ESP32-S3 Sense Modules  
     Very small size, wireless and wired support, does not require an additional programmer or separate antennas:
     [SeedStudio](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
+    [AliExpress](https://www.aliexpress.com/item/3256804601970891.html)
     
     Alternatively: 
     - 2x Freenove ESP 32-S3 WROOM  
@@ -103,7 +104,7 @@ If you decide to remove the filter, wear eye protection while doing so, the remo
 
 - #### 2x OV2640 160° FOV IR / Night vers 75mm (850nm)
 
-[AliExpress](https://a.aliexpress.com/_mrNbZww)
+(select 75MM-160 850nm) [AliExpress](https://www.aliexpress.com/item/3256802853835121.html)
 
 [Amazon alternative](https://www.amazon.com/Camera-Aideepen-Wide-Angle-Megapixel-Support/dp/B09XXPX4SP/) (note that you 
 will have to [manually remove the IR filter](https://www.youtube.com/watch?v=QYH-FWvDbDc))
@@ -120,7 +121,7 @@ Certain mounts may require a cable extension (ex: MUTE's frunk mod)
 To use a mount like that you will need a cable and a connector for each camera.
 Headsets like the Quest 2 do not require extensions if the camera boards are mounted at the bottom of the headset, near the facial interface.
 
-Extensions (select 0.5mm pitch type A) [AliExpress](https://a.aliexpress.com/_mqVcK8a) (200mm for MUTE's)
+Extensions (select 0.5mm, A-Forward Direction, 24P) [AliExpress](https://www.aliexpress.com/item/3256802223169786.html) (200mm for MUTE's)
 
 Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/3256804096715690.html)
 
@@ -128,11 +129,11 @@ Connectors (select 24P) [Aliexpress](https://www.aliexpress.com/item/32568040967
 -  1x USB 3.0+ hub
 The hub needs to support MTT if you wish to use a vive face tracker with the ESPs. Here is a hub that supports MTT and is not expensive [Amazon](https://www.amazon.com/dp/B09NDQGSPR)
 
-Ensure that it is of good quality, lightweight, compact in size, and I suggest a minimum of three ports - one for the face tracker and two for ESP32-S3 boards.
-Ensure that you acquire appropriate USB-A to USB-C adapters wherever required. For example the Valve Index only has one USB-A port. 
-Such adapter [Amazon.](https://a.co/d/gSWydCY)
+Ensure that it is of good quality, lightweight, compact in size, and I suggest a minimum of four ports - one for the face tracker, one for the LED kit, and two for ESP32-S3 boards.
+Ensure that you acquire appropriate USB-A to USB-C adapters wherever required. For example the Valve Index only has one USB-A port. Be wary that "mini" adapters with the short ends may not work properly. Ensure the adapter has a long end.
+Such adapter [Amazon.](https://a.co/d/e5C2u82)
 
-- 2x USB C cables (as short as possible) to connect both ESPs
+- 2x USB C cables (as short as possible) to connect both ESPs (select 0.05m/5cm) [AliExpress](https://www.aliexpress.com/item/3256804171454889.html) or [AliExpress USB C to USB A](https://www.aliexpress.com/item/3256805789406634.html)
 As the ESP32-S3 has USB-C connectors, you may require some USB-C to USB-A cables depending on your USB hub.
 It's worth noting that the HTC Face Tracker requires a USB-C port, so you may need to consider this requirement as well.
 You may also make custom cables using USB breakout boards of your choice and wire.
@@ -161,6 +162,8 @@ We recommend getting the official kits:
 - [Solder-less V4 kit](https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit) - requires no soldering.  
 
 - [Solder wires V4 kit](https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required) - requires you to solder your own wires to the LED boards.
+
+- [Solder V4 Lite kit](https://store.eyetrackvr.dev/products/v4-1-lite-diy-led-kit) - requires you to solder 2 through hole components and wires to the LED boards.
 
 
 #### Alternatively you can source the parts for V3 yourself:
