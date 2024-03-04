@@ -508,7 +508,7 @@ const image_settings = {
     max_width: "max-width: 600px;",
   },
   V4_wire_sketch: {
-    url: "https://i.imgur.com/OWSh6WM.png",
+    url: "https://imgur.com/zdj9WUu.png",
     alt: "Sketch of V4 wiring",
     max_width: "max-width: 600px;",
   },

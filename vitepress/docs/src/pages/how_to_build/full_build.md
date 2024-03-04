@@ -9,7 +9,9 @@ import { alerts } from '../../static/alerts'
 
 # Build Guide {.text-[var(--font-accent)]}
 
-## This page will contain a step-by-step assembly guide
+## This page will contain a step-by-step assembly guide.
+
+## Updated documentation is still in progress and not updated here, please be patient.
 
 This guide provides a walkthrough on the assembly of a **wireless** V3 eye tracking.
 V4 specific final docs are Work In Progress:
@@ -19,7 +21,7 @@ V4 specific final docs are Work In Progress:
 
 Sketch of V4 solderless wiring:
 <ImageCard :options="image_settings.V4_wire_sketch" />
-Credit: @seniorpringles, @g0ldjay via [Discord](https://discord.gg/kkXYbVykZX)
+Credit: @balty via [Discord](https://discord.gg/kkXYbVykZX)
 
 Sketch of solder assembly of V4:
 <ImageCard :options="image_settings.V4_solder_wire" />
