@@ -65,6 +65,7 @@ With that in mind, here are the required parts for the setup.
     - 2x XIAO ESP32-S3 Sense Modules  
     Very small size, wireless and wired support, does not require an additional programmer or separate antennas:
     [SeedStudio](https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html)
+
     [AliExpress](https://www.aliexpress.com/item/3256804601970891.html)
     
     Alternatively: 
