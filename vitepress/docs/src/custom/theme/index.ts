@@ -46,20 +46,20 @@ const theme = {
       text: "How to Build",
       collapsible: true,
       items: [
-        { text: "Full Build Guide", link: "/how_to_build/full_build" },
         { text: "Part List", link: "/how_to_build/parts_list" },
-        {
-          text: "How to Create your own Camera Mount",
-          link: "/how_to_build/creating_your_own_mount",
+        { 
+          text: "Protecting Cameras", 
+          link: "/how_to_build/protecting_cameras" 
         },
         { 
         text: "Preparing XIAO Sense ESP32", 
         link: "/how_to_build/preparing_xiao" 
         },
-        { 
-          text: "Protecting Cameras", 
-          link: "/how_to_build/protecting_cameras" 
-          },
+        {
+          text: "How to Create your own Camera Mount",
+          link: "/how_to_build/creating_your_own_mount",
+        },
+        { text: "Full Build Guide", link: "/how_to_build/full_build" },
       ],
     },
     {

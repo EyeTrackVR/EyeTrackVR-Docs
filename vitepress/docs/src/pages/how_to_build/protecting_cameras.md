@@ -13,7 +13,9 @@ The ribbon cables that these cameras use are notoriously prone to damage renderi
 
 By wrapping them in tape such as electrical tape and following best practices covered in the guide, you can significantly reduce the risk of killing a camera.
 
-## Wraping the Camera Ribbon
+It is recommended to do this before building your setup so you are less likely to kill a camera in the process of building a setup.
+
+## Wrapping the Camera Ribbon
 First get a roll of electrical tape to wrap the camera ribbon.
 It does not strictly need to be electrical tape, but that is what I have found to work good, (and look good too).
 
@@ -67,11 +69,11 @@ Fold over the other side.
 And you are done!
 <ImageCard :options="image_settings.camera_protect22" />
 
-## Best Practices When Handling Cameras Ribbons
-* Do not pull on them, this is the #1 cause of torn ribbons
-* Do not fold tightly or bend at < 45 deg angles if possible
-* Do not expose them to sharp objects or crevices
-* The less wear they go through while handling or putting on/off a headset the better
+## Best Practices When Handling Cameras
+* Do not pull or jerk on the ribbon
+* Do not fold tightly or bend the ribbon cable sharper than ~45 degrees if possible
+* Do not expose to sharp objects or crevices
+* The less wear while handling or putting on/off a headset the better
 
 
 ## Conclusion
