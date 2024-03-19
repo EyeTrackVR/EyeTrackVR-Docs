@@ -1,4 +1,108 @@
 const image_settings = {
+  
+  
+  
+
+  xiao13: {
+    url: "https://i.imgur.com/WgcyYGn.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao12: {
+    url: "https://i.imgur.com/7LhSFFS.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao11: {
+    url: "https://i.imgur.com/uwEzevX.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao10: {
+    url: "https://i.imgur.com/jhYUfsJ.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao9: {
+    url: "https://i.imgur.com/0nNosPh.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao8: {
+    url: "https://i.imgur.com/keWlXJy.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao7: {
+    url: "https://i.imgur.com/n14z7lw.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao6: {
+    url: "https://i.imgur.com/qQIYRfa.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao5: {
+    url: "https://i.imgur.com/4OJR3t0.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao4: {
+    url: "https://i.imgur.com/qi5OWBo.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+
+  xiao3: {
+    url: "https://i.imgur.com/kgZe9i6.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+
+  xiao2: {
+    url: "https://i.imgur.com/zmIZFxb.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+
+  xiao_antenna3: {
+    url: "https://i.imgur.com/0DN7iU7.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao_antenna2: {
+    url: "https://i.imgur.com/jFMXXcU.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao_antenna: {
+    url: "https://i.imgur.com/j8pSWr9.png",
+    alt: "'img of xiao esp'",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  xiao_kit: {
+    url: "https://i.imgur.com/wwXu77Q.png",
+    alt: "'img of xiao esp'",
+    caption: "Seeed Studio XIAO Sense ESP32 Contents",
+    max_width: "max-width: 400px;",
+  },
+
   image_one: {
     url: "https://i.imgur.com/j18rRI7.jpg",
     alt: "'img of components'",
