@@ -47,6 +47,7 @@ const theme = {
       collapsible: true,
       items: [
         { text: "Part List", link: "/how_to_build/parts_list" },
+        { text: "slimeList", link: "/how_to_build/part_list" },
         { 
           text: "Protecting Cameras", 
           link: "/how_to_build/protecting_cameras" 

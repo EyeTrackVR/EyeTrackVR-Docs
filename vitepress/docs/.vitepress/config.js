@@ -7,6 +7,17 @@ export default defineConfig({
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',
     ignoreDeadLinks: true,
+    head: [
+        // Corrected script tag example
+        [
+           'script',
+           {
+             async: true,
+             src: '/src/assets/diy.js' // Corrected path format
+           }
+        ]
+       ],
+       
     /* head: [
         [
             'link',
