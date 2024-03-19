@@ -7,7 +7,7 @@ import { image_settings } from '../../static/image_settings'
 import { alerts } from '../../static/alerts'
 </script>
 
-# Preparing a Seeed Studio XIAO Sense ESP32  {.text-[var(--font-accent)]}
+# How to prepare a Seeed Studio XIAO Sense ESP32  {.text-[var(--font-accent)]}
 
 ## What's in the box
 
@@ -31,7 +31,7 @@ then press firmly until it snaps on.
 
 <ImageCard :options="image_settings.xiao_antenna2" />
 
-One connected it should be flat like this:
+Once connected it should be flat like this:
 <ImageCard :options="image_settings.xiao_antenna3" />
 
 ## Wired Configuration
@@ -53,7 +53,7 @@ Once connected remember to be careful, it is known that these connectors can bre
 ## Removing the Camera
 First we need to remove the existing camera from the XIAO and replace it with a higher FOV longer ribbon camera.
 
-Begin by lifing up the grey part of the camera connector gently until it raises up.
+Begin by lifting up the grey part of the camera connector gently until it raises up.
 <ImageCard :options="image_settings.xiao5" />
 <ImageCard :options="image_settings.xiao6" />
 

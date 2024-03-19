@@ -53,9 +53,13 @@ const theme = {
           link: "/how_to_build/creating_your_own_mount",
         },
         { 
-        text: "Preparing XAIO Sense ESP32", 
+        text: "Preparing XIAO Sense ESP32", 
         link: "/how_to_build/preparing_xiao" 
         },
+        { 
+          text: "Protecting Cameras", 
+          link: "/how_to_build/protecting_cameras" 
+          },
       ],
     },
     {

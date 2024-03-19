@@ -1,8 +1,40 @@
 const image_settings = {
   
   
+
+
   
 
+  camera_protect5: {
+    url: "https://i.imgur.com/3WupMrm.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect4: {
+    url: "https://i.imgur.com/yUminT4.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect3: {
+    url: "https://i.imgur.com/bU6LnSo.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect2: {
+    url: "https://i.imgur.com/WnxDMQn.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect1: {
+    url: "https://i.imgur.com/yw2P7BI.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
   xiao13: {
     url: "https://i.imgur.com/WgcyYGn.png",
     alt: "'img of xiao esp'",
