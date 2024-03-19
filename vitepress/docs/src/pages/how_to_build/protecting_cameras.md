@@ -33,5 +33,47 @@ With the tape cut from the roll, lay it down and get out a X-ACTO knife.
 <ImageCard :options="image_settings.camera_protect5" />
 
 
+Begin to cut around the camera connector so the tape can be peeled off.
+
+<ImageCard :options="image_settings.camera_protect6" />
+<ImageCard :options="image_settings.camera_protect7" />
+
+When each side has been cut, begin to peel off the part that covered the connections.
+<ImageCard :options="image_settings.camera_protect8" />
+<ImageCard :options="image_settings.camera_protect9" />
+<ImageCard :options="image_settings.camera_protect10" />
 
 
+Now, carefully cut around the camera sensor part to remove its "skirt" leaving tape on the back of it.
+<ImageCard :options="image_settings.camera_protect11" />
+<ImageCard :options="image_settings.camera_protect13" />
+<ImageCard :options="image_settings.camera_protect14" />
+<ImageCard :options="image_settings.camera_protect15" />
+<ImageCard :options="image_settings.camera_protect12" />
+
+Gently pull off this outline of tape from the camera.
+<ImageCard :options="image_settings.camera_protect16" />
+<ImageCard :options="image_settings.camera_protect17" />
+
+
+Begin to wrap the tape along the ribbon cable by first folding in the slightly shorter side.
+<ImageCard :options="image_settings.camera_protect18" />
+<ImageCard :options="image_settings.camera_protect19" />
+
+Fold over the other side.
+<ImageCard :options="image_settings.camera_protect20" />
+<ImageCard :options="image_settings.camera_protect21" />
+
+And you are done!
+<ImageCard :options="image_settings.camera_protect22" />
+
+## Best Practices When Handling Cameras Ribbons
+* Do not pull on them, this is the #1 cause of torn ribbons
+* Do not fold tightly or bend at < 45 deg angles if possible
+* Do not expose them to sharp objects or crevices
+* The less wear they go through while handling or putting on/off a headset the better
+
+
+## Conclusion
+
+You have successfully wrapped your camera to be protected and learned the best practices with handling cameras!

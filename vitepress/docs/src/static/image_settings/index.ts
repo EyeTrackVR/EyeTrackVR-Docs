@@ -1,10 +1,109 @@
 const image_settings = {
   
   
-
-
   
-
+  camera_protect22: {
+    url: "https://i.imgur.com/2FJ4QYR.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect21: {
+    url: "https://i.imgur.com/OyZRfHu.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect20: {
+    url: "https://i.imgur.com/EkrBsC1.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect19: {
+    url: "https://i.imgur.com/qKDM8o8.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect18: {
+    url: "https://i.imgur.com/wJGlxUO.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect17: {
+    url: "https://i.imgur.com/NyVAhp1.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect16: {
+    url: "https://i.imgur.com/lRDQEkX.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect15: {
+    url: "https://i.imgur.com/IPNPHmK.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect14: {
+    url: "https://i.imgur.com/DM4gha2.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect13: {
+    url: "https://i.imgur.com/x8YnJBp.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect12: {
+    url: "https://i.imgur.com/2WEXI8t.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect11: {
+    url: "https://i.imgur.com/R4bU0YL.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect10: {
+    url: "https://i.imgur.com/LmJrnBL.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect9: {
+    url: "https://i.imgur.com/UNrAhv8.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect8: {
+    url: "https://i.imgur.com/QfLmUp8.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect7: {
+    url: "https://i.imgur.com/STZmIZS.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
+  camera_protect6: {
+    url: "https://i.imgur.com/EYfNWE0.png",
+    alt: "",
+    caption: "",
+    max_width: "max-width: 400px;",
+  },
   camera_protect5: {
     url: "https://i.imgur.com/3WupMrm.png",
     alt: "",
