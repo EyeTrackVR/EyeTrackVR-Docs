@@ -79,4 +79,4 @@ Now, close the camera connector by flipping the grey part down.
 <ImageCard :options="image_settings.xiao13" />
 
 ## Conclusion
-You should now have your XIAO Sense ESP32 ready for firmware flashing!
+You should now have your XIAO Sense ESP32 ready for [firmware flashing!](../firmware_guide/flashing_tool)
