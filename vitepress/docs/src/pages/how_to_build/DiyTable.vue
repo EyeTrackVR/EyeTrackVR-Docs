@@ -60,7 +60,15 @@ export default {
               cost: 12.87,
               costAll: () => this.tracker * 4.69 + 3.18,
               links: '<a href="https://www.aliexpress.us/item/3256806008099661.html">AliExpress ESP32 CAM</a> Requires additional programmer'
-            }
+            },
+            {
+              name: 'FREENOVE ESP32-S3-WROOM',
+              amount: () => this.tracker,
+              cost: 19.95,
+              costAll: () => this.tracker * 19.95,
+              links: '<a href="https://www.amazon.com/FREENOVE-ESP32-S3-WROOM-Compatible-Wireless-Detailed/dp/B0BMQ8F7FN">Amazon</a> Large, more expensive than XIAO'
+            },
+            
             
           ],
           selectedChoice: 1

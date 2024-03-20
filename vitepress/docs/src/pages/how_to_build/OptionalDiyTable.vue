@@ -76,7 +76,34 @@ export default {
               links: '<a href="https://www.amazon.com/Pigtail-Extension-Cables-Connector-Replacement/dp/B09ZQNJ2DJ/">Amazon</a>'
             },
           ],
-          selectedChoice: 1
+          selectedChoice: 0
+        },
+        {
+          name: 'USB-C Breakout',
+          choices: [
+            {
+              name: 'Bring Your Own',
+              amount: () => this.tracker,
+              cost: 0,
+              costAll: () => this.tracker * 0,
+              links: 'If you do not need or already have.'
+            },
+            {
+              name: 'AliExpress Male & Female',
+              amount: () => 1,
+              cost: 1.19,
+              costAll: () => this.tracker + 1.19 + 1.37,
+              links: '<a href="https://www.aliexpress.us/item/3256801151667308.html">AliExpress</a> Choose: "Color: 5Set".'
+            },
+            {
+              name: 'AliExpress Vertical Male',
+              amount: () => 1,
+              cost: 2.37,
+              costAll: () => this.tracker + 0.37 + 1.99,
+              links: '<a href="https://www.aliexpress.us/item/3256804002116469.html">AliExpress</a>'
+            },
+          ],
+          selectedChoice: 0
         },
         {
           name: 'Wire for ESPs',
@@ -104,7 +131,7 @@ export default {
               links: '<a href="https://a.aliexpress.com/_mK72cy6">AliExpress</a> Select "Specification: 30 AWG or lower"'
             },
             ],
-          selectedChoice: 1
+          selectedChoice: 0
         },
         {
           name: 'Wire for LEDs',
@@ -132,43 +159,89 @@ export default {
               links: '<a href="https://a.aliexpress.com/_mK72cy6">AliExpress</a> Select "Specification: 30 AWG or higher"'
             },
           ],
-          selectedChoice: 1
+          selectedChoice: 0
         },
         {
-          name: 'IR LEDs',
+          name: 'Camera Extension Cables',
           choices: [
             {
               name: 'Bring Your Own',
               amount: () => this.tracker,
               cost: 0,
               costAll: () => this.tracker * 0,
-              links: 'If you already have safe IR LED hardware and know what you are doing.'
+              links: 'If you do not need or already have.'
             },
             {
-              name: 'Official V4 mini Solder-less Kit',
+              name: 'AliExpress 24pin 0.5mm Pitch',
               amount: () => 1,
-              cost: 28,
-              costAll: () => this.tracker + 28 + 3,
-              links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit">ETVR Store</a> Length depending on HMD'
+              cost: 1.33,
+              costAll: () => this.tracker + 0.33 + 1.99,
+              links: '<a href="https://www.aliexpress.us/item/2255799835842411.html">AliExpress</a> Choose: "Insert Type: 24p 0.5mm pitch" and Type A. Length depends on HMD, usually 150mm or 200mm.'
             },
             {
-              name: 'Official V4 mini Bring Your Own Wires Kit',
-              amount: () => 1,
-              cost: 24,
-              costAll: () => this.tracker + 24 + 3,
-              links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required">AliExpress</a> Must solder up your own wires'
-            },
-                        {
-              name: 'Official V4 lite Assemble Yourself',
-              amount: () => 1,
-              cost: 7,
-              costAll: () => this.tracker + 7 + 3,
-              links: '<a href="https://store.eyetrackvr.dev/products/v4-1-lite-diy-led-kit">AliExpress</a> Must assemble yourself'
+              name: 'Adafruit 24 pin 0.5mm pitch',
+              amount: () => this.tracker,
+              cost: 1.35,
+              costAll: () => this.tracker * 1.35 + 6,
+              links: '<a href="https://www.adafruit.com/product/4230">Adafruit</a> 250mm'
             },
           ],
-          selectedChoice: 1
+          selectedChoice: 0
         },
-
+        {
+          name: 'Camera Extension Connectors',
+          choices: [
+            {
+              name: 'Bring Your Own',
+              amount: () => this.tracker,
+              cost: 0,
+              costAll: () => this.tracker * 0,
+              links: 'If you do not need or already have.'
+            },
+            {
+              name: 'AliExpress 24 pin',
+              amount: () => 1,
+              cost: 1.32,
+              costAll: () => this.tracker + 0.32 + 1.99,
+              links: '<a href="https://www.aliexpress.us/item/3256804096715690.html">AliExpress</a> Choose: "Pins: 24P".'
+            },
+            {
+              name: 'Adafruit 24 pin',
+              amount: () => this.tracker,
+              cost: 0.86,
+              costAll: () => this.tracker * 0.865 + 6,
+              links: '<a href="https://www.adafruit.com/product/4524">Adafruit</a>'
+            },
+          ],
+          selectedChoice: 0
+        },
+        {
+          name: 'External Antennas',
+          choices: [
+            {
+              name: 'Bring Your Own',
+              amount: () => this.tracker,
+              cost: 0,
+              costAll: () => this.tracker * 0,
+              links: 'If you do not need or already have.'
+            },
+            {
+              name: 'AliExpress Small',
+              amount: () => 1,
+              cost: 0.16,
+              costAll: () => this.tracker * 0.16 + 3.48,
+              links: '<a href="https://www.aliexpress.us/item/2251832800433720.html">AliExpress</a> Choose: "Color: 2.4G Antenna".'
+            },
+            {
+              name: 'Amazon Large',
+              amount: () => 1,
+              cost: 9.99,
+              costAll: () => this.tracker + 7.99,
+              links: '<a href="https://www.amazon.com/Diymall-Antenna-Antennas-Arduino-ESP-072pcs/dp/B00ZBJNO9O/">Amazon</a>'
+            },
+          ],
+          selectedChoice: 0
+        },
 
         // Add other components similarly
       ],
