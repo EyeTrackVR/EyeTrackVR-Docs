@@ -21,8 +21,8 @@
             <span v-else>{{ component.choices[0].name }}</span>
           </td>
           <td>{{ component.selectedChoice ? component.choices[component.selectedChoice].amount(tracker) : 0 }}</td>
-          <td>{{ component.selectedChoice ? '$' + component.choices[component.selectedChoice].cost : 0 }}</td>
-          <td>{{ component.selectedChoice ? '~$' + (component.choices[component.selectedChoice].costAll(tracker) * 100) / 100 : 0 }}</td>
+          <td>{{ component.selectedChoice ? '$' + component.choices[component.selectedChoice].cost.toFixed(2) : 0 }}</td>
+          <td>{{ component.selectedChoice ? '~$' + (component.choices[component.selectedChoice].costAll(tracker).toFixed(2)) : 0 }}</td>
           <td v-html="component.selectedChoice ? component.choices[component.selectedChoice].links : ''"></td>
         </tr>
       </tbody>
