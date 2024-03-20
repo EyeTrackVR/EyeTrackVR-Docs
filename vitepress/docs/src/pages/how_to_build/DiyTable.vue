@@ -15,7 +15,7 @@
         <tr v-for="component in components" :key="component.name">
           <th>{{ component.name }}</th>
           <td>
-            <select v-if="component.choices.length > 1" v-model="component.selectedChoice" @change="updatePrices">
+            <select v-if="component.choices.length > 1" v-model="component.selectedChoice" @change="switchSelect($event, component)">
               <option v-for="(choice, index) in component.choices" :key="index" :value="index">{{ choice.name }}</option>
             </select>
             <span v-else>{{ component.choices[0].name }}</span>
@@ -109,8 +109,8 @@ export default {
               name: 'Bring Your Own',
               amount: () => this.tracker,
               cost: 0,
-              costAll: () => this.tracker * 0 ,
-              links: 'If you already have safe IR LED hardware and know what you are doing.'
+              costAll: () => this.tracker * 0,
+              links: '<a href="https://docs.eyetrackvr.dev/getting_started/led_safety">IR LED Safety<a/> If you already have safe IR LED hardware and know what you are doing.'
             },
             {
               name: 'Official V4 mini Solder-less Kit',
@@ -124,17 +124,17 @@ export default {
               amount: () => 1,
               cost: 24,
               costAll: () => this.tracker + 24 + 3,
-              links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required">AliExpress</a> Must solder up your own wires'
+              links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required">ETVR Store</a> Must solder up your own wires'
             },
                         {
               name: 'Official V4 lite Assemble Yourself',
               amount: () => 1,
               cost: 7,
               costAll: () => this.tracker + 7 + 3,
-              links: '<a href="https://store.eyetrackvr.dev/products/v4-1-lite-diy-led-kit">AliExpress</a> Must assemble yourself'
+              links: '<a href="https://store.eyetrackvr.dev/products/v4-1-lite-diy-led-kit">ETVR Store</a> Must assemble yourself'
             },
           ],
-          selectedChoice: 1
+          selectedChoice: 2
         },
         {
           name: 'USB Hub',
@@ -168,7 +168,7 @@ export default {
               links: '<a href="https://www.aliexpress.us/item/3256801220206638.html">AliExpress</a> Small but non MTT hub breakout'
             },
             {
-              name: '3 port USB 3.0 Hub With Power Passthrough (Not MTT)',
+              name: '3 port USB 3.0 Hub With Power Passthrough (MTT)',
               amount: () => 1,
               cost: 17.99,
               costAll: () => this.tracker + 1.41,
@@ -210,18 +210,24 @@ export default {
       this.components.forEach(component => {
         if (component.choices.length > 1) {
           const choice = component.choices[component.selectedChoice];
-          total += choice.costAll();
+          total += choice.costAll(this.tracker);
         }
       });
       this.total = total;
     },
+    switchSelect(event, component) {
+      // Use Vue's $set method to ensure reactivity
+      this.$set(component, 'selectedChoice', event.target.value);
+      this.updatePrices();
+    }
  },
  mounted() {
     this.updatePrices();
  },
- 
 };
 </script>
 <style scoped>
 /* Your styles here */
 </style>
+
+

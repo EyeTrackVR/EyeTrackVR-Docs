@@ -242,7 +242,60 @@ export default {
           ],
           selectedChoice: 0
         },
-
+        {
+          name: 'USB-C Cables',
+          choices: [
+            {
+              name: 'Bring Your Own',
+              amount: () => this.tracker,
+              cost: 0,
+              costAll: () => this.tracker * 0,
+              links: 'If you do not need or already have.'
+            },
+            {
+              name: 'Short USB-C to USB-C Amazon',
+              amount: () => 1,
+              cost: 6.29,
+              costAll: () => this.tracker + 5.29,
+              links: '<a href="https://www.amazon.com/gp/product/B09C2D9Z7T/ref=ox_sc_act_title_2?smid=A10X1BEP2GKRDQ&th=1">Amazon</a>'
+            },
+            {
+              name: 'Short USB-A to USB-C Amazon',
+              amount: () => 1,
+              cost: 7.99,
+              costAll: () => this.tracker + 5.99,
+              links: '<a href="https://www.amazon.com/Charging-Durable-Station-Compatible-Samsung/dp/B08LL1SVZD/">Amazon</a>'
+            },
+          ],
+          selectedChoice: 0
+        },
+        {
+          name: 'V4 LED Wire Extensions/Replacements',
+          choices: [
+            {
+              name: 'Bring Your Own',
+              amount: () => this.tracker,
+              cost: 0,
+              costAll: () => this.tracker * 0,
+              links: 'If you do not need or already have.'
+            },
+            {
+              name: '110mm Extension/Replacement',
+              amount: () => 1,
+              cost: 1.50,
+              costAll: () => this.tracker + 1.50 + 5,
+              links: '<a href="https://store.eyetrackvr.dev/products/2x-110mm-replacement-wires">ETVR Store</a>'
+            },
+            {
+              name: '200mm Extension/Replacement',
+              amount: () => 1,
+              cost: 1.50,
+              costAll: () => this.tracker + 1.50 + 5,
+              links: '<a href="https://store.eyetrackvr.dev/products/2x-200mm-replacement-wires">ETVR Store</a>'
+            },
+          ],
+          selectedChoice: 0
+        },
         // Add other components similarly
       ],
       total: 0,
