@@ -4,9 +4,11 @@ import OptionalDiyTable from './OptionalDiyTable.vue'
 import Alerts from '../../vue/alerts/Alerts.vue'
 </script>
 
+WIP new parts list. 3D printed parts will live on their own page.
+
+Use the **interactive** tables below to select parts!
+
 # Required Parts:
-
-
 
 <DiyTable />
 
@@ -14,7 +16,7 @@ import Alerts from '../../vue/alerts/Alerts.vue'
 
 <OptionalDiyTable />
 
-
+<small> Table adjusted from the table on [SlimeVR's Docs](https://docs.slimevr.dev/diy/components-guide.html) which was created by [Carl](https://github.com/carl-anders)</small>
 
 ## ESP setup options:
 ::: danger
