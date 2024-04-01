@@ -22,7 +22,7 @@
           </td>
           <td>{{ component.selectedChoice ? component.choices[component.selectedChoice].amount(tracker) : 0 }}</td>
           <td>{{ component.selectedChoice ? '$' + component.choices[component.selectedChoice].cost.toFixed(2) : 0 }}</td>
-          <td>{{ component.selectedChoice ? '~$' + (component.choices[component.selectedChoice].costAll(tracker).toFixed(2)) : 0 }}</td>
+          <td>{{ component.selectedChoice ? '~$' + (component.choices[component.selectedChoice].costAll().toFixed(2)) : 0 }}</td>
           <td v-html="component.selectedChoice ? component.choices[component.selectedChoice].links : ''"></td>
         </tr>
       </tbody>
@@ -316,7 +316,6 @@ export default {
  mounted() {
     this.updatePrices();
  },
- 
 };
 </script>
 <style scoped>
