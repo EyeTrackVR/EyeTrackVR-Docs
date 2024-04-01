@@ -27,7 +27,7 @@ const InProgress: IDevRoadMap = {
         { label: 'New GUI' },
         { label: 'New backend for new GUI' },
         { label: 'V5 hardware (focus on wired usage)' },
-        { label: 'HELP WANTED: Dynamic foveated rendering via OpenXR' },
+        { label: 'Dynamic foveated rendering via OpenXR' },
         { label: '3D, 9-point calibration via OpenXR/SteamVR overlay' },
         
     ]

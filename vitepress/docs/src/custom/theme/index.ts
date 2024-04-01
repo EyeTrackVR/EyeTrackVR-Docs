@@ -64,6 +64,13 @@ const theme = {
       ],
     },
     {
+      text: "Headset Guides",
+      collapsible: true,
+      items: [
+        { text: "What is This?", link: "/headset_guides/what_is_this.md" },
+      ],
+    },
+    {
       text: "Firmware Guide",
       collapsible: true,
       items: [
