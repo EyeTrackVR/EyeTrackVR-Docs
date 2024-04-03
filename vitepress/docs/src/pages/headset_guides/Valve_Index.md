@@ -1,4 +1,4 @@
-# Headset Name
+# Valve Index
 
 ## MUTEtheCyberwolf's DEV Frunk Mod:
 ![DevFrunk1](https://i.imgur.com/KQDFg1J.jpeg)
