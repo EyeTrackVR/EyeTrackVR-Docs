@@ -1,33 +1,20 @@
-# What are "Headset Specific Guides"?
-
-This is an initiative to provide specific information on specific headsets. Any weird quirks, recommended 3d printed mounts and different setup types are to be included on a page. 
-
-Complete submissions will receive a 20% off coupon for the ETVR store. Partial completions (one specific mount) will receive 15% off coupons to show our appreciation and provide an incentive. (reach out to me in dms to receive the code `@prohurtz`)  
-
-Thank you for working to improve EyeTrackVR's accessibility!  
-
-
-### Guidelines
-
-Please keep it as concise as possible, and spell check before submitting. You can submit by making a PR on github, or sending the `.md` file to #documentation in the ETVR Discord pringing `@prohurtz` .
-
-
-file name: `headset_name.md`
-ex. `HTC_Vive_Pro_2.md`, `Bigscreen_Beyond.md`
-
-Page formatting and template:
-
 # Headset Name
 
-## Xyz's mod:
-[image(s) of mod (limit ~2)]
+## MUTEtheCyberwolf's DEV Frunk Mod:
+![DevFrunk1](https://i.imgur.com/KQDFg1J.jpeg)
 
 #### Mod Details
-This mod supports lens inserts and is very compact and easy to use. It provides good frunk ventilation and wide hardware support.
+The DEV Frunk is a popular choice for ETVR on the Index. It has multiple mounting points for both the XIAO's, a Vive Facial Tracker (or [babble!](https://www.printables.com/model/745299-xiao-sense-case-seeed-studio-xiao-esp32s3-sense-ca)), and cutouts for 30x30x7mm fans.  
+It also provides excellent ventilation simply due to the design being much more open.
 
 #### Extra Parts Needed:
-- 2x Camera extensions 
-- 2x Camera extension connectors  
+I recommend a screw kit like [this](https://www.amazon.com/XOOL-Precision-Screwdriver-Extension-Smartphone/dp/B086SQZGLJ) one
+- 1x T5 Torx Screwdriver
+- 1x H4.0 Screwdriver
+- 1x Soldering Iron for heat inserts
+- 8x M4x8.1 Heat Inserts [AliExpress](https://www.aliexpress.com/item/3256804349544912.html)  Choose Size: M4 (OD 6mm)50pcs | Color: Length 8mm
+- 6x M4x10 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.htm) Choose Size: M4 20pcs | Length: 10mm
+- 1x M4x30 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.htm) Choose Size: M4 20pcs | Length: 30mm
 
 [Parts Link](../how_to_build/part_list#additional-parts)
 (If the parts needed are not on the additional parts page, let me know. You can also just directly link to them.)
