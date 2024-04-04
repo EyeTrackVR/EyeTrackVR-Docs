@@ -2,11 +2,14 @@
 
 ## MUTEtheCyberwolf's DEV Frunk Mod:
 ![DevFrunk1](https://i.imgur.com/KQDFg1J.jpeg)
-<!-- ![HMD](https://i.imgur.com/Q3OoLkJ.jpeg) !-->
+![HMD](https://i.imgur.com/4n6f4U3.png)
 
 #### Mod Details
 The DEV Frunk is a popular choice for ETVR on the Index. Replacing the original index frunk entirely, it has multiple mounting points for both the XIAO's, a Vive Facial Tracker (or [babble!](https://www.printables.com/model/745299-xiao-sense-case-seeed-studio-xiao-esp32s3-sense-ca)), and cutouts for 30x30x7mm fans.  
+
 It also provides excellent ventilation simply due to the design being much more open, as well as a flip up design for the face tracker mount.
+
+Combined, it creates a clean setup with no need for hot glue or alternatives to mount your hardware.
 
 #### Extra Parts Needed:
 I recommend a screw kit like [this](https://www.amazon.com/XOOL-Precision-Screwdriver-Extension-Smartphone/dp/B086SQZGLJ) one
@@ -25,13 +28,14 @@ Found at MUTEtheCyberwolf's [GitHub Repo](https://github.com/MUTEtheCyberwolf/VA
 
 You will need to print:
 - 1x Coverplate for XIAO Retention Clip (Logo or no Logo)
+- 1x XIAO Retention Clip (Letters or no Letters)
 - 1x Eyetrack VR Prototype XIAO Mount.stl
 - 1x FacialTrackerBeerHingeVIDEVFrunk1.stl
 - 1x FacialTrackerBridgeVIDEVFrunk1.stl
   - Alternatively, if you have the [LDLRUI USB HUB](https://www.amazon.com/LDLrui-4-Port-Splitter-Multiport-Adapter/dp/B0BLHCD7FS), [this modified version](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ldlrui%20case%20and%20bridge%20merged-FacialTrackerBridgeVIDEVFrunk1.stl) of the DEV Frunk Bridge by Frosty can snap fit the hub onto the bridge. [Example](https://i.imgur.com/kRvx56r.jpeg)
 - 1x ValveIndexDEVFrunk1.stl
   - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](https://i.imgur.com/RcYQ8xd.png)
-- 1x XIAO Retention Clip (Letters or no Letters)
+
 
 
 Lens insert support Yes/No: Yes [Compatable mount](https://github.com)
@@ -40,7 +44,8 @@ There are 160 and 130-degree variants for camera mounts; pick which one correspo
 :::
 
 
-#### Assembly Details:
+### Assembly Details:
+ #### 1. Heat Inserts  
 Start with inserting your heat inserts to the designated holes on the frunk. Place the heat inserts so the side with the smaller radius sits in the hole 
 
   - When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
@@ -55,6 +60,8 @@ Next, place a heat insert into the bigger hole of the facial tracker bridge
 Lastly, place another heat insert into the thick side of the beer hinge
 
 ![HINGE](https://i.imgur.com/tVD4lAK.png)
+
+#### 2. Screws
 
 Now you're done with the hardest part!
 We can move onto screwing in the XIAO Mount and Facial tracker bridge onto the frunk, into the heat inserts we just inserted.
@@ -78,17 +85,35 @@ Use either an M4x10 or an M4x30. I find the M4x10 sometimes loses tension, while
 Your final result should look like this
 ![FINAL](https://i.imgur.com/1h7ex2y.jpg)
 
+#### 3. Mounting components
 
-You must have a Torx screwdriver set to remove the frunk screw, do so now.
+You can now push the XIAO's into the mount, making sure they are down snug, if you haven't already.
 
-[image]
+Place your V4 LED kit PCB into the middle of the XIAO Retention Clip, you will have to slide it in and push it under the little overhangs until they snap over the PCB.
 
-Then attach part b and tighten:
+Next, place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
 
-[image]
+Then you can slide the retention clip over your XIAO mount to keep them in place.
 
-Now clip on
-[image]
+#### 4. Replacing frunk 
+
+**PLEASE UNPLUG YOUR INDEX FROM POWER BEFORE CONTINUING**
+
+You must have a T5 Torx screwdriver to remove the original index frunk screws, we will use the same screws to hold the dev frunk in place.
+
+Picture courtesy of iFixit
+
+![T5SCREWS](https://i.imgur.com/AbnMtn4.jpeg)
+
+If you do not have fans, and are mounting a USB Hub infront, I recommend now plugging in the USB hub through the fan holes, as you won't be able to after dev frunk is screwed on.
+
+Alternatively, you can use the USB C port below the middle bottom screw, and passthrough a hub with a [FEMALE USB-C/A to MALE USB A](https://www.aliexpress.us/item/3256802596853859.html) cable
+
+Once the frunk is removed, line up your DEV Frunk and screw it back in the same way. Support it in a way you can screw in without it falling.
+
+![T5SCREWS2](https://i.imgur.com/LRN45aM.png)
+
+
 
 ## Abc's mod:
 [image(s) of mod (limit ~2)]
