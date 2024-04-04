@@ -37,13 +37,6 @@ You will need to print:
   - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](https://i.imgur.com/RcYQ8xd.png)
 
 
-
-Lens insert support Yes/No: Yes [Compatable mount](https://github.com)
-::: info Note
-There are 160 and 130-degree variants for camera mounts; pick which one corresponds with your cameras.
-:::
-
-
 ### Assembly Details:
  #### 1. Heat Inserts  
 Start with inserting your heat inserts to the designated holes on the frunk. Place the heat inserts so the side with the smaller radius sits in the hole 
