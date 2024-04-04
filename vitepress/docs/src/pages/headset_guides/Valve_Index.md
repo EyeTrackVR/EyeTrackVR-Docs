@@ -30,7 +30,7 @@ You will need to print:
 - 1x FacialTrackerBridgeVIDEVFrunk1.stl
   - Alternatively, if you have the [LDLRUI USB HUB](https://www.amazon.com/LDLrui-4-Port-Splitter-Multiport-Adapter/dp/B0BLHCD7FS), [this modified version](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ldlrui%20case%20and%20bridge%20merged-FacialTrackerBridgeVIDEVFrunk1.stl) of the DEV Frunk Bridge by Frosty can snap fit the hub onto the bridge. [Example](https://i.imgur.com/kRvx56r.jpeg)
 - 1x ValveIndexDEVFrunk1.stl
-  - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding ribbon cables and power cables. [Example](https://i.imgur.com/RcYQ8xd.png)
+  - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](https://i.imgur.com/RcYQ8xd.png)
 - 1x XIAO Retention Clip (Letters or no Letters)
 
 
@@ -41,11 +41,43 @@ There are 160 and 130-degree variants for camera mounts; pick which one correspo
 
 
 #### Assembly Details:
-(make sure to include quirks of setup not covered in other parts of documentation)
+Start with inserting your heat inserts to the designated holes on the frunk. Place the heat inserts so the side with the smaller radius sits in the hole 
 
-First, screw an M2 screw into the hole on part A:
+  - When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
+  -  **Do not push down**, and remove the iron when they are level with the print. It doesn't need to be perfect, so take your time!
 
-[image showing "part A" and screw]
+![FRUNK](https://i.imgur.com/Wc2mbKE.png)
+
+Next, place a heat insert into the bigger hole of the facial tracker bridge
+
+![BRIDGE](https://i.imgur.com/vNPx656.png)
+
+Lastly, place another heat insert into the thick side of the beer hinge
+
+![HINGE](https://i.imgur.com/tVD4lAK.png)
+
+Now you're done with the hardest part!
+We can move onto screwing in the XIAO Mount and Facial tracker bridge onto the frunk, into the heat inserts we just inserted.
+  - The XIAO mount should be placed so the longer side is not blocking the fan holes
+  - If you have trouble screwing them in, try screwing them equally to distribute the pressure more evenly.
+    - Screw one a little, screw the opposite the same amount, repeat.
+
+![M4SCREWGUIDE](https://i.imgur.com/hCi744w.png)
+
+Two last things to screw in will be the beer hinge and vive facial tracker or babble case if you have it
+
+Place the smaller hole of the beer hinge inbetween the bridge's screw holes. 
+Make sure the beer hinge isn't flipped, it should have the larger hole on the same side of the bridge's heat insert
+  - Screw in **opposite** of where the heat insert is. You should be screwing ***into*** the heat insert
+
+![M4SCREWGUIDE2](https://i.imgur.com/zJeadXI.png)
+
+For the last screw, repeat the same steps, but line up your face tracker or babble case. Screw from the same direction, into the heat insert of the beer hinge.
+Use either an M4x10 or an M4x30. I find the M4x10 sometimes loses tension, while the M4x30 doesnt. 
+
+Your final result should look like this
+![FINAL](https://i.imgur.com/1h7ex2y.jpg)
+
 
 You must have a Torx screwdriver set to remove the frunk screw, do so now.
 
