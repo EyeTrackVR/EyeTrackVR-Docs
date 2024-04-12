@@ -44,7 +44,9 @@ Start with inserting your heat inserts to the designated holes on the frunk. Pla
   - When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
   -  **Do not push down**, and remove the iron when they are level with the print. It doesn't need to be perfect, so take your time!
 
-![FRUNK](https://i.imgur.com/Wc2mbKE.png)
+![FRUNK](https://i.imgur.com/5xzpTqa.png)
+
+Bottom picture courtesy of amoistman
 
 Next, place a heat insert into the bigger hole of the facial tracker bridge
 
@@ -52,7 +54,14 @@ Next, place a heat insert into the bigger hole of the facial tracker bridge
 
 Lastly, place another heat insert into the thick side of the beer hinge
 
-![HINGE](https://i.imgur.com/tVD4lAK.png)
+
+![HINGE](https://i.imgur.com/R3Uwllz.png)
+
+Your finished heat inserts should look like this
+
+![INSERTSEXAMPLE](https://i.imgur.com/2z0TD3L.jpeg)
+
+Picture courtesy of amoistman
 
 #### 2. Screws
 
@@ -77,6 +86,7 @@ Use either an M4x10 or an M4x30. I find the M4x10 sometimes loses tension, while
 
 Your final result should look like this
 ![FINAL](https://i.imgur.com/1h7ex2y.jpg)
+
 
 #### 3. Mounting components
 
