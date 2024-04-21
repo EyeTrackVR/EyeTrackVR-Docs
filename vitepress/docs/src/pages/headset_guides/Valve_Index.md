@@ -36,6 +36,7 @@ You will need to print:
 - 1x ValveIndexDEVFrunk1.stl
   - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](https://i.imgur.com/RcYQ8xd.png)
 
+![Drawing1](https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/assets/98415183/3b2b4fc2-a0ce-4641-8d0f-8fcac9271e34)
 
 ### Assembly Details:
  #### 1. Heat Inserts  
@@ -123,7 +124,7 @@ Once the frunk is removed, line up your DEV Frunk and screw it back in the same 
 
 
 
-## Abc's mod:
+## Physics-Dude's Gumstick USB Hub Dongle
 [image(s) of mod (limit ~2)]
 
 #### Mod Details
