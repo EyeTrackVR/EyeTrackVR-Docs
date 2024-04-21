@@ -92,11 +92,16 @@ Your final result should look like this
 
 You can now push the XIAO's into the mount, making sure they are down snug, if you haven't already.
 
+![XIAO](https://i.imgur.com/pXb2UVZ.png)
+
+
 Place your V4 LED kit PCB into the middle of the XIAO Retention Clip, you will have to slide it in and push it under the little overhangs until they snap over the PCB.
 
 Next, place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
 
 Then you can slide the retention clip over your XIAO mount to keep them in place.
+
+![XIAO-V4](https://i.imgur.com/MnaWjHw.png)
 
 #### 4. Replacing frunk 
 
