@@ -125,46 +125,10 @@ Once the frunk is removed, line up your DEV Frunk and screw it back in the same 
 
 
 ## Physics-Dude's Gumstick USB Hub Dongle
-[image(s) of mod (limit ~2)]
+
+![newnewnewnwe](https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/assets/22563517/77e4141b-7da7-4cb3-ab16-d8d761c91930)
 
 #### Mod Details
-This mod supports lens inserts and is very compact and easy to use. It provides good frunk ventilation and wide hardware support.
+Physics-Dude's Gumstick Dongle provides a way to cleanly install EyeTrackVR, all fitting into the frunk. It will require significantly more tinkering and ability to solder.
 
-#### Extra Parts Needed:
-- 2x Camera extensions 
-- 2x Camera extension connectors
-- 50 M3 screws
-[Parts Link](../how_to_build/part_list#additional-parts)
-(If the parts needed are not on the additional parts page, let me know. You can also just directly link to them.)
-
-#### 3D Printed Mounts
-Found at Abc's [GitHub](https://github.com/)
-
-You will need to print:
-- 2x camera mount
-- 2x frunk mount
-
-Lens insert support Yes/No: Yes [Compatable mount](https://github.com)
-::: info Note
-There are 160 and 130-degree variants for camera mounts; pick which one corresponds with your cameras.
-:::
-
-
-#### Assembly Details:
-(make sure to include quirks of setup not covered in other parts of documentation)
-
-First, screw an M2 screw into the hole on part A:
-
-[image showing "part A" and screw]
-
-You must have a Torx screwdriver set to remove the frunk screw, do so now.
-
-[image]
-
-Then attach part b and tighten:
-
-[image]
-
-Now clip on
-[image]
-
+### Installation instructions and BOM available on [Physics-Dude's Repo](https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/tree/main?tab=readme-ov-file#gum-stick-usb-hub-dongle)
