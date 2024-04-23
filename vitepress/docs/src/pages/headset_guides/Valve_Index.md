@@ -1,5 +1,17 @@
 # Valve Index
 
+### Recommended Valve Index lens mounts
+
+[Physics-Dude's 160° V18](https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/blob/main/ETVR%20ValveIndex%20Cam-LED%20Mount%20Rings/Index-EyetrackVRv4%20v18%20Print%20Me.stl) (mirror the STL for left)
+
+[Foow17's 130 / 160°](https://makerworld.com/en/models/196741#profileId-217255)
+
+[Foow17's 130 / 160° VROPTICIAN](https://makerworld.com/en/models/196791#profileId-217311)
+
+[Frosty704's 160° WidmoVR Mount](https://github.com/Frosty704/indexwidmo-eyetrackvr)
+
+Please note due to the LED positioning, these will **require you to extend the LED wire, or get [110mm extensions](https://store.eyetrackvr.dev/products/2x-110mm-replacement-wires)**
+
 ## MUTEtheCyberwolf's DEV Frunk Mod:
 ![DevFrunk1](https://i.imgur.com/KQDFg1J.jpeg)
 ![HMD](https://i.imgur.com/4n6f4U3.png)
@@ -32,7 +44,7 @@ You will need to print:
 - 1x Eyetrack VR Prototype XIAO Mount.stl
 - 1x FacialTrackerBeerHingeVIDEVFrunk1.stl
 - 1x FacialTrackerBridgeVIDEVFrunk1.stl
-  - Alternatively, if you have the [LDLRUI USB HUB](https://www.amazon.com/LDLrui-4-Port-Splitter-Multiport-Adapter/dp/B0BLHCD7FS), [this modified version](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ldlrui%20case%20and%20bridge%20merged-FacialTrackerBridgeVIDEVFrunk1.stl) of the DEV Frunk Bridge by Frosty can snap fit the hub onto the bridge. [Example](https://i.imgur.com/kRvx56r.jpeg)
+  - Alternatively, if you have the [LDLRUI USB HUB](https://www.amazon.com/LDLrui-4-Port-Splitter-Multiport-Adapter/dp/B0BLHCD7FS), [this modified version](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ldlrui%20case%20and%20bridge%20merged-FacialTrackerBridgeVIDEVFrunk1.stl) of the DEV Frunk Bridge can snap fit the hub onto the bridge. [Example](https://i.imgur.com/kRvx56r.jpeg)
 - 1x ValveIndexDEVFrunk1.stl
   - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](https://i.imgur.com/RcYQ8xd.png)
 
@@ -101,6 +113,10 @@ Place your V4 LED kit PCB into the middle of the XIAO Retention Clip, you will h
 Next, place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
 
 Then you can slide the retention clip over your XIAO mount to keep them in place.
+
+#### 3. (Cont.) Mounting lens components
+
+This will differ depending on how you want to route cables, which mount you have, etc
 
 ![XIAO-V4](https://i.imgur.com/MnaWjHw.png)
 
