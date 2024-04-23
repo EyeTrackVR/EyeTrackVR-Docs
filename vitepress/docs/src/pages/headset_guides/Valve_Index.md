@@ -12,6 +12,8 @@
 
 Please note due to the LED positioning, these will **require you to extend the LED wire, or get [110mm extensions](https://store.eyetrackvr.dev/products/2x-110mm-replacement-wires)**
 
+[V4 LED Kit Assembly Video](https://www.youtube.com/watch?v=AVUbDNe7uNU)
+
 ## MUTEtheCyberwolf's DEV Frunk Mod:
 ![DevFrunk1](https://i.imgur.com/KQDFg1J.jpeg)
 ![HMD](https://i.imgur.com/4n6f4U3.png)
