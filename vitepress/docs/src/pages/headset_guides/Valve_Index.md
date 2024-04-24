@@ -51,7 +51,7 @@ You will need to print:
 
 ### Assembly Details:
  #### 1. Heat Inserts  
-Start with inserting your heat inserts to the designated holes on the frunk. Place the heat inserts so the side with the smaller radius sits in the hole 
+1. Start with inserting your heat inserts to the designated holes on the frunk. Place the heat inserts so the side with the smaller radius sits in the hole 
 
   - When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
   -  **Do not push down**, and remove the iron when they are level with the print. It doesn't need to be perfect, so take your time!
@@ -60,16 +60,16 @@ Start with inserting your heat inserts to the designated holes on the frunk. Pla
 
 Bottom picture courtesy of amoistman
 
-Next, place a heat insert into the bigger hole of the facial tracker bridge
+2. Next, place a heat insert into the bigger hole of the facial tracker bridge
 
 ![BRIDGE](https://i.imgur.com/vNPx656.png)
 
-Lastly, place another heat insert into the thick side of the beer hinge
+3. Lastly, place another heat insert into the thick side of the beer hinge
 
 
 ![HINGE](https://i.imgur.com/R3Uwllz.png)
 
-Your finished heat inserts should look like this
+4. Your finished heat inserts should look like this
 
 ![INSERTSEXAMPLE](https://i.imgur.com/2z0TD3L.jpeg)
 
@@ -87,33 +87,38 @@ We can move onto screwing in the XIAO Mount and Facial tracker bridge onto the f
 
 Two last things to screw in will be the beer hinge and vive facial tracker or babble case if you have it
 
-Place the smaller hole of the beer hinge inbetween the bridge's screw holes. 
+1. Place the smaller hole of the beer hinge inbetween the bridge's screw holes. 
 Make sure the beer hinge isn't flipped, it should have the larger hole on the same side of the bridge's heat insert
   - Screw in **opposite** of where the heat insert is. You should be screwing ***into*** the heat insert
 
 ![M4SCREWGUIDE2](https://i.imgur.com/zJeadXI.png)
 
-For the last screw, repeat the same steps, but line up your face tracker or babble case. Screw from the same direction, into the heat insert of the beer hinge.
+2. For the last screw, repeat the same steps, but line up your face tracker or babble case. Screw from the same direction, into the heat insert of the beer hinge.
 Use either an M4x10 or an M4x30. I find the M4x10 sometimes loses tension, while the M4x30 doesnt. 
 
-Your final result should look like this
+3. Your final result should look like this
 ![FINAL](https://i.imgur.com/1h7ex2y.jpg)
 
 
 #### 3. Mounting components
 
-You can now push the XIAO's into the mount, making sure they are down snug, if you haven't already.
+1. You can now push the XIAO's into the mount, making sure they are down snug, if you haven't already.
 
 ![XIAO](https://i.imgur.com/pXb2UVZ.png)
 
 
-Place your V4 LED kit PCB into the middle of the XIAO Retention Clip, you will have to slide it in and push it under the little overhangs until they snap over the PCB.
-
-Next, place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
+2. Place your V4 LED kit PCB into the middle of the XIAO Retention Clip. Ensure the hole in the PCB alligns with the small bump on the retention clip.
+You will have to slide it in and push it under the overhangs until they snap over the PCB.
 
 ![XIAO-V4](https://i.imgur.com/MnaWjHw.png)
 
-Then you can slide the retention clip over your XIAO mount to keep them in place.
+3. Route your V4 LED connectors through the coverplate holes prior to putting it on
+
+![V4POWER](https://i.imgur.com/rDOzTz8.png)
+
+4. Place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
+
+5. Then you can slide the retention clip over your XIAO mount to keep them in place.
 
 
 
@@ -127,11 +132,11 @@ Picture courtesy of iFixit
 
 ![T5SCREWS](https://i.imgur.com/AbnMtn4.jpeg)
 
-If you do not have fans, and are mounting a USB Hub infront, I recommend now plugging in the USB hub through the fan holes, as you won't be able to after dev frunk is screwed on.
+1. If you do not have fans, and are mounting a USB Hub infront, I recommend now plugging in the USB hub through the fan holes, as you won't be able to after dev frunk is screwed on.
 
 Alternatively, you can use the USB C port below the middle bottom screw, and passthrough a hub with a [FEMALE USB-C/A to MALE USB A](https://www.aliexpress.us/item/3256802596853859.html) cable
 
-Once the frunk is removed, line up your DEV Frunk and screw it back in the same way. Support it in a way you can screw in without it falling.
+2. Once the frunk is removed, line up your DEV Frunk and screw it back in the same way. Support it in a way you can screw in without it falling.
 
 ![T5SCREWS2](https://i.imgur.com/LRN45aM.png)
 
