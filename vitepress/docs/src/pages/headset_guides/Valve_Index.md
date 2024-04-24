@@ -34,9 +34,6 @@ I recommend a screw kit like [this](https://www.amazon.com/XOOL-Precision-Screwd
 - 6x M4x10 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.htm) Choose Size: M4 20pcs | Length: 10mm
 - 1x M4x30 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.htm) Choose Size: M4 20pcs | Length: 30mm
 
-[Parts Link](../how_to_build/part_list#additional-parts)
-(If the parts needed are not on the additional parts page, let me know. You can also just directly link to them.)
-
 #### 3D Printed Mounts
 Found at MUTEtheCyberwolf's [GitHub Repo](https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii))
 
