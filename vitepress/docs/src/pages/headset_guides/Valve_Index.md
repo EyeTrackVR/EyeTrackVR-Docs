@@ -111,13 +111,11 @@ Place your V4 LED kit PCB into the middle of the XIAO Retention Clip, you will h
 
 Next, place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
 
+![XIAO-V4](https://i.imgur.com/MnaWjHw.png)
+
 Then you can slide the retention clip over your XIAO mount to keep them in place.
 
-#### 3. (Cont.) Mounting lens components
 
-This will differ depending on how you want to route cables, which mount you have, etc
-
-![XIAO-V4](https://i.imgur.com/MnaWjHw.png)
 
 #### 4. Replacing frunk 
 
