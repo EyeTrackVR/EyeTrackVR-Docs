@@ -52,9 +52,8 @@ You will need to print:
 ### Assembly Details:
  #### 1. Heat Inserts  
 1. Start with inserting your heat inserts to the designated holes on the frunk. Place the heat inserts so the side with the smaller radius sits in the hole 
-
-  - When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
-  -  **Do not push down**, and remove the iron when they are level with the print. It doesn't need to be perfect, so take your time!
+- When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
+   -  **Do not push down**, and remove the iron when they are level with the print. It doesn't need to be perfect, so take your time!
 
 ![FRUNK](https://i.imgur.com/5xzpTqa.png)
 
@@ -87,9 +86,9 @@ We can move onto screwing in the XIAO Mount and Facial tracker bridge onto the f
 
 Two last things to screw in will be the beer hinge and vive facial tracker or babble case if you have it
 
-1. Place the smaller hole of the beer hinge inbetween the bridge's screw holes. 
-Make sure the beer hinge isn't flipped, it should have the larger hole on the same side of the bridge's heat insert
-  - Screw in **opposite** of where the heat insert is. You should be screwing ***into*** the heat insert
+1. Place the smaller hole of the beer hinge inbetween the bridge's screw holes.
+   - Screwing in **opposite** of where the heat insert is. You should be screwing ***into*** the heat insert
+
 
 ![M4SCREWGUIDE2](https://i.imgur.com/zJeadXI.png)
 
