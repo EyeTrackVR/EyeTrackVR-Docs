@@ -11,7 +11,7 @@ ETVR has a mechanism that allows you to recalibrate and recenter your tracking w
 <Alerts :options="alerts.parts_list_two">
     <template v-slot:content>
         <p>
-           Note, while this page explains how to do it from the point of view of vrchat, it can be done in Neos and CVR too, all the app listens to are two OSC messages.
+           Note, while this page explains how to do it from the point of view of vrchat, it can be done in Resonite and CVR too, all the app listens for are two OSC messages.
         </p>
     </template>
 </Alerts>

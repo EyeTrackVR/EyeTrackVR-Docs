@@ -1,7 +1,4 @@
 const image_settings = {
-  
-  
-  
   camera_protect22: {
     url: "https://i.imgur.com/2FJ4QYR.png",
     alt: "",
@@ -765,6 +762,11 @@ const image_settings = {
   flashing_tool_1: {
     url: "https://docs.eyetrackvr.dev/imgs/flashingtool_1.png",
     alt: "Flashing Tool ui lower half",
+    max_width: "max-width: 600px;",
+  },
+  vrcft_etvr_module_registry: {
+    url: "https://i.imgur.com/AKsgEyy.png",
+    alt: "Screenshot showcasing the VRCFT module registry, with ETVR Tracking Module selected",
     max_width: "max-width: 600px;",
   },
 };
