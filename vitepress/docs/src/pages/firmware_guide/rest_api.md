@@ -153,6 +153,15 @@ typedef enum {
 
 ### Camera Params
 
-::: tip Coming Soon
-We are currently working on this section of documentation.
+| Param | Description | Value Effect |
+| :---: | :---------: | :---------: |
+| `vflip` | Whether to flip the frames vertically. | 0 or 1 |
+| `framesize` | A value between 0-7 indicating the frame resolution. | Larger number - higher resolution. |
+| `href` | Unknown. | ? |
+| `quality` |  The JPEG quality level: 1-63? | **Smaller** number = higher quality, more latency and less fps |
+| `brightness` | The `agc_gain` of the camera. | Larger number = more bright. |
+
+
+::: tip Uncertain Values
+These values and their descriptions were reverse-engineered from the OpenIRIS C++ code and trial-and-error, so they would benefit from review by someone who understands their meaning.
 :::
