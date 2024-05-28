@@ -28,11 +28,11 @@ Combined, it creates a clean setup with no need for hot glue or alternatives to 
 #### Extra Parts Needed:
 I recommend a screw kit like [this](https://www.amazon.com/XOOL-Precision-Screwdriver-Extension-Smartphone/dp/B086SQZGLJ) one
 - 1x T5 Torx Screwdriver
-- 1x H4.0 Screwdriver
+- 1x H3.0 Screwdriver
 - 1x Soldering Iron for heat inserts
 - 8x M4x8.1 Heat Inserts [AliExpress](https://www.aliexpress.com/item/3256804349544912.html)  Choose Size: M4 (OD 6mm)50pcs | Color: Length 8mm
-- 6x M4x10 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.htm) Choose Size: M4 20pcs | Length: 10mm
-- 1x M4x30 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.htm) Choose Size: M4 20pcs | Length: 30mm
+- 6x M4x10 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.html) Choose Size: M4 20pcs | Length: 10mm
+- 1x M4x30 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.html) Choose Size: M4 20pcs | Length: 30mm
 
 #### 3D Printed Mounts
 Found at MUTEtheCyberwolf's [GitHub Repo](https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii))
