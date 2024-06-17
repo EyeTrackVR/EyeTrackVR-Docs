@@ -161,7 +161,3 @@ typedef enum {
 | `quality` |  The JPEG quality level: 1-63? | **Smaller** number = higher quality, more latency and less fps |
 | `brightness` | The `agc_gain` of the camera. | Larger number = more bright. |
 
-
-::: tip Uncertain Values
-These values and their descriptions were reverse-engineered from the OpenIRIS C++ code and trial-and-error, so they would benefit from review by someone who understands their meaning.
-:::
