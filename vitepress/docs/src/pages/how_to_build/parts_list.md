@@ -222,7 +222,7 @@ Mounts with a `★` next to them are the recommended mounts for the respected hm
 [Amazon](https://www.amazon.com/Assark-Sticks-School-Repairs-20W/dp/B09FYWQ44L/)
 
 - 1x Soldering iron and solder:
-[Pine64 Pinecil (Highly Recommended)](https://www.pine64.org/pinecil/) + [Amazon Solder](https://www.amazon.com/Rosin-Solder-Electronics-Components-repair/dp/B08M5YP6BN/)
+[Pine64 Pinecil (Highly Recommended)](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/) + [Amazon Solder](https://www.amazon.com/Rosin-Solder-Electronics-Components-repair/dp/B08M5YP6BN/)
 
 [AliExpress (Generic)](https://www.aliexpress.com/item/3256801448141079.html)  
 [Amazon (Generic)](https://www.amazon.com/Liouhoum-Auto-Sleep-Adjustable-Temperature-Thermostatic/dp/B08PZBPXLZ/ref=sr_1_9)
