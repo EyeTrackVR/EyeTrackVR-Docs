@@ -68,6 +68,7 @@ const theme = {
       collapsible: true,
       items: [
         { text: "What is This?", link: "/headset_guides/what_is_this.md" },
+        { text: "Valve Index", link: "/headset_guides/valve_index.md" },
       ],
     },
     {
