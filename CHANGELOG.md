@@ -3,6 +3,75 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.6.0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.5.0...v1.6.0) (2024-06-18)
+
+
+### 🍕 Features
+
+* add docs for firmware flashing tool ([fb4516e](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/fb4516e375e16cedec2861f858d0f8e1c5d9f69d))
+* set markdown layout to deep ([497a4f2](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/497a4f293cde871a0fdea4044bfb1e33b209aee3))
+* update css ([7dd59bf](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/7dd59bf18f7407533956d2ac752b010cf8360565))
+* update firmware flashing tool docs ([c57d7da](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/c57d7da1eef678d39b0981fe40ea70b2bcf50260))
+
+
+### 🐛 Bug Fixes
+
+* fix pinecil old link ([c7416ae](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/c7416ae7be7cf6d27dbc133a81ed85b9da2a79f9))
+* index page indexing ([6a92471](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/6a9247189c0ca1d41f07d9878d011333e0d5fac3))
+* Update image settings to fix paths ([be90d22](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/be90d22eab0e8e604caaeb9d880f621bac3b031c))
+
+
+### 📝 Documentation
+
+* add hyperlink to flasher tool ([e242d9b](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/e242d9b0ef12f63006479141f827f250696b97a2))
+* add new v4 wire guide, WIP disclaimer ([af06537](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/af06537543662b212b92253d6dd52f9598951254))
+* Add note about Wi-Fi specific settings, fix formatting of Environment list ([6367fe4](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/6367fe4613e2ef5a392975cd88c1ff710555b1c9))
+* add USB hub link, others ([0bb864a](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/0bb864a016ccfce1ebbaafb8dfc78dc7b3dff2d7))
+* add V4 mounts ([e8ba464](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/e8ba464976f143e0f01129b4b4982b50522c86a2))
+* add wordage ([d3fd5d0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/d3fd5d0ccea2863fe3f0971ffa491f612f74401b))
+* adjust page order ([9753e42](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/9753e4231d84eea2e6df890291599c838504038f))
+* Begin specific headset docs ([c02c4ab](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/c02c4ab16e47ba1a0448b8c02e59769fc5011746))
+* beta new part list ([750a0fe](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/750a0fe81cde813df96f986fb68ab7351b0bbd8b))
+* caps ([716c022](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/716c0222e367dcc617457e3cefc51f797f33011e))
+* disclaimer and credit ([e963ef4](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/e963ef4a64d39939f6948fd4ed8dc7e0ecdd664e))
+* fix floating point truncation ([a3801e2](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/a3801e216c791c3c2a172a8f4348c5efb094362f))
+* fix price not updating ([0b1fa0d](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/0b1fa0d14b62ef76ee897343cc2230fadf7a8aeb))
+* fix some typos on LED page ([e8f5ab6](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/e8f5ab6e79f5177ea80fb511f4fc72bfb5b629ea))
+* guide to protect camera ([621100e](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/621100e8f68d7d56c66cbfc08ef4acc6d0b809af))
+* LED safety page, add LED safety paper ([0b45f8a](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/0b45f8a379cc9a0f17981b131c9f029d6337f547))
+* link fixes, add cables ([29c290a](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/29c290ab4d436fd0297bb4111bf30bf11533022d))
+* Merge pull request [#10](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/10) from ShyAssassin/main ([9d0f654](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/9d0f65443060f0fc6dbcd2727d89b990c2d07f68))
+* Merge pull request [#11](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/11) from lorow/feature/cleanup-parts-page ([2f293be](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/2f293be3892e31b759fb0bc1966ac9a05cb7ca73))
+* Merge pull request [#13](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/13) from DenTechs/main ([95cc908](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/95cc90821168c1cd023f6a39e10c25b37b7e3115))
+* Merge pull request [#14](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/14) from Frosty704/main ([94b0584](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/94b058498e9a6e96b6446646b557bf6a2667e040))
+* most of new parts list WIP ([3e5db62](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/3e5db628da6069fd589a8cccf505294b3f9a19f8))
+* move led safety from misc ([ffc2022](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/ffc2022fa9fd5b38cb42779efb9bcf4c11faa5a8))
+* new XIAO prep guide ([5bc5f2d](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/5bc5f2d8ff5a21456fa646adf1bc1955fd164ea2))
+* remove OTA ([6029d7c](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/6029d7ca42ad71a5654bbdbadfcc180e84ca735a))
+* spelling errors and wip camera protection ([a13d3cc](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/a13d3ccd6e32f0e4bd187efaca8bf258f9e72a6a))
+* Swap blockquote for a vitepress info container ([b586ca0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/b586ca09b484f1fce12d512106f369d80dd5a10b))
+* typo :P ([8d582c6](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/8d582c64bf31027bd25eef19b4df4632ec20768e))
+* typo, vrc native ([efca79f](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/efca79fb153f03c4e2cbe0d324e1d83d8423a44c))
+* update FAQ ([4ffdb83](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/4ffdb8347d8cd91a2289e44c8f25a7d5cae1ce2a))
+* update file structure ([e375052](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/e37505234c0fc4719a12fa0fc65056a0e0c0094b))
+* update firmware environments ([9d92745](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/9d9274528fd2034740a3a2aa09717c141dc66add))
+* update parts list ([98cfdb3](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/98cfdb3f8e8fccaea04f2a6fe18c19b4a5e61a39))
+* update roadmap ([558c63f](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/558c63f5b93da6c3845b91e723cdedbef80df897))
+* update roadmap ([acc9ae5](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/acc9ae50e3d87c56dc1da152c3835f891a2ca406))
+* V4 docs ([ee321e5](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/ee321e51f086a6704c1d0135e5f4d1cd62366f6d))
+* wired cams is beta app only ([2202ccf](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/2202ccf62850ab205ecc0dbd125bdc887eef924c))
+
+
+### 🧑‍💻 Code Refactoring
+
+* update deps ([8e3b15f](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/8e3b15fa02f5c9d50598bccae1c46809f2e3951a))
+
+
+### 🤖 Build System
+
+* set project as type module for ESM module ([338ee2e](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/338ee2e709ec7077b83e769c8337c613860ab7e3))
+* Update build_release_vitepress.yml ([831f85a](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/831f85a6ba65f56619459c4322666a6d9fa3338c))
+
 ## [1.5.0](https://github.com/RedHawk989/EyeTrackVR-Docs/compare/v1.4.0...v1.5.0) (2023-06-04)
 
 
