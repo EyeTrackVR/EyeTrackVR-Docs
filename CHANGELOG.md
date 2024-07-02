@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.8.0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.7.0...v1.8.0) (2024-07-02)
+
+
+### 🍕 Features
+
+* part list table rework ([c49c743](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/c49c743cd3ec990280fe5886dcb293e48c805670))
+
 ## [1.7.0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.6.0...v1.7.0) (2024-06-29)
 
 
