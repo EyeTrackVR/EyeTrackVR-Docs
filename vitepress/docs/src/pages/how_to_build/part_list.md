@@ -16,7 +16,7 @@ Use the **interactive** tables below to select parts!
 
 <OptionalDiyTable />
 
-<small> Table adjusted from the table on [SlimeVR's Docs](https://docs.slimevr.dev/diy/components-guide.html) which was created by [Carl](https://github.com/carl-anders)</small>
+<small> Table modified greatly from the table on [SlimeVR's Docs](https://docs.slimevr.dev/diy/components-guide.html) which was created by [Carl](https://github.com/carl-anders)</small>
 
 ## ESP setup options:
 ::: danger

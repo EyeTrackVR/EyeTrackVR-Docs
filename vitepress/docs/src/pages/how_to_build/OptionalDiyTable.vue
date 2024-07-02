@@ -1,23 +1,31 @@
 <template>
- <div>
+  <div class="table-container">
     <table>
       <thead>
         <tr>
-          <th>Component</th>
-          <th>Choice</th>
-          <th>Amount</th>
-          <th>Cost</th>
-          <th>Cost All</th>
-          <th>Links</th>
+          <th class="component-col">Component</th>
+          <th class="choice-col">Choice</th>
+          <th class="amount-col">Amount</th>
+          <th class="cost-col">Cost</th>
+          <th class="cost-all-col">Cost All</th>
+          <th class="links-col">Links</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="component in components" :key="component.name">
-          <th>{{ component.name }}</th>
-          <td>
-            <select v-if="component.choices.length > 1" v-model="component.selectedChoice" @change="updatePrices">
-              <option v-for="(choice, index) in component.choices" :key="index" :value="index">{{ choice.name }}</option>
-            </select>
+          <th class="component-col">{{ component.name }}</th>
+          <td class="choice-col">
+            <div v-if="component.choices.length > 1" class="custom-select" @click="toggleDropdown(component)">
+              <div class="selected-option">{{ component.choices[component.selectedChoice].name }}</div>
+              <div v-if="component.isOpen" class="options">
+                <div v-for="(choice, index) in component.choices" 
+                     :key="index" 
+                     @click="selectOption(component, index)"
+                     class="option">
+                  {{ choice.name }}
+                </div>
+              </div>
+            </div>
             <span v-else>{{ component.choices[0].name }}</span>
           </td>
           <td>{{ component.selectedChoice ? component.choices[component.selectedChoice].amount(tracker) : 0 }}</td>
@@ -76,7 +84,8 @@ export default {
               links: '<a href="https://www.amazon.com/Pigtail-Extension-Cables-Connector-Replacement/dp/B09ZQNJ2DJ/">Amazon</a>'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'USB-C Breakout',
@@ -103,7 +112,8 @@ export default {
               links: '<a href="https://www.aliexpress.us/item/3256804002116469.html">AliExpress</a>'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'Wire for ESPs',
@@ -131,7 +141,8 @@ export default {
               links: '<a href="https://a.aliexpress.com/_mK72cy6">AliExpress</a> Select "Specification: 30 AWG or lower"'
             },
             ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'Wire for LEDs',
@@ -159,7 +170,8 @@ export default {
               links: '<a href="https://a.aliexpress.com/_mK72cy6">AliExpress</a> Select "Specification: 30 AWG or higher"'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'Camera Extension Cables',
@@ -186,7 +198,8 @@ export default {
               links: '<a href="https://www.adafruit.com/product/4230">Adafruit</a> 250mm'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'Camera Extension Connectors',
@@ -213,7 +226,8 @@ export default {
               links: '<a href="https://www.adafruit.com/product/4524">Adafruit</a>'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'External Antennas',
@@ -240,7 +254,8 @@ export default {
               links: '<a href="https://www.amazon.com/Diymall-Antenna-Antennas-Arduino-ESP-072pcs/dp/B00ZBJNO9O/">Amazon</a>'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'USB-C Cables',
@@ -267,7 +282,8 @@ export default {
               links: '<a href="https://www.amazon.com/Charging-Durable-Station-Compatible-Samsung/dp/B08LL1SVZD/">Amazon</a>'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         {
           name: 'V4 LED Wire Extensions/Replacements',
@@ -294,7 +310,8 @@ export default {
               links: '<a href="https://store.eyetrackvr.dev/products/2x-200mm-replacement-wires">ETVR Store</a>'
             },
           ],
-          selectedChoice: 0
+          selectedChoice: 0,
+          isOpen: false
         },
         // Add other components similarly
       ],
@@ -307,17 +324,208 @@ export default {
       this.components.forEach(component => {
         if (component.choices.length > 1) {
           const choice = component.choices[component.selectedChoice];
-          total += choice.costAll();
+          total += choice.costAll(this.tracker);
+        } else if (component.choices.length === 1) {
+          total += component.choices[0].costAll(this.tracker);
         }
       });
       this.total = total;
     },
+    toggleDropdown(component) {
+      // Close all other dropdowns
+      this.components.forEach(comp => {
+        if (comp !== component) {
+          comp.isOpen = false;
+        }
+      });
+      // Toggle the clicked dropdown
+      component.isOpen = !component.isOpen;
+    },
+    isOptionsAbove(component) {
+    if (this.$refs[`select-${component.name}`]) {
+      const rect = this.$refs[`select-${component.name}`].getBoundingClientRect();
+      const spaceBelow = window.innerHeight - rect.bottom;
+      return spaceBelow < 200 && rect.top > 200;
+    }
+    return false;
+    },
+    selectOption(component, index) {
+      component.selectedChoice = index;
+      component.isOpen = false;  // This line closes the dropdown
+      this.updatePrices();
+    },
+    closeAllDropdowns() {
+      this.components.forEach(component => {
+      component.isOpen = false;
+    });
+  },
+  // Add this new method
+  handleOutsideClick(event) {
+    if (!event.target.closest('.custom-select')) {
+      this.closeAllDropdowns();
+    }
+  }
  },
- mounted() {
-    this.updatePrices();
- },
+mounted() {
+  this.updatePrices();
+  document.addEventListener('click', this.handleOutsideClick);
+},
+beforeUnmount() {
+  document.removeEventListener('click', this.handleOutsideClick);
+},
 };
 </script>
+
+
+
+
 <style scoped>
-/* Your styles here */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+th, td {
+  padding: 5px;
+  border: 1px solid #ddd;
+  word-wrap: break-word;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.component-col { width: 15%; }
+.choice-col { width: 25%; }
+.amount-col { width: 7%; }
+.cost-col { width: 10%; }
+.cost-all-col { width: 13%; }
+.links-col { width: 30%; }
+
+.multi-line-select {
+  width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+  height: auto;
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+  white-space: normal;
+  height: auto;
+  text-align: center;
+  text-align-last: center;
+}
+
+/* This targets Webkit browsers like Chrome and Safari */
+select option {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+/* This targets Firefox */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    table-layout: auto;
+  }
+  
+  th, td {
+    white-space: normal;
+  }
+  
+  .component-col, .choice-col, .amount-col, .cost-col, .cost-all-col, .links-col {
+    width: auto;
+  }
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.custom-select:hover,
+.custom-select:focus-within {
+  z-index: 2;
+}
+
+.selected-option {
+  border: 1px solid #444;
+  padding: 5px;
+  background-color: #333;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #545454;
+}
+
+.options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  border: 1px solid #444;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  top: 100%;
+}
+.options-above {
+  bottom: 100%;
+  top: auto;
+}
+.option {
+  padding: 5px;
+  border-bottom: 1px solid #444;
+  color: #545454;
+  background-color: #333;
+}
+
+.option:last-child {
+  border-bottom: none;
+}
+
+.option:hover {
+  background-color: #1e1e20;
+}
+
+/* Ensure text is visible in all states */
+.custom-select, .selected-option, .option {
+  color: #fff;
+}
+
+/* Add some contrast to the selected option */
+.selected-option {
+  background-color: #1e1e20;
+}
+
+/* Improve visibility of options */
+.options {
+  background-color: #222;
+}
+
+/* Add a subtle hover effect */
+.option:hover {
+  background-color: #555;
+}
 </style>
