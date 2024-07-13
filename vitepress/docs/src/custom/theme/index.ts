@@ -98,7 +98,7 @@ const theme = {
           link: "/software_guide/osc_setup",
         },
         {
-          text: "VRCFT Module",
+          text: "Setting up VRCFT - VRCFT Module",
           link: "/software_guide/VRCFT_tracking_module",
         },
       ],

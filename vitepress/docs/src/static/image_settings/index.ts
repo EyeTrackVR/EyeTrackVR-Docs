@@ -769,6 +769,22 @@ const image_settings = {
     alt: "Screenshot showcasing the VRCFT module registry, with ETVR Tracking Module selected",
     max_width: "max-width: 600px;",
   },
+  vrcft_etvr_setitgs_page: {
+    url: "https://i.imgur.com/ectyHfl.png",
+    alt: "Screenshot showcasing the settings page of ETVR, explaining how to setup the VRCFT module",
+    max_width: "max-width: 600px;",
+  },
+  vrcft_etvr_setitgs_page_reset_settings: {
+    url: "https://i.imgur.com/lUrNBHV.png",
+    alt: "Screenshot showcasing the settings page of ETVR, explaining how to reset the ETVR Module",
+    max_width: "max-width: 600px;",
+  },
+
+  vrcft_etvr_setitgs_page_inter_pc_setup: {
+    url: "https://i.imgur.com/rQPXrER.png",
+    alt: "Screenshot showcasing the settings page of ETVR, explaining how to setup ETVR to talk to a different PC",
+    max_width: "max-width: 600px;",
+  },
 };
 
 export { image_settings };
