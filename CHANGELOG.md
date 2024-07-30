@@ -3,6 +3,13 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.9.0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.8.0...v1.9.0) (2024-07-30)
+
+
+### 🍕 Features
+
+* Merge pull request [#18](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/18) from lorow/feature/add-vrcft-module-info ([677b868](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/677b868c4d2978e749066190d8fbbc75073d8e30))
+
 ## [1.8.0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.7.0...v1.8.0) (2024-07-02)
 
 
