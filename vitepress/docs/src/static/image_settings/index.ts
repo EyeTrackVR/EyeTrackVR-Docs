@@ -1,7 +1,4 @@
 const image_settings = {
-  
-  
-  
   camera_protect22: {
     url: "https://i.imgur.com/2FJ4QYR.png",
     alt: "",
@@ -765,6 +762,27 @@ const image_settings = {
   flashing_tool_1: {
     url: "https://docs.eyetrackvr.dev/imgs/flashingtool_1.png",
     alt: "Flashing Tool ui lower half",
+    max_width: "max-width: 600px;",
+  },
+  vrcft_etvr_module_registry: {
+    url: "https://i.imgur.com/AKsgEyy.png",
+    alt: "Screenshot showcasing the VRCFT module registry, with ETVR Tracking Module selected",
+    max_width: "max-width: 600px;",
+  },
+  vrcft_etvr_setitgs_page: {
+    url: "https://i.imgur.com/ectyHfl.png",
+    alt: "Screenshot showcasing the settings page of ETVR, explaining how to setup the VRCFT module",
+    max_width: "max-width: 600px;",
+  },
+  vrcft_etvr_setitgs_page_reset_settings: {
+    url: "https://i.imgur.com/lUrNBHV.png",
+    alt: "Screenshot showcasing the settings page of ETVR, explaining how to reset the ETVR Module",
+    max_width: "max-width: 600px;",
+  },
+
+  vrcft_etvr_setitgs_page_inter_pc_setup: {
+    url: "https://i.imgur.com/rQPXrER.png",
+    alt: "Screenshot showcasing the settings page of ETVR, explaining how to setup ETVR to talk to a different PC",
     max_width: "max-width: 600px;",
   },
 };

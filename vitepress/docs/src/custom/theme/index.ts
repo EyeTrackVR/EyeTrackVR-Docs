@@ -97,6 +97,10 @@ const theme = {
           text: "Setting up OSC recenter/recalibrate",
           link: "/software_guide/osc_setup",
         },
+        {
+          text: "Setting up VRCFT - VRCFT Module",
+          link: "/software_guide/VRCFT_tracking_module",
+        },
       ],
     },
     {
