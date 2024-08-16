@@ -56,6 +56,10 @@ const theme = {
         text: "Preparing XIAO Sense ESP32", 
         link: "/how_to_build/preparing_xiao" 
         },
+        { 
+          text: "Preparing V4 LEDs", 
+          link: "/how_to_build/led_setup" 
+          },
         {
           text: "How to Create your own Camera Mount",
           link: "/how_to_build/creating_your_own_mount",
