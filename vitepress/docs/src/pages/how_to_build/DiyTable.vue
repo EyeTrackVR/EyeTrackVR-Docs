@@ -123,17 +123,17 @@ export default {
               links: '<a href="https://docs.eyetrackvr.dev/getting_started/led_safety">IR LED Safety<a/> If you already have safe IR LED hardware and know what you are doing.'
             },
             {
-              name: 'Official V4 mini Solder-less Kit',
+              name: 'Official V4 mini No-Solder',
               amount: () => 1,
-              cost: 28,
-              costAll: () => this.tracker + 28 + 3,
+              cost: 30,
+              costAll: () => this.tracker + 30 + 5,
               links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit">ETVR Store</a> Length depending on HMD'
             },
             {
-              name: 'Official V4 mini Bring Your Own Wires Kit',
+              name: 'Official V4 mini Solder-Required',
               amount: () => 1,
-              cost: 24,
-              costAll: () => this.tracker + 24 + 3,
+              cost: 25,
+              costAll: () => this.tracker + 25 + 3,
               links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required">ETVR Store</a> Must solder up your own wires'
             },
                         {
@@ -144,7 +144,7 @@ export default {
               links: '<a href="https://store.eyetrackvr.dev/products/v4-1-lite-diy-led-kit">ETVR Store</a> Must assemble yourself'
             },
           ],
-          selectedChoice: 2,
+          selectedChoice: 1,
           isOpen: false
         },
         {
