@@ -754,15 +754,45 @@ const image_settings = {
     alt: "GIF showing a switch of board environments.",
     max_width: "max-width: 600px;",
   },
-  flashing_tool: {
-    url: "https://docs.eyetrackvr.dev/imgs/flashingtool.png",
-    alt: "Flashing Tool ui",
-    max_width: "max-width: 600px;",
-  },
   flashing_tool_1: {
-    url: "https://docs.eyetrackvr.dev/imgs/flashingtool_1.png",
+    url: "https://imgur.com/vnjGE0x.png",
     alt: "Flashing Tool ui lower half",
-    max_width: "max-width: 600px;",
+    max_width: "max-width: 600px; width:100%",
+  },
+  flashing_tool_select_board: {
+    url: "https://imgur.com/oBJc8F9.png",
+    alt: "preview of manage boards",
+    max_width: "max-width: 600px; width:100%",
+  },
+  flashing_tool_flash_firmware: {
+    url: "https://imgur.com/3Oq2nQf.png",
+    alt: "preview of how to install openiris",
+    max_width: "max-width: 600px; width:100%",
+  },
+  flashing_tool_flash_firmware_success: {
+    url: "https://imgur.com/mjEvTwn.png",
+    alt: "preview of flashing success",
+    max_width: "max-width: 600px; width:100%",
+  },
+  flashing_tool_logs: {
+    url: "https://imgur.com/Dqi98qn.png",
+    alt: "logs",
+    max_width: "max-width: 600px; width:100%",
+  },
+  configure_wifi_network: {
+    url: "https://imgur.com/5RkjWTJ.png",
+    alt: "How to send wifi",
+    max_width: "max-width: 600px; width:100%",
+  },
+  send_wifi_credentials: {
+    url: "https://imgur.com/5pyIBgD.png",
+    alt: "how to setup credentials",
+    max_width: "max-width: 600px; width:100%",
+  },
+  flasher_camera_preview: {
+    url: "https://imgur.com/wfdSomX.png",
+    alt: "camera preview",
+    max_width: "max-width: 600px; width:100%",
   },
   vrcft_etvr_module_registry: {
     url: "https://i.imgur.com/AKsgEyy.png",

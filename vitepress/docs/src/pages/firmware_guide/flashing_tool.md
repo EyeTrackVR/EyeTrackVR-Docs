@@ -5,52 +5,121 @@ import { image_settings } from '../../static/image_settings'
 
 # Firmware Flashing Tool {.text-[var(--font-accent)]}
 
-## `What is this?`
-
-The Firmware Flashing Tool allows you to flash the firmware to your ESPs without requiring VScode. It is a GUI tool that is built using [Tauri](https://tauri.app/) and [SolidJS](https://www.solidjs.com/).
-
-Features include:
-
-- download pre-built firmware binaries
-- configure firmware settings
-- flash firmware to ESPs
-- open a serial monitor to view the ESPs output for debugging
+## Before we proceed
 
 ::: info Note
-This tool is currently in beta, and we are working on adding support for OTA and configuring network settings. If you have any issues, please let us know by opening an issue on the repository.
+
+- Ensure you have a **data transfer cable** ready, as it is necessary for the flashing process.
+- Ensure that your camera is set up correctly [How to prepare a Seeed Studio XIAO Sense ESP32](../how_to_build/preparing_xiao).
+
 :::
 
-## `How To Use`
+##
 
-### `Download the tool`
+### Step 1: Download and Install the Firmware Flashing Tool
 
-You can download the tool from the [releases page](https://github.com/EyeTrackVR/FirmwareFlashingTool/releases).
+- Download the Firmware Flashing Tool Installer from the latest [GitHub release](https://github.com/EyeTrackVR/FirmwareFlashingTool/releases).
+- Run the installer and follow the on-screen instructions to complete the installation of the Firmware Flashing Tool app.
 
-### `Flash the firmware`
+##
 
-1. Connect your ESP to your computer
-2. Open the tool
-3. Select the correct firmware for your board and setup.
-4. Download the firmware
-5. Connect to the Esp
-6. Flash the firmware
+### Step 2: Run the Firmware Flashing Tool app
 
-For the USB version, this is all you need to do! Well done.
+After the installation is complete, you should see an icon on your desktop. To open the application, double-click the icon.
 
-<ImageCard :options="image_settings.flashing_tool"/>
-
-### `WiFi Setup`
+You then should be greeted with a GUI that looks like this:
 
 <ImageCard :options="image_settings.flashing_tool_1"/>
 
-If you are using the WiFi version, you will need to configure the WiFi settings. After you have flashed the firmware you will need to connect to the ESPs WiFi network. The network name will be `EyeTrackVR`. The password will be `12345678`. Once you have connected to the network, you can open the Firmware Flashing tool and configure the WiFi settings. You will need to enter the SSID and password for your WiFi network. Once you have done this, you can click the `Save` button to save the settings to the ESP. The ESP will then restart and connect to your WiFi network. You can then connect to the ESPs IP address to view the web interface.
+##
 
-To find the ESP's IP address you can either use the serial monitor or look at your routers list of connected devices.
+### Step 3: Select board.
 
-To open the serial monitor,  you will need to connect to the esp, just as you did for flashing. Once you have connected, you can click the `Monitor` button to open the serial monitor. You should then see the ESPs output in the serial monitor.
+We now have a couple of options letting us decide how we want to build the firmware.
 
-## `Environments`
+- `Debug`<br/>
+  This is the default environment and does not need to be explicitly chosen. It includes extensive logging, making it ideal for initial setup and troubleshooting, as it provides comprehensive visibility into the system’s operation.
 
-The firmware supports multiple environments. This means that we have full support for multiple types of ESPs. Each ESP is configured to be in a different environment. If you are using a different ESP, you will need to change the environment to the correct one.
+- `_release`<br/>
+  Has a lot less debugging, may also be missing some things available only in debug for debug purposes, this should be flashed when everything is working.
 
-Please reference the [Firmware Environments Page](../firmware_guide/environments) for more information.
+Press left click on the `Select Board` dropdown, then choose your desired board from the list.
+Once you've selected your board, click **Confirm** to move on to the next step.
+
+<ImageCard :options="image_settings.flashing_tool_select_board"/>
+
+##
+
+### Step 4: Flash firmware.
+
+Once you're ready, hold down the **B** button on your board and connect it to your PC.
+Next, click **Install OpenIris** and select the port corresponding to your board to complete the installation.
+
+<ImageCard :options="image_settings.flashing_tool_flash_firmware"/>
+
+##
+
+### Step 5: That's it!.
+
+Installation complete! Everything is set up and ready to go.<br/>
+Click **Show Logs** to view the results.
+
+<ImageCard :options="image_settings.flashing_tool_flash_firmware_success"/>
+
+##
+
+### Step 6: Logs.
+
+If you choose the wired option, the correct logs should appear as follows.
+<br/>
+If the logs don't look right, ensure that your camera is properly connected to the board.
+
+<ImageCard :options="image_settings.flashing_tool_logs"/>
+
+## How to configure wifi.
+
+::: info Note
+
+- Please note that 5GHz networks are not currently supported, so you will need to use a 2.4GHz network.
+
+:::
+
+##
+
+### Step 1: Select board
+
+Ensure that the selected board has a **wireless mode** checkmark below it.
+
+<ImageCard :options="image_settings.flashing_tool_select_board"/>
+
+##
+
+### Step 2: Configure wifi network
+
+You'll need to provide information about the network you're planning to connect to.
+
+`SSID`<br/>
+The SSID is your Wi-Fi name, make sure it doesn't contain any `special characters`.
+
+`Password`<br/>
+You'll need to provide the password used to connect to the selected Wi-Fi network.
+
+<ImageCard :options="image_settings.configure_wifi_network"/>
+
+##
+
+### Step 3: Send wifi credentials.
+
+Once the installation is complete, unplug your board, then reconnect it to the PC without pressing any buttons and press **Send credentials**
+
+<ImageCard :options="image_settings.send_wifi_credentials"/>
+
+##
+
+### Step 4: Get working stream.
+
+After sending is complete, disconnect your board, then reconnect it to the PC without pressing any buttons, and click **Show logs**.
+<br/>
+Scroll down to find the text labeled **IP: 192.168.XXX.XXX**.
+
+<ImageCard :options="image_settings.flasher_camera_preview"/>
