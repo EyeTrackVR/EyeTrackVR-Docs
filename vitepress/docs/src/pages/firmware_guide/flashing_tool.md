@@ -52,7 +52,7 @@ Once you've selected your board, click **Confirm** to move on to the next step.
 
 ### Step 4: Flash firmware.
 
-Once you're ready, hold down the **B** button on your board and connect it to your PC.
+Once you're ready, hold down the **B** or **IO0** button on your board and connect it to your PC. (The button may be small, but it's there).
 Next, click **Install OpenIris** and select the port corresponding to your board to complete the installation.
 
 <ImageCard :options="image_settings.flashing_tool_flash_firmware"/>
@@ -80,7 +80,7 @@ If the logs don't look right, ensure that your camera is properly connected to t
 
 ::: info Note
 
-- Please note that 5GHz networks are not currently supported, so you will need to use a 2.4GHz network.
+- Please note that 5GHz networks are not supported by the hardware, so you will need to use a 2.4GHz network.
 
 :::
 
@@ -110,7 +110,7 @@ You'll need to provide the password used to connect to the selected Wi-Fi networ
 
 ### Step 3: Send wifi credentials.
 
-Once the installation is complete, unplug your board, then reconnect it to the PC without pressing any buttons and press **Send credentials**
+Once the installation is complete, unplug your board, then reconnect it to the PC without pressing any buttons and press **Send credentials**.
 
 <ImageCard :options="image_settings.send_wifi_credentials"/>
 
@@ -120,6 +120,8 @@ Once the installation is complete, unplug your board, then reconnect it to the P
 
 After sending is complete, disconnect your board, then reconnect it to the PC without pressing any buttons, and click **Show logs**.
 <br/>
-Scroll down to find the text labeled **IP: 192.168.XXX.XXX**.
+Scroll down to find the text labeled **`IP: 192.168.XXX.XXX`**.
 
 <ImageCard :options="image_settings.flasher_camera_preview"/>
+
+This IP can then be entered into the app or a web browser like: `http://192.168.XXX.XXX` 
