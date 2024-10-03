@@ -1,0 +1,11 @@
+@layer components {
+  .grid-container {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+
+  .custom-links {
+    @apply dark:text-blue-400 text-blue-800 hover:underline
+  }
+}
