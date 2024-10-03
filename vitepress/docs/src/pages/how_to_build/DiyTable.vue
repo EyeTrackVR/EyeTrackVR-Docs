@@ -56,7 +56,7 @@ export default {
               links: 'If you already have a supported camera capable ESP32 or sourced elsewhere.'
             },
             {
-              name: 'Seeed Studio XIAO Sense ESP32-S3',
+              name: '★ Seeed Studio XIAO Sense ESP32-S3',
               amount: () => this.tracker,
               cost: 12.87,
               costAll: () => this.tracker * 12.87 + 3.18,
@@ -94,7 +94,7 @@ export default {
               links: 'If you already have a supported camera or sourced elsewhere.'
             },
             {
-              name: '130 Degree NO-IR',
+              name: '★ 130 Degree NO-IR',
               amount: () => this.tracker,
               cost: 5.41,
               costAll: () => this.tracker * 5.41,
@@ -123,7 +123,7 @@ export default {
               links: '<a href="https://docs.eyetrackvr.dev/getting_started/led_safety">IR LED Safety<a/> If you already have safe IR LED hardware and know what you are doing.'
             },
             {
-              name: 'Official V4 mini No-Solder',
+              name: '★ Official V4 mini No-Solder',
               amount: () => 1,
               cost: 30,
               costAll: () => this.tracker + 30 + 5,
@@ -158,7 +158,7 @@ export default {
               links: 'If you already have safe IR LED hardware and know what you are doing.'
             },
             {
-              name: '4 port USB 3.2 LDLrui (MTT Usually)',
+              name: '★ 4 port USB 3.2 LDLrui (MTT Usually)',
               amount: () => 1,
               cost: 17.99,
               costAll: () => this.tracker + 17.99,
@@ -179,7 +179,14 @@ export default {
               links: '<a href="https://www.aliexpress.us/item/3256801220206638.html">AliExpress</a> Small but non MTT hub breakout'
             },
             {
-              name: '3 port USB 3.0 Hub With Power Passthrough (MTT)',
+             name: '★ 4 port Adafruit CH334F USB Hub Breakout (MTT)',
+             amount: () => 1,
+             cost: 4.99,
+             costAll: () => this.tracker + 8,
+             links: '<a href="https://www.adafruit.com/product/5997">Adafruit</a> Small, high quality MTT hub breakout'
+            },
+            {
+              name: '★ 3 port USB 3.0 Hub With Power Passthrough (MTT)',
               amount: () => 1,
               cost: 17.99,
               costAll: () => this.tracker + 1.41,
@@ -204,7 +211,7 @@ export default {
               amount: () => this.tracker,
               cost: 2,
               costAll: () => this.tracker * 2 + 5,
-              links: '<a href="https://jlc3dp.com/3d-printing-quote">JLC3DP</a> '
+              links: '<a href="https://docs.eyetrackvr.dev/misc/jlc3dp">JLC3DP Printing Service</a>'
             },
           ],
           selectedChoice: 0,

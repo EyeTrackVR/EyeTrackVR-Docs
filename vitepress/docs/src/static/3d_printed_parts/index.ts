@@ -1,5 +1,19 @@
 const printed_parts = {
     hmds: [
+                {
+            hmd: "Quest 3",
+            parts: [
+                ""
+            ],
+            hyper_links: [
+                {
+                    url: "https://www.thingiverse.com/thing:6439510",
+                    desc: "★ Quest 3 V4 Mount by BasilAldwin & Dentohn (Eye_Tracking_Ring_V21-B.stl)"
+                },
+
+            ],
+            link_id: 1
+        },
         {
             hmd: "Quest 2",
             parts: [
@@ -31,7 +45,7 @@ const printed_parts = {
                     desc: "ESP mount by Prohurtz"
                 },
             ],
-            link_id: 1
+            link_id: 2
         },
         {
             hmd: "Valve Index",
@@ -41,34 +55,31 @@ const printed_parts = {
             hyper_links: [
                 {
                     url: "https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/blob/main/ETVR%20ValveIndex%20Cam-LED%20Mount%20Rings/Index-EyetrackVRv4%20v18%20Print%20Me.stl",
-                    desc: "★ V4 IR and Camera mount by Physics Dude and bitbyt3r. Will require extra 110mm cables for solder-less"
+                    desc: "★ 160° V4 IR and Camera mount by Physics Dude and bitbyt3r."
                 },
                 {
-                    url: "https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii)/Gen%203%20Prohurtz%20V2%20Mounts%20(VROptician)",
-                    desc: "★ VROptician V4 IR and Camera mount by MUTE the Cyberwolf"  
+                    url: "https://makerworld.com/en/models/196741#profileId-217255",
+                    desc: "★ 160/130° V4 IR and Camera mount by Foow17 & Physics Dude"
+                },
+
+                {
+                    url: "https://makerworld.com/en/models/196791#profileId-217330",
+                    desc: "★ 160/130° VROptician V4 IR and Camera mount by Foow17 & MUTE"  
+                },
+                {
+                    url: "https://github.com/Frosty704/indexwidmo-eyetrackvr/tree/main/v2",
+                    desc: "★ 160/120° WidmoVR V4 IR and Camera mount by frosty704 & lerx-cnm"  
                 },
                 {
                     url: "https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii)",
-                    desc: "★ ESP frunk mod by MUTE the Cyberwolf"
+                    desc: " ESP frunk mod by MUTE the Cyberwolf"
                 },
                 {
                     url: "https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/tree/main",
                     desc: "Gum Stick USB Hub Dongle by Physics Dude"
                 },
-                {
-                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/Seaweed",
-                    desc: "V3 High IPD compatible 160 and 120 degree camera and IR emitter mounts by Seaweed"
-                },
-                {
-                    url: "https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts/Valve_Index/qdot",
-                    desc: "V3 Camera and IR emitter mount by Qdot"
-                },
-                {
-                    url: "https://github.com/rrazgriz/IndexEyeTrackVR/tree/main/hardware",
-                    desc: "Camera mount by Razgriz"
-                },
             ],
-            link_id: 2
+            link_id: 3
         },
         {
             hmd: "Samsung Odyssey +",
@@ -81,7 +92,7 @@ const printed_parts = {
                     desc: "★ V3 Camera and IR emitter mount by Breakdown"
                 }
             ],
-            link_id: 3
+            link_id: 4
         },
         {
             hmd: "Quest 1",
@@ -94,7 +105,7 @@ const printed_parts = {
                     desc: "★ V3 Camera and IR emitter mount by G0LDJAY"
                 }
             ],
-            link_id: 4
+            link_id: 5
         },
         {
             hmd: "Vive Pro 2",
@@ -111,7 +122,20 @@ const printed_parts = {
                     desc: "V3 VROptician camera and IR emitter mount by cat_who_loves_pie"
                 }  
             ],
-            link_id: 5
+            link_id: 6
+        },
+                {
+            hmd: "Vive & Vive Pro",
+            parts: [
+                
+            ],
+            hyper_links: [
+                {
+                    url: "https://www.thingiverse.com/thing:6438138",
+                    desc: "★ Vive & Vive Pro EyeTrackVR V4 mount by SunGear" 
+                }
+            ],
+            link_id: 6
         },
         {
             hmd: "Pico 4",
@@ -128,7 +152,7 @@ const printed_parts = {
                     desc: "★ V4 board, and XIAO ESP mounts by RamesTheGeneric"
                 }
             ],
-            link_id: 6
+            link_id: 8
         },
         {
             hmd: "General ESP Mounts",
@@ -141,7 +165,7 @@ const printed_parts = {
                     desc: "★ ESP mount by G0LDJAY for general HMD use (use if there are no specific HMD mounts available)"
                 }
             ],
-            link_id: 7
+            link_id: 9
         }
     ]
 }

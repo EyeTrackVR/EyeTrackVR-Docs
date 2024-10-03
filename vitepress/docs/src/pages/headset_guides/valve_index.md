@@ -1,4 +1,6 @@
-# Valve Index
+# Valve Index {.text-[var(--font-accent)]}
+
+These are two proven/tested ways to do a clean ETVR build on the Valve Index. Don't treat this as a *must follow*, but a setup to go for if you don't have other plans.
 
 ### Recommended Valve Index lens mounts
 
@@ -8,18 +10,18 @@
 
 [Foow17's 130 / 160° VROPTICIAN](https://makerworld.com/en/models/196791#profileId-217311)
 
-[Frosty704's 160° WidmoVR Mount](https://github.com/Frosty704/indexwidmo-eyetrackvr)
+[Frosty704's 160/120° WidmoVR Mount](https://github.com/Frosty704/indexwidmo-eyetrackvr)
 
-Please note due to the LED positioning, these will **require you to extend the LED wire, or get [110mm extensions](https://store.eyetrackvr.dev/products/2x-110mm-replacement-wires)**
+Please note due to the LED positioning, these will **require you to use the included 110mm extensions included in the V4 Kit**
 
-[V4 LED Kit Assembly Video](https://www.youtube.com/watch?v=AVUbDNe7uNU)
+[V4 LED Kit Assembly](https://docs.eyetrackvr.dev/how_to_build/led_setup)
 
 ## MUTEtheCyberwolf's DEV Frunk Mod:
 ![DevFrunk1](https://i.imgur.com/KQDFg1J.jpeg)
 ![HMD](https://i.imgur.com/4n6f4U3.png)
 
 #### Mod Details
-The DEV Frunk is a popular choice for ETVR on the Index. Replacing the original index frunk entirely, it has multiple mounting points for both the XIAO's, a Vive Facial Tracker (or [babble!](https://www.printables.com/model/745299-xiao-sense-case-seeed-studio-xiao-esp32s3-sense-ca)), and cutouts for 30x30x7mm fans.  
+The DEV Frunk is a popular choice for ETVR on the Index. Replacing the original index frunk entirely, it has multiple mounting points for both the XIAO's, a Vive Facial Tracker (or [project babble!](https://babble.diy/)), and cutouts for 30x30x7mm fans.  
 
 It also provides excellent ventilation simply due to the design being much more open, as well as a flip up design for the face tracker mount.
 
