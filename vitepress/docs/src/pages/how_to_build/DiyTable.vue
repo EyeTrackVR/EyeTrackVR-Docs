@@ -158,7 +158,7 @@ export default {
               links: 'If you already have safe IR LED hardware and know what you are doing.'
             },
             {
-              name: '★ 4 port USB 3.2 LDLrui (MTT Usually)',
+              name: '★ 4 port USB 3.2 LDLrui (MTT Usually) (Best for Cost)',
               amount: () => 1,
               cost: 17.99,
               costAll: () => this.tracker + 17.99,
@@ -179,19 +179,20 @@ export default {
               links: '<a href="https://www.aliexpress.us/item/3256801220206638.html">AliExpress</a> Small but non MTT hub breakout'
             },
             {
-             name: '★ 4 port Adafruit CH334F USB Hub Breakout (MTT)',
+             name: '★ 4 port Adafruit CH334F USB Hub Breakout (MTT) (Best for Size)',
              amount: () => 1,
              cost: 4.99,
              costAll: () => this.tracker + 8,
              links: '<a href="https://www.adafruit.com/product/5997">Adafruit</a> Small, high quality MTT hub breakout'
             },
             {
-              name: '★ 3 port USB 3.0 Hub With Power Passthrough (MTT)',
+              name: '★ 3 port USB 3.0 Hub With Power Passthrough (MTT) (Best for Quest)',
               amount: () => 1,
               cost: 17.99,
               costAll: () => this.tracker + 1.41,
               links: '<a href="https://www.amazon.com/uni-Charging-Thunderbolt-Aluminum-Pixelbook/dp/B08SVZFFPP/">Amazon</a> Great for Quest due to power passthrough'
             }, 
+ 
           ],
           selectedChoice: 1,
           isOpen: false
@@ -204,7 +205,7 @@ export default {
               amount: () => this.tracker,
               cost: 0,
               costAll: () => this.tracker * 0,
-              links: 'If you have a 3d printer or have access to one somewhere.'
+              links: 'If you have a 3d printer or have access to one somewhere such as a library, friend, or school.'
             },
             {
               name: 'JLCPCB Print Service, JLC3DP',
@@ -217,7 +218,6 @@ export default {
           selectedChoice: 0,
           isOpen: false
         },
-
 
         // Add other components similarly
       ],

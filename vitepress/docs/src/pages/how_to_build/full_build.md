@@ -11,7 +11,7 @@ import { alerts } from '../../static/alerts'
 
 ## This page will contain a step-by-step assembly guide.
 
-## Updated documentation is still in progress and not updated here, please be patient.
+## Updated documentation for V4 is still in progress and not updated here, please be patient.
 
 This guide provides a walkthrough on the assembly of a **wireless** V3 eye tracking.
 V4 specific final docs are Work In Progress:
