@@ -12,15 +12,20 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="component in components" :key="component.name">
+        <tr v-for="(component, index) in components" :key="component.name">
           <th class="component-col">{{ component.name }}</th>
           <td class="choice-col">
-            <div v-if="component.choices.length > 1" class="custom-select" @click="toggleDropdown(component)">
-              <div class="selected-option">{{ component.choices[component.selectedChoice].name }}</div>
-              <div v-if="component.isOpen" class="options">
-                <div v-for="(choice, index) in component.choices" 
-                     :key="index" 
-                     @click="selectOption(component, index)"
+            <div v-if="component.choices.length > 1" class="custom-select" @click="toggleDropdown(component, index)" :ref="`select-${component.name}`">
+              <div class="selected-option">
+                {{ component.choices[component.selectedChoice].name }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="dropdown-arrow" :class="{ 'rotate': component.isOpen }">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </div>
+              <div v-if="component.isOpen" class="options" :class="{ 'options-above': isOptionsAbove(index) }">
+                <div v-for="(choice, choiceIndex) in component.choices" 
+                     :key="choiceIndex" 
+                     @click="selectOption(component, choiceIndex)"
                      class="option">
                   {{ choice.name }}
                 </div>
@@ -36,11 +41,12 @@
       </tbody>
     </table>
     <p>Total: ${{ total.toFixed(2) }}</p>
- </div>
-</template>
+  </div>
+</template> 
+
 <script>
 export default {
- data() {
+  data() {
     return {
       tracker: 2,
       components: [
@@ -218,13 +224,11 @@ export default {
           selectedChoice: 0,
           isOpen: false
         },
-
-        // Add other components similarly
       ],
       total: 0,
     };
- },
- methods: {
+  },
+  methods: {
     updatePrices() {
       let total = 0;
       this.components.forEach(component => {
@@ -237,54 +241,42 @@ export default {
       });
       this.total = total;
     },
-    toggleDropdown(component) {
-      // Close all other dropdowns
+    toggleDropdown(component, index) {
       this.components.forEach(comp => {
         if (comp !== component) {
           comp.isOpen = false;
         }
       });
-      // Toggle the clicked dropdown
       component.isOpen = !component.isOpen;
     },
-    isOptionsAbove(component) {
-    if (this.$refs[`select-${component.name}`]) {
-      const rect = this.$refs[`select-${component.name}`].getBoundingClientRect();
-      const spaceBelow = window.innerHeight - rect.bottom;
-      return spaceBelow < 200 && rect.top > 200;
-    }
-    return false;
+    isOptionsAbove(index) {
+      return index >= this.components.length - 2;
     },
     selectOption(component, index) {
       component.selectedChoice = index;
-      component.isOpen = false;  // This line closes the dropdown
+      component.isOpen = false;
       this.updatePrices();
     },
     closeAllDropdowns() {
       this.components.forEach(component => {
-      component.isOpen = false;
-    });
-  },
-  // Add this new method
-  handleOutsideClick(event) {
-    if (!event.target.closest('.custom-select')) {
-      this.closeAllDropdowns();
+        component.isOpen = false;
+      });
+    },
+    handleOutsideClick(event) {
+      if (!event.target.closest('.custom-select')) {
+        this.closeAllDropdowns();
+      }
     }
-  }
- },
-mounted() {
-  this.updatePrices();
-  document.addEventListener('click', this.handleOutsideClick);
-},
-beforeUnmount() {
-  document.removeEventListener('click', this.handleOutsideClick);
-},
+  },
+  mounted() {
+    this.updatePrices();
+    document.addEventListener('click', this.handleOutsideClick);
+  },
+  beforeUnmount() {
+    document.removeEventListener('click', this.handleOutsideClick);
+  },
 };
 </script>
-
-
-
-
 <style scoped>
 .table-container {
   width: 100%;
@@ -312,34 +304,82 @@ th, td {
 .cost-all-col { width: 13%; }
 .links-col { width: 30%; }
 
-.multi-line-select {
+.custom-select {
+  position: relative;
   width: 100%;
-  white-space: normal;
-  word-wrap: break-word;
-  height: auto;
-  text-align: center;
+  cursor: pointer;
+  z-index: 1;
 }
 
-select {
-  width: 100%;
+.custom-select:hover,
+.custom-select:focus-within {
+  z-index: 2;
+}
+
+.selected-option {
+  border: 1px solid #999;
   padding: 5px;
-  box-sizing: border-box;
-  white-space: normal;
-  height: auto;
+  background-color: #666;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-align: center;
-  text-align-last: center;
+  color: #fff;
+  transition: background-color 0.3s ease;
 }
 
-/* This targets Webkit browsers like Chrome and Safari */
-select option {
-  white-space: normal;
-  word-wrap: break-word;
+.selected-option:hover {
+  background-color: #444;
 }
 
-/* This targets Firefox */
-select:-moz-focusring {
-  color: transparent;
-  text-shadow: 0 0 0 #000;
+.options {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: #222;
+  border: 1px solid #444;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  top: 100%;
+}
+
+.options-above {
+  bottom: 100%;
+  top: auto;
+}
+
+.option {
+  padding: 5px;
+  border-bottom: 1px solid #444;
+  color: #fff;
+  background-color: #333;
+}
+
+.option:last-child {
+  border-bottom: none;
+}
+
+.option:hover {
+  background-color: #1e1e20;
+}
+
+.dropdown-arrow {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-arrow.rotate {
+  transform: rotate(180deg);
+}
+
+.custom-select[aria-expanded="true"] .dropdown-arrow {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 768px) {
@@ -358,80 +398,5 @@ select:-moz-focusring {
   .component-col, .choice-col, .amount-col, .cost-col, .cost-all-col, .links-col {
     width: auto;
   }
-}
-
-.custom-select {
-  position: relative;
-  width: 100%;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.custom-select:hover,
-.custom-select:focus-within {
-  z-index: 2;
-}
-
-.selected-option {
-  border: 1px solid #444;
-  padding: 5px;
-  background-color: #333;
-  min-height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #545454;
-}
-
-.options {
-  position: absolute;
-  left: 0;
-  right: 0;
-  background-color: #222;
-  border: 1px solid #444;
-  max-height: 200px;
-  overflow-y: auto;
-  z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  top: 100%;
-}
-.options-above {
-  bottom: 100%;
-  top: auto;
-}
-.option {
-  padding: 5px;
-  border-bottom: 1px solid #444;
-  color: #545454;
-  background-color: #333;
-}
-
-.option:last-child {
-  border-bottom: none;
-}
-
-.option:hover {
-  background-color: #1e1e20;
-}
-
-/* Ensure text is visible in all states */
-.custom-select, .selected-option, .option {
-  color: #fff;
-}
-
-/* Add some contrast to the selected option */
-.selected-option {
-  background-color: #1e1e20;
-}
-
-/* Improve visibility of options */
-.options {
-  background-color: #222;
-}
-
-/* Add a subtle hover effect */
-.option:hover {
-  background-color: #555;
 }
 </style>

@@ -46,7 +46,7 @@ const theme = {
       text: "How to Build",
       collapsible: true,
       items: [
-        { text: "Parts List (BETA)", link: "/how_to_build/part_list" },
+        { text: "Parts List", link: "/how_to_build/part_list" },
         { 
           text: "Preparing Cameras", 
           link: "/how_to_build/preparing_cameras" 
