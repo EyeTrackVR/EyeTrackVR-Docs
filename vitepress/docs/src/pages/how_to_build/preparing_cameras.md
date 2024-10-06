@@ -13,7 +13,7 @@ Many times, the IR filter will still be on the 160° night vision model. If your
 
 ### 130° IR Filter removal
 
-<video src="https://i.imgur.com/qaEmxmn.mp4" width="640" height="360" controls></video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mRSLSeX3omA" title="How to Remove the IR Filter on a 130 Deg OV2640 Camera" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 160° IR Filter removal
 
