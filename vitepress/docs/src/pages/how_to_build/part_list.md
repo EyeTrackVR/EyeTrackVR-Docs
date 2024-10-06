@@ -40,7 +40,7 @@ This is our latest setup recommended for users with wired headsets such as the V
 **Cons:**
 - Requires USB port i.e. on Valve Index and USB hub mounted on your headset
 - Can be slightly more costly
-- When in use with a Vive Facial Tracker or other bandwidth sensitive components, a MTT USB hub is required
+- When in use with a Vive Facial Tracker or other bandwidth sensitive components, a MTT USB hub is required or the devices will be unusable (low FPS).
 - Requires beta app versions until the v2.0 app is released
 
 ## Option 2: Wireless over WiFi 2.4 GHz
