@@ -46,11 +46,10 @@ const theme = {
       text: "How to Build",
       collapsible: true,
       items: [
-        { text: "Part List", link: "/how_to_build/parts_list" },
         { text: "Parts List (BETA)", link: "/how_to_build/part_list" },
         { 
-          text: "Protecting Cameras", 
-          link: "/how_to_build/protecting_cameras" 
+          text: "Preparing Cameras", 
+          link: "/how_to_build/preparing_cameras" 
         },
         { 
         text: "Preparing XIAO Sense ESP32", 
@@ -61,10 +60,13 @@ const theme = {
           link: "/how_to_build/led_setup" 
           },
         {
+          text: "3D Printed Mounts",
+          link: "/how_to_build/3d_printed_mounts",
+          },
+        {
           text: "How to Create your own Camera Mount",
           link: "/how_to_build/creating_your_own_mount",
         },
-        { text: "Full Build Guide", link: "/how_to_build/full_build" },
       ],
     },
     {
@@ -111,6 +113,7 @@ const theme = {
       text: "Miscellaneous",
       collapsible: true,
       items: [
+        { text: "JLC3DP 3D Printing Service", link: "/misc/jlc3dp"},
         { text: "VR Chat Avatar Setup", link: "/misc/vrc_avatar_setup" },
         { text: "FAQ", link: "/misc/faq" },
       ],
@@ -149,6 +152,9 @@ const theme = {
           text: "Prepare to solder IR LED PCB V2's",
           link: "/archive/fox_ir_v2_build_instructions",
         },
+        { text: "V3 Full Build Guide", link: "/how_to_build/full_build" },
+        { text: "Part List (legacy)", link: "/how_to_build/parts_list" },
+   
       ],
     },
   ],
