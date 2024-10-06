@@ -158,5 +158,3 @@ Repeat for your other eye.
         </p>
     </template>
 </Alerts>
-
-## See anything outdated on this guide? Let me know! `Prohurtz#0001`
