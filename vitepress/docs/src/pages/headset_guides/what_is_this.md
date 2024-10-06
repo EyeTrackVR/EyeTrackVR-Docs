@@ -2,14 +2,14 @@
 
 This is an initiative to provide specific information on specific headsets. Any weird quirks, recommended 3d printed mounts and different setup types are to be included on a page. 
 
-Complete submissions will receive a 20% off coupon for the ETVR store. Partial completions (one specific mount) will receive 15% off coupons to show our appreciation and provide an incentive. (reach out to me in dms to receive the code `@prohurtz`)  
+Complete submissions will receive a 50% off coupon for the ETVR store. Partial completions (one specific mount) will receive 15% off coupons to show our appreciation and provide an incentive. (reach out to me in dms to receive the code `@prohurtz`)  
 
 Thank you for working to improve EyeTrackVR's accessibility!  
 
 
 ### Guidelines
 
-Please keep it as concise as possible, and spell check before submitting. You can submit by making a PR on github, or sending the `.md` file to #documentation in the ETVR Discord pringing `@prohurtz` .
+Please keep it as concise as possible, and spell check before submitting. You can submit by making a PR on github, or sending the `.md` file to #documentation in the ETVR Discord pinging `@prohurtz` . Take a look at the Valve Index guide for inspiration.
 
 
 file name: `headset_name.md`
