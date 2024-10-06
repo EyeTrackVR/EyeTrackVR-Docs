@@ -22,9 +22,9 @@ Many times, the IR filter will still be on the 160° night vision model. If your
 ##
 
 # Blurry Camera?   {.text-[var(--font-accent)]}
-If your feed looks blurry in the ETVR app, you need to focus the cameras by turning the lens. They are glued in place from factory, but easily breakable with pliers. 
+If your feed looks blurry in the ETVR app, you likely need to focus the cameras by turning the lens. They are glued in place from factory, but easily breakable with pliers. 
 
-Use a point of reference like the LED's while holding the camera, rotate the lens with pliers in either direction and watch if the feed gets more or less blurry. Repeat until you dial it in nicely. You should do this prior to mounting the cameras.
+Use a point of reference like the LED's while holding the camera, rotate the lens with pliers in either direction and watch if the feed gets more or less blurry. Repeat until you dial it in nicely. You should do this prior to mounting the cameras or atleast prevent mounting and unmounting them too many times or you risk breaking them.
 
 ##
 
@@ -97,7 +97,7 @@ And you are done!
 * Do not fold tightly or bend the ribbon cable sharper than ~45 degrees if possible
 * Do not expose to sharp objects or crevices
 * The less wear while handling or putting on/off a headset the better
-
+* Do not unmount and mount the cameras repetitively.
 
 ## Conclusion
 
