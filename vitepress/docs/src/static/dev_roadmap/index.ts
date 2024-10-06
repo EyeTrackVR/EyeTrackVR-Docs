@@ -29,7 +29,8 @@ const InProgress: IDevRoadMap = {
         { label: 'V5 hardware (focus on wired usage)' },
         { label: 'Dynamic foveated rendering via OpenXR' },
         { label: '3D, 9-point calibration via OpenXR/SteamVR overlay' },
-        
+        { label: 'Custom cam boards/cameras' },
+        { label: 'Full hardware kits' },
     ]
 }
 
@@ -37,7 +38,7 @@ const InProgress: IDevRoadMap = {
 const Planned: IDevRoadMap = {
     state: false,
     object: [
-        { label: 'Custom cam boards/cameras?' },
+
         { label: 'Game interaction SDK' },
         { label: 'Game developer integration program' },
     ]
