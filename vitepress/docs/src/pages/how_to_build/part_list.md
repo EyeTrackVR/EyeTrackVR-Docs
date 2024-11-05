@@ -57,7 +57,6 @@ However, they can be a bit more temperamental and if you are using a wired heads
 - Less cables (power only)
 - No issues with USB hubs
 - Easier to flash
-- Less power draw
 
 **Cons:**
 - Requires two external antennas for optimal streaming quality
