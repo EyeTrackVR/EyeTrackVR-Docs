@@ -764,18 +764,23 @@ const image_settings = {
     alt: "preview of manage boards",
     max_width: "max-width: 600px; width:100%",
   },
+  flashing_tool_select_port: {
+    url: "https://imgur.com/8eGro5i.png",
+    alt: "preview of manage ports",
+    max_width: "max-width: 600px; width:100%",
+  },
   flashing_tool_flash_firmware: {
-    url: "https://imgur.com/3Oq2nQf.png",
+    url: "https://imgur.com/BuUzn3j.png",
     alt: "preview of how to install openiris",
     max_width: "max-width: 600px; width:100%",
   },
   flashing_tool_flash_firmware_success: {
-    url: "https://imgur.com/mjEvTwn.png",
+    url: "https://imgur.com/Xh0iWR2.png",
     alt: "preview of flashing success",
     max_width: "max-width: 600px; width:100%",
   },
   flashing_tool_logs: {
-    url: "https://imgur.com/Dqi98qn.png",
+    url: "https://imgur.com/ZwJhusl.png",
     alt: "logs",
     max_width: "max-width: 600px; width:100%",
   },
@@ -785,12 +790,12 @@ const image_settings = {
     max_width: "max-width: 600px; width:100%",
   },
   send_wifi_credentials: {
-    url: "https://imgur.com/5pyIBgD.png",
+    url: "https://imgur.com/8kJskYi.png",
     alt: "how to setup credentials",
     max_width: "max-width: 600px; width:100%",
   },
   flasher_camera_preview: {
-    url: "https://imgur.com/wfdSomX.png",
+    url: "https://imgur.com/aJAfgDG.png",
     alt: "camera preview",
     max_width: "max-width: 600px; width:100%",
   },
