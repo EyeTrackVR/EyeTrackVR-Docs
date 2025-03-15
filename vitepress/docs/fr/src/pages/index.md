@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: Doccumentation de EyeTrackVR
-  text: Un système de suivi des yeux open source et abordable.
+  text: Un système de suivi oculaire abordable et axé sur la communauté.
   image:
     src: /logo_light.png
     alt: ETRVR logo
@@ -17,8 +17,8 @@ hero:
       link: https://github.com/EyeTrackVR/EyeTrackVR
 features:
   - icon: ⚡️
-    title: Open Source
-    details: EyeTrackVR est totalement open source gratuit d'utilisation.
+    title: Source Available
+    details: le code source est disponible pour une utilisation non commerciale.
   - icon: 🎉
     title: Communautaire
     details: EyeTrackVR est construit par toi pour toi.

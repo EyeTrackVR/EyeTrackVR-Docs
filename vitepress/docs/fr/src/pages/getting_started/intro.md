@@ -7,7 +7,7 @@ import { image_settings } from '../../static/image_settings'
 
 # EyeTrackVR {.text-3xl .font-bold .underline .text-[#ab5ac7]}
 
-Une plateforme de suivi des yeux open source et *abordable* pour les jeux sociaux VR via le protocole `OSC` et `UDP`.
+Une plateforme de suivi oculaire orientée vers la communauté *abordable* pour les jeux sociaux VR via le protocole `OSC` et `UDP`.
 
 <Alerts :options="alerts.user_warning">
     <template v-slot:content>

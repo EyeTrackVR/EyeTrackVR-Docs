@@ -44,10 +44,6 @@ import { members, contributors } from '../static/members'
         (pas toutes aussi soignés que les autres) que l'on donnes pour que d'autres personnes puisses les utiliser<br>
         <br>
         On espère que tu trouvera quleque chose d'utile ici aussi<br>
-        <br>
-        On est militant du modèle<a class="custom-links" href="https://fr.wikipedia.org/wiki/Open_source" target="_blank">open source</a>.<br>
-        <br>
-        C'est donc pour ça que nous nous éfforçons à faire en sorte que notre travail soit ouvert aux autres pour être regardé, reproduit et/ou réutilisé.
     </template>
   </VPTeamPageSection>
 </VPTeamPage>

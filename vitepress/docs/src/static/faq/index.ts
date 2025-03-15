@@ -2,7 +2,7 @@ const faq = {
     faq: [
         {
             question: "What is the goal of this project?",
-            answer: "To provide an open source, affordable VR eye tracker for Social games like VRChat as well as provide an open eye tracking platform.",
+            answer: "To provide an community oriented, affordable VR eye tracker for Social games like VRChat as well as provide an open eye tracking platform.",
             hyper_link: "",
             link_description: "",
         },
