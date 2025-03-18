@@ -7,7 +7,7 @@ import { image_settings } from '../../static/image_settings'
 
 # EyeTrackVR {.text-3xl .font-bold .underline .text-[#ab5ac7]}
 
-Open source and *affordable* VR eye tracker platform for Social VR Games via `OSC` and `UDP` protocol.
+A community oriented and *affordable* VR eye tracker platform for Social VR Games via `OSC` and `UDP` protocol.
 
 ### Welcome to the EyetrackVR documentation website. Here you will find all avalable documentation regauding building, development, and other resources related to this project.
 

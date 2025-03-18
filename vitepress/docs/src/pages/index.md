@@ -6,7 +6,7 @@ head:
       content: EyeTrackVR ETVR VR Virtual Reality Eye Tracking VRChat Social VR Games VR Game VR Games VRChat Avatar VRChat Avatars VRChat Eye Tracking VRChat Eye Tracking Avatar VRChat Eye Tracking Avatars
 hero:
   name: EyeTrackVR Docs
-  text: Open-source and affordable VR eye tracking.
+  text: Community oriented and affordable VR eye tracking.
   image:
     src: /logo_light.png
     alt: ETVR logo
@@ -20,8 +20,8 @@ hero:
       link: https://github.com/EyeTrackVR/EyeTrackVR
 features:
   - icon: ⚡️
-    title: Open Source
-    details: fully open source and free to use.
+    title: Source Available
+    details: source code available for noncommercial use.
   - icon: 🎉
     title: Community Driven
     details: built by you for you.

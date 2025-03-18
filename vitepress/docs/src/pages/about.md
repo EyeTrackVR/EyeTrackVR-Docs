@@ -43,10 +43,6 @@ import { members, contributors } from '../static/members'
         The <a class="custom-links" href="/intro" target="_blank">guides</a> on this website include some of our teams own notes (not all of them are polished) that we disclose for other people to use.<br>
         <br>
         Here, we hope you may find something useful to you.<br>
-        <br>
-        We advocate the <a class="custom-links" href="https://en.wikipedia.org/wiki/Open-source_model" target="_blank">Open Source model</a>.<br>
-        <br>
-        This is why we strive to make our work open to other people for consultation, replication and reuse.
     </template>
   </VPTeamPageSection>
 </VPTeamPage>
