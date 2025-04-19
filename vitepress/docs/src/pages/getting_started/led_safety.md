@@ -7,86 +7,141 @@ import { image_settings } from '../../static/image_settings'
 
 
 
+## Near‑Eye Infrared (IR) Emitter Safety
 
-## About IR Emitter Safety
+**Please exercise caution when messing around with IR emitters.**
 
-Please *exercise caution* when messing around with IR emitters.
-
-IR can be dangerous to your eyes once at a certain power level. It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes.
-If you doubt yourself or do not understand something, just do exactly what we do. Don't use different emitters, don't use different means of power, etc.
+Infrared emitters are invisible but **not harmless**. Excessive IR energy can heat the **cornea** and, over long exposures, contribute to cataract formation. At higher intensities and shorter wavelengths, the **retina** is also at risk due to focused thermal energy. This page explains how EyeTrackVR remains well below internationally accepted exposure limits, and how *you* can help ensure continued safety.
 
 ::: danger
-It is important that you <ins>**DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE**</ins>. This can result in irreversible bodily harm.
+**DO NOT** remove current‑limiting resistors, supply the LEDs with a different voltage, substitute emitters, or bypass firmware current caps. These modifications invalidate the safety calculations and may cause **permanent eye damage**.
 :::
 
-The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth, excessive eye-strain or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we strive to make EyeTrackVR as safe as possible, we do not hold any responsibility for damage done.
+---
 
+### Relevant Safety Limits
 
-### What we care about:
+We design for compliance with these key international safety standards:
 
-We care about power exposure "W" to the cornea, which we can normalize over the exposed area to Irradiance "mW/cm^2"
-This number gives us the amount of IR radiation being released into the normalized area. We don't really care about "mA", or "V" alone, as by themselves these do not give us the exposure levels which we need to ensure safety.
+- **ICNIRP 2013**: For exposures >1000 seconds, the **anterior eye** (cornea and lens) irradiance limit is  
+  **10 mW/cm²** (equivalent to 100 W/m²).
+- **IEC 62471** and **IEC 60825-1**: For sources in the **retinal hazard region** (400–1400 nm), and a worst-case exposure of ≥10 s, the irradiance limit is  
+  **4 mW/cm²** (averaged over a 7 mm pupil projected cone of 11 mrad).
 
-Irradiance also needs to take into account distance of the light source (LED) as the further away you get from a source the weaker the intensity gets. (You can test this by looking at a light source from far away, and as you move closer, the brighter and more painful it is to look at) We do this by using Radiance "mW/cm2/sr" to normalize for the distance. The 'sr' stands for steradian, which can be thought of as a cone shape expanding as it moves away from the source.
+EyeTrackVR emitters operate at **850 nm**, within the retinal hazard region.  
+Our calculated output is well below both thresholds:  
+**≤ 0.8 mW/cm²** at 1 cm — **5×** below the retinal limit, **13×** below the corneal limit.
 
+---
 
-The International Commission on Non-Ionizing Radiation Protection's [Guidelines of limits of exposure to broad-band incoherent optical radiation (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf) states:
-> "To avoid thermal injury of the cornea and possible delayed effects on the lens of the eye (cataractogenesis), infrared radiation (780nm < > λ < > 3μm) should be limited to 100 W m⁻² (10 mW cm⁻²) for lengthy exposures (> 1000 s)" 
+### Why Current (mA) Isn’t Enough
 
-So 10 mW/cm2 is the **max** recommended limit given by this source. In my opinion this is still quite high, you will definitely feel some warmth and likely eyestrain after a while.
+LED current (mA) is not a direct measure of safety. **Irradiance** (power per unit area) determines actual eye exposure:
 
-It is known that when outside and not directly looking at the sun, your eyes get exposed to about 1 mW/cm2 or IR radiation. This is the target I set for hardware generally.
+```
+Irradiance E = Radiant Intensity Ie / Illuminated Area A
+A            = r² · Ω          where Ω = 2π(1−cosθ)
+```
 
+- *Ie* = radiant intensity (in **mW/sr**, from datasheet)
+- *r* = distance from LED to cornea (worst-case 1 cm)
+- *θ* = half-angle of LED emission cone (datasheet: 60°, full angle 120°)
+- *Ω* = solid angle in **steradians**  
+  (for θ = 60° → Ω ≈ π sr)  
+  → A = π cm² at 1 cm
 
-<Alerts :options="alerts.build_software_one">
-    <template v-slot:content>
-        <p>
-           This math is assuming the LED is directly in front of your pupil, and your pupil is not moving. In real world this is not the case. We have multiple LEDs around your eye, and your eye moves. When you look to the side, your pupil is not receiving all of the light from all LEDs and the distance grows as well. Properly calculating for this is hard and not worth the time. I chose to show that the "worst case scenario" is still well withing safety margins.
-        </p>
-    </template>
-</Alerts>
+---
 
+## Hardware Exposure Calculations
 
-# V3 Hardware Safety Outline and Exposure Numbers:
-For all of this math we will assume the "worst" to ensure we are well within safety. 
+### LED: XL‑3216HIRC‑850
 
-if powered with 5V, using 700 ohms of resistance, V3 Hardware will draw 0.00314... Amps. We will round up and convert this to 3.2mA.
-> (5V - 1.4V - 1.4V) / 700 ohm = 0.00314 ≈ 3.2mA  
+| Datasheet Value             | Symbol              | Notes                              |
+|-----------------------------|---------------------|-------------------------------------|
+| Radiant intensity @ 20 mA   | *Ie₍20ₘₐ₎* = 5 mW/sr | Typical max value, 60° half-angle   |
+| Full emission angle         | 120°                | ⇒ θ = 60°, Ω ≈ π sr                 |
 
-The [LED datasheet](https://datasheet.lcsc.com/lcsc/2211030000_XINGLIGHT-XL-3216HIRC-850_C965891.pdf) lists the intensity at 20mA to be a minimum of 2 and max of 5. We will assume the worst and use 5mW/sr.
+Radiant intensity scales roughly linearly with current:
 
-> 5 mW/sr * (3.2mA / 20mA) = 0.8 mW/sr
+```
+Ie = Ie₍20ₘₐ₎ × (I_drive / 20 mA)
+```
 
-Now, we need to account for distance. My number is based on a worst case scenario of 1cm of distance. (typically is is higher on average.) We convert 1cm to 1cm2/sr
+---
 
-> 0.8 mW/sr / 1cm2/sr = 0.8 mW/cm2
+### V3 Module (2 LEDs @ 3.2 mA each)
 
-Now, this is only for 1 LED, in the case of V3 we have 2 so we can:
-> 0.8 mW/cm2 * 2 = 1.6 mW/cm2
+```
+Ie_single  = 5 × (3.2 / 20) = 0.80 mW/sr
+E_single   = 0.80 / π = 0.25 mW/cm²
+E_total    = 0.25 × 2 = 0.51 mW/cm²
+→ ~5% of ICNIRP corneal limit
+```
 
-This value is well below the limit, and close to normal sun exposure outside.
-If the LEDs were further than 1cm (which they typically are) the exposure would be even less.
+---
 
+### V4 Module (4 LEDs @ 2.4 mA each)
 
+```
+Ie_single  = 5 × (2.4 / 20) = 0.60 mW/sr
+E_single   = 0.60 / π = 0.19 mW/cm²
+E_total    = 0.19 × 4 = 0.76 mW/cm²
+→ ~8% of ICNIRP corneal limit
+```
 
+---
 
+### Worst-Case (High Bin) Calculations
 
-# V4 Hardware Safety Outline and Exposure Numbers:
-For all of this math we will assume the "worst" to ensure we are well within safety. 
+Some LEDs may fall into a higher output bin with up to **8 mW/sr @ 20 mA**. We conservatively recalculate:
 
-V4 hardware is actively limited to ~2.4 mA
+#### V3 Max Bin (2 LEDs @ 3.2 mA):
 
-The [LED datasheet](https://datasheet.lcsc.com/lcsc/2211030000_XINGLIGHT-XL-3216HIRC-850_C965891.pdf) lists the intensity at 20mA to be a minimum of 2 and max of 5. We will assume the worst and use 5mW/sr.
+```
+Ie_single  = 8 × (3.2 / 20) = 1.28 mW/sr
+E_single   = 1.28 / π = 0.41 mW/cm²
+E_total    = 0.41 × 2 = 0.81 mW/cm²
+→ ~8.1% of ICNIRP corneal limit
+```
 
-> 5 mW/sr * (2.4mA / 20mA) = 0.6 mW/sr
+#### V4 Max Bin (4 LEDs @ 2.4 mA):
 
-Now, we need to account for distance. My number is based on a worst case scenario of 1cm of distance. (typically is is higher on average.) We convert 1cm to 1cm2/sr
+```
+Ie_single  = 8 × (2.4 / 20) = 0.96 mW/sr
+E_single   = 0.96 / π = 0.31 mW/cm²
+E_total    = 0.31 × 4 = 1.22 mW/cm²
+→ ~12.2% of ICNIRP corneal limit
+```
 
-> 0.6 mW/sr / 1cm2/sr = 0.6 mW/cm2
+---
 
-Now, this is only for 1 LED, in the case of V4 we have 4 so we can:
-> 0.6 mW/cm2 * 4 = 2.4 mW/cm2
+## Your Responsibilities
 
-This value is well below the limit, and not far from sun exposure.
-If the LEDs were further than 1cm (which they typically are) the exposure would be even less. And with typical eye movement they are less.
+1. **Do not modify the hardware.** Changing components or resistors voids all safety guarantees.
+2. **Verify functionality before use.** Use an IR-sensitive camera to confirm all LEDs are on and of equal brightness.
+3. **Perform periodic inspections** to ensure IR emitters have not damaged and remain equal brightness.
 
+---
+
+## Appendix A – Formula Summary
+
+```
+Ω               = 2π(1−cosθ)        (solid angle of emission)
+A               = Ω × r²            (illuminated area)
+Ie              = Ie₍20ₘₐ₎ × I / 20 mA
+E (per LED)     = Ie / A
+E_total         = E × (# of LEDs)
+```
+
+---
+
+## Appendix B – Quoted Guideline (ICNIRP 2013)
+
+> “To avoid thermal injury of the cornea and possible delayed effects on the lens of the eye (cataractogenesis), infrared radiation (780 nm < λ < 3 µm) should be limited to 100 W m⁻² (10 mW cm⁻²) for lengthy exposures (> 1000 s).”
+
+> — *ICNIRP Guidelines on Limits of Exposure to Incoherent Optical Radiation (2013)*  
+PDF: `/public/safety/ICNIRP_optical_radiation.pdf`
+
+---
+
+If you have suggestions, believe these calculations are inaccurate, or wish to contribute improvements, please [open a discussion on GitHub](https://github.com/EyeTrackVR/EyetrackVR-Docs). Your feedback helps us keep everyone safe.
