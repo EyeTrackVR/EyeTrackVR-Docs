@@ -140,7 +140,7 @@ E_total         = E × (# of LEDs)
 > “To avoid thermal injury of the cornea and possible delayed effects on the lens of the eye (cataractogenesis), infrared radiation (780 nm < λ < 3 µm) should be limited to 100 W m⁻² (10 mW cm⁻²) for lengthy exposures (> 1000 s).”
 
 > — *ICNIRP Guidelines on Limits of Exposure to Incoherent Optical Radiation (2013)*  
-PDF: `/public/safety/ICNIRP_optical_radiation.pdf`
+[PDF](https://docs.eyetrackvr.dev/safety/ICNIRP_optical_radiation.pdf)
 
 ---
 
