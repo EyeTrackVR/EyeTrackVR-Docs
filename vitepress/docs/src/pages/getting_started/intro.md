@@ -50,7 +50,7 @@ Our default configuration stays well below international safety thresholds (see 
 <Alerts :options="alerts.led_power_warning">
   <template v-slot:content>
     <p>
-      Use only <ins class="text-red-400 dark:text-red-500">non-focused</ins> LEDs, and ensure total output is <strong>5 mW/sr or less</strong>.
+      Use only <ins class="text-red-400 dark:text-red-500">non-focused</ins> LEDs, and ensure total output is <strong>4 mW/sr or less</strong>.
     </p>
   </template>
 </Alerts>

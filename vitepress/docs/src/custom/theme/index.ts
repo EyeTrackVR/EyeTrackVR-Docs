@@ -68,7 +68,7 @@ const theme = {
           link: "/how_to_build/creating_your_own_mount",
         },
         {
-          text: "V4 Full Build Guide",
+          text: "V4 Full Build Guide WIP",
           link: "/how_to_build/v4_full_build",
         },
       ],
