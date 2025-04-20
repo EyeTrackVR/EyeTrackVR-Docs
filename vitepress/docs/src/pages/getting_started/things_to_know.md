@@ -9,19 +9,14 @@ Do not expect 100% reliable and perfect function. Not all features are fully dev
 
 ### Firmware may have user difficulties
 
-Our firmware has not been tested widely so issues may creep up.
+As our firmware matures, bugs may creep up that make the process not flawless.
 
-### IR emitters are dangerous
+### IR emitters can be dangerous
 
-If handled wrong or precautions are ignored you can and will cause damage to your eyes. Please make sure to only buy linked ones or ones with specs that match exactly. We will not be responsible for damage caused if you go your own route.
+If handled wrong or precautions are ignored you can and will cause damage to your eyes. Please make sure to only buy linked emitters at calculated power or ones with specs that match exactly. We will not be responsible for damage caused if you go your own route. Our official kits are designed to be well within safety limits when used as designed.
 
 ### Documentation may be incomplete
 
-Important steps may be missing.
-
-### You will need to set up your avatar to use this
-
-This will require basic knowledge of Unity and ownership of your own avatar.
-Note: The 2.0 beta version of our app uses VRC's Native eye tracking, which does **NOT** require a special avatar.
+Important steps may be missing or unclear. We are working to bring documentation to completeness but it is a large undertaking and takes time. Feel free to ask questions in our Discord if things are unclear.
 
 ### Once you have acknowledged the items above, move on to the [Full Build Guide](../how_to_build/full_build)
