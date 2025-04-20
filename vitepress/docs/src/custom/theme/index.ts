@@ -67,6 +67,10 @@ const theme = {
           text: "How to Create your own Camera Mount",
           link: "/how_to_build/creating_your_own_mount",
         },
+        {
+          text: "V4 Full Build GUide",
+          link: "/how_to_build/v4_full_build",
+        },
       ],
     },
     {
