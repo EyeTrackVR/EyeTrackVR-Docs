@@ -11,11 +11,13 @@ import { image_settings } from '../../static/image_settings'
 
 **Please exercise caution when messing around with IR emitters.**
 
-Infrared emitters are invisible but **not harmless**. Excessive IR energy can heat the **cornea** and, over long exposures, contribute to cataract formation. At higher intensities and shorter wavelengths, the **retina** is also at risk due to focused thermal energy. This page explains how EyeTrackVR remains well below internationally accepted exposure limits, and how *you* can help ensure continued safety.
+IR can be dangerous to your eyes once at a certain power level. **It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes. If you doubt yourself or do not understand something, just do exactly what we do. Don't use different emitters, don't use different means of power, etc.**
 
-::: danger
-**DO NOT** remove current‑limiting resistors, supply the LEDs with a different voltage, substitute emitters, or bypass firmware current caps. These modifications invalidate the safety calculations and may cause **permanent eye damage**.
-:::
+::: danger It is important that you DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE. This can result in irreversible bodily harm. :::
+
+The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth, excessive eye-strain or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we have designed EyeTrackVR to be as safe as possible, we do not hold any responsibility for damage done.
+
+[Our official kits](https://store.eyetrackvr.dev/) are made with known safe parts, undergo design testing to ensure failures are safe, and have calculated exposure nummbers below.
 
 ---
 
