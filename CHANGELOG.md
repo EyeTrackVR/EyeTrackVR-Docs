@@ -3,6 +3,34 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.9.1](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.9.0...v1.9.1) (2025-05-01)
+
+
+### 🐛 Bug Fixes
+
+* page imports ([aff653b](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/aff653be4c1e9b476c3460aad0b10ed682a11db1))
+
+
+### 📝 Documentation
+
+* fix danger block ([c40b5e0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/c40b5e0d8ca87a9ab8115c27344639f26bdd0b6c))
+* fix link ([e991ea6](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/e991ea6fa34bc332c3a5d31c9d65e428e4fc4727))
+* fix power draw issue ([7da7ba4](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/7da7ba4c50fc695a005e293f5cc42f898f5c81a3))
+* fix typo ([419b2e0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/419b2e0c585fb9c2bc638264a769f8d26960a6de))
+* fix vue formatting ([0a96ea1](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/0a96ea1b7fe191a9e9590964be35e11e11ad9c06))
+* Merge pull request [#20](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/20) from luckmer/flashing-tool-docs-update ([c09e911](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/c09e911e8ba46659d6ac68bc6d7f47f48fcf8b5a))
+* Merge pull request [#21](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/21) from lorow/main ([58eeb9e](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/58eeb9ed5b2828cae1ef02cbc820ca2b8d34c371))
+* Merge pull request [#22](https://github.com/EyeTrackVR/EyeTrackVR-Docs/issues/22) from Frosty704/main with tweaks ([7ed813f](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/7ed813f90d6b81882ec9bf77cddf91bfca8b2f8e))
+* small IR tweak ([5f142f2](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/5f142f215c9083d53b1185e1a6a4b06608cde45f))
+* spell fix and example of guide ([8cbed53](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/8cbed53756fe6e3096612c224bae0f580c65c974))
+* start LED page ([0e65003](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/0e6500324cdfb70949adf814af14448d8e99be1b))
+* update default option and price of LEDs ([7101df2](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/7101df2dd075e639edb5eb67016c5e03c3e5d76e))
+* update led safety page ([84c9fab](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/84c9fab1667a7d8b5967dc795688aacb846868d9))
+* update page name and IR number ([37c5976](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/37c5976368f255b1bf898cb72cd4d28a635f410e))
+* update pages ([e554b45](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/e554b4552cb194193f97b76a60de2e263aaea8a2))
+* update part list tables, move out of beta ([5c92fec](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/5c92fecfc48b5e29d017d44d3e745bb71fe8ccbb))
+* update things to know ([6f9cdfa](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/6f9cdfa33a3af1225475970108896fea77d36651))
+
 ## 1.0.0 (2024-09-11)
 
 
