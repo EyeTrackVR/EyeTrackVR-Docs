@@ -119,8 +119,8 @@ E_total    = 0.31 × 4 = 1.22 mW/cm²
 
 ## Your Responsibilities
 
-1. **Do not modify the hardware.** Changing components or resistors voids all safety guarantees.
-2. **Verify functionality before use.** Use an IR-sensitive camera to confirm all LEDs are on and of equal brightness.
+1. **Do not modify the hardware.** Changing components or resistors voids all safety guarantees and may lead to unsafe conditions.
+2. **Verify functionality before use.** Use an IR-sensitive camera to confirm all LEDs are on and of equal brightness and the view of your eye is not completely washed out.
 3. **Perform periodic inspections** to ensure IR emitters have not damaged and remain equal brightness.
 
 ---
