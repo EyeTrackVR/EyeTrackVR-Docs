@@ -6,7 +6,9 @@
 
 IR can be dangerous to your eyes once at a certain power level. **It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes. If you doubt yourself or do not understand something, just do exactly what we do. Don't use different emitters, don't use different means of power, etc.**
 
-::: danger It is important that you DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE. This can result in irreversible bodily harm. :::
+::: danger 
+It is important that you DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE. This can result in irreversible bodily harm. 
+:::
 
 The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth, excessive eye-strain or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we have designed EyeTrackVR to be as safe as possible, we do not hold any responsibility for damage done.
 
