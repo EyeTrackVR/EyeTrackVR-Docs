@@ -1,11 +1,4 @@
-<script setup>
-import Alerts from '../../vue/alerts/Alerts.vue'
-import ImageCard from '../../vue/images/ImageComponent.vue'
-import { alerts } from '../../static/alerts'
-import { image_settings } from '../../static/image_settings'
-</script>
-
-
+<script setup> import Alerts from '../../vue/alerts/Alerts.vue' import ImageCard from '../../vue/images/ImageComponent.vue' import { alerts } from '../../static/alerts' import { image_settings } from '../../static/image_settings' </script> 
 
 ## Near‑Eye Infrared (IR) Emitter Safety
 
