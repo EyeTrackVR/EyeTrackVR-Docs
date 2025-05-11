@@ -33,7 +33,7 @@ const faq = {
         {
             question: "Est-ce que les infrarouges vont faire des dégars sur mes yeux?",
             answer: "Ce projet à été construit avec la sûreté en temps que pillier. Si vous avez toutes les mesures de sécurité en place et que la quantité d'infrarouges que vous observez avec une caméra à l'air sûr, tout devrait bien aller. Merci de vous rappeler que le développement n'est pas fini et qu'il vaut mieux être précautionneux.",
-            hyper_link: "https://dammedia.osram.info/media/bin/osram-dam-2496608/AN002_Details%20on%20photobiological%20safety%20of%20LED%20light%20sources.pdf",
+            hyper_link: "https://look.ams-osram.com/m/1d720a7b18ab3fce/original/Details-on-photobiological-safety-of-LED-light-sources.pdf",
             link_description: " here is a pdf with safety information",
         },
         {
