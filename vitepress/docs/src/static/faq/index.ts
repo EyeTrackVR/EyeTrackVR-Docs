@@ -33,7 +33,7 @@ const faq = {
         {
             question: "Will IR damage my eyes?",
             answer: "This project has safety in mind. If you do all of the safety measures that we put into place and visually test the amount of IR light you will be fine. Please note we have not finished development of all safety stuff so be careful.",
-            hyper_link: "https://dammedia.osram.info/media/bin/osram-dam-2496608/AN002_Details%20on%20photobiological%20safety%20of%20LED%20light%20sources.pdf",
+            hyper_link: "https://look.ams-osram.com/m/1d720a7b18ab3fce/original/Details-on-photobiological-safety-of-LED-light-sources.pdf",
             link_description: " here is a pdf with safety information",
         },
         {
