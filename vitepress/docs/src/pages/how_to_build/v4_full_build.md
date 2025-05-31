@@ -18,8 +18,8 @@ After following our part's list you should have the following components.
 You should have the following parts:
 
     2 × Supported ESP32 Camera Boards
-    2 × OV2640 Cameras Without IR Filters
-    2 × V4 IR emitter Kit
+    2 × OV2640 130 or 160 Degree Cameras Without IR Filters
+    1 × V4 IR Emitter Kit
     3 × USB-C cables
     1 × USB hub
     1 × Set of 3D printed mounts
