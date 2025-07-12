@@ -3,6 +3,18 @@
 [![semantic versioning](https://img.shields.io/badge/semantic%20versioning-2.0.0-green.svg)](https://semver.org)
 > All notable changes to this project will be documented in this file
 
+## [1.10.0](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.9.1...v1.10.0) (2025-07-12)
+
+
+### 🍕 Features
+
+* update part list links ([bbd37a9](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/bbd37a98795b6beef6c377fae86cff990af97143))
+
+
+### 📝 Documentation
+
+* fix led typo in full build ([4337ea5](https://github.com/EyeTrackVR/EyeTrackVR-Docs/commit/4337ea56018771d090c53162a79cb11d29a6b7a2))
+
 ## [1.9.1](https://github.com/EyeTrackVR/EyeTrackVR-Docs/compare/v1.9.0...v1.9.1) (2025-05-01)
 
 
