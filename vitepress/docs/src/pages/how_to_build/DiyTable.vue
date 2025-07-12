@@ -184,6 +184,14 @@ export default {
               costAll: () => this.tracker + 27.99,
               links: '<a href="https://amzn.to/40Q1K47">Amazon</a> Great for Quest due to power passthrough'
             }, 
+            {
+              name: '4 port USB 3.0 C to A Hub (Most compact for Index)',
+              amount: () => 1,
+              cost: 5,
+              costAll: () => this.tracker + 5,
+              links: '<a href="https://amzn.to/4nMGeqL">Amazon</a>'
+            }, 
+            
  
           ],
           selectedChoice: 3,
