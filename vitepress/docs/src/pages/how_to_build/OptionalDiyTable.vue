@@ -62,32 +62,25 @@ components: [
               links: 'If you do not need or already have.'
             },
             {
-              name: 'Type A USB Breakout Bare (AliExpress)',
+              name: 'Type A USB Breakout Bare',
               amount: () => 1,
               cost: 1.18,
               costAll: () => this.tracker + 1.18,
-              links: '<a href="https://www.aliexpress.us/item/2255801092919590.html">AliExpress</a>'
-            },
-            {
-              name: 'Type A USB Breakout Bare (Amazon)',
-              amount: () => 1,
-              cost: 6.49,
-              costAll: () => this.tracker + 5.49,
-              links: '<a href="https://www.amazon.com/10Gtek-DIP-Breakout-Adapter-2-54mm/dp/B09LC8WQCD/">Amazon</a>'
+              links: '<a href="https://www.aliexpress.us/item/2255801092919590.html">AliExpress</a> or <a href="https://amzn.to/44LhdDV">Amazon</a>'
             },
             {
               name: 'Type A USB Breakout With Cover (AliExpress)',
               amount: () => 1,
               cost: 2.20,
               costAll: () => this.tracker + 1.20 + 1.99,
-              links: '<a href="https://www.aliexpress.us/item/2251832820552545.html/">AliExpress</a>'
+              links: '<a href="https://www.aliexpress.us/item/2251832820552545.html/">AliExpress</a> or <a href="https://amzn.to/4lAfNmL">Amazon</a>'
             },
             {
               name: 'Type A USB Breakout With Wire and Cover (Amazon)',
               amount: () => 1,
-              cost: 9.60,
-              costAll: () => this.tracker + 8.60,
-              links: '<a href="https://www.amazon.com/Pigtail-Extension-Cables-Connector-Replacement/dp/B09ZQNJ2DJ/">Amazon</a>'
+              cost: 9.90,
+              costAll: () => this.tracker + 9.90,
+              links: '<a href="https://amzn.to/4nIoQ6u">Amazon</a>'
             },
           ],
           selectedChoice: 0,
@@ -104,18 +97,18 @@ components: [
               links: 'If you do not need or already have.'
             },
             {
-              name: 'AliExpress Male & Female',
+              name: 'Male & Female',
               amount: () => 1,
               cost: 1.19,
               costAll: () => this.tracker + 1.19 + 1.37,
-              links: '<a href="https://www.aliexpress.us/item/3256801151667308.html">AliExpress</a> Choose: "Color: 5Set".'
+              links: '<a href="https://www.aliexpress.us/item/3256801151667308.html">AliExpress</a> Choose: "Color: 5Set". or <a href="https://amzn.to/4eWGMq7">Amazon</a>'
             },
             {
-              name: 'AliExpress Vertical Male',
+              name: 'Vertical Male',
               amount: () => 1,
               cost: 2.37,
               costAll: () => this.tracker + 0.37 + 1.99,
-              links: '<a href="https://www.aliexpress.us/item/3256804002116469.html">AliExpress</a>'
+              links: '<a href="https://www.aliexpress.us/item/3256804002116469.html">AliExpress</a> or <a href="https://amzn.to/44Afl0o">Amazon</a>'
             },
           ],
           selectedChoice: 0,
@@ -133,18 +126,11 @@ components: [
               links: 'If you do not need wire or already have.'
             },
             {
-              name: 'Silicone Wire Kit',
+              name: '★ Silicone Wire Kit',
               amount: () => 1,
               cost: 5.96,
               costAll: () => this.tracker + 5.96 + 0.99,
-              links: '<a href="https://www.aliexpress.us/item/3256806164419666.html">AliExpress</a> 30 AWG or lower'
-            },
-            {
-              name: 'Generic Wire',
-              amount: () => 1,
-              cost: 0.70,
-              costAll: () => this.tracker + 0.70 + 1.24,
-              links: '<a href="https://a.aliexpress.com/_mK72cy6">AliExpress</a> Select "Specification: 30 AWG or lower"'
+              links: '<a href="https://www.aliexpress.us/item/3256806164419666.html">AliExpress</a> or <a href="https://amzn.to/3GESYiB">Amazon</a> 30 AWG or lower'
             },
             ],
           selectedChoice: 0,
@@ -162,11 +148,11 @@ components: [
               links: 'If you do not need wire or already have.'
             },
             {
-              name: 'Silicone Wire Kit',
+              name: '★ Silicone Wire Kit',
               amount: () => 1,
               cost: 5.96,
               costAll: () => this.tracker + 5.96 + 0.99,
-              links: '<a href="https://www.aliexpress.us/item/3256806164419666.html">AliExpress</a> 30 AWG or higher'
+              links: '<a href="https://www.aliexpress.us/item/3256806164419666.html">AliExpress</a> or <a href="https://amzn.to/44uCcfa">Amazon</a> 30 AWG or higher'
             },
             {
               name: 'Generic Wire',
@@ -197,11 +183,11 @@ components: [
               links: '<a href="https://www.aliexpress.us/item/2255799835842411.html">AliExpress</a> Choose: "Insert Type: 24p 0.5mm pitch" and Type A. Length depends on HMD, usually 150mm or 200mm.'
             },
             {
-              name: 'Adafruit 24 pin 0.5mm pitch',
+              name: '★ ETVR Official Cable and Connector Kit',
               amount: () => this.tracker,
-              cost: 1.35,
-              costAll: () => this.tracker * 1.35 + 6,
-              links: '<a href="https://www.adafruit.com/product/4230">Adafruit</a> 250mm'
+              cost: 5,
+              costAll: () => this.tracker + 5,
+              links: '<a href="https://store.eyetrackvr.dev/products/esp-camera-cable-extensions">ETVR Store</a>'
             },
           ],
           selectedChoice: 0,
@@ -231,6 +217,13 @@ components: [
               costAll: () => this.tracker * 0.865 + 6,
               links: '<a href="https://www.adafruit.com/product/4524">Adafruit</a>'
             },
+            {
+              name: '★ ETVR Official Cable and Connector Kit',
+              amount: () => this.tracker,
+              cost: 5,
+              costAll: () => this.tracker + 5,
+              links: '<a href="https://store.eyetrackvr.dev/products/esp-camera-cable-extensions">ETVR Store</a>'
+            },
           ],
           selectedChoice: 0,
           isOpen: false
@@ -253,11 +246,11 @@ components: [
               links: '<a href="https://www.aliexpress.us/item/2251832800433720.html">AliExpress</a> Choose: "Color: 2.4G Antenna".'
             },
             {
-              name: 'Amazon Large',
+              name: '★ Large',
               amount: () => 1,
               cost: 9.99,
               costAll: () => this.tracker + 7.99,
-              links: '<a href="https://www.amazon.com/Diymall-Antenna-Antennas-Arduino-ESP-072pcs/dp/B00ZBJNO9O/">Amazon</a>'
+              links: '<a href="https://amzn.to/44P49NT">Amazon</a> Reccomended for the best Wireless performance'
             },
           ],
           selectedChoice: 0,
@@ -278,21 +271,21 @@ components: [
               amount: () => 1,
               cost: 6.29,
               costAll: () => this.tracker + 5.29,
-              links: '<a href="https://www.amazon.com/gp/product/B09C2D9Z7T/ref=ox_sc_act_title_2?smid=A10X1BEP2GKRDQ&th=1">Amazon</a>'
+              links: '<a href="https://amzn.to/3U6OT9V">Amazon</a>'
             },
             {
               name: 'Short USB-A to USB-C Amazon',
               amount: () => 1,
               cost: 7.99,
               costAll: () => this.tracker + 5.99,
-              links: '<a href="https://www.amazon.com/Charging-Durable-Station-Compatible-Samsung/dp/B08LL1SVZD/">Amazon</a>'
+              links: '<a href="https://amzn.to/3U8Y4Xn">Amazon</a>'
             },
           ],
           selectedChoice: 0,
           isOpen: false
         },
         {
-          name: 'V4 LED Wire Extensions/Replacements',
+          name: 'V4 mini LED Wire Extensions/Replacements',
           choices: [
             {
               name: 'Bring Your Own',
@@ -304,16 +297,23 @@ components: [
             {
               name: '110mm Extension/Replacement',
               amount: () => 1,
-              cost: 1.50,
+              cost: 3,
               costAll: () => this.tracker + 1.50 + 5,
               links: '<a href="https://store.eyetrackvr.dev/products/2x-110mm-replacement-wires">ETVR Store</a>'
             },
             {
               name: '200mm Extension/Replacement',
               amount: () => 1,
-              cost: 1.50,
+              cost: 3,
               costAll: () => this.tracker + 1.50 + 5,
               links: '<a href="https://store.eyetrackvr.dev/products/2x-200mm-replacement-wires">ETVR Store</a>'
+            },
+            {
+              name: '35mm Extension/Replacement',
+              amount: () => 1,
+              cost: 3,
+              costAll: () => this.tracker + 1.50 + 5,
+              links: '<a href="https://store.eyetrackvr.dev/products/2x-35mm-replacement-wires">ETVR Store</a>'
             },
           ],
           selectedChoice: 0,

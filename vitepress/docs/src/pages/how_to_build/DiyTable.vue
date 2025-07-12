@@ -66,7 +66,7 @@ export default {
               amount: () => this.tracker,
               cost: 12.87,
               costAll: () => this.tracker * 12.87 + 3.18,
-              links: '<a href="https://www.aliexpress.com/item/3256804601970891.html">AliExpress XIAO Sense</a> Recommended'
+              links: '<a href="https://www.aliexpress.com/item/3256804601970891.html">AliExpress</a> <a href="https://amzn.to/44ZZrhi">Amazon</a> ESP32 S3 XIAO Sense Recommended'
             },
             {
               name: 'ESP32-CAM',
@@ -104,14 +104,14 @@ export default {
               amount: () => this.tracker,
               cost: 5.41,
               costAll: () => this.tracker * 5.41,
-              links: '<a href="https://www.aliexpress.com/item/3256802853835121.html">AliExpress</a> Select "Color: 75MM-130 Degree" Must manually remove IR filter'
+              links: '<a href="https://www.aliexpress.com/item/3256802853835121.html">AliExpress</a> Select "Color: 75MM-130 Degree" Must manually remove IR filter This gives best tracking quality and supports smaller headsets (Beyond, quest 3) than 160 degree.'
             },
             {
               name: '160 Degree IR',
               amount: () => this.tracker,
               cost: 4.26,
               costAll: () => this.tracker * 4.26,
-              links: '<a href="https://www.aliexpress.com/item/3256802853835121.html">AliExpress</a> Select "Color: 75MM-160 850nm"'
+              links: '<a href="https://www.aliexpress.com/item/3256802853835121.html">AliExpress</a> Select "Color: 75MM-160 850nm" Most of the times these come without filters however it is not uncommon to receive ones with it still on.'
             }
             
           ],
@@ -131,22 +131,22 @@ export default {
             {
               name: '★ Official V4 mini No-Solder',
               amount: () => 1,
-              cost: 30,
-              costAll: () => this.tracker + 30 + 5,
+              cost: 37,
+              costAll: () => this.tracker + 37 + 5,
               links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit">ETVR Store</a> Length depending on HMD'
             },
             {
               name: 'Official V4 mini Solder-Required',
               amount: () => 1,
-              cost: 25,
-              costAll: () => this.tracker + 25 + 3,
+              cost: 34,
+              costAll: () => this.tracker + 34 + 5,
               links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required">ETVR Store</a> Must solder up your own wires'
             },
                         {
               name: 'Official V4 lite Assemble Yourself',
               amount: () => 1,
-              cost: 7,
-              costAll: () => this.tracker + 7 + 3,
+              cost: 15,
+              costAll: () => this.tracker + 15 + 5,
               links: '<a href="https://store.eyetrackvr.dev/products/v4-1-lite-diy-led-kit">ETVR Store</a> Must assemble yourself'
             },
           ],
@@ -164,43 +164,29 @@ export default {
               links: 'If you already have safe IR LED hardware and know what you are doing.'
             },
             {
-              name: '★ 4 port USB 3.2 LDLrui (MTT Usually) (Best for Cost)',
+              name: '★ 4 port USB 3.0 Hub (Best for Cost)',
               amount: () => 1,
-              cost: 17.99,
-              costAll: () => this.tracker + 17.99,
-              links: '<a href="https://www.amazon.com/dp/B09NDQRLBT/">Amazon</a> Usually these are MTT, but sometimes not'
-            },
-            {
-              name: '4 port USB 3.2 Sitecom CN-385 Hub (MTT)',
-              amount: () => 1,
-              cost: 40.53,
-              costAll: () => this.tracker + 17.99,
-              links: '<a href="https://www.amazon.com/gp/product/B07YN54Q33/">Amazon</a> Known good MTT hub, but expensive'
-            },
-            {
-              name: '4 port USB 2.0 Breakout (Not MTT)',
-              amount: () => 1,
-              cost: 1.41,
-              costAll: () => this.tracker + 1.41 + 1.99,
-              links: '<a href="https://www.aliexpress.us/item/3256801220206638.html">AliExpress</a> Small but non MTT hub breakout'
+              cost: 9.99,
+              costAll: () => this.tracker + 9.99,
+              links: '<a href="https://amzn.to/4eISjJw">Amazon</a>'
             },
             {
              name: '★ 4 port Adafruit CH334F USB Hub Breakout (MTT) (Best for Size)',
              amount: () => 1,
              cost: 4.99,
-             costAll: () => this.tracker + 8,
+             costAll: () => this.tracker + 9,
              links: '<a href="https://www.adafruit.com/product/5997">Adafruit</a> Small, high quality MTT hub breakout'
             },
             {
-              name: '★ 3 port USB 3.0 Hub With Power Passthrough (MTT) (Best for Quest)',
+              name: '★ 4 port USB 3.0 Hub With Power Passthrough (MTT) (Best for Quest)',
               amount: () => 1,
-              cost: 17.99,
-              costAll: () => this.tracker + 1.41,
-              links: '<a href="https://www.amazon.com/uni-Charging-Thunderbolt-Aluminum-Pixelbook/dp/B08SVZFFPP/">Amazon</a> Great for Quest due to power passthrough'
+              cost: 27.99,
+              costAll: () => this.tracker + 27.99,
+              links: '<a href="https://amzn.to/40Q1K47">Amazon</a> Great for Quest due to power passthrough'
             }, 
  
           ],
-          selectedChoice: 1,
+          selectedChoice: 3,
           isOpen: false
         },
         {

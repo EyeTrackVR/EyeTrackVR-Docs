@@ -8,6 +8,8 @@ WIP new parts list. 3D printed parts will live on their own page.
 
 Use the **interactive** tables below to select parts!
 
+
+
 # Required Parts:
 
 <DiyTable />
@@ -16,7 +18,7 @@ Use the **interactive** tables below to select parts!
 
 <OptionalDiyTable />
 
-<small> Table modified greatly from the table on [SlimeVR's Docs](https://docs.slimevr.dev/diy/components-guide.html) which was created by [Carl](https://github.com/carl-anders)</small>
+<small> We may earn a commission from some links, this is at no extra cost to you. </small>
 
 ## ESP setup options:
 ::: danger
