@@ -2,10 +2,18 @@
 
 This is an initiative to provide specific information on specific headsets. Any weird quirks, recommended 3d printed mounts and different setup types are to be included on a page. 
 
-Complete submissions will receive a 50% off coupon for the ETVR store. Partial completions (one specific mount) will receive 15% off coupons to show our appreciation and provide an incentive. (reach out to me in dms to receive the code `@prohurtz`)  
+If you want to contribute to the project, writing a headset guide is one of the **best** ways! 
 
-Thank you for working to improve EyeTrackVR's accessibility!  
 
+
+# Current Headsets:
+
+- [Valve Index](../headset_guides/valve_index)
+
+
+---
+
+# Contributing
 
 ### Guidelines
 

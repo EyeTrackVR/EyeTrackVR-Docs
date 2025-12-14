@@ -4,6 +4,21 @@ head:
   - - meta
     - name: keywords
       content: EyeTrackVR (ETVR) VR Virtual Reality Eye Tracking VRChat Social VR Games VR Game VR Games VRChat Avatar VRChat Avatars VRChat Eye Tracking VRChat Eye Tracking Avatar VRChat Eye Tracking Avatars
+  - - meta
+    - name: description
+      content: EyeTrackVR (ETVR) is an open-source, affordable, and DIY VR eye tracking platform for VRChat, social VR, and more. Supports nearly all headsets.
+  - - meta
+    - property: og:type
+      content: website
+  - - meta
+    - property: og:title
+      content: EyeTrackVR - Open Source & Affordable VR Eye Tracking
+  - - meta
+    - property: og:description
+      content: Build your own VR eye tracker for a fraction of the cost. Source First software and open hardware for VRChat and PCVR.
+  - - meta
+    - name: twitter:card
+      content: summary_large_image
 hero:
   name: EyeTrackVR Docs
   text: Source First and affordable VR eye tracking.
