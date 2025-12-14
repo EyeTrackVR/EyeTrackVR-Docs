@@ -2,7 +2,7 @@ const faq = {
     faq: [
         {
             question: "What is the goal of this project?",
-            answer: "To provide an open source, affordable VR eye tracker for Social games like VRChat as well as provide an open eye tracking platform.",
+            answer: "To provide an open, affordable VR eye tracker for Social games like VRChat as well as provide an open eye tracking platform for utilities and beyond.",
             hyper_link: "",
             link_description: "",
         },
@@ -13,14 +13,14 @@ const faq = {
             link_description: "",
         },
         {
-            question: "How will this work?",
-            answer: "Currently, a camera is mounted inside the headset for each eye. The camera streams through wifi to a PC client which processes and sends eye tracking data to an OSC endpoint ex VRChat.",
+            question: "How does this work?",
+            answer: "Currently, a camera is mounted inside the headset for each eye. The camera streams through WiFi or USB to a PC client which processes and sends eye tracking data to an OSC endpoint ex VRChat.",
             hyper_link: "",
             link_description: "",
         },
         {
             question: "What features will be supported?",
-            answer: "The goal is eye tracking with eye openness, and some form of pupil dilation. A far away aspiration of this project is some form of weak foveated rendering because it's cool and any small performance increase in VR is welcome.",
+            answer: "The goal is eye tracking with eye openness, pupil dilation and more ready to go with little user config. A slightly further aspiration of this project is some form of foveated rendering because it's cool and any small performance increase in VR is welcome.",
             hyper_link: "",
             link_description: "",
         },
@@ -32,19 +32,19 @@ const faq = {
         },
         {
             question: "Will IR damage my eyes?",
-            answer: "This project has safety in mind. If you do all of the safety measures that we put into place and visually test the amount of IR light you will be fine. Please note we have not finished development of all safety stuff so be careful.",
+            answer: "This project has safety in mind. If you do all of the safety measures that we put into place and visually test the amount of IR light you will be fine.",
             hyper_link: "https://look.ams-osram.com/m/1d720a7b18ab3fce/original/Details-on-photobiological-safety-of-LED-light-sources.pdf",
             link_description: " here is a pdf with safety information",
         },
         {
-            question: "How expensive will this be?",
-            answer: "My goal is to keep it as cheap as possible with around $75 as the absolute max, with current setups being around $30-80. aaaa",
-            hyper_link: "",
-            link_description: ""
+            question: "How expensive is this?",
+            answer: "Please see the parts list for a cost estimation.",
+            hyper_link: "../how_to_build/part_list",
+            link_description: "here"
         },
         {
             question: "How do I set up my avatar?",
-            answer: "Check out the VR Chat face tracking wiki on our github. Keep in mind that we currently only support float parameters. ",
+            answer: "Check out the VR Chat Face Tracking wiki. We support VRC Native ET, as well as VRCFT v1/v2 params. ",
             hyper_link: "",
             link_description: ""
         },
@@ -56,7 +56,7 @@ const faq = {
         },
         {
             question: "Where are the docs?",
-            answer: "All of our documentation is located on this website, all future documentation will be found here as well.",
+            answer: "All of our documentation is located on this website, all future documentation will be found here as well. Our Discord provides additional details and a place to ask questions.",
             hyper_link: "",
             link_description: "",
         }
