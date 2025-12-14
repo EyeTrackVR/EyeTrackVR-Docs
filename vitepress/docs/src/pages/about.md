@@ -44,9 +44,9 @@ import { members, contributors } from '../static/members'
         <br>
         Here, we hope you may find something useful to you.<br>
         <br>
-        We advocate the <a class="custom-links" href="https://en.wikipedia.org/wiki/Open-source_model" target="_blank">Open Source model</a>.<br>
+        We advocate the <a class="custom-links" href="https://sourcefirst.com/" target="_blank">Source First model</a> to promote sustainable development practices.<br>
         <br>
-        This is why we strive to make our work open to other people for consultation, replication and reuse.
+        This is why we strive to make our work open to other people to view, audit, and use at no cost.
     </template>
   </VPTeamPageSection>
 </VPTeamPage>

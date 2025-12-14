@@ -4,7 +4,7 @@ const members: IMembers[] = [
     {
         name: 'Prohurtz',
         avatar: 'https://avatars.githubusercontent.com/u/48768484?v=4',
-        title: 'Creator / Lead Software Developer / Documentor / Hardware Developer',
+        title: 'Creator / Lead Software Developer / ML Engineer / Hardware Developer',
         links: [
             {
                 icon: 'github',
@@ -15,7 +15,7 @@ const members: IMembers[] = [
     {
         name: 'Summer',
         avatar: 'https://avatars.githubusercontent.com/u/115666235?v=4',
-        title: 'Machine Learning Engineer / Data Scientist / App Developer',
+        title: 'ML Engineer / Data Scientist / App Developer',
         links: [
             {
                 icon: 'github',
@@ -35,9 +35,25 @@ const members: IMembers[] = [
         ]
     },
     {
+        name: 'ShyAssassin',
+        avatar: 'https://avatars.githubusercontent.com/u/49711232?v=4',
+        title: 'App Developer',
+        links: [
+            {
+                icon: 'github',
+                link: 'https://github.com/ShyAssassin'
+            },
+        ]
+    },
+
+
+    
+]
+
+const contributors: IMembers[] = [
+    {
         name: 'DaOfficialWizard',
         avatar: 'https://avatars.githubusercontent.com/u/45744329?v=4',
-        title: 'Firmware Developer / Documentation Manager / App Developer',
         links: [
             {
                 icon: 'github',
@@ -45,9 +61,6 @@ const members: IMembers[] = [
             },
         ]
     },
-]
-
-const contributors: IMembers[] = [
     {
         name: 'qdot',
         avatar: 'https://avatars.githubusercontent.com/u/34539?v=4',
