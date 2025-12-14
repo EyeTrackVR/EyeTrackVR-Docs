@@ -208,17 +208,24 @@ export default {
               links: 'If you do not need or already have.'
             },
             {
-              name: 'Short USB-C to USB-C Amazon',
+              name: '★ Very Short USB-C to USB-C Amazon',
               amount: () => 1,
               cost: 6.29,
-              costAll: () => this.tracker + 5.29,
+              costAll: () => this.tracker + 6.29,
               links: '<a href="https://amzn.to/3U6OT9V">Amazon</a>'
+            },
+            {
+              name: '★ Short USB-C to USB-C Amazon',
+              amount: () => 1,
+              cost: 7.99,
+              costAll: () => this.tracker + 7.99,
+              links: '<a href="https://amzn.to/4iUW1ln">Amazon</a>'
             },
             {
               name: 'Short USB-A to USB-C Amazon',
               amount: () => 1,
               cost: 7.99,
-              costAll: () => this.tracker + 5.99,
+              costAll: () => this.tracker + 7.99,
               links: '<a href="https://amzn.to/3U8Y4Xn">Amazon</a>'
             },
           ],
