@@ -19,8 +19,12 @@ Whether you are here to build your own tracker, write code, or just see how it a
 
 Ready to build? This documentation, covers everything from buying parts to flashing firmware. If you are new to the project, please follow these steps:
 
-1. **[Parts List](https://docs.eyetrackvr.dev/how_to_build/part_list)** – Read this first to understand what hardware you need.
-2. **[Full Build Guide](https://docs.eyetrackvr.dev/how_to_build/full_build)** – Step-by-step instructions to assemble your device.
+1. **[Parts List](../how_to_build/part_list)** – Read this first to understand what hardware you need.
+2. **[3D Printed Parts](../how_to_build/3d_printed_mounts)** – Read this to find what 3D prints you need.
+3. **[Prepare Cameras](../how_to_build/preparing_cameras)** – Prepare the cameras.
+4. **[Prepare ESP32](../how_to_build/preparing_xiao)** – Prepare the ESP32s.
+5. **[Prepare IR LEDS](../how_to_build/led_setup)** – Prepare IR LEDS.
+6. **[Full Build Guide](../how_to_build/v4_full_build)** – Step-by-step instructions to assemble the setup.
 
 
 ---
@@ -38,7 +42,7 @@ Ready to build? This documentation, covers everything from buying parts to flash
 
 EyeTrackVR is designed to be universal. It can theoretically work with **any** VR headset, provided there is a way to mount the cameras inside.
 
-Check our **[Mount List](https://docs.eyetrackvr.dev/how_to_build/parts_list#_3d-printed-mounts)** to see if a 3D-printable mount already exists for your specific headset.
+Check our **[Mount List](../how_to_build/parts_list#_3d-printed-mounts)** to see if a 3D-printable mount already exists for your specific headset.
 
 *Don't see your headset listed?* You are welcome to design your own mount or join the community to see if someone else is working on one!
 
