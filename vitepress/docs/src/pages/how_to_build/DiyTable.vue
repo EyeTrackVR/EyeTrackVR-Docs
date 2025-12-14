@@ -198,6 +198,34 @@ export default {
           isOpen: false
         },
         {
+          name: 'USB-C Cables',
+          choices: [
+            {
+              name: 'Bring Your Own',
+              amount: () => this.tracker,
+              cost: 0,
+              costAll: () => this.tracker * 0,
+              links: 'If you do not need or already have.'
+            },
+            {
+              name: 'Short USB-C to USB-C Amazon',
+              amount: () => 1,
+              cost: 6.29,
+              costAll: () => this.tracker + 5.29,
+              links: '<a href="https://amzn.to/3U6OT9V">Amazon</a>'
+            },
+            {
+              name: 'Short USB-A to USB-C Amazon',
+              amount: () => 1,
+              cost: 7.99,
+              costAll: () => this.tracker + 5.99,
+              links: '<a href="https://amzn.to/3U8Y4Xn">Amazon</a>'
+            },
+          ],
+          selectedChoice: 0,
+          isOpen: false
+        },
+        {
           name: '3D Printed Mounts',
           choices: [
             {
