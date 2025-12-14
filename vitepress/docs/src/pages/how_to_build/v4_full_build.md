@@ -18,7 +18,7 @@ After following our part's list you should have the following components.
 You should have the following parts:
 
     2 × Supported ESP32 Camera Boards
-    2 × OV2640 130 or 160 Degree Cameras Without IR Filters
+    2 × Cameras Without IR Filters
     1 × V4 IR Emitter Kit
     3 × USB-C cables
     1 × USB hub
@@ -26,7 +26,7 @@ You should have the following parts:
 
 
 ## Prepare you hardware
-Follow the docs pages for preparing the LEDs, cameras and XIAO ESPs. 
+Follow the docs pages for preparing the LEDs, cameras and ESPs. 
 
 Flash the OpenIris firmware onto the ESPs.
 
