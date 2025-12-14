@@ -5,7 +5,7 @@
         <tr>
           <th class="component-col">Component</th>
           <th class="choice-col">Choice</th>
-          <th class="amount-col">Amount</th>
+          <th class="amount-col">Quantity</th>
           <th class="cost-col">Cost</th>
           <th class="cost-all-col">Cost All</th>
           <th class="links-col">Links</th>
@@ -229,7 +229,7 @@ export default {
               links: '<a href="https://amzn.to/3U8Y4Xn">Amazon</a>'
             },
           ],
-          selectedChoice: 0,
+          selectedChoice: 2,
           isOpen: false
         },
         {

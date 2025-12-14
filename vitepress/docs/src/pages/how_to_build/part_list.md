@@ -4,10 +4,14 @@ import OptionalDiyTable from './OptionalDiyTable.vue'
 import Alerts from '../../vue/alerts/Alerts.vue'
 </script>
 
-WIP new parts list. 3D printed parts will live on their own page.
 
 Use the **interactive** tables below to select parts!
 
+Items with a ★ are the reccomended and most common part options!
+
+Required parts are a MUST for a setup, additional parts *might* be required or desired depending on the type and complexity of your build.  
+
+The most common optional part is camera extensions, or bigger external antennas if wireless performance is poor with included antennas.
 
 
 # Required Parts:
