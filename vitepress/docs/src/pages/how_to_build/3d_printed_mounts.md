@@ -22,4 +22,5 @@ Mounts with a `★` next to them are the recommended mounts for the respected hm
 
 ## Dont see your headset?
 
-There may be mounts in the Discord that have not been added here. Check out the `#community-mounts` fourm for additional mounts [here](https://discord.gg/wqZnPxdQxf).
+There are almost certainly mounts in the Discord that have not been added here. Check out the `#community-mounts` fourm for additional mounts [here](https://discord.gg/wqZnPxdQxf).
+We are working on updating those mounts to be here as well, but **they are currently not all on this page**

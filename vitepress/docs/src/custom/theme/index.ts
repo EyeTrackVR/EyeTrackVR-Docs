@@ -35,10 +35,6 @@ const theme = {
       collapsible: true,
       items: [
         { text: "Introduction", link: "/getting_started/intro" },
-        {
-          text: "Things to know before you start",
-          link: "/getting_started/things_to_know",
-        },
         { text: "LED Safety", link: "/getting_started/led_safety" },
       ],
     },
@@ -62,10 +58,6 @@ const theme = {
         {
           text: "3D Printed Mounts",
           link: "/how_to_build/3d_printed_mounts",
-          },
-        {
-          text: "How to Create your own Camera Mount",
-          link: "/how_to_build/creating_your_own_mount",
         },
         {
           text: "V4 Full Build Guide WIP",
@@ -119,6 +111,7 @@ const theme = {
       items: [
         { text: "JLC3DP 3D Printing Service", link: "/misc/jlc3dp"},
         { text: "VR Chat Avatar Setup", link: "/misc/vrc_avatar_setup" },
+        { text: "How to Create your own Camera Mount", link: "/misc/creating_your_own_mount" },
         { text: "FAQ", link: "/misc/faq" },
       ],
     },

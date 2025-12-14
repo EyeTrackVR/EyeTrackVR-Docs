@@ -7,45 +7,69 @@ import { image_settings } from '../../static/image_settings'
 
 # EyeTrackVR {.text-3xl .font-bold .underline .text-[#ab5ac7]}
 
-EyeTrackVR is a Source First, affordable eye-tracking platform designed specifically for Virtual Reality—especially for Social VR experiences like VRChat. It works by sending real-time eye tracking data over `OSC` or `UDP`, making it compatible with many existing VR applications.
+Welcome to **EyeTrackVR**, a Source First, affordable eye-tracking platform designed specifically for adding to VR Headsets.
 
-Whether you're here to build your own tracker, contribute to development, or explore how it works, you're in the right place.
+While built with Social VR (like VRChat) in mind, EyeTrackVR is highly versatile. It works by capturing real-time eye data and transmitting it via `OSC`, making it compatible with a wide variety of VR applications.
+
+Whether you are here to build your own tracker, write code, or just see how it all works, you’ve come to the right place.
 
 ---
 
-## Get Started
+## Getting Started
 
-This documentation covers everything from assembly and firmware setup to headset mounting and safety. If you're new to the project, we recommend starting with the following pages:
+Ready to build? This documentation, covers everything from buying parts to flashing firmware. If you are new to the project, please follow these steps:
 
-- [Things to Know](https://docs.eyetrackvr.dev/getting_started/things_to_know) – Important background before diving in  
-- [Full Build Guide](https://docs.eyetrackvr.dev/how_to_build/full_build) – Step-by-step assembly instructions
+1. **[Parts List](https://docs.eyetrackvr.dev/how_to_build/part_list)** – Read this first to understand what hardware you need.
+2. **[Full Build Guide](https://docs.eyetrackvr.dev/how_to_build/full_build)** – Step-by-step instructions to assemble your device.
+
+
+---
 
 <Alerts :options="alerts.user_warning">
   <template v-slot:content>
     <p>
-      This project is under active development, but it's already working reliably for many users. Your feedback helps us improve!
+      This project is under active development. While it works reliably for many users, you may encounter bugs. Your feedback helps us improve!
     </p>
   </template>
 </Alerts>
 
+
+## Headset Compatibility
+
+EyeTrackVR is designed to be universal. It can theoretically work with **any** VR headset, provided there is a way to mount the cameras inside.
+
+Check our **[Mount List](https://docs.eyetrackvr.dev/how_to_build/parts_list#_3d-printed-mounts)** to see if a 3D-printable mount already exists for your specific headset.
+
+*Don't see your headset listed?* You are welcome to design your own mount or join the community to see if someone else is working on one!
+
 ---
 
-## Eye Safety Notice
+## Community & Support
 
-Eye safety is a top priority. Infrared (IR) light is invisible but not harmless—especially at close distances and high intensities. EyeTrackVR has built-in safety measures, but users must also follow proper precautions.
+Need help? Want to show off your build? Join our Discord server! We’re excited to have you on board!
 
-**Always use the recommended LEDs, wiring, and firmware settings.**
+<ImageCard :options="image_settings.discord_content" />
+
+---
+
+## ⚠️ Eye Safety in DIY LED Builds
+
+Your safety is our top priority. Because this project involves Infrared (IR) light—which is invisible to the human eye—it is strictly important that you understand the risks.
+Our hardware is built with safety in mind, and so it is important that yours does too.
+
+**To ensure safety, you must adhere to the recommended LEDs, wiring diagrams, and firmware settings.**
 
 ::: danger
-Never bypass safety features or swap out IR components without understanding the risks. Doing so could result in permanent eye damage.
+**Never bypass safety features or swap out IR components.**
+Changing the recommended hardware without understanding the specific risks can result in permanent eye damage.
 :::
 
-Our default configuration stays well below international safety thresholds (see [ICNIRP guidelines](../safety/ICNIRP_optical_radiation.pdf)), but it's your responsibility to:
+Our default configuration is designed to stay well below international safety thresholds (see [ICNIRP guidelines](../safety/ICNIRP_optical_radiation.pdf)). However, as a DIY builder, it is your responsibility to:
 
-- Use non-focused emitters  
-- Keep total radiant intensity below **5 mW/sr**
-- Verify LED brightness with an IR camera
-- Stop using the device if you feel warmth or discomfort in your eyes
+- **Use Non-Focused Emitters:** Never use focused laser-like components.
+- **Check Intensity:** Keep total radiant intensity below **5 mW/sr**.
+- **Verify:** Use an IR-capable camera to visually check LED brightness.
+- **Listen to your body:** If you feel warmth or discomfort in your eyes, **stop using the device immediately.**
 
 <Alerts :options="alerts.led_power_warning">
   <template v-slot:content>
@@ -55,40 +79,9 @@ Our default configuration stays well below international safety thresholds (see 
   </template>
 </Alerts>
 
-::: details Safety References
-[Effect of infrared radiation on the lens](../safety/effect_of_ir_on_the_lens.pdf)  
-[Photobiological safety of LED light sources](../safety/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)  
-[ICNIRP Guidelines (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf)  
+::: details 📚 Safety References & Data
+[Effect of infrared radiation on the lens](../safety/effect_of_ir_on_the_lens.pdf)
+[Photobiological safety of LED light sources](../safety/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
+[ICNIRP Guidelines (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf)
 [Training Library – NIR Standards](../safety/training-library_nir_stds_20021011.pdf)
 :::
-
----
-
-## Hardware Overview
-
-See our [Parts List](https://docs.eyetrackvr.dev/how_to_build/part_list) and [Hardware Repository](https://github.com/EyeTrackVR/EyeTrackVR-Hardware) to source components, print mounts, and prepare your setup.
-
-## Firmware
-
-The firmware powering EyeTrackVR's ESP32 cameras is called **OpenIris**, developed by `lorow`.  
-You can find it [here on GitHub](https://github.com/EyeTrackVR/OpenIris).
-
----
-
-## Headset Compatibility
-
-EyeTrackVR can work with any VR headset—but not every model has a 3D-printed mount available yet.  
-
-Check our [mount list](https://docs.eyetrackvr.dev/how_to_build/parts_list#_3d-printed-mounts) to see if your headset is supported.  
-If not, you’re welcome to design your own or wait for a community-sourced version.
-
----
-
-## Community & Support
-
-Join our Discord server for updates, and community projects. We’re excited to have you on board!
-
-<ImageCard :options="image_settings.discord_content" />
-
-
-
