@@ -50,7 +50,17 @@ Once you've selected your board, click **Confirm** to move on to the next step.
 
 ##
 
-### Step 4: Flash firmware.
+### Step 4: Select port (optional).
+
+The firmware flashing tool includes an option to automatically select the first active port.
+<br/>
+If you're not satisfied with this selection, you can manually choose your desired port.
+
+<ImageCard :options="image_settings.flashing_tool_select_port"/>
+
+##
+
+### Step 5: Flash firmware.
 
 Once you're ready, hold down the **B** or **IO0** button on your board and connect it to your PC. (The button may be small, but it's there).
 Next, click **Install OpenIris** and select the port corresponding to your board to complete the installation.
@@ -59,7 +69,7 @@ Next, click **Install OpenIris** and select the port corresponding to your board
 
 ##
 
-### Step 5: That's it!.
+### Step 6: That's it!.
 
 Installation complete! Everything is set up and ready to go.<br/>
 Click **Show Logs** to view the results.
@@ -68,7 +78,9 @@ Click **Show Logs** to view the results.
 
 ##
 
-### Step 6: Logs.
+### Step 7: Logs.
+
+After the installation is complete, disconnect the board and then reconnect it to the PC without pressing any buttons, and click Show logs.
 
 If you choose the wired option, the correct logs should appear as follows.
 <br/>
@@ -106,9 +118,17 @@ You'll need to provide the password used to connect to the selected Wi-Fi networ
 
 <ImageCard :options="image_settings.configure_wifi_network"/>
 
+### Step 3: Select port (optional).
+
+The firmware flashing tool includes an option to automatically select the first active port.
+<br/>
+If you're not satisfied with this selection, you can manually choose your desired port.
+
+<ImageCard :options="image_settings.flashing_tool_select_port"/>
+
 ##
 
-### Step 3: Send wifi credentials.
+### Step 4: Send wifi credentials.
 
 Once the installation is complete, unplug your board, then reconnect it to the PC without pressing any buttons and press **Send credentials**.
 
@@ -116,12 +136,14 @@ Once the installation is complete, unplug your board, then reconnect it to the P
 
 ##
 
-### Step 4: Get working stream.
+### Step 5: Get working stream.
 
 After sending is complete, disconnect your board, then reconnect it to the PC without pressing any buttons, and click **Show logs**.
 <br/>
-Scroll down to find the text labeled **`IP: 192.168.XXX.XXX`**.
+
+Scroll down to find the text labeled **`IP: 192.168.XXX.XXX`**, or use the "Tracker name" you set up in the previous step. It should be located at **`http://<tracker_name>.local`** .
 
 <ImageCard :options="image_settings.flasher_camera_preview"/>
 
-This IP can then be entered into the app or a web browser like: `http://192.168.XXX.XXX` 
+You can then enter this IP into the app or a tracker name, such as:
+**`http://192.168.XXX.XXX`** or **`http://<tracker_name>.local`**.
