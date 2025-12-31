@@ -43,7 +43,7 @@ However, they can be a bit more temperamental and if you are using a wired heads
 - Risk of radio interference with FBT and other WiFi 2.4 GHz devices
 - ESP32-CAM uses more power and heats up due to radio module power needs
 
-### Option 2: Wired over USB Serial (in beta)
+### Option 2: Wired over USB Serial
 
 This is our latest setup recommended for users with wired headsets such as the Valve Index.  
 

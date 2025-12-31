@@ -82,8 +82,8 @@ Enter that IP address into the app's `Camera Address` field.
 
 Press the `Save and Restart Tracking` button.
 
-### Wired configuration (experimental)
-#### Note this is a Beta app feature only. Please use the latest Open Beta in the Discord.
+### Wired configuration (Reccomended for wired headsets)
+
 
 Find your ESPs in Device Manager and figure out their COM port numbers, e.g. ``COM4``.
 
