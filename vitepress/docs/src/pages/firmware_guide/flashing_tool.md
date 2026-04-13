@@ -5,123 +5,156 @@ import { image_settings } from '../../static/image_settings'
 
 # Firmware Flashing Tool {.text-[var(--font-accent)]}
 
-## Before we proceed
+## Before We Proceed
 
 ::: info Note
 
-- Ensure you have a **data transfer cable** ready, as it is necessary for the flashing process.
-- Ensure that your camera is set up correctly [How to prepare a Seeed Studio XIAO Sense ESP32](../how_to_build/preparing_xiao).
+- Make sure you have a **data transfer cable** ready, as it is required for the flashing process.
+- Ensure your camera is properly set up: [How to prepare a Seeed Studio XIAO Sense ESP32](../how_to_build/preparing_xiao).
 
 :::
 
-##
+## Flash Firmware
 
 ### Step 1: Download and Install the Firmware Flashing Tool
 
 - Download the Firmware Flashing Tool Installer from the latest [GitHub release](https://github.com/EyeTrackVR/FirmwareFlashingTool/releases).
-- Run the installer and follow the on-screen instructions to complete the installation of the Firmware Flashing Tool app.
+- Run the installer and follow the on-screen instructions to complete the installation of the Firmware Flashing Tool application.
 
 ##
 
-### Step 2: Run the Firmware Flashing Tool app
+### Step 2: Run the Firmware Flashing Tool
 
-After the installation is complete, you should see an icon on your desktop. To open the application, double-click the icon.
+After installation, double-click the desktop icon to open the application.
 
-You then should be greeted with a GUI that looks like this:
+You should see a GUI similar to this:
 
 <ImageCard :options="image_settings.flashing_tool_1"/>
 
 ##
 
-### Step 3: Select board.
+### Step 3: Select Board
 
-We now have a couple of options letting us decide how we want to build the firmware.
-
-- `Debug`<br/>
-  This is the default environment and does not need to be explicitly chosen. It includes extensive logging, making it ideal for initial setup and troubleshooting, as it provides comprehensive visibility into the system’s operation.
-
-- `_release`<br/>
-  Has a lot less debugging, may also be missing some things available only in debug for debug purposes, this should be flashed when everything is working.
-
-Press left click on the `Select Board` dropdown, then choose your desired board from the list.
-Once you've selected your board, click **Confirm** to move on to the next step.
+Click the `Select Board` dropdown and choose your board from the list.  
+Once selected, click **Next** to continue.
 
 <ImageCard :options="image_settings.flashing_tool_select_board"/>
 
 ##
 
-### Step 4: Flash firmware.
+### Step 4: Select Port
 
-Once you're ready, hold down the **B** or **IO0** button on your board and connect it to your PC. (The button may be small, but it's there).
-Next, click **Install OpenIris** and select the port corresponding to your board to complete the installation.
+Click the `Select port` dropdown, choose the port your board is connected to (e.g., COM3), then click **Install Openiris** to start the flashing process.
 
-<ImageCard :options="image_settings.flashing_tool_flash_firmware"/>
-
-##
-
-### Step 5: That's it!.
-
-Installation complete! Everything is set up and ready to go.<br/>
-Click **Show Logs** to view the results.
-
-<ImageCard :options="image_settings.flashing_tool_flash_firmware_success"/>
+<ImageCard :options="image_settings.flashing_tool_select_port"/>
 
 ##
 
-### Step 6: Logs.
+### Step 5: Installation
 
-If you choose the wired option, the correct logs should appear as follows.
-<br/>
-If the logs don't look right, ensure that your camera is properly connected to the board.
+If the correct board and port are selected, the flashing process will begin automatically.  
+No action is required during this step.
 
-<ImageCard :options="image_settings.flashing_tool_logs"/>
-
-## How to configure wifi.
-
-::: info Note
-
-- Please note that 5GHz networks are not supported by the hardware, so you will need to use a 2.4GHz network.
-
-:::
+<ImageCard :options="image_settings.flashing_tool_pending_flash_action"/>
 
 ##
 
-### Step 1: Select board
+### Troubleshooting
 
-Ensure that the selected board has a **wireless mode** checkmark below it.
+If flashing fails, check the following:
 
-<ImageCard :options="image_settings.flashing_tool_select_board"/>
+- Verify that the correct port is selected.
+- If your board has a **Boot (B) button**, press and hold it.
+- Ensure your **data transfer cable** is connected properly.
+- Confirm that your camera is correctly set up: [Preparing Seeed Studio XIAO Sense ESP32](../how_to_build/preparing_xiao).
 
-##
-
-### Step 2: Configure wifi network
-
-You'll need to provide information about the network you're planning to connect to.
-
-`SSID`<br/>
-The SSID is your Wi-Fi name, make sure it doesn't contain any `special characters`.
-
-`Password`<br/>
-You'll need to provide the password used to connect to the selected Wi-Fi network.
-
-<ImageCard :options="image_settings.configure_wifi_network"/>
+<ImageCard :options="image_settings.flashing_tool_error_flash_action"/>
 
 ##
 
-### Step 3: Send wifi credentials.
+### That's all
 
-Once the installation is complete, unplug your board, then reconnect it to the PC without pressing any buttons and press **Send credentials**.
+Once the process finishes successfully, you will see `Firmware flashed!`.  
+Click **Continue setup** to configure your board in **wired** or **wireless** mode.
 
-<ImageCard :options="image_settings.send_wifi_credentials"/>
+<ImageCard :options="image_settings.flashing_tool_success_flash_action"/>
+
+## Wired Mode
+
+To use your board in wired mode, simply click **Wired mode**.
+
+<ImageCard :options="image_settings.flashing_tool_wired_mode"/>
 
 ##
 
-### Step 4: Get working stream.
+### Step 1: Setup Tracker Name
 
-After sending is complete, disconnect your board, then reconnect it to the PC without pressing any buttons, and click **Show logs**.
-<br/>
-Scroll down to find the text labeled **`IP: 192.168.XXX.XXX`**.
+Enter a custom name for your tracker. This name will identify your device.  
+Click **Setup tracker** to complete the setup.
 
-<ImageCard :options="image_settings.flasher_camera_preview"/>
+<ImageCard :options="image_settings.flashing_tool_tracker_name"/>
 
-This IP can then be entered into the app or a web browser like: `http://192.168.XXX.XXX` 
+##
+
+### Step 2: That's all
+
+Your board is now set up and ready to use in wired mode.
+
+<ImageCard :options="image_settings.flashing_tool_tracker_name_success"/>
+
+## Wireless Mode
+
+### Step 1: Select Wireless Mode
+
+Click **Wi-Fi mode** to use your board wirelessly.
+
+<ImageCard :options="image_settings.flashing_tool_wireless_mode"/>
+
+##
+
+### Step 2: Select Network
+
+Choose a network from the list.  
+If your network is not listed, click `Manual setup` to enter the details manually.
+
+<ImageCard :options="image_settings.flashing_tool_networks_list"/>
+
+##
+
+### Step 3: Enter Credentials
+
+Enter the password for the selected network, check for errors, and click **Continue**.
+
+<ImageCard :options="image_settings.flashing_tool_setup_credentials"/>
+
+##
+
+### Step 4: Configure mDNS
+
+Set the name under which your board will appear on the network.  
+To use a custom name, select `Setup custom mdns` and enter your preferred name.
+
+<ImageCard :options="image_settings.flashing_tool_setup_mdns"/>
+
+##
+
+### Step 5: Connection Process
+
+If the network and credentials are correct, the connection will start automatically.  
+No further action is required during this step.
+
+<ImageCard :options="image_settings.flashing_tool_setup_pending"/>
+
+##
+
+If the connection fails, double-check your credentials and try again.
+
+<ImageCard :options="image_settings.flashing_tool_setup_error"/>
+
+##
+
+### Step 6: That's all
+
+Your board is now connected to the network and ready to use in wireless mode.
+
+<ImageCard :options="image_settings.flashing_tool_setup_success"/>

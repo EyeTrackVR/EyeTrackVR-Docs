@@ -43,18 +43,18 @@ const theme = {
       collapsible: true,
       items: [
         { text: "Parts List", link: "/how_to_build/part_list" },
-        { 
-          text: "Preparing Cameras", 
-          link: "/how_to_build/preparing_cameras" 
+        {
+          text: "Preparing Cameras",
+          link: "/how_to_build/preparing_cameras",
         },
-        { 
-        text: "Preparing XIAO Sense ESP32", 
-        link: "/how_to_build/preparing_xiao" 
+        {
+          text: "Preparing XIAO Sense ESP32",
+          link: "/how_to_build/preparing_xiao",
         },
-        { 
-          text: "Preparing V4 LEDs", 
-          link: "/how_to_build/led_setup" 
-          },
+        {
+          text: "Preparing V4 LEDs",
+          link: "/how_to_build/led_setup",
+        },
         {
           text: "3D Printed Mounts",
           link: "/how_to_build/3d_printed_mounts",
@@ -79,6 +79,10 @@ const theme = {
       items: [
         { text: "Introduction", link: "/firmware_guide/firmware" },
         { text: "Flashing Tool", link: "/firmware_guide/flashing_tool.md" },
+        {
+          text: "Flashing Tool Advanced options",
+          link: "/firmware_guide/flashing_tool_advanced_options.md",
+        },
         { text: "MDNS", link: "/firmware_guide/mdns" },
         { text: "REST API", link: "/firmware_guide/rest_api" },
       ],
@@ -109,9 +113,12 @@ const theme = {
       text: "Miscellaneous",
       collapsible: true,
       items: [
-        { text: "JLC3DP 3D Printing Service", link: "/misc/jlc3dp"},
+        { text: "JLC3DP 3D Printing Service", link: "/misc/jlc3dp" },
         { text: "VR Chat Avatar Setup", link: "/misc/vrc_avatar_setup" },
-        { text: "How to Create your own Camera Mount", link: "/misc/creating_your_own_mount" },
+        {
+          text: "How to Create your own Camera Mount",
+          link: "/misc/creating_your_own_mount",
+        },
         { text: "FAQ", link: "/misc/faq" },
       ],
     },
@@ -151,7 +158,6 @@ const theme = {
         },
         { text: "V3 Full Build Guide", link: "/how_to_build/full_build" },
         { text: "Part List (legacy)", link: "/how_to_build/parts_list" },
-   
       ],
     },
   ],
