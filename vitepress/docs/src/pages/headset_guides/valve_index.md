@@ -17,8 +17,8 @@ Please note due to the LED positioning, these will **require you to use the incl
 [V4 LED Kit Assembly](https://docs.eyetrackvr.dev/how_to_build/led_setup)
 
 ## MUTEtheCyberwolf's DEV Frunk Mod:
-![DevFrunk1](https://i.imgur.com/KQDFg1J.jpeg)
-![HMD](https://i.imgur.com/4n6f4U3.png)
+![DevFrunk1](../imgs/headset_guides/KQDFg1J.jpeg)
+![HMD](../imgs/headset_guides/4n6f4U3.png)
 
 #### Mod Details
 The DEV Frunk is a popular choice for ETVR on the Index. Replacing the original index frunk entirely, it has multiple mounting points for both the XIAO's, a Vive Facial Tracker (or [project babble!](https://babble.diy/)), and cutouts for 30x30x7mm fans.  
@@ -45,9 +45,9 @@ You will need to print:
 - 1x Eyetrack VR Prototype XIAO Mount.stl
 - 1x FacialTrackerBeerHingeVIDEVFrunk1.stl
 - 1x FacialTrackerBridgeVIDEVFrunk1.stl
-  - Alternatively, if you have the [LDLRUI USB HUB](https://www.amazon.com/LDLrui-4-Port-Splitter-Multiport-Adapter/dp/B0BLHCD7FS), [this modified version](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ldlrui%20case%20and%20bridge%20merged-FacialTrackerBridgeVIDEVFrunk1.stl) of the DEV Frunk Bridge can snap fit the hub onto the bridge. [Example](https://i.imgur.com/kRvx56r.jpeg)
+  - Alternatively, if you have the [LDLRUI USB HUB](https://www.amazon.com/LDLrui-4-Port-Splitter-Multiport-Adapter/dp/B0BLHCD7FS), [this modified version](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ldlrui%20case%20and%20bridge%20merged-FacialTrackerBridgeVIDEVFrunk1.stl) of the DEV Frunk Bridge can snap fit the hub onto the bridge. [Example](../imgs/headset_guides/kRvx56r.jpeg)
 - 1x ValveIndexDEVFrunk1.stl
-  - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](https://i.imgur.com/RcYQ8xd.png)
+  - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](../imgs/headset_guides/RcYQ8xd.png)
 
 ![Drawing1](https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/assets/98415183/3b2b4fc2-a0ce-4641-8d0f-8fcac9271e34)
 
@@ -57,22 +57,22 @@ You will need to print:
 - When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
    -  **Do not push down**, and remove the iron when they are level with the print. It doesn't need to be perfect, so take your time!
 
-![FRUNK](https://i.imgur.com/5xzpTqa.png)
+![FRUNK](../imgs/headset_guides/5xzpTqa.png)
 
 Bottom picture courtesy of amoistman
 
 2. Next, place a heat insert into the bigger hole of the facial tracker bridge
 
-![BRIDGE](https://i.imgur.com/vNPx656.png)
+![BRIDGE](../imgs/headset_guides/vNPx656.png)
 
 3. Lastly, place another heat insert into the thick side of the beer hinge
 
 
-![HINGE](https://i.imgur.com/R3Uwllz.png)
+![HINGE](../imgs/headset_guides/R3Uwllz.png)
 
 4. Your finished heat inserts should look like this
 
-![INSERTSEXAMPLE](https://i.imgur.com/2z0TD3L.jpeg)
+![INSERTSEXAMPLE](../imgs/headset_guides/2z0TD3L.jpeg)
 
 Picture courtesy of amoistman
 
@@ -84,7 +84,7 @@ We can move onto screwing in the XIAO Mount and Facial tracker bridge onto the f
   - If you have trouble screwing them in, try screwing them equally to distribute the pressure more evenly.
     - Screw one a little, screw the opposite the same amount, repeat.
 
-![M4SCREWGUIDE](https://i.imgur.com/hCi744w.png)
+![M4SCREWGUIDE](../imgs/headset_guides/hCi744w.png)
 
 Two last things to screw in will be the beer hinge and vive facial tracker or babble case if you have it
 
@@ -92,30 +92,30 @@ Two last things to screw in will be the beer hinge and vive facial tracker or ba
    - Screwing in **opposite** of where the heat insert is. You should be screwing ***into*** the heat insert
 
 
-![M4SCREWGUIDE2](https://i.imgur.com/zJeadXI.png)
+![M4SCREWGUIDE2](../imgs/headset_guides/zJeadXI.png)
 
 2. For the last screw, repeat the same steps, but line up your face tracker or babble case. Screw from the same direction, into the heat insert of the beer hinge.
 Use either an M4x10 or an M4x30. I find the M4x10 sometimes loses tension, while the M4x30 doesnt. 
 
 3. Your final result should look like this
-![FINAL](https://i.imgur.com/1h7ex2y.jpg)
+![FINAL](../imgs/headset_guides/1h7ex2y.jpg)
 
 
 #### 3. Mounting components
 
 1. You can now push the XIAO's into the mount, making sure they are down snug, if you haven't already.
 
-![XIAO](https://i.imgur.com/pXb2UVZ.png)
+![XIAO](../imgs/headset_guides/pXb2UVZ.png)
 
 
 2. Place your V4 LED kit PCB into the middle of the XIAO Retention Clip. Ensure the hole in the PCB alligns with the small bump on the retention clip.
 You will have to slide it in and push it under the overhangs until they snap over the PCB.
 
-![XIAO-V4](https://i.imgur.com/MnaWjHw.png)
+![XIAO-V4](../imgs/headset_guides/MnaWjHw.png)
 
 3. Route your V4 LED connectors through the coverplate holes prior to putting it on
 
-![V4POWER](https://i.imgur.com/rDOzTz8.png)
+![V4POWER](../imgs/headset_guides/rDOzTz8.png)
 
 4. Place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
 
@@ -131,7 +131,7 @@ You must have a T5 Torx screwdriver to remove the original index frunk screws, w
 
 Picture courtesy of iFixit
 
-![T5SCREWS](https://i.imgur.com/AbnMtn4.jpeg)
+![T5SCREWS](../imgs/headset_guides/AbnMtn4.jpeg)
 
 1. If you do not have fans, and are mounting a USB Hub infront, I recommend now plugging in the USB hub through the fan holes, as you won't be able to after dev frunk is screwed on.
 
@@ -139,7 +139,7 @@ Alternatively, you can use the USB C port below the middle bottom screw, and pas
 
 2. Once the frunk is removed, line up your DEV Frunk and screw it back in the same way. Support it in a way you can screw in without it falling.
 
-![T5SCREWS2](https://i.imgur.com/LRN45aM.png)
+![T5SCREWS2](../imgs/headset_guides/LRN45aM.png)
 
 
 
