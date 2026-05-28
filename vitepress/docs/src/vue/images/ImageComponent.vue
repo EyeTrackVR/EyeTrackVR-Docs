@@ -3,7 +3,7 @@ const props = defineProps(['options']);
 </script>
 
 <template>
-    <div align="center" class="mb-4">
+    <div align="center">
         <figure>
             <a v-if="options.url_2" class="no_icon" target="_blank" rel="noopener" :href="options.url_2">
                 <img class="docimage max-w-full h-auto rounded-lg" :src="options.url" :alt="options.alt"
