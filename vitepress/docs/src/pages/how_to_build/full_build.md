@@ -63,6 +63,7 @@ This is the best solution when it comes to the final result. If you have Vive/Tu
 Below is an example of bridging the connections and attaching an antenna.
 
 <ImageCard :options="image_settings.external_antenna_resistors" />
+<br>
 
 <div align="center">
 <iframe width="500" height="300" src="https://www.youtube.com/embed/aBTZuvg5sM8" title="How to add an external antenna to an ESP32-CAM (2 methods)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -55,10 +55,12 @@ First we need to remove the existing camera from the XIAO and replace it with a 
 
 Begin by lifting up the grey part of the camera connector gently until it raises up.
 <ImageCard :options="image_settings.xiao5" />
+<br>
 <ImageCard :options="image_settings.xiao6" />
 
 Now grab the camera and gently wiggle it out of the connector.
 <ImageCard :options="image_settings.xiao7" />
+<br>
 <ImageCard :options="image_settings.xiao8" />
 
 ## Connecting the camera
@@ -76,6 +78,7 @@ The cable should go about half way in like this image:
 
 Now, close the camera connector by flipping the grey part down.
 <ImageCard :options="image_settings.xiao12" />
+<br>
 <ImageCard :options="image_settings.xiao13" />
 
 ## Conclusion
