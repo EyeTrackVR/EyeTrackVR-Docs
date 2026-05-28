@@ -35,7 +35,7 @@ Once completed, you should be all set to proceed.
 
 > This builds the firmware, but does not send it to the ESP yet.
 
-![img](../imgs/vsc-legacy/EmSkhFp.png)
+<ImageCard :options="image_settings.upload_and_update_firmware_img" />
 
 ## 3. Upload your firmware
 
@@ -44,7 +44,7 @@ Once completed, you should be all set to proceed.
 - Once the firmware has been built, press the upload button to upload the firmware.
 
   This sends the firmware to the ESP.
-  ![img](../imgs/vsc-legacy/lI3PFVC.png)
+  <ImageCard :options="image_settings.upload_and_update_firmware_img_1" />
 
 <Alerts :options="alerts.upload_firmware_one">
     <template v-slot:content>
@@ -56,7 +56,7 @@ Once completed, you should be all set to proceed.
 
 - If the upload is successful, you should get an output that looks like this:
 
-  ![img](../imgs/vsc-legacy/SDQcCr1.png)
+  <ImageCard :options="image_settings.upload_and_update_firmware_img_2" />
 
 Congratulations! You have now successfully uploaded the firmware to your EyeTrackVR Tracker!
 
@@ -163,7 +163,7 @@ This will open a list of all available environments, select the one that matches
 
 4. Restart the ESPs, they **_must_** be power cycled
 5. Press the upload button to upload the firmware.<br>  
-   ![img](../imgs/vsc-legacy/lI3PFVC.png)
+   <ImageCard :options="image_settings.upload_and_update_firmware_img_1" />
 6. Do not touch esps or move them during OTA upload
 7. Wait around 1 minute.
 8. Repeat for as many trackers as you need.

@@ -1,4 +1,9 @@
 Pardon the mess, this page is WIP more docs for other configurations and assemblly are in the works.
+<script setup>
+import ImageCard from '../../vue/images/ImageComponent.vue'
+import { image_settings } from '../../static/image_settings'
+</script>
+
 
 # How to assemble a V4 mini LED hardware kit:
 
@@ -9,28 +14,31 @@ There are 3 main components of an IR LED kit; the mainboard, LEDs and wires.
 
 ### Mainboard
 Below is the V4 mini mainboard with major features labled.
-![V4mini](../imgs/leds/SpwYUgw.jpeg)  
-![V4mini_back](../imgs/leds/ZsTnjem.jpeg)
+<ImageCard :options="image_settings.led_setup_v4mini" />
+<br>  
+<ImageCard :options="image_settings.led_setup_v4mini_back" />
 
 
 ### LEDs
 There are 2 different types of LED boards. 
 The one you should have more of are the "N" LEDs. N stands for Normal, these make up 3 of the leds per eye.
-![nLED](../imgs/leds/f0onbjb.jpeg)  
-![NLEDback](../imgs/leds/pM31O08.jpeg)
+<ImageCard :options="image_settings.led_setup_nled" />  
+<br>
+<ImageCard :options="image_settings.led_setup_nledback" />
 
 
 The second type is the "E" LEDs. E stands for End as these are put at the end of the LED strand.
 
-![eLED](../imgs/leds/LaJmm4Z.jpeg)  
-![eLEDback](../imgs/leds/UkLVPci.jpeg)
+<ImageCard :options="image_settings.led_setup_eled" />  
+<br>
+<ImageCard :options="image_settings.led_setup_eledback" />
 
 In future orders the "E" LEDs will be purple for easier distinction.
-![eLEDpurple](../imgs/leds/a1j6zHi.jpeg)
+<ImageCard :options="image_settings.led_setup_eledpurple" />
 
 ### Wires
 The included wires are a bit special, they have 3 pins on the connectors but only 2 wires are attached.
-![v4wire](../imgs/leds/UTtd5bG.jpeg)  
+<ImageCard :options="image_settings.led_setup_v4wire" />  
 
 This distinction is crutial in assembling a kit as the wires need to go in a specific orientation outlined in the assembly picture which shows the pins without wires as dashes - - -.
 
@@ -38,8 +46,9 @@ This distinction is crutial in assembling a kit as the wires need to go in a spe
 
 Start by pluggin in the long wires to the main board like shown.
 
-![notpluggedr](../imgs/leds/DNpVzY3.jpeg)  
-![pluggedinr](../imgs/leds/4VWqUiZ.jpeg)
+<ImageCard :options="image_settings.led_setup_notpluggedr" />  
+<br>
+<ImageCard :options="image_settings.led_setup_pluggedinr" />
 
 
 Then connect the wires to leds in the sequence:
@@ -48,11 +57,11 @@ Then connect the wires to leds in the sequence:
 
 You need to **pay very close attention** to the **orientation** of the wires so that the missing wire is facing the correct way. The following image shows a kit fully assembled:
 
-![v4minifull](../imgs/leds/zdj9WUu.png)
+<ImageCard :options="image_settings.led_setup_v4minifull" />
 
 Here is an example of the right eye's LED strand.  
  
-![v4minireye](../imgs/leds/Bi6Og87.jpeg)  
+<ImageCard :options="image_settings.led_setup_v4minireye" />  
   
 # How to assemble V4 Lite LED kit:  
 
@@ -76,19 +85,19 @@ First, decide if you want dual eye or single eye operation and pick the appropia
 **__Single Eye:__**   
 Use the 130ohm resistor marked with Black, Black, and Gold middle rings:  
   
-![v4litesingleeye](../imgs/leds/dCNMQaZ.jpeg)  
+<ImageCard :options="image_settings.led_setup_v4litesingleeye" />  
 
 
 **__Dual Eye:__**  
 Use the 65ohm resistor marked with Yellow, White and Gold middle rings:  
   
-![v4litedualeye](../imgs/leds/vuhsckU.jpeg)  
+<ImageCard :options="image_settings.led_setup_v4litedualeye" />  
 
 Now, solder the resistor on the board (any orientation), and then the black 3 pin voltage regulator (orientation matters, solder on the side with the white outline and have it fit in the outline's shape)  
   
-![v4litemainboardassem](../imgs/leds/s1eqJiE.jpeg)  
+<ImageCard :options="image_settings.led_setup_v4litemainboardassem" />  
 
 
 Now, wire up the LEDs like shown.  
 
-![v4litefullassmb](../imgs/leds/l57tEmr.png)  
+<ImageCard :options="image_settings.led_setup_v4litefullassmb" />  

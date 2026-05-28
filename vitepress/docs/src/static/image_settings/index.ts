@@ -880,6 +880,227 @@ const image_settings = {
     alt: "Screenshot showcasing the settings page of ETVR, explaining how to setup ETVR to talk to a different PC",
     max_width: "max-width: 600px;",
   },
+
+  valve_index_devfrunk1: {
+    url: "../imgs/headset_guides/KQDFg1J.jpeg",
+    alt: "Mute's dev frunt hero picture",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_hmd: {
+    url: "../imgs/headset_guides/4n6f4U3.png",
+    alt: "build with hub mounted to the 3d print",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_frunk: {
+    url: "../imgs/headset_guides/5xzpTqa.png",
+    alt: "heat inserts locations",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_bridge: {
+    url: "../imgs/headset_guides/vNPx656.png",
+    alt: "heat inserts locations - hinge",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_hinge: {
+    url: "../imgs/headset_guides/R3Uwllz.png",
+    alt: "heat inserts locations - hinge",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_insertsexample: {
+    url: "../imgs/headset_guides/2z0TD3L.jpeg",
+    alt: "inserts mounted example",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_m4screwguide: {
+    url: "../imgs/headset_guides/hCi744w.png",
+    alt: "M4 screws guide",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_m4screwguide2: {
+    url: "../imgs/headset_guides/zJeadXI.png",
+    alt: "M4 screws guide",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_final: {
+    url: "../imgs/headset_guides/1h7ex2y.jpg",
+    alt: "finalized assembly",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_xiao: {
+    url: "../imgs/headset_guides/pXb2UVZ.png",
+    alt: "XIAO board mounted",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_xiao_v4: {
+    url: "../imgs/headset_guides/MnaWjHw.png",
+    alt: "XIAO-V4 sandwitched",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_v4power: {
+    url: "../imgs/headset_guides/rDOzTz8.png",
+    alt: "V4 power routing",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_t5screws: {
+    url: "../imgs/headset_guides/AbnMtn4.jpeg",
+    alt: "T5 screws locations",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_t5screws2: {
+    url: "../imgs/headset_guides/LRN45aM.png",
+    alt: "T5 screws locations",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_dev_frunk_bridge: {
+    url: "../imgs/headset_guides/kRvx56r.jpeg",
+    alt: "vive face tracker mounted to the hinge",
+    max_width: "max-width: 600px;",
+  },
+
+  valve_index_dev_frunk_ribbons: {
+    url: "../imgs/headset_guides/RcYQ8xd.png",
+    alt: "ribbon routing",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4mini: {
+    url: "../imgs/leds/SpwYUgw.jpeg",
+    alt: "V4mini",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4mini_back: {
+    url: "../imgs/leds/ZsTnjem.jpeg",
+    alt: "V4mini_back",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_nled: {
+    url: "../imgs/leds/f0onbjb.jpeg",
+    alt: "nLED",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_nledback: {
+    url: "../imgs/leds/pM31O08.jpeg",
+    alt: "NLED back",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_eled: {
+    url: "../imgs/leds/LaJmm4Z.jpeg",
+    alt: "eLED",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_eledback: {
+    url: "../imgs/leds/UkLVPci.jpeg",
+    alt: "eLED back",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_eledpurple: {
+    url: "../imgs/leds/a1j6zHi.jpeg",
+    alt: "eLED purple",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4wire: {
+    url: "../imgs/leds/UTtd5bG.jpeg",
+    alt: "v4 wire",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_notpluggedr: {
+    url: "../imgs/leds/DNpVzY3.jpeg",
+    alt: "not plugged right ",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_pluggedinr: {
+    url: "../imgs/leds/4VWqUiZ.jpeg",
+    alt: "plugged in right",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4minifull: {
+    url: "../imgs/leds/zdj9WUu.png",
+    alt: "v4mini full",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4minireye: {
+    url: "../imgs/leds/Bi6Og87.jpeg",
+    alt: "v4mini right eye",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4litesingleeye: {
+    url: "../imgs/leds/dCNMQaZ.jpeg",
+    alt: "v4lite single eye",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4litedualeye: {
+    url: "../imgs/leds/vuhsckU.jpeg",
+    alt: "v4lite dual eye",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4litemainboardassem: {
+    url: "../imgs/leds/s1eqJiE.jpeg",
+    alt: "v4lit emain board assembly",
+    max_width: "max-width: 600px;",
+  },
+
+  led_setup_v4litefullassmb: {
+    url: "../imgs/leds/l57tEmr.png",
+    alt: "v4lite full assembly",
+    max_width: "max-width: 600px;",
+  },
+
+  upload_and_update_firmware_img: {
+    url: "../imgs/vsc-legacy/EmSkhFp.png",
+    alt: "build firmware shortcut",
+    max_width: "max-width: 600px;",
+  },
+  upload_and_update_firmware_img_1: {
+    url: "../imgs/vsc-legacy/lI3PFVC.png",
+    alt: "flash firmware shortcut",
+    max_width: "max-width: 600px;",
+  },
+
+  upload_and_update_firmware_img_2: {
+    url: "../imgs/vsc-legacy/SDQcCr1.png",
+    alt: "successful flash output",
+    max_width: "max-width: 600px;",
+  },
+
+  jlc3dp_uploadjlc: {
+    url: "../imgs/prints/NFKoPAA.png",
+    alt: "Upload JLC",
+    max_width: "max-width: 600px;",
+  },
+
+  jlc3dp_shipping: {
+    url: "../imgs/prints/ck27eaH.png",
+    alt: "Shipping",
+    max_width: "max-width: 600px;",
+  },
 };
 
 export { image_settings };

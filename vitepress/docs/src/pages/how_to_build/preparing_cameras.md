@@ -52,6 +52,7 @@ Cut the tape from the roll, here I used flat cutters.
 Be careful to not cut the camera connector in the process.
 
 <ImageCard :options="image_settings.camera_protect3" />
+<br>
 <ImageCard :options="image_settings.camera_protect4" />
 
 With the tape cut from the roll, lay it down and get out a X-ACTO knife.
@@ -61,32 +62,42 @@ With the tape cut from the roll, lay it down and get out a X-ACTO knife.
 Begin to cut around the camera connector so the tape can be peeled off.
 
 <ImageCard :options="image_settings.camera_protect6" />
+<br>
 <ImageCard :options="image_settings.camera_protect7" />
 
 When each side has been cut, begin to peel off the part that covered the connections.
 <ImageCard :options="image_settings.camera_protect8" />
+<br>
 <ImageCard :options="image_settings.camera_protect9" />
+<br>
 <ImageCard :options="image_settings.camera_protect10" />
 
 
 Now, carefully cut around the camera sensor part to remove its "skirt" leaving tape on the back of it.
 <ImageCard :options="image_settings.camera_protect11" />
+<br>
 <ImageCard :options="image_settings.camera_protect13" />
+<br>
 <ImageCard :options="image_settings.camera_protect14" />
+<br>
 <ImageCard :options="image_settings.camera_protect15" />
+<br>
 <ImageCard :options="image_settings.camera_protect12" />
 
 Gently pull off this outline of tape from the camera.
 <ImageCard :options="image_settings.camera_protect16" />
+<br>
 <ImageCard :options="image_settings.camera_protect17" />
 
 
 Begin to wrap the tape along the ribbon cable by first folding in the slightly shorter side.
 <ImageCard :options="image_settings.camera_protect18" />
+<br>
 <ImageCard :options="image_settings.camera_protect19" />
 
 Fold over the other side.
 <ImageCard :options="image_settings.camera_protect20" />
+<br>
 <ImageCard :options="image_settings.camera_protect21" />
 
 And you are done!
