@@ -6,6 +6,7 @@ _site
 .jekyll-metadata
 gemfile.lock
 node_modules
+.pnpm-store/
 .tmp
 .DS_Store
 .idea
