@@ -3,6 +3,9 @@ import { defineConfig } from 'vitepress'
 import { theme } from '../src/custom/theme'
 
 export default defineConfig({
+    vite: {
+        assetsInclude: ['**/*.JPG']
+    },
     outDir: './.vitepress/dist',
     srcDir: './src/pages',
     cleanUrls: 'with-subfolders',

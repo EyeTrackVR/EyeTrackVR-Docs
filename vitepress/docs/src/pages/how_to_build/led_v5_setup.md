@@ -16,11 +16,11 @@ Do all wiring with the USB-C cable disconnected. Recheck every connector before 
 
 The V5 mainboard has two LED outputs. With the component side facing you and the USB-C port at the bottom, the sockets are marked `R` for the right eye and `L` for the left eye.
 
-![Component side of the V5 mainboard, showing the R and L output labels](../imgs/leds-v5/DSCF2311.JPG)
+![Component side of the V5 mainboard, showing the R and L output labels](../public/imgs/leds-v5/DSCF2311.JPG)
 
 The back is labeled `Right LED` and `Left LED`. Use these labels to choose the correct socket. Do not rely on where a socket appears in a rotated photo.
 
-![Reverse side of the V5 mainboard, showing the Right LED and Left LED labels](../imgs/leds-v5/DSCF2313.JPG)
+![Reverse side of the V5 mainboard, showing the Right LED and Left LED labels](../public/imgs/leds-v5/DSCF2313.JPG)
 
 ### LED boards
 
@@ -32,11 +32,11 @@ A standard board is marked `V5`. These are the first three boards in each eye's 
 
 **LED side: the `V5` marking is visible.**
 
-![LED side of a standard board marked V5](../imgs/leds-v5/DSCF2317.JPG)
+![LED side of a standard board marked V5](../public/imgs/leds-v5/DSCF2317.JPG)
 
 **Connector side of the same standard `V5` board:**
 
-![Connector side of a standard V5 board](../imgs/leds-v5/DSCF2318.JPG)
+![Connector side of a standard V5 board](../public/imgs/leds-v5/DSCF2318.JPG)
 
 #### End `V5E` board (one per eye)
 
@@ -44,11 +44,11 @@ An end board is marked `V5E`. It must be the fourth and final board in the stran
 
 **LED side: look for the extra `E` in the `V5E` marking.**
 
-![LED side of an end board marked V5E](../imgs/leds-v5/DSCF2315.JPG)
+![LED side of an end board marked V5E](../public/imgs/leds-v5/DSCF2315.JPG)
 
 **Connector side of the same `V5E` end board:**
 
-![Connector side of a V5E end board](../imgs/leds-v5/DSCF2316.JPG)
+![Connector side of a V5E end board](../public/imgs/leds-v5/DSCF2316.JPG)
 
 ::: tip The reliable identification check
 The connector sides look similar. If you are unsure which board you have, turn it over and read `V5` or `V5E` next to the LED.
@@ -56,13 +56,13 @@ The connector sides look similar. If you are unsure which board you have, turn i
 
 The complete kit contains six `V5` boards and two `V5E` boards. Check the printed markings and board color.
 
-![Six standard V5 boards and two V5E end boards](../imgs/leds-v5/DSCF2314.JPG)
+![Six standard V5 boards and two V5E end boards](../public/imgs/leds-v5/DSCF2314.JPG)
 
 ### Cables and keyed connectors
 
 Here are 6 "Short" wires typically used between LED and LED. 
 
-![The different two-wire cables supplied with the V5 kit](../imgs/leds-v5/DSCF2310.JPG)
+![The different two-wire cables supplied with the V5 kit](../public/imgs/leds-v5/DSCF2310.JPG)
 
 ::: tip The connectors are keyed
 The two-pin connectors are keyed and normally cannot be inserted backward. If a plug does not go in easily, stop and check its direction. Never force it into the socket, although they may take some force to plug in. Double check if unsure.
@@ -91,11 +91,11 @@ Note the LED board orientation in how they are plugged in. Be careful as a wrong
 
 **Correct assembly example 1:**
 
-![First correct full V5 dual-eye assembly](../imgs/leds-v5/DSCF2321.JPG)
+![First correct full V5 dual-eye assembly](../public/imgs/leds-v5/DSCF2321.JPG)
 
 **Correct assembly example 2:**
 
-![Full V5 dual-eye layout with three V5 boards followed by one V5E board in each strand](../imgs/leds-v5/DSCF2322.JPG)
+![Full V5 dual-eye layout with three V5 boards followed by one V5E board in each strand](../public/imgs/leds-v5/DSCF2322.JPG)
 
 If your headset mount needs more distance at the end of a strand, you may use a longer cable between the third `V5` board and the final `V5E` board.
 
@@ -103,7 +103,7 @@ If your headset mount needs more distance at the end of a strand, you may use a 
 
 Connect one long strand cable to `R` and the other to `L`. In the photo below, one cable is connected to the `R` socket.
 
-![A two-wire cable connected to the R output of the V5 mainboard](../imgs/leds-v5/DSCF2319.JPG)
+![A two-wire cable connected to the R output of the V5 mainboard](../public/imgs/leds-v5/DSCF2319.JPG)
 
 ### 2. Add three standard boards to each strand
 
@@ -134,9 +134,9 @@ The mainboard can then be installed in its printed housing. Keep both LED cables
 
 Insert the PCB and slide it into the 3d print. Note this may take some force, be careful but its okay to push it!
 
-![V5 mainboard in its housing with both LED cables connected](../imgs/leds-v5/DSCF2323.JPG)
+![V5 mainboard in its housing with both LED cables connected](../public/imgs/leds-v5/DSCF2323.JPG)
 
-![Closed V5 mainboard housing with both LED cables exiting without being pinched](../imgs/leds-v5/DSCF2324.JPG)
+![Closed V5 mainboard housing with both LED cables exiting without being pinched](../public/imgs/leds-v5/DSCF2324.JPG)
 
 Connect USB-C only after completing the inspection above.
 
