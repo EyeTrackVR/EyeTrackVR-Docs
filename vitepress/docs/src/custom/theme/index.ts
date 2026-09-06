@@ -60,6 +60,10 @@ const theme = {
           link: "/how_to_build/led_v5_setup",
         },
         {
+          text: "Preparing V4 LEDs",
+          link: "/how_to_build/led_v4_setup",
+        },
+        {
           text: "3D Printed Mounts",
           link: "/how_to_build/3d_printed_mounts",
         },
