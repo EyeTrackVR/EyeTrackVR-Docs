@@ -14,7 +14,7 @@ These are two proven/tested ways to do a clean ETVR build on the Valve Index. Do
 
 Please note due to the LED positioning, these will **require you to use the included 110mm extensions included in the V4 Kit**
 
-[V4 LED Kit Assembly](https://docs.eyetrackvr.dev/how_to_build/led_setup)
+[V4 LED Kit Assembly](https://docs.eyetrackvr.dev/how_to_build/led_v4_setup)
 
 ## MUTEtheCyberwolf's DEV Frunk Mod:
 ![DevFrunk1](../public/imgs/headset_guides/KQDFg1J.jpeg)

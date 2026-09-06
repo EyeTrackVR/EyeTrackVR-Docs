@@ -2,7 +2,7 @@
 
 This guide covers the V5 Pro LED Dev kit. The kit uses one USB-C mainboard, six standard `V5` LED boards, two `V5E` end boards, and various two-wire cables.
 
-[Buy the V5 Pro LED Dev Kit from the EyeTrackVR Store](https://store.eyetrackvr.dev/products/v5-pro-led-dev-kit).
+[Buy the V5 Pro LED Dev Kit from the EyeTrackVR Store](https://store.eyetrackvr.dev/products/v5-pro-led-dev-kit-1).
 
 [View the V5 Pro PCB source files on GitHub](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/IR%20Emmitter/V5%20Pro).
 

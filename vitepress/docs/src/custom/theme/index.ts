@@ -52,7 +52,7 @@ const theme = {
           link: "/how_to_build/preparing_xiao",
         },
         {
-          text: "Preparing V4 LEDs",
+          text: "LED Kit Setup",
           link: "/how_to_build/led_setup",
         },
         {

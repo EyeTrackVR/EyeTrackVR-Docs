@@ -35,6 +35,7 @@ jobs:
         with:
           name: production-files
           path: ./vitepress/docs/.vitepress/dist
+          retention-days: 1
   deploy:
     runs-on: ubuntu-latest
     name: Deploy
@@ -74,15 +75,3 @@ jobs:
           cname: docs.eyetrackvr.dev
           allow_empty_commit: true
           full_commit_message: ${{ github.event.head_commit.message }}
-
-  cleanup:
-    name: Cleanup actions
-    needs:
-      - deploy
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    steps:
-      - name: "♻️ remove build artifacts"
-        uses: geekyeggo/delete-artifact@v1
-        with:
-          name: production-files
