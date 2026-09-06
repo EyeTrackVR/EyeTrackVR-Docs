@@ -66,7 +66,7 @@ export default {
               amount: () => this.tracker,
               cost: 12.87,
               costAll: () => this.tracker * 12.87 + 3.18,
-              links: '<a href="https://www.aliexpress.com/item/3256804601970891.html">AliExpress</a> <a href="https://amzn.to/44ZZrhi">Amazon</a> ESP32 S3 XIAO Sense Recommended'
+              links: '<a href="https://www.seeedstudio.com/XIAO-ESP32S3-Sense-p-5639.html">Seeed</a> <a href="https://amzn.to/44ZZrhi">Amazon</a> ESP32 S3 XIAO Sense'
             },
             {
               name: 'ESP32-CAM',
@@ -129,24 +129,17 @@ export default {
               links: '<a href="https://docs.eyetrackvr.dev/getting_started/led_safety">IR LED Safety<a/> If you already have safe IR LED hardware and know what you are doing.'
             },
             {
-              name: '★ Official V4 mini No-Solder',
+              name: '★ Official V5 Pro No-Solder',
               amount: () => 1,
-              cost: 37,
-              costAll: () => this.tracker + 37 + 5,
-              links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-fully-solderless-kit">ETVR Store</a> Length depending on HMD'
-            },
-            {
-              name: 'Official V4 mini Solder-Required',
-              amount: () => 1,
-              cost: 34,
-              costAll: () => this.tracker + 34 + 5,
-              links: '<a href="https://store.eyetrackvr.dev/products/v4-mini-some-assemblly-required">ETVR Store</a> Must solder up your own wires'
+              cost: 28,
+              costAll: () => this.tracker + 28 + 6,
+              links: '<a href="https://store.eyetrackvr.dev/products/v5-pro-led-dev-kit-1">ETVR Store</a>'
             },
                         {
               name: 'Official V4 lite Assemble Yourself',
               amount: () => 1,
-              cost: 15,
-              costAll: () => this.tracker + 15 + 5,
+              cost: 10,
+              costAll: () => this.tracker + 10 + 5,
               links: '<a href="https://store.eyetrackvr.dev/products/v4-1-lite-diy-led-kit">ETVR Store</a> Must assemble yourself'
             },
           ],
