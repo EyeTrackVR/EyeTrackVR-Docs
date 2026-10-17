@@ -1,0 +1,2300 @@
+# EyeTrackVR Docs
+
+> Official EyeTrackVR documentation: build an open-source, affordable VR eye tracker for VRChat, social VR and PCVR. Works with nearly all headsets.
+
+
+---
+source: https://docs.eyetrackvr.dev/about
+title: About the EyeTrackVR Project
+---
+
+[Team page - see the live page]
+
+---
+source: https://docs.eyetrackvr.dev/contact
+title: Contact and Community
+---
+
+Contact Us
+
+    Please join our Discord for updates and any questions.
+
+
+
+
+<!-- [![Discord](https://discord.com/api/guilds/946212245187199026/widget.png?style=banner3)](https://discord.gg/kkXYbVykZX){:target="_blank" :alt="Discord"} -->
+
+---
+source: https://docs.eyetrackvr.dev/dev_roadmap
+title: Development Roadmap
+---
+
+# EyeTrackVR Development Roadmap
+
+This will contain a list of features that are in progress, completed, and planned.
+
+## Completed
+
+## In Progress
+
+## Planned
+
+---
+source: https://docs.eyetrackvr.dev/development/docs/dev_docs
+title: Docs Site Development
+---
+
+# Development Documentation for the EyeTrackVR Docs Site
+
+This is the documentation for the EyeTrackVR Docs site. It is built using [VitePress](https://vitepress.vuejs.org/).
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/en/) (v14.15.4 or higher)
+- [Yarn](https://yarnpkg.com/) (v1.22.10 or higher)
+- [Git](https://git-scm.com/) (v2.30.1 or higher)
+- [VSCode](https://code.visualstudio.com/) (v1.56.2 or higher)
+
+### Installation
+
+1. Clone the repo
+
+   ```sh
+   git clone https://github.com/EyeTrackVR/EyeTrackVR-Docs.git
+   ```
+
+2. Navigate to the `vitepress` folder
+
+   ```sh
+   cd vitepress
+   ```
+
+3. Install Yarn packages
+
+   ```sh
+    yarn
+    ```
+
+4. Start the dev server
+
+      ```sh
+      yarn dev
+      ```
+
+5. Open the site in your browser
+
+## Contributing
+
+### Project Structure
+
+1. Familiarize yourself with the [VitePress documentation](https://vitepress.vuejs.org/).
+2. Then, move on to our project specific documentation below.
+
+#### Standards
+
+- All documentation should be written in Markdown or Vue components.
+- All file names are snake case *and* lowercase letters.
+- Do not make naming changes to the `vitepress` folder.
+- Do not make major changes to the `vitepress` folder structure without proir consultation of team members.
+- For Vue componentes, follow the [Vue3 docs](https://vuejs.org/guide/introduction.html).
+
+---
+source: https://docs.eyetrackvr.dev/development/docs/pages
+title: Adding and Editing Docs Pages
+---
+
+# Pages
+
+This section will cover how to add or edit pages on the docs website.
+
+Please use the `Github Markdown` flavour for your Markdown files.
+
+Please look at other pages to see how they are formatted, and for examples of how to use Markdown.
+
+## Adding a Page
+
+To add a page, you will need to create a new Markdown file in the `vitepress/docs/src/pages` folder. The file name will be the URL of the page. For example, if you create a file called `my_page.md`, the URL will be `https://docs.eyetrackvr.dev/my_page`.
+
+### Sub-directories
+
+You can also create sub-directories in the `vitepress/docs/src/pages` folder. For example, if you create a file called `my_page.md` in a folder called `my_folder`, the URL will be `https://docs.eyetrackvr.dev/my_folder/my_page`.
+
+This is useful for organizing pages into categories.
+
+### Adding a Page to the Sidebar
+
+To add a page to the sidebar, you will need to add the page to the `vitepress/docs/src/custom/theme/index.js` file.
+
+To do this, you will need to add the page to the `sidebar` object.
+
+For example, if you want to add a page called `my_page.md` to the sidebar, you will need to add the following to the `sidebar` object:
+
+```js
+{
+    text: "Getting Started",
+    collapsible: true,
+    items: [
+        { text: "Introduction", link: "/getting_started/intro" },
+        { text: "Things to know before you start", link: "/getting_started/things_to_know" },
+        { text: "My Page", link: "/my_folder/my_page" }, // Add this line - subdir then file
+    ],
+},
+```
+
+::: info Note
+The `link` property does not require a file extension. Please do not add it.
+:::
+
+### Title Style
+
+The title style is the style of the title that appears at the top of the page.
+
+We like to keep this cohesive, so please use the following style:
+
+```md
+# My Page
+```
+
+This will give the title a nice orange colour.
+
+The `{}` are required, and the `.text-[#e67e22]` is the colour using `TailWindCSS` classes. You can also use our built in CSS variables ``. You will find these in the `src/styles/theme.css` file. You can change this to any colour you like, but please keep it consistent with the rest of the site.
+
+::: tip Tip
+This entire site supports `TailWindCSS` classes. You can find the documentation [here](https://tailwindcss.com/docs).
+
+All classes you wish to add, must be prefaced with a `.` when inside of the `{}`.
+
+When using classes on `HTML` elements, you can use the `class` attribute. For example:
+
+```html
+My Page
+```
+
+:::
+
+## Editing a Page
+
+To edit a page, you will need to edit the Markdown file in the `vitepress/docs/src/pages` folder.
+
+---
+source: https://docs.eyetrackvr.dev/development/docs/standards
+title: Docs Standards Guide
+---
+
+# Standards Guide
+
+Listed here are the standards that are used for the EyeTrackVR project. These standards are used to ensure that the project is consistent and easy to understand.
+
+## Code Standards
+
+### General
+
+It is by design that we use a static-site framework for the documentation site. This is to ensure that the documentation is easy to maintain and extend. This is also to ensure that the documentation is easy to understand.
+
+We have only a few rules for the documentation site:
+
+- All code should be written in English.
+- All code should be written in a way that is easy to understand.
+- All code should be written in a way that is easy to maintain.
+- All code should be written in a way that is easy to extend.
+- Our git commit style is to be followed, in english only.
+
+### Git Commit Style
+
+We use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) standard for our git commit style. This is to ensure that our git commits are easy to understand and easy to maintain. This is also to ensure that our git commits are easy to extend.
+
+Git commits are used to with the [Semantic Release](https://semantic-release.gitbook.io/semantic-release/) tool to automatically generate the changelog and versioning for the project. As such, it is important that we follow the Conventional Commits standard, with our own rule customizations.
+
+The following is a list of the customizations that we have made to the Conventional Commits standard:
+
+- We use the `BREAKING CHANGE(S)` or `BREAKING` text to indicate a breaking change.
+
+Our git commit style is as follows:
+
+```bash
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+The following is a list of the types that we use:
+
+- `feat`: A new feature.
+- `fix`: A bug fix.
+- `docs`: Documentation only changes.
+- `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
+- `refactor`: A code change that neither fixes a bug nor adds a feature.
+- `perf`: A code change that improves performance.
+- `test`: Adding missing or correcting existing tests.
+- `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm, yarn, actions).
+- `ci`: Changes to our CI configuration files and scripts (example scopes: GH-Actions, yml, YAML).
+- `chore`: Other changes that don't modify src or test files.
+- `revert`: Reverts a previous commit.
+- `BREAKING CHANGE`: Indicate a breaking change.
+- `no-release`: This commit will not trigger a release.
+
+An example of our git commit style is as follows:
+
+```bash
+feat: add a new feature # this is the commit title
+
+- added new thing # some detail about the new thing
+
+BREAKING CHANGE: this is a breaking change #this line is optionaland only used if needed
+```
+
+---
+source: https://docs.eyetrackvr.dev/firmware_guide/firmware
+title: Firmware Overview
+---
+
+# What is this?
+
+Firmware is the second part of the equation to get your trackers going. It lives on the ESP32 chip, and is responsible for streaming video data from the tracker. We currently fully support wireless streaming over 2.4GHz, and are working on adding support for wired streaming to the main desktop App.
+
+## What should I download and where?
+
+You can access the firmware, as well as flash your boards, using our new [Firmware Flashing Tool](https://github.com/EyeTrackVR/FirmwareFlashingTool).
+
+::: warning Caution
+This tool is currently in beta.
+:::
+
+We are working on adding support for Over-The-Air (OTA) and configuring network settings. If you have any issues, please let us know by opening an issue on the repository.
+
+This tool relies on our own solution called `OpenIris`, [found here](https://github.com/EyeTrackVR/OpenIris).
+
+::: info Note
+You **do not** need to download OpenIris separately. The flashing tool will download it for you.
+:::
+
+To check the status of the project, please visit the [Development Road Map](/dev_roadmap)
+
+::: details I want to use VSCode - How would I do this?
+[Follow the steps described here](./setup_vscode)
+:::
+
+---
+source: https://docs.eyetrackvr.dev/firmware_guide/flashing_tool_advanced_options
+title: Flashing Tool Advanced Options
+---
+
+# Firmware Flashing Tool Advanced options
+
+## Before We Proceed
+
+::: info Note
+
+- Ensure you have a **data transfer cable** ready, as it is required for the flashing process.
+- Make sure your camera is properly configured: [How to prepare a Seeed Studio XIAO Sense ESP32](../how_to_build/preparing_xiao).
+- Verify that your board is running the **latest firmware version**; otherwise, some options may not be available or may not work correctly.
+
+:::
+
+## Change Device Mode
+
+Switch your device between **wireless** and **wired** modes, depending on your setup and use case.
+
+### How to Start
+
+To change your board’s mode, follow the steps below:
+
+##
+
+### Select Port
+
+Click on the `Select port` dropdown, choose the port your board is connected to (e.g., COM3), then click `Detect device` to identify your device.
+
+##
+
+### Choose Device Mode
+
+Select the device mode you want to switch to (wired or wireless), depending on your needs.
+
+##
+
+### That's All
+
+Your board is now configured and ready to use in the selected mode.
+
+## Wi-Fi Mode / Update Network
+
+Allows you to configure or change the Wi-Fi network your device connects to.
+You can switch between available networks to improve connectivity, performance, or accessibility.
+
+##
+
+### Select Port
+
+Click on the `Select port` dropdown, choose the port your board is connected to (e.g., COM3), then click **Check mode** to continue.
+
+##
+
+### Select Network
+
+Choose a network from the list that you want to connect to.
+
+If your network is not listed, click `Manual setup` to enter the network details manually.
+
+##
+
+### Enter Credentials
+
+Enter the password for the selected network, verify that it is correct, and click `Continue`.
+
+##
+
+### Configure mdns
+
+Choose the name under which your board will be visible on the network.
+
+If you prefer a custom name, select `Setup custom mdns` and enter your own.
+
+##
+
+### Connection Process
+
+If the selected network and credentials are correct, the connection process will start automatically.
+No additional action is required during this step.
+
+##
+
+If the connection fails, double-check your network credentials and try again.
+
+##
+
+### That's All
+
+Your board is now connected to the network and ready to use.
+
+---
+source: https://docs.eyetrackvr.dev/firmware_guide/flashing_tool
+title: Firmware Flashing Tool
+---
+
+# Firmware Flashing Tool
+
+## Before We Proceed
+
+::: info Note
+
+- Make sure you have a **data transfer cable** ready, as it is required for the flashing process.
+- Ensure your camera is properly set up: [How to prepare a Seeed Studio XIAO Sense ESP32](../how_to_build/preparing_xiao).
+
+:::
+
+## Flash Firmware
+
+### Step 1: Download and Install the Firmware Flashing Tool
+
+- Download the Firmware Flashing Tool Installer from the latest [GitHub release](https://github.com/EyeTrackVR/FirmwareFlashingTool/releases).
+- Run the installer and follow the on-screen instructions to complete the installation of the Firmware Flashing Tool application.
+
+##
+
+### Step 2: Run the Firmware Flashing Tool
+
+After installation, double-click the desktop icon to open the application.
+
+You should see a GUI similar to this:
+
+##
+
+### Step 3: Select Board
+
+Click the `Select Board` dropdown and choose your board from the list.
+Once selected, click **Next** to continue.
+
+##
+
+### Step 4: Select Port
+
+Click the `Select port` dropdown, choose the port your board is connected to (e.g., COM3), then click **Install Openiris** to start the flashing process.
+
+##
+
+### Step 5: Installation
+
+If the correct board and port are selected, the flashing process will begin automatically.
+No action is required during this step.
+
+##
+
+### Troubleshooting
+
+If flashing fails, check the following:
+
+- Verify that the correct port is selected.
+- If your board has a **Boot (B) button**, press and hold it.
+- Ensure your **data transfer cable** is connected properly.
+- Confirm that your camera is correctly set up: [Preparing Seeed Studio XIAO Sense ESP32](../how_to_build/preparing_xiao).
+
+##
+
+### That's all
+
+Once the process finishes successfully, you will see `Firmware flashed!`.
+Click **Continue setup** to configure your board in **wired** or **wireless** mode.
+
+## Wired Mode
+
+To use your board in wired mode, simply click **Wired mode**.
+
+##
+
+### Step 1: Setup Tracker Name
+
+Enter a custom name for your tracker. This name will identify your device.
+Click **Setup tracker** to complete the setup.
+
+##
+
+### Step 2: That's all
+
+Your board is now set up and ready to use in wired mode.
+
+## Wireless Mode
+
+### Step 1: Select Wireless Mode
+
+Click **Wi-Fi mode** to use your board wirelessly.
+
+##
+
+### Step 2: Select Network
+
+Choose a network from the list.
+If your network is not listed, click `Manual setup` to enter the details manually.
+
+##
+
+### Step 3: Enter Credentials
+
+Enter the password for the selected network, check for errors, and click **Continue**.
+
+##
+
+### Step 4: Configure mDNS
+
+Set the name under which your board will appear on the network.
+To use a custom name, select `Setup custom mdns` and enter your preferred name.
+
+##
+
+### Step 5: Connection Process
+
+If the network and credentials are correct, the connection will start automatically.
+No further action is required during this step.
+
+##
+
+If the connection fails, double-check your credentials and try again.
+
+##
+
+### Step 6: That's all
+
+Your board is now connected to the network and ready to use in wireless mode.
+
+---
+source: https://docs.eyetrackvr.dev/firmware_guide/mdns
+title: mDNS Tracker Discovery
+---
+
+# MDNS
+
+## What is it?
+
+`mDNS` is a protocol that allows you to connect to a device using a name instead of an IP address. This is useful if you do not know the IP address of the device, or if you do not want to keep track of the IP address of the device. This is also useful if you are using a device that does not have a static IP address.
+
+In the `mDNS` protocol the IP address of the device can change, but the name of the device will always be the same. This means that you can connect to the device using the name of the device, even if the IP address of the device changes.
+
+## How to use it
+
+### Enable mDNS
+
+The `mDNS` is enabled by default on the new firmware, and can not be disabled.
+
+To use it, all you need to do is set the name of the device in the firmware config file.
+
+This setting can be located under the `[wifi]` section of the `ini/user_config.ini` file.
+
+```ini
+mdnsname = "openiristracker" # do not add .local
+```
+
+By default, the name of the device is `openiristracker`, however you can change it to whatever you want.
+
+::: warning Change the name
+Since you have two ESP32 devices, you need to make sure that the name of the device is different for each device. If you do not change the name of the device, you will not be able to connect to both devices at the same time.
+:::
+
+### Connect to the device
+
+To connect to the device, you need to use the name of the device followed by `.local`. For example, if the name of the device is `esp32`, you can connect to the device using `http://esp32.local`.
+
+## Prerequisites `Bonjour`
+
+`Bonjour` is required to use the `mDNS` protocol _for windows and mac only_. If you are using Windows, you can download Bonjour from [here](https://support.apple.com/kb/DL999?locale=en_US). If you are using macOS, Bonjour is already installed.
+
+You can also get the fully tested Bonjour package from us [here](https://github.com/EyeTrackVR/EyeTrackVR/tree/GUI/GUI/assets/3rdParty) (for Windows only).
+
+## Troubleshooting
+
+### Can not connect to the device
+
+If you can not connect to the device, make sure that the name of the device is correct. If the name of the device is correct, make sure that the device is connected to the network.
+
+If the device is connected to the network, try to restart the device. If the device is still not connected, try to restart the router.
+
+---
+source: https://docs.eyetrackvr.dev/firmware_guide/rest_api
+title: Firmware REST API
+---
+
+# REST API
+
+## What is it?
+
+A REST API is a way to communicate with the ESP devices using HTTP requests. This is useful if you want to control the device from a computer or a mobile device.
+
+We developed a REST API for this project so that we can control the devices more easily from our new app.
+
+## How to use it
+
+### REST API Client
+
+Any REST API client can be used to communicate with the ESP devices. We recommend using [Thunder Client](https://www.thunderclient.com/) to test the REST API, as it's free and is a vscode extension.
+
+For basic `GET` requests, you can use your browser of choice.
+
+### Standard
+
+The REST API follows the following standard:
+
+```txt
+http://{device_name}.local:81/control/builtin/command/{endpoint}?{param}={value}&{param}={value}
+```
+
+> For example, if the name of the device is `esp32`, you can connect to the device using `http://esp32.local:81/control/builtin/command/<endpoint>`.
+
+### Endpoints
+
+::: info Note
+Any endpoint marked with `**` is currently not implemented, and will be implemented in the future.
+
+If you would like to help us implement these endpoints, please contact us.
+
+We are also open to suggestions for new endpoints.
+
+> **Note**: Any endpoint that makes changes to the config will require a call to `/save` to write the changes to the flash.
+> This is to prevent the flash from being written to too often, which can cause the flash to wear out.
+> The device will write the changes to the flash and then restart itself after a call to `/save`.
+:::
+
+The REST API has the following endpoints:
+
+| Endpoint | Method | Description |
+| :------: | :----: | :---------: |
+| /ping | GET | Returns the status of the device. |
+| /save | GET | Writes any changes to the flash. |
+| /restartDevice | GET | Restarts the ESP itself. |
+| /restartCamera | GET | Restarts the camera. |
+| /resetConfig | GET | Clears the current config in memory and RAM |
+| /getStoredConfig | GET | Returns a _JSON_ object of the devices current config. |
+| /setTxPower | POST | Sets the Transmission Power of the ESPs |
+| /setDevice | POST | Sets the `OTA` and `mDNS` settings |
+| /setCamera | POST | Sets all of the camera settings |
+| /wifi | POST | Adds a new wifi network, or writes over an existing one |
+| /wifi | DELETE | Deletes a wifi network `**` |
+
+::: info Note
+`/wifi` uses the `POST` method to add a new wifi network, and the `DELETE` method to delete a wifi network.
+:::
+
+### Params
+
+The REST API has the following params:
+
+::: danger Feature not a bug
+All params for a given URL are required, even if you are not changing that params value.
+
+If you do not supply a param, that param will be set to default settings.
+:::
+
+URL params are passed in the URL as a query string, using the following format:
+
+`http://<device_name>.local:81/control/builtin/command/<endpoint>?<param>=<value>&<param>=<value>`
+
+#### /wifi
+
+::: info Note
+We allow you to store up to 3 wifi networks in memory. If you try to add more than 3, the oldest network will be overwritten.
+:::
+
+| Param | Description |
+| :---: | :---------: |
+| `ssid` | The ssid of the network. |
+| `password` | The password of the network. |
+| `networkName` | The unique name (given by you) to refer to that network in memory. |
+| `channel` | The channel for the wifi network to broadcast on  only `1 - 14` are allowed. |
+| `power` | The Transmittion power of the ESP for that network config. |
+| `adhoc` | Whether to enable AP mode or not. |
+
+::: info Note - Transmission Power
+You must follow the following format for the `power` param:
+
+Using the following enum, you pass the _number_ to the right of the `=` sign that corresponds with the power in `dBm` that you wish to use.
+
+```cpp
+typedef enum {
+    WIFI_POWER_19_5dBm = 78,// 19.5dBm
+    WIFI_POWER_19dBm = 76,// 19dBm
+    WIFI_POWER_18_5dBm = 74,// 18.5dBm
+    WIFI_POWER_17dBm = 68,// 17dBm
+    WIFI_POWER_15dBm = 60,// 15dBm
+    WIFI_POWER_13dBm = 52,// 13dBm
+    WIFI_POWER_11dBm = 44,// 11dBm
+    WIFI_POWER_8_5dBm = 34,// 8.5dBm
+    WIFI_POWER_7dBm = 28,// 7dBm
+    WIFI_POWER_5dBm = 20,// 5dBm
+    WIFI_POWER_2dBm = 8,// 2dBm
+    WIFI_POWER_MINUS_1dBm = -4// -1dBm
+} wifi_power_t;
+```
+
+:::
+
+#### /setDevice
+
+| Param | Description |
+| :---: | :---------: |
+| `hostname` | The hostname for the ESP  used by `OTA` and `mDNS`. |
+| `service` | The service to look for when scanning `mDNS` devices on the network  this should be set to `openiristracker` in order to look for `EyeTrackVR` devices  |
+| `ota_password` | The password for the `OTA` service. |
+| `ota_port` | The port for the `OTA` service. |
+| `firmware_name` | The name of the binary file for `OTA`  depricated and will be removed |
+
+#### /setTxPower
+
+::: info Note
+You must follow the following format for the `txPower` param:
+
+Using the following enum, you pass the _number_ to the right of the `=` sign.
+
+```cpp
+typedef enum {
+    WIFI_POWER_19_5dBm = 78,// 19.5dBm
+    WIFI_POWER_19dBm = 76,// 19dBm
+    WIFI_POWER_18_5dBm = 74,// 18.5dBm
+    WIFI_POWER_17dBm = 68,// 17dBm
+    WIFI_POWER_15dBm = 60,// 15dBm
+    WIFI_POWER_13dBm = 52,// 13dBm
+    WIFI_POWER_11dBm = 44,// 11dBm
+    WIFI_POWER_8_5dBm = 34,// 8.5dBm
+    WIFI_POWER_7dBm = 28,// 7dBm
+    WIFI_POWER_5dBm = 20,// 5dBm
+    WIFI_POWER_2dBm = 8,// 2dBm
+    WIFI_POWER_MINUS_1dBm = -4// -1dBm
+} wifi_power_t;
+```
+
+:::
+
+| Param | Description |
+| :---: | :---------: |
+| `txPower` | The power level to set. |
+
+### Camera Params
+
+| Param | Description | Value Effect |
+| :---: | :---------: | :---------: |
+| `vflip` | Whether to flip the frames vertically. | 0 or 1 |
+| `framesize` | A value between 0-7 indicating the frame resolution. | Larger number - higher resolution. |
+| `hflip` | Whether to flip the frames horizontally. | 0 or 1 |
+| `quality` |  The JPEG quality level: 1-63? | **Smaller** number = higher quality, more latency and less fps |
+| `brightness` | The `agc_gain` of the camera. | Larger number = more bright. |
+
+---
+source: https://docs.eyetrackvr.dev/getting_started/intro
+title: Introduction and Getting Started
+---
+
+# EyeTrackVR
+
+Welcome to **EyeTrackVR**, a Source First, affordable eye-tracking platform designed specifically for adding to VR Headsets.
+
+While built with Social VR (like VRChat) in mind, EyeTrackVR is highly versatile. It works by capturing real-time eye data and transmitting it via `OSC`, making it compatible with a wide variety of VR applications.
+
+Whether you are here to build your own tracker, write code, or just see how it all works, you’ve come to the right place.
+
+---
+
+## Getting Started
+
+Ready to build? This documentation, covers everything from buying parts to flashing firmware. If you are new to the project, please follow these steps:
+
+1. **[Parts List](../how_to_build/part_list)** – Read this first to understand what hardware you need.
+2. **[3D Printed Parts](../how_to_build/3d_printed_mounts)** – Read this to find what 3D prints you need.
+3. **[Prepare Cameras](../how_to_build/preparing_cameras)** – Prepare the cameras.
+4. **[Prepare ESP32](../how_to_build/preparing_xiao)** – Prepare the ESP32s.
+5. **[Prepare IR LEDS](../how_to_build/led_setup)** – Prepare IR LEDS.
+6. **[Full Build Guide](../how_to_build/v4_full_build)** – Step-by-step instructions to assemble the setup.
+
+---
+
+<Alerts :options="alerts.user_warning">
+  <template v-slot:content>
+
+      This project is under active development. While it works reliably for many users, you may encounter bugs. Your feedback helps us improve!
+
+  </template>
+</Alerts>
+
+## Headset Compatibility
+
+EyeTrackVR is designed to be universal. It can theoretically work with **any** VR headset, provided there is a way to mount the cameras inside.
+
+Check our **[Mount List](../how_to_build/parts_list#_3d-printed-mounts)** to see if a 3D-printable mount already exists for your specific headset.
+
+*Don't see your headset listed?* You are welcome to design your own mount or join the community to see if someone else is working on one!
+
+---
+
+## Community & Support
+
+Need help? Want to show off your build? Join our Discord server! We’re excited to have you on board!
+
+---
+
+## ⚠️ Eye Safety in DIY LED Builds
+
+Your safety is our top priority. Because this project involves Infrared (IR) light—which is invisible to the human eye—it is strictly important that you understand the risks.
+Our hardware is built with safety in mind, and so it is important that yours does too.
+
+**To ensure safety, you must adhere to the recommended LEDs, wiring diagrams, and firmware settings.**
+
+::: danger
+**Never bypass safety features or swap out IR components.**
+Changing the recommended hardware without understanding the specific risks can result in permanent eye damage.
+:::
+
+Our default configuration is designed to stay well below international safety thresholds (see [ICNIRP guidelines](../safety/ICNIRP_optical_radiation.pdf)). However, as a DIY builder, it is your responsibility to:
+
+- **Use Non-Focused Emitters:** Never use focused laser-like components.
+- **Check Intensity:** Keep total radiant intensity below **5 mW/sr**.
+- **Verify:** Use an IR-capable camera to visually check LED brightness.
+- **Listen to your body:** If you feel warmth or discomfort in your eyes, **stop using the device immediately.**
+
+<Alerts :options="alerts.led_power_warning">
+  <template v-slot:content>
+
+      Use only <ins class="text-red-400 dark:text-red-500">non-focused</ins> LEDs, and ensure total output is <strong>4 mW/sr or less</strong>.
+
+  </template>
+</Alerts>
+
+::: details 📚 Safety References & Data
+[Effect of infrared radiation on the lens](../safety/effect_of_ir_on_the_lens.pdf)
+[Photobiological safety of LED light sources](../safety/AN002_Details_on_photobiological_safety_of_LED_light_sources.pdf)
+[ICNIRP Guidelines (0.38 to 3 µm)](../safety/ICNIRP_optical_radiation.pdf)
+[Training Library – NIR Standards](../safety/training-library_nir_stds_20021011.pdf)
+:::
+
+---
+source: https://docs.eyetrackvr.dev/getting_started/led_safety
+title: IR LED Eye Safety
+---
+
+# Near-Eye Infrared (IR) Emitter Safety
+
+## Safety overview
+
+**Please exercise caution when messing around with IR emitters.**
+
+IR can be dangerous to your eyes once at a certain power level. **It is not recommended to use different emitters unless you know exactly what you are doing as it could result in harm to your eyes. If you doubt yourself or do not understand something, just do exactly what we do. Don't use different emitters, don't use different means of power, etc.**
+
+::: danger
+It is important that you DO NOT BYPASS (OR NOT DO) ANY SAFETY FEATURES PUT IN PLACE. This can result in irreversible bodily harm.
+:::
+
+The safety measures were put in place to REDUCE the potential failure risk. All further safety responsibilities are on the user. This includes visually checking with an IR camera that the brightness is correct and that you do not feel warmth, excessive eye-strain or experience short-term effects after being exposed to the IR light (symptoms such as dark spots or dry/warm feeling eyes while actively using). While we have designed EyeTrackVR to be as safe as possible, we do not hold any responsibility for damage done.
+
+[Our official kits](https://store.eyetrackvr.dev/) are made with known safe parts, undergo design testing to ensure failures are safe, and have calculated exposure numbers below.
+
+-----
+
+### Relevant Safety Limits
+
+We design for compliance with these key international safety standards:
+
+  - **ICNIRP 2013**: For exposures \>1000 seconds, the **anterior eye** (cornea and lens) irradiance limit is **10 mW/cm²** (equivalent to 100 W/m²).
+  - **IEC 62471** and **IEC 60825-1**: For sources in the **retinal hazard region** (400–1400 nm), and a worst-case exposure of ≥10 s, the irradiance limit is **4 mW/cm²** (averaged over a 7 mm pupil projected cone of 11 mrad).
+
+EyeTrackVR emitters operate at **850 nm**, within the retinal hazard region.  
+Our calculated output is well below both thresholds:  
+**≤ 1.71 mW/cm²** (worst-case V4 High Bin) at 1.5 cm — safely under the retinal limit and **5.8×** below the corneal limit.
+
+-----
+
+### Why Current (mA) Isn’t Enough
+
+LED current (mA) is not a direct measure of safety. **Irradiance** (power per unit area) determines actual eye exposure.
+
+For on-axis exposure calculations, we use the Inverse Square Law:
+
+```
+Irradiance E = Radiant Intensity Ie / r²
+```
+
+  - *Ie* = radiant intensity (in **mW/sr**, from datasheet)
+  - *r* = distance from LED to cornea (worst-case 1.5 cm)
+
+-----
+
+## Hardware Exposure Calculations
+
+### LED: XL‑3216HIRC‑850
+
+| Datasheet Value             | Symbol              | Notes                              |
+|-----------------------------|---------------------|-------------------------------------|
+| Radiant intensity @ 20 mA   | *Ie₍20ₘₐ₎* = 5 mW/sr | Typical max value, 60° half-angle   |
+| Distance to eye             | *r* = 1.5 cm        | Standard EyeTrackVR mounting distance |
+
+Radiant intensity scales roughly linearly with current:
+
+```
+Ie = Ie₍20ₘₐ₎ × (I_drive / 20 mA)
+```
+
+-----
+
+### V3 Module (2 LEDs @ 3.2 mA each)
+
+```
+Ie_single  = 5 × (3.2 / 20) = 0.80 mW/sr
+E_single   = 0.80 / (1.5)² = 0.36 mW/cm²
+E_total    = 0.36 × 2 = 0.72 mW/cm²
+→ ~7.2% of ICNIRP corneal limit
+```
+
+-----
+
+### V4 Module (4 LEDs @ 2.4 mA each)
+
+```
+Ie_single  = 5 × (2.4 / 20) = 0.60 mW/sr
+E_single   = 0.60 / (1.5)² = 0.27 mW/cm²
+E_total    = 0.27 × 4 = 1.08 mW/cm²
+→ ~10.8% of ICNIRP corneal limit
+```
+
+-----
+
+### Worst-Case (High Bin) Calculations
+
+Some LEDs may fall into a higher output bin with up to **8 mW/sr @ 20 mA**. We conservatively recalculate:
+
+#### V3 Max Bin (2 LEDs @ 3.2 mA):
+
+```
+Ie_single  = 8 × (3.2 / 20) = 1.28 mW/sr
+E_single   = 1.28 / (1.5)² = 0.57 mW/cm²
+E_total    = 0.57 × 2 = 1.14 mW/cm²
+→ ~11.4% of ICNIRP corneal limit
+```
+
+#### V4 Max Bin (4 LEDs @ 2.4 mA):
+
+```
+Ie_single  = 8 × (2.4 / 20) = 0.96 mW/sr
+E_single   = 0.96 / (1.5)² = 0.43 mW/cm²
+E_total    = 0.43 × 4 = 1.71 mW/cm²
+→ ~17.1% of ICNIRP corneal limit
+```
+
+-----
+
+## Your Responsibilities
+
+1.  **Do not modify the hardware.** Changing components or resistors voids all safety guarantees and may lead to unsafe conditions.
+2.  **Verify functionality before use.** Use an IR-sensitive camera to confirm all LEDs are on and of equal brightness and the view of your eye is not completely washed out.
+3.  **Perform periodic inspections** to ensure IR emitters have not damaged and remain equal brightness.
+
+-----
+
+## Appendix A – Formula Summary
+
+```
+Ie              = Ie₍20ₘₐ₎ × I / 20 mA
+E (per LED)     = Ie / r²
+E_total         = E × (# of LEDs)
+```
+
+-----
+
+## Appendix B – Quoted Guideline (ICNIRP 2013)
+
+> “To avoid thermal injury of the cornea and possible delayed effects on the lens of the eye (cataractogenesis), infrared radiation (780 nm \< λ \< 3 µm) should be limited to 100 W m⁻² (10 mW cm⁻²) for lengthy exposures (\> 1000 s).”
+
+> — *ICNIRP Guidelines on Limits of Exposure to Incoherent Optical Radiation (2013)*  
+> [PDF](https://docs.eyetrackvr.dev/safety/ICNIRP_optical_radiation.pdf)
+
+-----
+
+If you have suggestions, believe these calculations are inaccurate, or wish to contribute improvements, please [open a discussion on GitHub](https://github.com/EyeTrackVR/EyetrackVR-Docs). Your feedback helps us keep everyone safe.
+
+---
+source: https://docs.eyetrackvr.dev/headset_guides/valve_index
+title: Valve Index Build Guide
+---
+
+# Valve Index
+
+These are two proven/tested ways to do a clean ETVR build on the Valve Index. Don't treat this as a *must follow*, but a setup to go for if you don't have other plans.
+
+### Recommended Valve Index lens mounts
+
+[Physics-Dude's 160° V18](https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/blob/main/ETVR%20ValveIndex%20Cam-LED%20Mount%20Rings/Index-EyetrackVRv4%20v18%20Print%20Me.stl) (mirror the STL for left)
+
+[Foow17's 130 / 160°](https://makerworld.com/en/models/196741#profileId-217255)
+
+[Foow17's 130 / 160° VROPTICIAN](https://makerworld.com/en/models/196791#profileId-217311)
+
+[Frosty704's 160/120° WidmoVR Mount](https://github.com/Frosty704/indexwidmo-eyetrackvr)
+
+Please note due to the LED positioning, these will **require you to use the included 110mm extensions included in the V4 Kit**
+
+[V4 LED Kit Assembly](https://docs.eyetrackvr.dev/how_to_build/led_v4_setup)
+
+## MUTEtheCyberwolf's DEV Frunk Mod:
+![Valve Index DEV Frunk mount with two XIAO cameras installed](/imgs/headset_guides/KQDFg1J.jpeg)
+![Front view of the Valve Index fitted with the DEV Frunk eye tracking mount](/imgs/headset_guides/4n6f4U3.webp)
+
+#### Mod Details
+The DEV Frunk is a popular choice for ETVR on the Index. Replacing the original index frunk entirely, it has multiple mounting points for both the XIAO's, a Vive Facial Tracker (or [project babble!](https://babble.diy/)), and cutouts for 30x30x7mm fans.
+
+It also provides excellent ventilation simply due to the design being much more open, as well as a flip up design for the face tracker mount.
+
+Combined, it creates a clean setup with no need for hot glue or alternatives to mount your hardware.
+
+#### Extra Parts Needed:
+I recommend a screw kit like [this](https://www.amazon.com/XOOL-Precision-Screwdriver-Extension-Smartphone/dp/B086SQZGLJ) one
+- 1x T5 Torx Screwdriver
+- 1x H3.0 Screwdriver
+- 1x Soldering Iron for heat inserts
+- 8x M4x8.1 Heat Inserts [AliExpress](https://www.aliexpress.com/item/3256804349544912.html)  Choose Size: M4 (OD 6mm)50pcs | Color: Length 8mm
+- 6x M4x10 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.html) Choose Size: M4 20pcs | Length: 10mm
+- 1x M4x30 Screws [AliExpress](https://www.aliexpress.com/item/2251832624557792.html) Choose Size: M4 20pcs | Length: 30mm
+
+#### 3D Printed Mounts
+Found at MUTEtheCyberwolf's [GitHub Repo](https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/tree/main/3D%20Print%20Files%20STL(Ascii))
+
+You will need to print:
+- 1x Coverplate for XIAO Retention Clip (Logo or no Logo)
+- 1x XIAO Retention Clip (Letters or no Letters)
+- 1x Eyetrack VR Prototype XIAO Mount.stl
+- 1x FacialTrackerBeerHingeVIDEVFrunk1.stl
+- 1x FacialTrackerBridgeVIDEVFrunk1.stl
+  - Alternatively, if you have the [LDLRUI USB HUB](https://www.amazon.com/LDLrui-4-Port-Splitter-Multiport-Adapter/dp/B0BLHCD7FS), [this modified version](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ldlrui%20case%20and%20bridge%20merged-FacialTrackerBridgeVIDEVFrunk1.stl) of the DEV Frunk Bridge can snap fit the hub onto the bridge. [Example](/imgs/headset_guides/kRvx56r.jpeg)
+- 1x ValveIndexDEVFrunk1.stl
+  - Alternatively, if you are interested in routing the ribbon cables internally, [this modified DEV Frunk](https://github.com/Frosty704/mods-eyetrackvr/blob/main/ValveIndexDEVFrunk1_MODIFIED.stl) has holes at the top for sliding through ribbon cables and power cables. [Example](/imgs/headset_guides/RcYQ8xd.jpg)
+
+![Exploded drawing of the Valve Index DEV Frunk 1.0 parts](https://github.com/MUTEtheCyberwolf/VALVE-INDEX-DEV-Frunk-1.0/assets/98415183/3b2b4fc2-a0ce-4641-8d0f-8fcac9271e34)
+
+### Assembly Details:
+ #### 1. Heat Inserts
+1. Start with inserting your heat inserts to the designated holes on the frunk. Place the heat inserts so the side with the smaller radius sits in the hole
+- When heating up the inserts, **let the weight of the soldering iron do the work**, they make take a few seconds to start moving on their own.
+   -  **Do not push down**, and remove the iron when they are level with the print. It doesn't need to be perfect, so take your time!
+
+![Heat set inserts being melted into the DEV Frunk 3D print](/imgs/headset_guides/5xzpTqa.webp)
+
+Bottom picture courtesy of amoistman
+
+2. Next, place a heat insert into the bigger hole of the facial tracker bridge
+
+![Heat insert hole in the facial tracker bridge print](/imgs/headset_guides/vNPx656.webp)
+
+3. Lastly, place another heat insert into the thick side of the beer hinge
+
+![Heat insert hole in the beer hinge print](/imgs/headset_guides/R3Uwllz.webp)
+
+4. Your finished heat inserts should look like this
+
+![DEV Frunk print with all heat inserts installed and level](/imgs/headset_guides/2z0TD3L.jpeg)
+
+Picture courtesy of amoistman
+
+#### 2. Screws
+
+Now you're done with the hardest part!
+We can move onto screwing in the XIAO Mount and Facial tracker bridge onto the frunk, into the heat inserts we just inserted.
+  - The XIAO mount should be placed so the longer side is not blocking the fan holes
+  - If you have trouble screwing them in, try screwing them equally to distribute the pressure more evenly.
+    - Screw one a little, screw the opposite the same amount, repeat.
+
+![Diagram showing which holes take the M4 screws on the DEV Frunk](/imgs/headset_guides/hCi744w.webp)
+
+Two last things to screw in will be the beer hinge and vive facial tracker or babble case if you have it
+
+1. Place the smaller hole of the beer hinge inbetween the bridge's screw holes.
+   - Screwing in **opposite** of where the heat insert is. You should be screwing ***into*** the heat insert
+
+![Screwing into the heat insert from the back of the DEV Frunk print](/imgs/headset_guides/zJeadXI.jpg)
+
+2. For the last screw, repeat the same steps, but line up your face tracker or babble case. Screw from the same direction, into the heat insert of the beer hinge.
+Use either an M4x10 or an M4x30. I find the M4x10 sometimes loses tension, while the M4x30 doesnt.
+
+3. Your final result should look like this
+![Finished DEV Frunk with the M4 screws installed](/imgs/headset_guides/1h7ex2y.jpg)
+
+#### 3. Mounting components
+
+1. You can now push the XIAO's into the mount, making sure they are down snug, if you haven't already.
+
+![XIAO ESP32 cameras pushed into the DEV Frunk mount](/imgs/headset_guides/pXb2UVZ.webp)
+
+2. Place your V4 LED kit PCB into the middle of the XIAO Retention Clip. Ensure the hole in the PCB alligns with the small bump on the retention clip.
+You will have to slide it in and push it under the overhangs until they snap over the PCB.
+
+![V4 LED kit PCB seated in the XIAO retention clip](/imgs/headset_guides/MnaWjHw.webp)
+
+3. Route your V4 LED connectors through the coverplate holes prior to putting it on
+
+![V4 LED connectors routed through the DEV Frunk coverplate holes](/imgs/headset_guides/rDOzTz8.jpg)
+
+4. Place the coverplate ontop of the LED PCB until the front of it snaps down and locks it over the retention clip.
+
+5. Then you can slide the retention clip over your XIAO mount to keep them in place.
+
+#### 4. Replacing frunk
+
+**PLEASE UNPLUG YOUR INDEX FROM POWER BEFORE CONTINUING**
+
+You must have a T5 Torx screwdriver to remove the original index frunk screws, we will use the same screws to hold the dev frunk in place.
+
+Picture courtesy of iFixit
+
+![T5 screw locations on the Valve Index frunk, image courtesy of iFixit](/imgs/headset_guides/AbnMtn4.jpeg)
+
+1. If you do not have fans, and are mounting a USB Hub infront, I recommend now plugging in the USB hub through the fan holes, as you won't be able to after dev frunk is screwed on.
+
+Alternatively, you can use the USB C port below the middle bottom screw, and passthrough a hub with a [FEMALE USB-C/A to MALE USB A](https://www.aliexpress.us/item/3256802596853859.html) cable
+
+2. Once the frunk is removed, line up your DEV Frunk and screw it back in the same way. Support it in a way you can screw in without it falling.
+
+![DEV Frunk lined up and screwed back onto the Valve Index](/imgs/headset_guides/LRN45aM.jpg)
+
+## Physics-Dude's Gumstick USB Hub Dongle
+
+![Gumstick USB hub dongle installed on the Valve Index](https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/assets/22563517/77e4141b-7da7-4cb3-ab16-d8d761c91930)
+
+#### Mod Details
+Physics-Dude's Gumstick Dongle provides a way to cleanly install EyeTrackVR, all fitting into the frunk. It will require significantly more tinkering and ability to solder.
+
+### Installation instructions and BOM available on [Physics-Dude's Repo](https://github.com/Physics-Dude/Phys-Index-EyetrackVR-HW/tree/main?tab=readme-ov-file#gum-stick-usb-hub-dongle)
+
+---
+source: https://docs.eyetrackvr.dev/headset_guides/what_is_this
+title: Headset Specific Guides
+---
+
+# What are "Headset Specific Guides"?
+
+This is an initiative to provide specific information on specific headsets. Any weird quirks, recommended 3d printed mounts and different setup types are to be included on a page.
+
+If you want to contribute to the project, writing a headset guide is one of the **best** ways!
+
+# Current Headsets:
+
+- [Valve Index](../headset_guides/valve_index)
+
+---
+
+# Contributing
+
+### Guidelines
+
+Please keep it as concise as possible, and spell check before submitting. You can submit by making a PR on github, or sending the `.md` file to #documentation in the ETVR Discord pinging `@prohurtz` . Take a look at the Valve Index guide for inspiration.
+
+file name: `headset_name.md`
+ex. `HTC_Vive_Pro_2.md`, `Bigscreen_Beyond.md`
+
+Page formatting and template:
+
+# Headset Name
+
+## Xyz's mod:
+[image(s) of mod (limit ~2)]
+
+#### Mod Details
+This mod supports lens inserts and is very compact and easy to use. It provides good frunk ventilation and wide hardware support.
+
+#### Extra Parts Needed:
+- 2x Camera extensions
+- 2x Camera extension connectors
+
+[Parts Link](../how_to_build/part_list#additional-parts)
+(If the parts needed are not on the additional parts page, let me know. You can also just directly link to them.)
+
+#### 3D Printed Mounts
+Found at Xyz's [GitHub](https://github.com/)
+
+You will need to print:
+- 2x camera mount
+- 2x frunk mount
+
+Lens insert support Yes/No: Yes [Compatable mount](https://github.com)
+::: info Note
+There are 160 and 130-degree variants for camera mounts; pick which one corresponds with your cameras.
+:::
+
+#### Assembly Details:
+(make sure to include quirks of setup not covered in other parts of documentation)
+
+First, screw an M2 screw into the hole on part A:
+
+[image showing "part A" and screw]
+
+You must have a Torx screwdriver set to remove the frunk screw, do so now.
+
+[image]
+
+Then attach part b and tighten:
+
+[image]
+
+Now clip on
+[image]
+
+## Abc's mod:
+[image(s) of mod (limit ~2)]
+
+#### Mod Details
+This mod supports lens inserts and is very compact and easy to use. It provides good frunk ventilation and wide hardware support.
+
+#### Extra Parts Needed:
+- 2x Camera extensions
+- 2x Camera extension connectors
+- 50 M3 screws
+[Parts Link](../how_to_build/part_list#additional-parts)
+(If the parts needed are not on the additional parts page, let me know. You can also just directly link to them.)
+
+#### 3D Printed Mounts
+Found at Abc's [GitHub](https://github.com/)
+
+You will need to print:
+- 2x camera mount
+- 2x frunk mount
+
+Lens insert support Yes/No: Yes [Compatable mount](https://github.com)
+::: info Note
+There are 160 and 130-degree variants for camera mounts; pick which one corresponds with your cameras.
+:::
+
+#### Assembly Details:
+(make sure to include quirks of setup not covered in other parts of documentation)
+
+First, screw an M2 screw into the hole on part A:
+
+[image showing "part A" and screw]
+
+You must have a Torx screwdriver set to remove the frunk screw, do so now.
+
+[image]
+
+Then attach part b and tighten:
+
+[image]
+
+Now clip on
+[image]
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/3d_printed_mounts
+title: 3D Printed Camera Mounts
+---
+
+# 3D Printed Mounts
+
+Mounts with a `★` next to them are the recommended mounts for the respected hmd. This is based on user feedback on what works best for most people.
+
+<Alerts :options="alerts.parts_list_three">
+    <template v-slot:content>
+
+        Keep in mind, some mounts only have the right(or left) version available. You may need to use blender or a slicer to mirror the STL for the other side.
+
+    </template>
+</Alerts>
+
+<PartsList />
+
+## Dont see your headset?
+
+There are almost certainly mounts in the Discord that have not been added here. Check out the `#community-mounts` fourm for additional mounts [here](https://discord.gg/wqZnPxdQxf).
+We are working on updating those mounts to be here as well, but **they are currently not all on this page**
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/led_setup
+title: IR LED Kit Setup
+---
+
+# LED kit setup
+
+Choose the guide that matches the LED kit you have:
+
+## [V5 Pro kit](./led_v5_setup)
+
+Newest No Solder LED Kit
+
+## [V4 mini](./led_v4_setup#v4-mini)
+
+Older No Solder LED Kit
+
+## [V4 Lite](./led_v4_setup#v4-lite)
+
+Budget Friendly DIY Solder Required LED Kit
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/led_v4_setup
+title: Assembling V4 LED Kits
+---
+
+Pardon the mess this page is WIP; more docs for other configurations and assembly are in the works.
+
+# How to assemble V4 LED kits
+
+## V4 mini
+
+### Getting to know your hardware
+
+There are 3 main components of an IR LED kit; the mainboard, LEDs and wires.
+
+### Mainboard
+
+Below is the V4 mini mainboard with major features labeled.
+![V4 mini mainboard with the main features labelled](/imgs/leds/SpwYUgw.jpeg)
+![Reverse side of the V4 mini mainboard](/imgs/leds/ZsTnjem.jpeg)
+
+### LEDs
+
+There are 2 different types of LED boards.
+The one you should have more of are the "N" LEDs. N stands for Normal, these make up 3 of the LEDs per eye.
+![V4 N (normal) IR LED board, LED side](/imgs/leds/f0onbjb.jpeg)
+![V4 N (normal) IR LED board, connector side](/imgs/leds/pM31O08.jpeg)
+
+The second type is the "E" LEDs. E stands for End as these are put at the end of the LED strand.
+
+![V4 E (end) IR LED board, LED side](/imgs/leds/LaJmm4Z.jpeg)
+![V4 E (end) IR LED board, connector side](/imgs/leds/UkLVPci.jpeg)
+
+In future orders the "E" LEDs will be purple for easier distinction.
+![Purple V4 E (end) LED board used on future orders](/imgs/leds/a1j6zHi.jpeg)
+
+### Wires
+
+The included wires are a bit special, they have 3 pins on the connectors but only 2 wires are attached.
+![Three-pin LED cable with only two wires attached](/imgs/leds/UTtd5bG.jpeg)
+
+This distinction is crucial in assembling a kit as the wires need to go in a specific orientation outlined in the assembly picture which shows the pins without wires as dashes - - -.
+
+### Wiring up V4 mini
+
+Start by plugging in the long wires to the main board like shown.
+
+![Long LED wires plugged into the V4 mini mainboard](/imgs/leds/DNpVzY3.jpeg)
+![LED wire connectors seated in the V4 mini mainboard](/imgs/leds/4VWqUiZ.jpeg)
+
+Then connect the wires to LEDs in the sequence:
+
+`Mainboard -> N LED -> N LED -> N LED -> E LED`
+
+You need to **pay very close attention** to the **orientation** of the wires so that the missing wire is facing the correct way. The following image shows a kit fully assembled:
+
+![Fully assembled V4 mini kit with mainboard and both LED strands](/imgs/leds/zdj9WUu.png)
+
+Here is an example of the right eye's LED strand.
+
+![Right eye V4 mini LED strand connected to the mainboard](/imgs/leds/Bi6Og87.jpeg)
+
+## V4 Lite
+
+### Getting to know V4 Lite
+
+V4 Lite is a soldering-required approach to LEDs. There are a few specific caveats to know before assembling and using this hardware.
+
+1. The board must be supplied with 5V.
+   - Other voltages may result in darker/non-functioning LEDs.
+
+2. You must change resistors if you change from a single or dual eye setup to the other.
+   - Not doing so will result in too dim of LEDs or extremely bright LEDs. Ensure you are always using the correct one for your application.
+
+3. Shorts on the main board can result in damaged hardware, dangerously bright LEDs, or nonfunctioning hardware.
+   - Please ensure there are no shorts (even very small stray solder strands) between any pins or solder joints on the main board or LEDs.
+
+### Wiring up V4 Lite
+
+First, decide if you want dual eye or single eye operation and pick the appropriate resistor.
+
+**__Single Eye:__**
+Use the 130ohm resistor marked with Black, Black, and Gold middle rings:
+
+![130 ohm resistor for single eye V4 Lite operation](/imgs/leds/dCNMQaZ.jpeg)
+
+**__Dual Eye:__**
+Use the 65ohm resistor marked with Yellow, White and Gold middle rings:
+
+![65 ohm resistor for dual eye V4 Lite operation](/imgs/leds/vuhsckU.jpeg)
+
+Now, solder the resistor on the board (any orientation), and then the black 3 pin voltage regulator (orientation matters, solder on the side with the white outline and have it fit in the outline's shape).
+
+![V4 Lite mainboard with resistor and voltage regulator soldered in](/imgs/leds/s1eqJiE.jpeg)
+
+Now, wire up the LEDs like shown.
+
+![V4 Lite kit fully wired and assembled](/imgs/leds/l57tEmr.jpg)
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/led_v5_setup
+title: Assembling the V5 Pro LED Kit
+---
+
+# How to assemble a V5 Pro LED hardware kit
+
+This guide covers the V5 Pro LED Dev kit. The kit uses one USB-C mainboard, six standard `V5` LED boards, two `V5E` end boards, and various two-wire cables.
+
+[Buy the V5 Pro LED Dev Kit from the EyeTrackVR Store](https://store.eyetrackvr.dev/products/v5-pro-led-dev-kit-1).
+
+[View the V5 Pro PCB source files on GitHub](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/IR%20Emmitter/V5%20Pro).
+
+::: warning Disconnect power first
+Do all wiring with the USB-C cable disconnected. Recheck every connector before applying power.
+:::
+
+## Identify the parts
+
+### Mainboard
+
+The V5 mainboard has two LED outputs. With the component side facing you and the USB-C port at the bottom, the sockets are marked `R` for the right eye and `L` for the left eye.
+
+![Component side of the V5 mainboard, showing the R and L output labels](/imgs/leds-v5/DSCF2311.JPG)
+
+The back is labeled `Right LED` and `Left LED`. Use these labels to choose the correct socket. Do not rely on where a socket appears in a rotated photo.
+
+![Reverse side of the V5 mainboard, showing the Right LED and Left LED labels](/imgs/leds-v5/DSCF2313.JPG)
+
+### LED boards
+
+Each eye uses three standard `V5` boards and one `V5E` end board. The two types are very similar, so identify them by the marking on the **LED side** of the board as well as color difference (E is Purple).
+
+#### Standard `V5` board (three per eye)
+
+A standard board is marked `V5`. These are the first three boards in each eye's strand. Each one connects to the next board.
+
+**LED side: the `V5` marking is visible.**
+
+![LED side of a standard board marked V5](/imgs/leds-v5/DSCF2317.JPG)
+
+**Connector side of the same standard `V5` board:**
+
+![Connector side of a standard V5 board](/imgs/leds-v5/DSCF2318.JPG)
+
+#### End `V5E` board (one per eye)
+
+An end board is marked `V5E`. It must be the fourth and final board in the strand, farthest from the mainboard.
+
+**LED side: look for the extra `E` in the `V5E` marking.**
+
+![LED side of an end board marked V5E](/imgs/leds-v5/DSCF2315.JPG)
+
+**Connector side of the same `V5E` end board:**
+
+![Connector side of a V5E end board](/imgs/leds-v5/DSCF2316.JPG)
+
+::: tip The reliable identification check
+The connector sides look similar. If you are unsure which board you have, turn it over and read `V5` or `V5E` next to the LED.
+:::
+
+The complete kit contains six `V5` boards and two `V5E` boards. Check the printed markings and board color.
+
+![Six standard V5 boards and two V5E end boards](/imgs/leds-v5/DSCF2314.JPG)
+
+### Cables and keyed connectors
+
+Here are 6 "Short" wires typically used between LED and LED.
+
+![The different two-wire cables supplied with the V5 kit](/imgs/leds-v5/DSCF2310.JPG)
+
+::: tip The connectors are keyed
+The two-pin connectors are keyed and normally cannot be inserted backward. If a plug does not go in easily, stop and check its direction. Never force it into the socket, although they may take some force to plug in. Double check if unsure.
+:::
+
+::: tip Unplug cables by pulling. Do not use tools
+To disconnect a cable, pull both wires together and straight out from the connector. This is safe, and the cables are designed for it. Do not pry at the plug with pliers, tweezers, a screwdriver, or other tools. Tools can damage the small connector. Before pulling, remove any glue or anything else that would stop the plug from coming out normally.
+:::
+
+## Assemble the two eye strands
+
+Build the left and right strands separately. The order for **each** eye is:
+
+`mainboard output -> V5 -> V5 -> V5 -> V5E`
+
+This means the completed dual-eye kit has two four-board strands:
+
+| Eye | Mainboard socket | Board order |
+| --- | --- | --- |
+| Right | `R` / `Right LED` | `V5 -> V5 -> V5 -> V5E` |
+| Left | `L` / `Left LED` | `V5 -> V5 -> V5 -> V5E` |
+
+Use the following completed assemblies as wiring references. They show the **two correct configurations** for the V5 kit. The board orientation and cable routing differ slightly, but both use three `V5` boards followed by one `V5E` board for each eye.
+
+Note the LED board orientation in how they are plugged in. Be careful as a wrong orientation will cause it to not work.
+
+**Correct assembly example 1:**
+
+![First correct full V5 dual-eye assembly](/imgs/leds-v5/DSCF2321.JPG)
+
+**Correct assembly example 2:**
+
+![Full V5 dual-eye layout with three V5 boards followed by one V5E board in each strand](/imgs/leds-v5/DSCF2322.JPG)
+
+If your headset mount needs more distance at the end of a strand, you may use a longer cable between the third `V5` board and the final `V5E` board.
+
+### 1. Connect the mainboard ends
+
+Connect one long strand cable to `R` and the other to `L`. In the photo below, one cable is connected to the `R` socket.
+
+![A two-wire cable connected to the R output of the V5 mainboard](/imgs/leds-v5/DSCF2319.JPG)
+
+### 2. Add three standard boards to each strand
+
+Starting from each mainboard cable, connect three boards marked `V5`. Connect the mainboard cable to the first board, then connect the first board to the second and the second board to the third. Following the oreintation shown in the working setup examples above.
+
+Before plugging in each connector, check these three things:
+
+1. The board is marked `V5`, not `V5E`.
+2. All three boards face the same direction and match the chosen assembly photo.
+3. The plug is straight and lines up with the socket. No pins are bent or sticking out.
+
+### 3. Finish each strand with a V5E board
+
+Connect one board marked `V5E` after the third standard board in each strand. The `V5E` board is last, so nothing connects after it.
+
+Check the orinetation to be correct compared to the exampels above.
+
+## Final check and power-up
+
+Before connecting USB-C, check both strands from the mainboard outward:
+
+- `R` feeds exactly three `V5` boards and then one `V5E` board.
+- `L` feeds exactly three `V5` boards and then one `V5E` board.
+- Every plug is pushed in all the way.
+- No exposed metal can touch the headset or another board.
+
+The mainboard can then be installed in its printed housing. Keep both LED cables clear of the case edges so they are not pinched when the housing is slid on.
+
+Insert the PCB and slide it into the 3d print. Note this may take some force, be careful but its okay to push it!
+
+![V5 mainboard in its housing with both LED cables connected](/imgs/leds-v5/DSCF2323.JPG)
+
+![Closed V5 mainboard housing with both LED cables exiting without being pinched](/imgs/leds-v5/DSCF2324.JPG)
+
+Connect USB-C only after completing the inspection above.
+
+### Optional sweat protection
+
+Most people do not need additional sweat protection. If you sweat heavily, you can apply a thin layer of clear nail polish to the board **around the LED and exposed pads, but not on top of the LED lens**.
+
+Before applying it:
+
+1. Assemble and test the entire kit until it works correctly.
+2. Disconnect USB-C and all power.
+3. Keep nail polish out of the wire connectors and away from connector contacts.
+4. Let the nail polish dry completely before reconnecting power.
+
+::: danger Do not use superglue
+Do not use superglue on or around the LED boards. Superglue can damage the LEDs permanantly.
+:::
+
+## FAQ
+
+### Help! No LEDs light up
+
+Infrared light is invisible to the human eye. Check the LEDs through a phone camera or an ESP camera to confirm whether they are on.
+
+If no LEDs appear through the camera:
+
+1. Ensure every connection matches one of the two example eye strands shown above.
+2. Check that every connector lines up correctly and is pushed in all the way.
+3. Restart the mainboard by unplugging its power cable and plugging it back in.
+4. Confirm that the orange LED on the mainboard is on.
+
+### The mainboard has no orange LED
+
+Try a different power source, such as a computer, battery bank, or USB wall adapter. Also inspect the mainboard and LED boards for physical damage.
+
+### Help! I'm missing a part or it isn't working
+
+If an important part is missing or the kit still does not work after completing the checks above, email [support@fovea-labs.com](mailto:support@fovea-labs.com). We will do our best to make it right.
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/part_list
+title: Required Parts and BOM
+---
+
+Use the **interactive** tables below to select parts!
+
+Items with a ★ are the reccomended and most common part options!
+
+Required parts are a MUST for a setup, additional parts *might* be required or desired depending on the type and complexity of your build.
+
+The most common optional part is camera extensions, or bigger external antennas if wireless performance is poor with included antennas.
+
+# Required Parts:
+
+<DiyTable />
+
+# Additional Parts:
+
+<OptionalDiyTable />
+
+<small> We may earn a commission from some links, this is at no extra cost to you. </small>
+
+## ESP setup options:
+::: danger
+There are two primary categories of trackers supported: wireless and wired.
+It's super important that you really look at all your options and consider your use case before making a decision.
+:::
+
+## Option 1: Wired over USB Serial
+### Wired Capable ESPs:
+* Seeed Studio XIAO Sense
+* FREENOVE ESP32-S3-WROOM CAM Board
+
+This is our latest setup recommended for users with wired headsets such as the Valve Index.
+
+**Pros:**
+- Much better performance and higher framerate up to 70 FPS with lower latency
+- No conflicts with advanced FBT setups such as Vive or Tundra Trackers
+- Can be wireless *or* wired
+- Less soldering required compared to ESP32-CAM boards
+
+**Cons:**
+- Requires USB port i.e. on Valve Index and USB hub mounted on your headset
+- Can be slightly more costly
+- When in use with a Vive Facial Tracker or other bandwidth sensitive components, a MTT USB hub is required or the devices will be unusable (low FPS).
+
+## Option 2: Wireless over WiFi 2.4 GHz
+### Wireless Capable ESPs:
+
+* Seeed Studio XIAO Sense
+* ESP32-CAM
+* FREENOVE ESP32-S3-WROOM CAM Board
+
+This offers a good starting point as the ESP32-CAM boards are cheaper than wired capable trackers.
+However, they can be a bit more temperamental and if you are using a wired headset, they don't really make sense.
+
+**Pros:**
+- Less cables (power only)
+- No issues with USB hubs
+- Easier to flash
+
+**Cons:**
+- Requires two external antennas for optimal streaming quality
+- Requires WiFi 2.4 GHz router or access point in reasonable proximity
+- High risk of radio interference with FBT and other WiFi 2.4 GHz devices
+- Uses more power and heats up due to radio power needs
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/preparing_cameras
+title: IR Filter Removal
+---
+
+# IR Filter Removal
+Some cameras require a removal of the IR filter, so the sensors are able to pick up the lighting provided by the IR LED's.
+Many times, the IR filter will still be on the 160° night vision model. If your feed looks dark, this may be why!
+
+### 130° IR Filter removal
+
+### 160° IR Filter removal
+
+##
+
+# Blurry Camera?
+If your feed looks blurry in the ETVR app, you likely need to focus the cameras by turning the lens. They are glued in place from factory, but easily breakable with pliers.
+
+Use a point of reference like the LED's while holding the camera, rotate the lens with pliers in either direction and watch if the feed gets more or less blurry. Repeat until you dial it in nicely. You should do this prior to mounting the cameras or atleast prevent mounting and unmounting them too many times or you risk breaking them.
+
+##
+
+# Protecting a Camera Ribbon Cable
+
+The ribbon cables that these cameras use are notoriously prone to damage rendering them useless.
+
+By wrapping them in tape such as electrical tape and following best practices covered in the guide, you can significantly reduce the risk of killing a camera.
+
+It is recommended to do this before building your setup so you are less likely to kill a camera in the process of building a setup.
+
+## Wrapping the Camera Ribbon
+First get a roll of electrical tape to wrap the camera ribbon.
+It does not strictly need to be electrical tape, but that is what I have found to work good, (and look good too).
+
+Place the camera on the tape so that the entire bottom area including the sensor are covered and that one side of the camera ribbon has slightly more tape (helps make it look good).
+
+Cut the tape from the roll, here I used flat cutters.
+Be careful to not cut the camera connector in the process.
+
+With the tape cut from the roll, lay it down and get out a X-ACTO knife.
+
+Begin to cut around the camera connector so the tape can be peeled off.
+
+When each side has been cut, begin to peel off the part that covered the connections.
+
+Now, carefully cut around the camera sensor part to remove its "skirt" leaving tape on the back of it.
+
+Gently pull off this outline of tape from the camera.
+
+Begin to wrap the tape along the ribbon cable by first folding in the slightly shorter side.
+
+Fold over the other side.
+
+And you are done!
+
+## Best Practices When Handling Cameras
+* Do not pull or jerk on the ribbon
+* Do not fold tightly or bend the ribbon cable sharper than ~45 degrees if possible
+* Do not expose to sharp objects or crevices
+* The less wear while handling or putting on/off a headset the better
+* Do not unmount and mount the cameras repetitively.
+
+## Conclusion
+
+You have successfully wrapped your camera to be protected and learned the best practices with handling cameras!
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/preparing_xiao
+title: Preparing the XIAO ESP32 Sense
+---
+
+# How to prepare a Seeed Studio XIAO Sense ESP32
+
+## What's in the box
+
+Your XIAO should come with the following components:
+* ESP32-S3 Main Board
+* Camera Hat With Low FOV Camera
+* External Antenna
+
+## Wired vs Wireless
+The only difference in hardware config between wireless and wired XIAOs is if the antenna is connected or not.
+
+## Wireless Configuration
+If you are making a wireless setup, you will need to connect the antenna.
+
+Line up the antenna connector to the one on the board,
+
+then press firmly until it snaps on.
+
+Once connected it should be flat like this:
+
+## Wired Configuration
+If you are making a wired setup, you do not need to attach the antenna.
+Set it aside and continue to the next step.
+
+## Connecting the Camera Hat
+
+First, locate the connector on the camera hat, and the corresponding one on the XIAO main board circled below.
+
+Press down carefully until it snaps on.
+
+Once connected remember to be careful, it is known that these connectors can break semi-easily so avoid ripping them apart too many times or twisting on them weirdly.
+
+## Removing the Camera
+First we need to remove the existing camera from the XIAO and replace it with a higher FOV longer ribbon camera.
+
+Begin by lifting up the grey part of the camera connector gently until it raises up.
+
+Now grab the camera and gently wiggle it out of the connector.
+
+## Connecting the camera
+The camera should have the pins facing downward, you should only see the black end.
+
+Line up the camera with the pins on the connector like below.
+
+Push the camera in by using a finger on each side of the connector, slowly pushing straight in until it stops.
+Be gentle so you do not damage the ribbon cable.
+
+The cable should go about half way in like this image:
+
+Now, close the camera connector by flipping the grey part down.
+
+## Conclusion
+You should now have your XIAO Sense ESP32 ready for [firmware flashing!](../firmware_guide/flashing_tool)
+
+---
+source: https://docs.eyetrackvr.dev/how_to_build/v4_full_build
+title: V4 Full Build Guide
+---
+
+# V4 Build Guide (WIP)
+This is a heavily unfinished docs page for a V4 setup build.
+
+After following our part's list you should have the following components.
+
+You should have the following parts:
+
+    2 × Supported ESP32 Camera Boards
+    2 × Cameras Without IR Filters
+    1 × V4 IR Emitter Kit
+    3 × USB-C cables
+    1 × USB hub
+    1 × Set of 3D printed mounts
+
+## Prepare you hardware
+Follow the docs pages for preparing the LEDs, cameras and ESPs.
+
+Flash the OpenIris firmware onto the ESPs.
+
+## Prepare and assemble the 3d printed mounts
+Clip the LEDs into the 3d printed mounts, routing the wires up to the top of the headset.
+
+Attach the cameras to the mount carefully. If you are using 130 degree cameras you might need to hotglue them depending on the mount. Glue the plastic housing and not the lens or back of the camera (it will melt).
+
+Now, carefully attach the mounts to your lens and route the camera cables down and out, and the LED wires up and through the top of the headset gasket.
+
+Now, attach the ESPs to your headset by hot-gluing a mount or whatever other mount they use.
+
+Attach your headset gasket carefully now.
+
+## Wiring it up
+Now, connect your USB hub to your headset and connect the ESPs and LED board with USB-C cables.
+
+Attach any ESP antennas now to your headset.
+
+Cable manage!
+
+## Software
+At this point you should have all of your hardware and firmware ready so it is time to set-up the tracking app.
+
+### Wired
+On Windows, you will need to open Device manager and find the COM port. (you may have this from the firmware flashing step). Under `Serial Devices (Com)` there will be a list of devices. You can unplug an ESP and see which one disconnects which will be the port of the ESP. Enter this into the app under the cooresponding eye (right or left) like `COM4`.
+
+### Wireless
+When flashing the firmware you will have set a MDNS address like `ETVR-left.local`. Enter this into the app under its corresponding eye.
+
+---
+source: https://docs.eyetrackvr.dev/misc/creating_your_own_mount
+title: Designing Your Own Camera Mount
+---
+
+# Creating Your Own Mount
+
+## This page will include a basic rundown on how to create your own camera mount for a headset that may not have any existing community mounts
+
+So, you have a headset that does not have any mounts or none that work well for you. Here I will show some simple steps to get some form of a mount working.
+
+## Step 1: Find a way to mount to your headset's lens
+
+The easiest way to get started is to find a lens protector for your headset.
+You can visit a website like [Thingiverse](https://www.thingiverse.com/) or do a search for "3d printed lens protector for {your headset here}"
+
+Example: Here is a lens protector for the Quest 1/2 and Rift S [https://www.thingiverse.com/thing:3653631](https://www.thingiverse.com/thing:3653631)
+
+## Step 2: Find a camera mount
+
+Now, you need a way to attach the camera. We have a basic design created by qdot, based on his mount on the hardware GitHub [here](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/blob/main/3d_Printed_Mounts/Basic_Mount_Components/basic_ETVR_camera_mount.stl)
+
+Alternatively, you can create your own mount if you have the skills.
+
+## Step 3: Place the camera mount where it will give a good camera angle
+
+The "Ideal" location is a place that gives a good view of the pupil when looking to all extremes, the lower corners do a good job at getting there, or nearly there.
+
+It is recommended to place the camera as close as possible to the headset's lens to maximize the view of the eye.
+I recommend looking at other headset mounts for [inspiration.](https://github.com/EyeTrackVR/EyeTrackVR-Hardware/tree/main/3d_Printed_Mounts)
+
+## Step 4: Mount your LEDs
+
+You can either add parts to your mount for holding the LED boards or just glue them on. It's up to you and what works best for you, experiment!
+
+## Step 5: Test everything
+
+It is unlikely you will get a perfect mount on the first try. Print, test, adjust, and repeat until you have a satisfactory mount.
+Good luck!
+
+## Step 6: Get your mounts listed
+
+Send me the mount to be added to the docs here! You can upload it to Thingiverse or similar services, or just send me the .STLs via discord `(Prohurtz#0001)`
+
+---
+source: https://docs.eyetrackvr.dev/misc/faq
+title: Frequently Asked Questions
+---
+
+# Frequently Asked Questions
+
+---
+
+---
+source: https://docs.eyetrackvr.dev/misc/jlc3dp
+title: Ordering Prints from JLC3DP
+---
+
+# 3D Printing Service JLC3DP
+
+## If you don't own a 3D Printer, you can order high quality prints by the dollar using JLC3DP
+https://jlc3dp.com/3d-printing-quote
+
+### Upload your STL files with the following print settings
+Do note that if you are printing for a example, a lens mount, you may need to mirror it in blender, or any slicer, to get both a left and right STL and upload them separate. Do not upload them combined
+
+![JLC3DP upload screen with the recommended EyeTrackVR print settings](/imgs/prints/NFKoPAA.png)
+
+### Choose a cheaper shipping option, for me this is global standard direct line
+
+![JLC3DP shipping options with global standard direct line selected](/imgs/prints/ck27eaH.png)
+
+In the likely event you get an [email or alert](/imgs/prints/t2QmpBY.png) from JLC asking for consent to print as the STL has thin walls, you can agree to the print without worry.
+
+---
+source: https://docs.eyetrackvr.dev/misc/vrc_avatar_setup
+title: VRChat Avatar Setup for Eye Tracking
+---
+
+# How to set up your avatar for eye tracking:
+
+Here is an avatar setup video created by a contributor:
+
+
+
+Another great resource is the [VRC Face Tracking Wiki](https://github.com/benaclejames/VRCFaceTracking/wiki/Eye-Tracking-Setup) and their [Discord](https://discord.gg/Fh4FNehzKn).
+
+
+### We currently support:
+
+- VRCFT V1 Params
+- VRCFT V2 (UE) Params
+- VRC Native ET (No setup required for most avatars!)
+
+---
+source: https://docs.eyetrackvr.dev/software_guide/build_software
+title: Build the ETVR App from Source
+---
+
+# Build the app from source
+
+## This guide will show how to build the app from source
+
+<Alerts :options="alerts.build_software_one">
+    <template v-slot:content>
+
+           This is NOT a required step, you do not need to build the app from source.
+
+    </template>
+</Alerts>
+
+## Requirements
+
+<CheckList :options=""/>
+
+## Install Python
+
+EyeTrackVR is currently using [Python 3.13.0](https://www.python.org/downloads/release/python-31311/) Before you continue, please install it.
+
+## Installing Poetry
+
+Starting with version `0.1.7`, EyeTrackVR uses Poetry to manage app dependencies. To build the app, you must first install Poetry to fetch the required dependencies.
+
+To install Poetry follow the [Poetry Installation Docs](https://python-poetry.org/docs/#installation)
+
+## Install the required Python modules
+
+After cloning the project and installing Poetry, open a command prompt in the EyeTrackApp folder. Then run the command: `poetry install`
+
+This should install all of the required modules.
+
+## Build the app
+
+Now, you should be ready to build the app.
+With a command prompt open in the EyeTrackApp folder, run the command `poetry run pyinstaller eyetrackapp.spec`
+
+Give it time to build the app. Once done, the app should be under `dist/eyetrackapp`
+
+---
+source: https://docs.eyetrackvr.dev/software_guide/eyetrackvr_app_guide
+title: Install and Set Up the ETVR App
+---
+
+# How to install, run and adjust the EyeTrackVR app.
+
+### Step 1: Download the EyeTrackVR Installer and install the EyeTrackVR app
+
+Go to the latest [GitHub release here](https://github.com/EyeTrackVR/EyeTrackVR/releases/latest) and download the Setup.exe file.
+
+Follow the prompts and the app should be installed.
+
+## Step 2: Run the EyeTrackVR app
+
+If the `Create Desktop Shortcut` option was checked you should see an icon on your desktop, double click it to run.
+
+You then should be greeted with a GUI that looks like this:
+
+## Step 3: Getting familiar with settings and terminology
+
+Let's go over some basic terminology you will find in the app.
+
+Starting from the top:
+
+### `Right eye`
+
+Shows the right eye feed and settings only.
+
+### `Left eye`
+
+Shows the left eye feed and settings only.
+
+### `Both eyes`
+
+Shows both eyes' feed and settings.
+
+### `Camera Address`
+
+This is where you enter the IP address of your camera.
+Alternatively, it can be used to put the cam number for wired cameras or pass in a video file.
+
+### `Tracking Mode`
+
+This changes the GUI to the tracking mode where it outputs values.
+
+### `Cropping Mode`
+
+This is where you will crop out your eye.
+
+### `Threshold`
+
+This is used to cut out things that aren't dark like your pupil.
+
+### `Rotation`
+
+For our method to work best, you want your eye to be level.
+Use this slider to adjust it to where that is the case.
+
+### `Restart Calibration`
+
+This will start a calibration mode for your eye where you look to all extremes.
+
+### `Recenter Eye`
+
+This will recenter your eye to whatever point you are looking at.
+
+## Step 4: Adding your cameras to the software and configuring them
+
+### Wireless configuration
+
+Power your ESPs and find what the IP address is for your right eye. This can be done by opening both Cameras in a browser and then holding your finger over your right eye camera.
+
+Copy that IP address and then close the browser tab with it open.
+
+Enter that IP address into the app's `Camera Address` field.
+
+Press the `Save and Restart Tracking` button.
+
+### Wired configuration (Reccomended for wired headsets)
+
+Find your ESPs in Device Manager and figure out their COM port numbers, e.g. ``COM4``.
+
+Enter that COM port number into the app's `Camera Address` field.
+
+Press the `Save and Restart Tracking` button.
+
+### Setting up ROI
+
+Don't see your camera feed? That's because an ROI hasn't been set yet.
+
+Now press the `Cropping Mode` button.
+You should see a feed of your camera.
+
+Put your headset on and use an application to see your desktop. (Virtual desktop, SteamVR desktop, etc.)
+
+You should see something like this:
+
+Now, draw a rectangle that selects your eye.
+
+A good example of an ROI
+
+Head back over to the `Tracking mode`.
+
+We will now adjust our rotation by moving the `Rotation` slider.
+
+From this:
+
+To this:
+
+Now we will adjust our threshold.
+
+Continuing with your headset on, move the slider all the way up.
+start slowly backing it off until mainly only your pupil is being visualized in the threshold viewer.
+
+Example of a threshold being too low:
+
+Example of too high of a threshold:
+
+Example of a good threshold:
+
+Repeat everything in this step for your left eye.
+
+## Step 5: Calibrating your eyes
+
+Once your eye is trackable by the software we need to calibrate it.
+
+Press the `Restart Calibration` button and look around.
+The important part is that you look to all extremes, all the way up, left, etc.
+Once you have done so, wait for the `Mode` to say `Tracking`
+
+The next step is to center your eye.
+
+Look straight forward and press the `Recenter Eye` button.
+
+Your eye is now fully calibrated.
+
+Repeat for your other eye.
+
+<Alerts :options="alerts.eyetrack_vr_guide_two">
+    <template v-slot:content>
+
+           To best center both eyes, look at one spot and hit the 'Recenter Eye' button for each eye without moving your eyes.
+
+    </template>
+</Alerts>
+
+---
+source: https://docs.eyetrackvr.dev/software_guide/osc_setup
+title: OSC Recenter and Recalibrate in VRChat
+---
+
+# Setting up recalibration and recentering from VRChat.
+ETVR has a mechanism that allows you to recalibrate and recenter your tracking without the need to interact with the app directly, here's how to set up your avatar to make use of OSC to trigger this from within VRC itself.
+
+<Alerts :options="alerts.parts_list_two">
+    <template v-slot:content>
+
+           Note, while this page explains how to do it from the point of view of vrchat, it can be done in Resonite and CVR too, all the app listens for are two OSC messages.
+
+    </template>
+</Alerts>
+
+## Setting up your parameters
+
+### Adding parameters
+You'll need to add two parameters to your Parameters config, those being:
+
+- `etvr_recalibrate`: `Bool`
+- `etvr_recenter`: `Bool`
+
+Both of them do not have to be synced, meaning they won't increase your total memory count.
+
+To do this, in Unity, select your avatar on the scene and find Avatar Descriptor in the inspector. In it, find the section named "expressions", expand it and click on the file assigned to the "`parameters`" field, that's your Parameters config.
+
+Clicking on it will highlight the associated asset in the asset browser. Click on the highlighted file to get its content to show in the inspector panel. Now, in the inspector, click on the `Add` button to add the parameters mentioned above. Both of them need to be of type Bool, but they don't need to be synced nor saved.
+
+That's it for the parameters.
+
+### Adding buttons to the menu
+
+Now, you will need to add actual buttons for them in your gesture menu.
+
+The expressions section mentioned above also contains the menu, you can use that to either add the buttons there directly or create a small submenu to make it less cluttered, here we will add them directly.
+
+Once you have the menu file opened in the inspector, click on the "add control" button. This will add an empty action slot, expand it.
+
+You'll see a bunch of fields, like name, icon, type and parameter. Firstly, let's give it a friendly name like "recalibrate eyes" or "recenter tracking" depending on the action you want to assign to them.
+
+Leave the type as is - as a button, it's more convenient as it bounces back into the off state by itself.
+
+Now, in the parameter section, click on the `[None]` and select one of the parameters you have created in the previous section.
+
+Repeat the steps for the other one.
+
+Once done simply build and upload the updated version of your avatar.
+
+And that's it, you now should be able to recenter and recalibrate your tracking form inside of VRC!
+
+## Resetting the OSC config in case the parameters don't work
+
+Sometimes VRChat won't regenerate the config files that it uses to communicate the changes to anyone that's listening. To fix this, it's enough to simply delete the auto generated configuration files and let VRC remake them.
+
+They are stored under
+
+`C:\Users\<user>\AppData\LocalLow\VRChat\VRChat\OSC\<your user uuid>\Avatars\`
+
+Deleting the contents of the Avatars directory will resolve the issue.
+
+## Other platforms
+
+Like mentioned in the note, this functionality is not limited to VRC.
+
+The app itself listens to OSC messages sent on port `9001` to two addresses:
+
+- `/avatar/parameters/etvr_recenter`
+- `/avatar/parameters/etvr_recalibrate`
+
+It only needs to receive a `Bool` value of `True` to trigger the recenter and calibration.
+
+The port and the addresses can be changed in the app settings, if need be.
+
+---
+source: https://docs.eyetrackvr.dev/software_guide/VRCFT_tracking_module
+title: VRCFT ETVR Tracking Module
+---
+
+# VRCFT ETVR Tracking module, or simply the ETVR tracking module
+
+## What is this?
+
+VRCFT ETVR Tracking module is an extension for VRCFT. It allows ETVR to send out tracking data and have
+it converted to parameters expected by VRCFT and avatars compatible with VRCFT.
+
+In effect, ETVR will be compatible with whichever game or program that supports VRCFT, thanks to this module.
+
+It is required for all avatrs that are setup to use Unified Expression(UE) or V2 parameters, optional for ones setup with so-called legacy or v1 parameters.
+
+## What do I need and how do I set this up?
+
+To make ETVR work with VRCFT, you'll need two things. VRCFT itself, and the tracking module.
+
+### Required programs / Files
+
+#### VRCFT
+
+To get VRCFT head over to: [their docs page!](https://docs.vrcft.io/docs/intro/getting-started)
+
+#### ETVR Module
+
+Once you've installed VRCFT, you can find the most recent version of the module in the registry.
+
+Clicking on `install` will download and load the module, VRCFT will now be setup to listen for ETVR data. That's it!
+
+### Setting up ETVR to use the module
+
+- Open `settings` tab
+- Under OSC section select `Use the ETVR Module`
+- Select the desired parameters - V1 or V2 (UE)
+- Go back into the tracking tab
+
+Settings will apply automatically, no need to change port or restart the app. ETVR will automatically start sending the data to the module.
+
+### Sending the tracking data to VRCFT running on a separate PC.
+
+If you're running a hybrid setup where one machine does all of the ETVR tracking, and the other has VRCFT and other software running, you'll need to adjust the settings a bit.
+
+First, make sure that both machines are on the same network and they can see each other. If they're connected via Ethernet to the same router, or to the same WiFi network, things should just work.
+
+Next, find out that's the IP address of the machine running VRCFT. For how to, refer to [Microsoft's documentation](https://support.microsoft.com/en-us/windows/find-your-ip-address-in-windows-f21a9bbc-c582-55cd-35e0-73431160a1b9)
+
+With that, head over to ETVR, select the `VRCFT Module Settings tab`. Notice the `VRCFT Module listening IP` section. By default it's set to `127.0.0.1`, change it to the IP the PC that runs VRCFT.
+
+### Reseting the module to default settings in case something went wrong.
+
+This is also taken care of by the app, simply make sure that VRCFT is running and the ETVR module got loaded in.
+
+Then, in ETVR head back over to `VRCFT Module Settings tab` and hit `Reset Settings to default`.
+
+This will reset the module's settings to default values for both - ETVR and VRCFT.
+
+### There's a breaking change reported, what does that mean? What do I do?
+
+When we say there's a breaking change, we mean that something changed so drastically that there's a high chance of the module failing to load.
+This is a very rare thing, usually happens when settings get modified so much that they're no longer compatible.
+
+In such cases, deleting the module's settings file is enough. Check the FAQ section - Where's the module's configuration file? For locating and deleting it.
+
+## Dev version of the module for testing
+
+Sometimes, we'll have a new version of the module ready for test, or a special one with a lot of additional logging to help us debug some stuff on your end. This version won't be available in the registry right away so how you install it?
+
+1. Uninstall any pre-existing EVT Modules:
+
+Uninstall your current ETVR Module installation.
+
+Similarly to installing it for the first time, navigate to VRCFT's module registry, find the ETVR Module and hit uninstall.
+
+2. Download the latest build:
+
+Download the latest release / pre-release from [the repo](https://github.com/EyeTrackVR/ETVRTrackingModule/releases) or from the discord.
+
+3. Install the development version:
+
+Navigate to:
+
+`C:\Users\<Your PC name>\AppData\Roaming\VRCFaceTracking\CustomLibs`
+
+And place the module there. If `CustomLibs` doesn't exist yet, create it.
+VRCFT will use it to load the development version of the module next time you launch the app.
+
+### Building from source
+
+#### Download the ETVR Module source from github
+
+First, just like you'd do with the apps source, download it from github. Either via downloading and extracting a zip or by using `git clone`.
+
+#### Donwload the latest VRCFT Source
+
+Download the VRCFT Source from their [github](https://github.com/benaclejames/VRCFaceTracking). It's important to put next to the ETVR module.
+Your directory should look more or less like this:
+
+```
+parent_directory
+    - ETVR Module
+    - VRCFT Repo
+```
+
+Building the module requires some of the VRCFT stuff to be present, namely the Core directory. To make it easier to compile, we've set the project up so that it will look for it, next to its own directory.
+
+#### Install Visual Studio or Jetbrains Rider, and open the project
+
+Whichever IDE you prefer, both just work, both make it easier to work with the source code.
+
+Once installed, open the project in them and wait for everything to load.
+
+#### Building the module
+
+That's the last step, now we just need to verify that everything is setup correctly. Click on build, or hit `ctrl+b` and watch the output.
+
+It should build just fine and the resulting file should get copied to the VRCFT CustomModules` directory.
+
+Note, the copying **will** fail when VRCFT is running. If it does, close VRCFT and hit build again, this time only the copy step will be executed
+
+## FAQ
+
+### Where's the module's configuration file?
+
+In the rare cases where you need to modify the configuration file, here's how to find it:
+
+Since CRVFT is an UWP app and those behave quite a bit differently than regular apps, there's no easy way to access that file. Instead, you'll need to search on your `C:/` drive for `'ETVRModuleConfig.json` and it should show up.
+
+### WHat do the fields in this file mean?
+
+Range explanation: `0` - fully closed, `1` - fully open.
+
+- `OutputMultiplier`: Defines by how much the output should be multiplied, it helps with making your tracking less or more expressive. `1` by default, `[0 - 2]` range.
+- `PortNumber`: the port under which the module will be listening for OSC messages, by default `8889`
+- `ShouldEmulateEyeWiden`: Toggle for emulating eye widen, think surprised face. On by default, will at `0.97` of fully open eye
+- `ShouldEmulateEyeSquint`: Toggle for emulating squinting, think shutting your eyes with a bit of force. On by default, will activate at `0.05` of eye openness.
+- `ShouldEmulateEyebrows`: Togggle for emulating eyebrow movement, depending on eye openness, the module will try and move the avis eye brows a little. On by default at `0.89`, range `[0 - 1]`
+- `EyebrowThresholdRising`: Defines when eyebrow emulation should kick in, by default at `0.89`, range `[0 - 1]`
+- `EyebrowThresholdLowering`: Defines when eyebrow emulation should kick in but in the opposite direction, by default at `0.06`, range `[0 - 1]`
+
+- `SqueezeThresholdV1` - Defines when squeeze emulation should begin, and how "fast" should it be. By default, `[0.06, 0.51]`, with range first: `[0 - 1]`, second: `[0 - 2]`. This is used for v1 or legacy parameters
+
+-`SqueezeThresholdV2` - Defines when squeeze emulation should begin, and how "fast" should it be. By default, `[0.06, -0.99]`, with range first: `[0 - 1]`, second: `[-2 - 0]`. This is used for v2 or Unified Expressions parameters
+
+- `WidenThresholdV1` - Defines when Widen emulation should begin, and how "fast" should it be. By default, `[0.93, 1.01]`, with range first: `[0 - 1]`, second: `[0 - 2]`. This is used for v1 or legacy parameters
+
+- `WidenThresholdV2` - Defines when widen emulation should begin, and how "fast" should it be. By default, `[0.96, 1.04]`, with range first: `[0 - 1]`, second: `[0 - 2]`. This is used for v2 or Unified Expressions parameters
+
+To better explain how Widen / Squeeze emulation thresholds work: They're implemented via a simple smoothstep, you can play around with it [here](https://thebookofshaders.com/glossary/?search=smoothstep), simply plug in the values in `smoothstep()` and watch how the graph reacts.

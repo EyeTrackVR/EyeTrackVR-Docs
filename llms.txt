@@ -1,0 +1,65 @@
+# EyeTrackVR Docs
+
+> Official EyeTrackVR documentation: build an open-source, affordable VR eye tracker for VRChat, social VR and PCVR. Works with nearly all headsets.
+
+EyeTrackVR (ETVR) is an open-source, community-built eye tracking platform for VR headsets.
+Hardware, firmware and app source are all free. Tracking data is sent over OSC/UDP and never leaves the user's PC.
+
+Site: https://docs.eyetrackvr.dev
+Source: https://github.com/EyeTrackVR/EyeTrackVR-Docs
+Community: https://discord.gg/kkXYbVykZX
+
+## Overview
+
+- [About the EyeTrackVR Project](https://docs.eyetrackvr.dev/about): Who builds EyeTrackVR: the team and contributors behind the open-source VR eye tracking project and how it is run.
+- [Contact and Community](https://docs.eyetrackvr.dev/contact): Join the EyeTrackVR Discord for build help, hardware questions and contributing to the open-source VR eye tracking project.
+- [Development Roadmap](https://docs.eyetrackvr.dev/dev_roadmap): Features in progress, completed and planned for EyeTrackVR hardware, firmware and the desktop app.
+
+## Development
+
+- [Docs Site Development](https://docs.eyetrackvr.dev/development/docs/dev_docs): How the EyeTrackVR documentation site is built with VitePress, and how to run and build it locally.
+- [Adding and Editing Docs Pages](https://docs.eyetrackvr.dev/development/docs/pages): How to add, edit and structure pages on the EyeTrackVR docs site, including the frontmatter every page should carry.
+- [Docs Standards Guide](https://docs.eyetrackvr.dev/development/docs/standards): The writing and formatting standards that keep EyeTrackVR documentation consistent and easy to follow.
+
+## Firmware Guide
+
+- [Firmware Overview](https://docs.eyetrackvr.dev/firmware_guide/firmware): How EyeTrackVR firmware runs on the ESP32, streams camera video over 2.4GHz WiFi or USB, and talks to the desktop app.
+- [Flashing Tool Advanced Options](https://docs.eyetrackvr.dev/firmware_guide/flashing_tool_advanced_options): Advanced options in the EyeTrackVR flashing tool, including manual settings for experienced users and troubleshooting.
+- [Firmware Flashing Tool](https://docs.eyetrackvr.dev/firmware_guide/flashing_tool): How to flash EyeTrackVR firmware with the flashing tool: pick a board, connect over USB or mDNS, and confirm the update.
+- [mDNS Tracker Discovery](https://docs.eyetrackvr.dev/firmware_guide/mdns): How EyeTrackVR uses mDNS to find trackers on your network, what the tracker names mean, and how to fix discovery problems.
+- [Firmware REST API](https://docs.eyetrackvr.dev/firmware_guide/rest_api): The REST API exposed by EyeTrackVR firmware on the ESP32: endpoints, usage, and how the desktop app talks to your tracker.
+
+## Getting Started
+
+- [Introduction and Getting Started](https://docs.eyetrackvr.dev/getting_started/intro): What EyeTrackVR is, how the open-source VR eye tracking platform sends eye data over OSC, which headsets work, and the six steps to your first build.
+- [IR LED Eye Safety](https://docs.eyetrackvr.dev/getting_started/led_safety): Near-eye infrared safety for EyeTrackVR: ICNIRP and IEC 62471 limits, 850 nm emitter output numbers, and the rules for safe DIY LED kits.
+
+## Headset Guides
+
+- [Valve Index Build Guide](https://docs.eyetrackvr.dev/headset_guides/valve_index): Two proven ways to build a clean EyeTrackVR setup on the Valve Index, including mounts, camera placement and wiring.
+- [Headset Specific Guides](https://docs.eyetrackvr.dev/headset_guides/what_is_this): What the headset specific guides cover: quirks, recommended 3D printed mounts and setup notes for each VR headset.
+
+## How to Build
+
+- [3D Printed Camera Mounts](https://docs.eyetrackvr.dev/how_to_build/3d_printed_mounts): Community 3D printed EyeTrackVR camera mounts for Valve Index, Quest, Pico, WMX and more, with the recommended print for each headset.
+- [IR LED Kit Setup](https://docs.eyetrackvr.dev/how_to_build/led_setup): Choose the EyeTrackVR LED guide that matches your hardware: the V4 LED kits or the V5 Pro USB-C development kit.
+- [Assembling V4 LED Kits](https://docs.eyetrackvr.dev/how_to_build/led_v4_setup): How to assemble V4, V4 mini and V4E IR LED boards, wire them up and check polarity before mounting them in your headset.
+- [Assembling the V5 Pro LED Kit](https://docs.eyetrackvr.dev/how_to_build/led_v5_setup): How to assemble the EyeTrackVR V5 Pro LED kit: USB-C mainboard, six V5 LED boards, two V5E end boards and the two-wire cables.
+- [Required Parts and BOM](https://docs.eyetrackvr.dev/how_to_build/part_list): Every part an EyeTrackVR build needs: ESP32 board options, cameras, IR LED kits, cables and 3D printed mounts, with what to buy and where.
+- [IR Filter Removal](https://docs.eyetrackvr.dev/how_to_build/preparing_cameras): How to remove the IR cut filter from EyeTrackVR cameras so the sensors can see the 850 nm illuminators, with step-by-step photos.
+- [Preparing the XIAO ESP32 Sense](https://docs.eyetrackvr.dev/how_to_build/preparing_xiao): What ships in the Seeed Studio XIAO ESP32 Sense box and how to prepare the board for an EyeTrackVR eye tracker build.
+- [V4 Full Build Guide](https://docs.eyetrackvr.dev/how_to_build/v4_full_build): Step-by-step assembly of a V4 EyeTrackVR tracker: cameras, IR LEDs, ESP32 and mount, from parts to first calibration.
+
+## Miscellaneous
+
+- [Designing Your Own Camera Mount](https://docs.eyetrackvr.dev/misc/creating_your_own_mount): How to design your own EyeTrackVR camera mount for a headset that has no community mount yet, with measurement basics.
+- [Frequently Asked Questions](https://docs.eyetrackvr.dev/misc/faq): Answers about EyeTrackVR: supported headsets, cost, IR eye safety, how the tracking works, and how to get help.
+- [Ordering Prints from JLC3DP](https://docs.eyetrackvr.dev/misc/jlc3dp): How to order EyeTrackVR 3D printed mounts from JLC3DP when you do not own a printer, from upload to shipping.
+- [VRChat Avatar Setup for Eye Tracking](https://docs.eyetrackvr.dev/misc/vrc_avatar_setup): How to set up a VRChat avatar for EyeTrackVR eye tracking, including blend shapes, config and a walkthrough video.
+
+## Software Guide
+
+- [Build the ETVR App from Source](https://docs.eyetrackvr.dev/software_guide/build_software): How to build the EyeTrackVR app from source, including the toolchain, dependencies and build steps for each platform.
+- [Install and Set Up the ETVR App](https://docs.eyetrackvr.dev/software_guide/eyetrackvr_app_guide): How to download, install and calibrate the EyeTrackVR desktop app, and how to tune tracking for your eyes and lighting.
+- [OSC Recenter and Recalibrate in VRChat](https://docs.eyetrackvr.dev/software_guide/osc_setup): Set up VRChat OSC so you can recenter and recalibrate EyeTrackVR eye tracking from inside the game without touching the app.
+- [VRCFT ETVR Tracking Module](https://docs.eyetrackvr.dev/software_guide/VRCFT_tracking_module): How to use the VRCFT EyeTrackVR module to feed eye tracking into VRChat through VRCFT instead of the OSC pathway.
