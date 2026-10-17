@@ -1,3 +1,9 @@
+---
+title: Updating PlatformIO (archived)
+description: Archived troubleshooting notes for updating PlatformIO when EyeTrackVR firmware builds fail.
+noindex: true
+---
+
 <script setup>
 import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'

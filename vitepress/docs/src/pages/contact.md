@@ -1,5 +1,10 @@
+---
+title: Contact and Community
+description: Join the EyeTrackVR Discord for build help, hardware questions and contributing to the open-source VR eye tracking project.
+---
+
 <div align="center" class="rounded-md">
-    <h1 class="text-[#ab5ac7]">Contact Us</h1>
+    <h1 class="text-[var(--font-accent)]">Contact Us</h1>
     <br>
     Please join our Discord for updates and any questions.
     <br>

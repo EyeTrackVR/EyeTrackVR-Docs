@@ -1,3 +1,8 @@
+---
+title: OSC Recenter and Recalibrate in VRChat
+description: Set up VRChat OSC so you can recenter and recalibrate EyeTrackVR eye tracking from inside the game without touching the app.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import ImageCard from '../../vue/images/ImageComponent.vue'

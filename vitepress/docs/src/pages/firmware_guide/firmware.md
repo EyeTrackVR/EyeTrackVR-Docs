@@ -1,3 +1,8 @@
+---
+title: Firmware Overview
+description: How EyeTrackVR firmware runs on the ESP32, streams camera video over 2.4GHz WiFi or USB, and talks to the desktop app.
+---
+
 # What is this? {.text-[var(--font-accent)]}
 
 Firmware is the second part of the equation to get your trackers going. It lives on the ESP32 chip, and is responsible for streaming video data from the tracker. We currently fully support wireless streaming over 2.4GHz, and are working on adding support for wired streaming to the main desktop App.

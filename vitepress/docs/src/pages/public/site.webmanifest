@@ -1,6 +1,9 @@
 {
-    "name": "EyeTrackVR",
-    "short_name": "EyeTrackVR",
+    "name": "EyeTrackVR Docs",
+    "short_name": "ETVR Docs",
+    "description": "Official documentation for EyeTrackVR — open-source, affordable VR eye tracking for VRChat, social VR and PCVR.",
+    "start_url": "/",
+    "scope": "/",
     "icons": [
         {
             "src": "android-chrome-192x192.png",

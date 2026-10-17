@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Archive/legacy pages opt out with `noindex: true` frontmatter and are also
+# excluded from sitemap.xml at build time (see .vitepress/seo.js).
+
+Sitemap: https://docs.eyetrackvr.dev/sitemap.xml

@@ -1,3 +1,9 @@
+---
+title: Configuring the Firmware (archived)
+description: Archived notes on configuring EyeTrackVR firmware in PlatformIO. Current builds use the flashing tool and app settings.
+noindex: true
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import ImageCard from '../../vue/images/ImageComponent.vue'

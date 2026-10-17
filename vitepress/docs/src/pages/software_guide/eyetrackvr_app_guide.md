@@ -1,3 +1,8 @@
+---
+title: Install and Set Up the ETVR App
+description: How to download, install and calibrate the EyeTrackVR desktop app, and how to tune tracking for your eyes and lighting.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import CheckList from '../../vue/CheckBoxList.vue'

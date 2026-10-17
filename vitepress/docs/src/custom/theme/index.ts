@@ -5,11 +5,21 @@
 
 const theme = {
   logo: {
-    light: "/logo_light.png",
-    dark: "/logo.svg",
+    light: "/logo_dark.png",
+    dark: "/logo_no_bg.png",
     alt: "EyeTrackVR Logo",
   },
-  siteTitle: "EyeTrackVR Docs",
+  /* Rendered as the two-tone "EyeTrackVR Docs" wordmark by the Layout in
+   * .vitepress/theme/index.ts - VitePress can only put plain text here. */
+  siteTitle: false,
+  lastUpdated: {
+    text: "Last updated",
+  },
+  editLink: {
+    pattern:
+      "https://github.com/EyeTrackVR/EyeTrackVR-Docs/edit/main/vitepress/docs/src/pages/:path",
+    text: "Edit this page on GitHub",
+  },
   /* Note the footer will not show when sidebar is active */
   search: {
     provider: "local",

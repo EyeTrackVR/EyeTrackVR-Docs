@@ -3,80 +3,60 @@
 /**
  * Customize default theme styling by overriding CSS variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ *
+ * The palette and type below are shared with the EyeTrackVR landing page
+ * (https://github.com/EyeTrackVR/ETVR-Landing-Page) so the docs read as the
+ * same product: Inter for text, IBM Plex Mono for code, and the #b5a0ee accent
+ * on a near-black #09090c / #111115 surface.
  */
 
 /**
- * Colors
- *
- * Each colors have exact same color scale system with 3 levels of solid
- * colors with different brightness, and 1 soft color.
- * 
- * - `XXX-1`: The most solid color used mainly for colored text. It must
- *   satisfy the contrast ratio against when used on top of `XXX-soft`.
- *
- * - `XXX-2`: The color used mainly for hover state of the button.
- *
- * - `XXX-3`: The color for solid background, such as bg color of the button.
- *   It must satisfy the contrast ratio with pure white (#ffffff) text on
- *   top of it.
- *
- * - `XXX-soft`: The color used for subtle background such as custom container
- *   or badges. It must satisfy the contrast ratio when putting `XXX-1` colors
- *   on top of it.
- *
- *   The soft color must be semi transparent alpha channel. This is crucial
- *   because it allows adding multiple "soft" colors on top of each other
- *   to create a accent, such as when having inline code block inside
- *   custom containers.
- *
- * - `default`: The color used purely for subtle indication without any
- *   special meanings attched to it such as bg color for menu hover state.
- *
- * - `brand`: Used for primary brand colors, such as link text, button with
- *   brand theme, etc.
- *
- * - `tip`: Used to indicate useful information. The default theme uses the
- *   brand color for this by default.
- *
- * - `warning`: Used to indicate warning to the users. Used in custom
- *   container, badges, etc.
- *
- * - `danger`: Used to show error, or dangerous message to the users. Used
- *   in custom container, badges, etc.
+ * Brand tokens
  * -------------------------------------------------------------------------- */
 
-@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
-@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:regular,italic,700,700italic);
+:root {
+  /* Straight from the landing page :root */
+  --etvr-accent: #b5a0ee;
+  --etvr-accent-hi: #c7b1f5;
+  --etvr-ink: #09090c;
+  --etvr-bg: #09090c;
+  --etvr-surface: #111115;
+  --etvr-surface-hi: #17171d;
+  --etvr-line: #2b2b32;
+  --etvr-text: #f2f0f5;
+  --etvr-muted: #99979f;
+
+  /* The landing accent is too light to use as text on white (2.3:1), so the
+   * light theme uses a darkened version of the same hue. Both clear 4.5:1. */
+  --etvr-accent-dark: #6f5bd6;
+  --etvr-accent-darker: #5b45b8;
+
+  /* Alias kept for content: page headings are written as
+   * `# Title {.text-[var(--font-accent)]}`, so this has to keep resolving. */
+  --font-accent: var(--etvr-accent-dark);
+  --font-accent-light: var(--etvr-accent);
+}
 
 /**
  * Typography
  * -------------------------------------------------------------------------- */
 
 :root {
-  /* Base Font */
-  --vp-font-family-base: "Space Grotesk", "Inter var experimental", "Inter var",
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
-    Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-
-  --font-accent: #ab5ac7;
-  --font-accent-light: #ab5ac7e3;
+  /* Base Font - Inter, self-hosted by VitePress as "Inter var" */
+  --vp-font-family-base: "Chinese Quotes", "Inter var", "Inter", ui-sans-serif,
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   /* Code Snippet font */
-  --vp-font-family-mono: "Space Mono", Menlo, Monaco, Consolas, "Courier New",
+  --vp-font-family-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular,
+    "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
     monospace;
 }
 
-/* Main Theme Colors */
-:root {
-  --vp-c-brand: var(--font-accent);
-  --vp-c-brand-light: var(--font-accent-light);
-  --vp-c-brand-lighter: var(--font-accent);
-  --vp-c-brand-lighter: rgba(31, 23, 255, 0.25);
-  --vp-c-brand-dark: #4d45a8;
-  --vp-c-brand-darker: #3a3381;
-
-  --vp-c-sponsor: #fd1d7c;
-}
+/**
+ * Colors
+ * -------------------------------------------------------------------------- */
 
 :root {
   --vp-c-default-1: var(--vp-c-gray-1);
@@ -84,10 +64,10 @@
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: var(--vp-c-indigo-1);
-  --vp-c-brand-2: var(--vp-c-indigo-2);
-  --vp-c-brand-3: var(--vp-c-indigo-3);
-  --vp-c-brand-soft: var(--vp-c-indigo-soft);
+  --vp-c-brand-1: var(--etvr-accent-dark);
+  --vp-c-brand-2: var(--etvr-accent-darker);
+  --vp-c-brand-3: var(--etvr-accent-darker);
+  --vp-c-brand-soft: rgba(111, 91, 214, 0.12);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -103,6 +83,44 @@
   --vp-c-danger-2: var(--vp-c-red-2);
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
+
+  --vp-c-sponsor: #fd1d7c;
+}
+
+/* Light theme: keep the white surfaces, just pull them a shade cooler so they
+ * sit next to the purple accent. */
+:root {
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f6f5fa;
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f6f5fa;
+
+  --vp-c-border: #cdc9e0;
+  --vp-c-divider: #e4e1ef;
+  --vp-c-gutter: #e4e1ef;
+}
+
+/* Dark theme: the landing page palette. */
+.dark {
+  --vp-c-bg: var(--etvr-bg);
+  --vp-c-bg-alt: var(--etvr-surface);
+  --vp-c-bg-elv: var(--etvr-surface);
+  --vp-c-bg-soft: var(--etvr-surface-hi);
+
+  --vp-c-text-1: var(--etvr-text);
+  --vp-c-text-2: var(--etvr-muted);
+  --vp-c-text-3: #6f6d77;
+
+  --vp-c-border: var(--etvr-line);
+  --vp-c-divider: #232329;
+  --vp-c-gutter: var(--etvr-bg);
+
+  --vp-c-brand-1: var(--etvr-accent);
+  --vp-c-brand-2: var(--etvr-accent-hi);
+  --vp-c-brand-3: var(--etvr-accent);
+  --vp-c-brand-soft: rgba(181, 160, 238, 0.16);
+
+  --font-accent: var(--etvr-accent);
 }
 
 /**
@@ -121,37 +139,51 @@
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
 }
 
-/*
+/* The accent is a light purple, so dark ink on it is the readable pairing -
+ * same as the landing page primary button. */
+.dark {
+  --vp-button-brand-text: var(--etvr-ink);
+  --vp-button-brand-hover-text: var(--etvr-ink);
+  --vp-button-brand-active-text: var(--etvr-ink);
+}
+
+/**
  * Component: Home
- * -------------------------------------------------------------------------- 
+ * --------------------------------------------------------------------------
  */
 
 :root {
-  --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: -webkit-linear-gradient(
-    120deg,
-    var(--vp-c-brand-darker) 30%,
-    var(--font-accent)
-  );
+  /* "EyeTrack" and " Docs" sit in the normal text colour; only "VR" is
+   * accented, exactly like the landing page wordmark. */
+  --vp-home-hero-name-color: var(--vp-c-text-1);
+  --vp-home-hero-name-background: none;
 
-  --vp-home-hero-image-background-image: linear-gradient(
-    -45deg,
-    var(--font-accent-dark) 50%,
-    var(--font-accent) 50%
-  );
-  --vp-home-hero-image-filter: blur(40px);
+  /* No glow behind the hero logo - the mark stands on its own. */
+  --vp-home-hero-image-background-image: none;
+  --vp-home-hero-image-filter: none;
 }
 
-@media (min-width: 640px) {
-  :root {
-    --vp-home-hero-image-filter: blur(56px);
-  }
+/**
+ * Component: Wordmark
+ *
+ * The landing page renders its brand as "EyeTrack" + a purple "VR"; the same
+ * treatment is used for the docs nav title and the home hero. Logotypes are
+ * exempt from text-contrast rules, so the accent stays #b5a0ee in both themes.
+ * -------------------------------------------------------------------------- */
+
+.brand-vr {
+  color: var(--etvr-accent);
 }
 
-@media (min-width: 960px) {
-  :root {
-    --vp-home-hero-image-filter: blur(72px);
-  }
+.etvr-wordmark {
+  white-space: nowrap;
+}
+
+/* The hero name is painted with -webkit-text-fill-color, which children
+ * inherit, so the accent has to be re-declared here. */
+.VPHero .clip .brand-vr {
+  color: var(--etvr-accent);
+  -webkit-text-fill-color: var(--etvr-accent);
 }
 
 /**
@@ -171,4 +203,18 @@
 
 .DocSearch {
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
+}
+
+/**
+ * Selection, matching the landing page.
+ * -------------------------------------------------------------------------- */
+
+::selection {
+  background: var(--etvr-accent-dark);
+  color: var(--vp-c-white);
+}
+
+.dark ::selection {
+  background: var(--etvr-accent);
+  color: var(--etvr-ink);
 }

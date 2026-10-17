@@ -1,3 +1,9 @@
+---
+title: Setting Up the VS Code Environment (archived)
+description: Archived guide for preparing VS Code and PlatformIO to build EyeTrackVR firmware. Use the firmware flashing tool instead.
+noindex: true
+---
+
 <script setup>
 import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'

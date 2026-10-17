@@ -1,3 +1,8 @@
+---
+title: Development Roadmap
+description: Features in progress, completed and planned for EyeTrackVR hardware, firmware and the desktop app.
+---
+
 <script setup>
 import CheckBoxList from '../vue/CheckBoxList.vue'
 import { InProgress, Completed, Planned } from '../static/dev_roadmap'

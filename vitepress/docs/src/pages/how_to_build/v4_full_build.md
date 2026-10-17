@@ -1,3 +1,8 @@
+---
+title: V4 Full Build Guide
+description: "Step-by-step assembly of a V4 EyeTrackVR tracker: cameras, IR LEDs, ESP32 and mount, from parts to first calibration."
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import CheckBoxList from '../../vue/CheckBoxList.vue'

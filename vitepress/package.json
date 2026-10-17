@@ -13,7 +13,9 @@
     "serve": "vitepress serve docs",
     "lint": "eslint --ext .js,.ts,.jsx,.tsx src",
     "format": "pnpm run lint --fix & pnpm prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
-    "update-deps": "pnpm up -Li"
+    "update-deps": "pnpm up -Li",
+    "seo:images": "python3 scripts/optimize_images.py && python3 scripts/rewrite_image_refs.py",
+    "seo:og-image": "python3 scripts/make_og_image.py"
   },
   "devDependencies": {
     "@types/flexsearch": "^0.7.4",

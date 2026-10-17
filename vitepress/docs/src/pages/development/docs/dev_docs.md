@@ -1,3 +1,8 @@
+---
+title: Docs Site Development
+description: How the EyeTrackVR documentation site is built with VitePress, and how to run and build it locally.
+---
+
 # Development Documentation for the EyeTrackVR Docs Site
 
 This is the documentation for the EyeTrackVR Docs site. It is built using [VitePress](https://vitepress.vuejs.org/).

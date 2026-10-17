@@ -1,3 +1,8 @@
+---
+title: Docs Standards Guide
+description: The writing and formatting standards that keep EyeTrackVR documentation consistent and easy to follow.
+---
+
 # Standards Guide
 
 Listed here are the standards that are used for the EyeTrackVR project. These standards are used to ensure that the project is consistent and easy to understand.

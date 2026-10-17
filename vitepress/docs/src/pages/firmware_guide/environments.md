@@ -1,3 +1,9 @@
+---
+title: Firmware Environments (archived)
+description: Archived reference for PlatformIO firmware environments in the EyeTrackVR firmware repository.
+noindex: true
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import ImageCard from '../../vue/images/ImageComponent.vue'

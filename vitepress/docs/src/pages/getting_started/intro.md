@@ -1,3 +1,8 @@
+---
+title: Introduction and Getting Started
+description: What EyeTrackVR is, how the open-source VR eye tracking platform sends eye data over OSC, which headsets work, and the six steps to your first build.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import ImageCard from '../../vue/images/ImageComponent.vue'
@@ -5,7 +10,7 @@ import { alerts } from '../../static/alerts'
 import { image_settings } from '../../static/image_settings'
 </script>
 
-# EyeTrackVR {.text-3xl .font-bold .underline .text-[#ab5ac7]}
+# EyeTrackVR {.text-3xl .font-bold .underline .text-[var(--font-accent)]}
 
 Welcome to **EyeTrackVR**, a Source First, affordable eye-tracking platform designed specifically for adding to VR Headsets.
 

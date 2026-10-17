@@ -1,3 +1,8 @@
+---
+title: mDNS Tracker Discovery
+description: How EyeTrackVR uses mDNS to find trackers on your network, what the tracker names mean, and how to fix discovery problems.
+---
+
 # MDNS {.text-[var(--font-accent)]}
 
 ## What is it?

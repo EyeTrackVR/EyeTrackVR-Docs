@@ -1,3 +1,8 @@
+---
+title: VRCFT ETVR Tracking Module
+description: How to use the VRCFT EyeTrackVR module to feed eye tracking into VRChat through VRCFT instead of the OSC pathway.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import ImageCard from '../../vue/images/ImageComponent.vue'

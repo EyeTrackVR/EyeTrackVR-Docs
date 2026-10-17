@@ -8,7 +8,7 @@ input[type="checkbox"] {
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
-  outline: 1px solid lightblue;
+  outline: 1px solid var(--vp-c-brand-1);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -20,17 +20,17 @@ input,
 input:focus {
   border: none;
   border-radius: 2pt;
-  box-shadow: 0 0 0 1pt grey;
+  box-shadow: 0 0 0 1pt var(--vp-c-border);
   outline: none;
   transition: 0.1s;
 }
 
 input[type="checkbox"]:checked {
-  background-color: #3899ff;
+  background-color: var(--vp-c-brand-1);
 }
 
 input[type="checkbox"]:focus {
-  box-shadow: 0 0 3pt 2pt cornflowerblue;
+  box-shadow: 0 0 3pt 2pt var(--vp-c-brand-1);
 }
 
 label {

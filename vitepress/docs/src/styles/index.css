@@ -6,6 +6,11 @@
   }
 
   .custom-links {
-    @apply dark:text-blue-400 text-blue-800 hover:underline
+    color: var(--vp-c-brand-1);
+    text-decoration: none;
+  }
+
+  .custom-links:hover {
+    text-decoration: underline;
   }
 }

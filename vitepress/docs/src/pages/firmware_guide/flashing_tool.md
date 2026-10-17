@@ -1,3 +1,8 @@
+---
+title: Firmware Flashing Tool
+description: "How to flash EyeTrackVR firmware with the flashing tool: pick a board, connect over USB or mDNS, and confirm the update."
+---
+
 <script setup>
 import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'

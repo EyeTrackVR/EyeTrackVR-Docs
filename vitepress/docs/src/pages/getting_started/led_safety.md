@@ -1,9 +1,16 @@
+---
+title: IR LED Eye Safety
+description: "Near-eye infrared safety for EyeTrackVR: ICNIRP and IEC 62471 limits, 850 nm emitter output numbers, and the rules for safe DIY LED kits."
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import { alerts } from '../../static/alerts'
 </script>
 
-## Near‑Eye Infrared (IR) Emitter Safety
+# Near-Eye Infrared (IR) Emitter Safety
+
+## Safety overview
 
 **Please exercise caution when messing around with IR emitters.**
 

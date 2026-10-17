@@ -1,3 +1,9 @@
+---
+title: Fox IR V2 Build Instructions (archived)
+description: Archived instructions for soldering Fox IR V2 LED PCBs. Current builds use the V4 or V5 Pro LED kits.
+noindex: true
+---
+
 <script setup>
 import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'

@@ -1,3 +1,8 @@
+---
+title: Ordering Prints from JLC3DP
+description: How to order EyeTrackVR 3D printed mounts from JLC3DP when you do not own a printer, from upload to shipping.
+---
+
 # 3D Printing Service JLC3DP {.text-[var(--font-accent)]}
 
 ## If you don't own a 3D Printer, you can order high quality prints by the dollar using JLC3DP
@@ -6,10 +11,10 @@ https://jlc3dp.com/3d-printing-quote
 ### Upload your STL files with the following print settings
 Do note that if you are printing for a example, a lens mount, you may need to mirror it in blender, or any slicer, to get both a left and right STL and upload them separate. Do not upload them combined
 
-![UploadJLC](../public/imgs/prints/NFKoPAA.png)
+![JLC3DP upload screen with the recommended EyeTrackVR print settings](/imgs/prints/NFKoPAA.png)
 
 ### Choose a cheaper shipping option, for me this is global standard direct line
 
-![Shipping](../public/imgs/prints/ck27eaH.png)
+![JLC3DP shipping options with global standard direct line selected](/imgs/prints/ck27eaH.png)
 
-In the likely event you get an [email or alert](../public/imgs/prints/t2QmpBY.png) from JLC asking for consent to print as the STL has thin walls, you can agree to the print without worry.
+In the likely event you get an [email or alert](/imgs/prints/t2QmpBY.png) from JLC asking for consent to print as the STL has thin walls, you can agree to the print without worry.

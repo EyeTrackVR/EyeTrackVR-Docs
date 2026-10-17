@@ -1,3 +1,8 @@
+---
+title: Firmware REST API
+description: "The REST API exposed by EyeTrackVR firmware on the ESP32: endpoints, usage, and how the desktop app talks to your tracker."
+---
+
 # REST API {.text-[var(--font-accent)]}
 
 ## What is it?

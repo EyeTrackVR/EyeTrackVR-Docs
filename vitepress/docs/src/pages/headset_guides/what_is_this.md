@@ -1,3 +1,8 @@
+---
+title: Headset Specific Guides
+description: "What the headset specific guides cover: quirks, recommended 3D printed mounts and setup notes for each VR headset."
+---
+
 # What are "Headset Specific Guides"?
 
 This is an initiative to provide specific information on specific headsets. Any weird quirks, recommended 3d printed mounts and different setup types are to be included on a page. 

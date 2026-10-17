@@ -1,3 +1,8 @@
+---
+title: 3D Printed Camera Mounts
+description: Community 3D printed EyeTrackVR camera mounts for Valve Index, Quest, Pico, WMX and more, with the recommended print for each headset.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import { alerts } from '../../static/alerts'

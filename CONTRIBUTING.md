@@ -110,3 +110,30 @@ A **CLA** enables a contributor to grant "inbound" rights to a project.
 <Other>
 <A table should be maintained for relating maintainers and components. When triaging, this is essential to figure out if someone in particular should be consulted about specific changes.>
 <A stable release cadence should be established, e.g.: every month.>
+
+## Docs site SEO
+
+Every page under `vitepress/docs/src/pages` carries this frontmatter, and the build
+turns it into the `<title>`, meta description, canonical URL, Open Graph / Twitter
+card and JSON-LD for that page — you never write those tags by hand:
+
+```yaml
+---
+title: Short, keyword-first page title      # becomes "… — EyeTrackVR"
+description: One sentence, 120-160 chars.   # unique per page
+noindex: true                               # archive/legacy pages only
+---
+```
+
+Rules worth keeping:
+
+- **One H1 per page.** The first `#` heading is what search engines read as the page
+  subject; `title` frontmatter is the SERP title, they do not have to match word for word.
+- **`noindex: true`** is for superseded pages (old hardware, old firmware workflow).
+  Those pages get `robots: noindex, follow` and are dropped from `sitemap.xml`.
+- **Reference images as `/imgs/...`**, never `../public/imgs/...`. Relative paths get
+  bundled *and* copied, so every image would ship twice.
+- **Give every image a real `alt`.** Describe what the photo shows, not the filename.
+- Run `pnpm seo:images` after adding screenshots and `pnpm seo:og-image` if the brand
+  assets change. Both scripts live in `vitepress/scripts/` and are idempotent.
+- The build fails on dead internal links (`ignoreDeadLinks: false`) — that is intentional.

@@ -1,3 +1,8 @@
+---
+title: IR Filter Removal
+description: How to remove the IR cut filter from EyeTrackVR cameras so the sensors can see the 850 nm illuminators, with step-by-step photos.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import CheckBoxList from '../../vue/CheckBoxList.vue'

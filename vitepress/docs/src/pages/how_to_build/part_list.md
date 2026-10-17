@@ -1,3 +1,8 @@
+---
+title: Required Parts and BOM
+description: "Every part an EyeTrackVR build needs: ESP32 board options, cameras, IR LED kits, cables and 3D printed mounts, with what to buy and where."
+---
+
 <script setup>
 import DiyTable from './DiyTable.vue'
 import OptionalDiyTable from './OptionalDiyTable.vue'

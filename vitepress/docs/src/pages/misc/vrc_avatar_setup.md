@@ -1,3 +1,8 @@
+---
+title: VRChat Avatar Setup for Eye Tracking
+description: How to set up a VRChat avatar for EyeTrackVR eye tracking, including blend shapes, config and a walkthrough video.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import { alerts } from '../../static/alerts'

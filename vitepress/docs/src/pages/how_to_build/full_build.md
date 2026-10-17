@@ -1,3 +1,9 @@
+---
+title: V3 Full Build Guide (archived)
+description: Archived V3 EyeTrackVR build guide kept for reference. New builds should follow the current V4 build guide.
+noindex: true
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import CheckBoxList from '../../vue/CheckBoxList.vue'
@@ -29,7 +35,7 @@ Sketch of solder assembly of V4:
 
 Nevertheless, it's worth noting that these instructions are also mostly applicable to those who are using wired or V4 trackers.
 
-## Step 1: Make sure your have read the [Things to know before you start](../getting_started/things_to_know) guide
+## Step 1: Make sure your have read the [Things to know before you start](/getting_started/intro) guide
 
 This will give you a basic overview of the project's status and what to expect currently.
 

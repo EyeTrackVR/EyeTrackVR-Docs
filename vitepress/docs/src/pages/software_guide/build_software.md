@@ -1,3 +1,8 @@
+---
+title: Build the ETVR App from Source
+description: How to build the EyeTrackVR app from source, including the toolchain, dependencies and build steps for each platform.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import CheckList from '../../vue/CheckBoxList.vue'

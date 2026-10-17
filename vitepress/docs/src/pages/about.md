@@ -1,6 +1,9 @@
 ---
+title: About the EyeTrackVR Project
+description: "Who builds EyeTrackVR: the team and contributors behind the open-source VR eye tracking project and how it is run."
 layout: page
 ---
+
 <script setup>
 import {
   VPTeamPage,
@@ -15,7 +18,7 @@ import { members, contributors } from '../static/members'
 <VPTeamPage>
   <VPTeamPageTitle>
     <template #title>
-      <div class="text-[#ab5ac7]">
+      <div class="text-[var(--font-accent)]">
         Our Team
       </div>
     </template>

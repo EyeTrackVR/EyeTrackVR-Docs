@@ -1,3 +1,8 @@
+---
+title: IR LED Kit Setup
+description: "Choose the EyeTrackVR LED guide that matches your hardware: the V4 LED kits or the V5 Pro USB-C development kit."
+---
+
 # LED kit setup
 
 Choose the guide that matches the LED kit you have:

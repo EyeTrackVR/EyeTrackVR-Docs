@@ -1,3 +1,8 @@
+---
+title: Designing Your Own Camera Mount
+description: How to design your own EyeTrackVR camera mount for a headset that has no community mount yet, with measurement basics.
+---
+
 # Creating Your Own Mount {.text-[var(--font-accent)]}
 
 ## This page will include a basic rundown on how to create your own camera mount for a headset that may not have any existing community mounts

@@ -1,3 +1,8 @@
+---
+title: Preparing the XIAO ESP32 Sense
+description: What ships in the Seeed Studio XIAO ESP32 Sense box and how to prepare the board for an EyeTrackVR eye tracker build.
+---
+
 <script setup>
 import Alerts from '../../vue/alerts/Alerts.vue'
 import CheckBoxList from '../../vue/CheckBoxList.vue'

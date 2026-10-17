@@ -1,3 +1,8 @@
+---
+title: Adding and Editing Docs Pages
+description: How to add, edit and structure pages on the EyeTrackVR docs site, including the frontmatter every page should carry.
+---
+
 # Pages {.text-[var(--font-accent)]}
 
 This section will cover how to add or edit pages on the docs website.

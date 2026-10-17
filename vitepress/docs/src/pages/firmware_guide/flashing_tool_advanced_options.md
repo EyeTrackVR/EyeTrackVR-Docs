@@ -1,3 +1,8 @@
+---
+title: Flashing Tool Advanced Options
+description: Advanced options in the EyeTrackVR flashing tool, including manual settings for experienced users and troubleshooting.
+---
+
 <script setup>
 import ImageCard from '../../vue/images/ImageComponent.vue'
 import { image_settings } from '../../static/image_settings'
