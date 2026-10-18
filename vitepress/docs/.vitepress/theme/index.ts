@@ -20,8 +20,51 @@ const ETVRWordmark = () =>
         ' Docs'
     ])
 
+/**
+ * Pointer highlight for the "frosted" controls, ported from the landing page's
+ * script.js: a small radial gradient follows the cursor inside the surface via
+ * --pointer-x / --pointer-y. Delegated from the document so it keeps working
+ * after client-side navigation, and skipped for touch and reduced motion.
+ */
+function setupFrostedGlow() {
+    const FROSTED = '.VPButton.alt, .VPSocialLink'
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+    let frame = 0
+
+    const surfaceOf = (target: EventTarget | null) =>
+        target instanceof Element ? target.closest<HTMLElement>(FROSTED) : null
+
+    document.addEventListener('pointermove', (event) => {
+        const surface = surfaceOf(event.target)
+        if (!surface || event.pointerType === 'touch' || reducedMotion.matches) {
+            return
+        }
+        const bounds = surface.getBoundingClientRect()
+        cancelAnimationFrame(frame)
+        frame = requestAnimationFrame(() => {
+            surface.style.setProperty('--pointer-x', `${event.clientX - bounds.left}px`)
+            surface.style.setProperty('--pointer-y', `${event.clientY - bounds.top}px`)
+        })
+    })
+
+    document.addEventListener('pointerout', (event) => {
+        const surface = surfaceOf(event.target)
+        if (!surface || surface.contains(event.relatedTarget as Node)) {
+            return
+        }
+        surface.style.removeProperty('--pointer-x')
+        surface.style.removeProperty('--pointer-y')
+    })
+}
+
 const CustomTheme = {
     ...DefaultTheme,
+    enhanceApp(ctx) {
+        DefaultTheme.enhanceApp?.(ctx)
+        if (inBrowser) {
+            setupFrostedGlow()
+        }
+    },
     setup() {
         const { lang } = useData()
         watchEffect(() => {

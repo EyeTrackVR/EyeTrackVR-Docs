@@ -13,17 +13,6 @@ const members: IMembers[] = [
         ]
     },
     {
-        name: 'Summer',
-        avatar: 'https://avatars.githubusercontent.com/u/115666235?v=4',
-        title: 'ML Engineer / Data Scientist / App Developer',
-        links: [
-            {
-                icon: 'github',
-                link: 'https://github.com/Summer404NotFound'
-            },
-        ]
-    },
-    {
         name: 'lorow',
         avatar: 'https://avatars.githubusercontent.com/u/14099558?v=4',
         title: 'Lead Firmware Developer / App Developer',
@@ -42,6 +31,26 @@ const members: IMembers[] = [
             {
                 icon: 'github',
                 link: 'https://github.com/ShyAssassin'
+            },
+        ]
+    },
+    {
+        name: 'DenTechs',
+        avatar: 'https://avatars.githubusercontent.com/u/48604154?v=4',
+        links: [
+            {
+                icon: 'github',
+                link: 'https://github.com/DenTechs'
+            },
+        ]
+    },
+    {
+        name: 'dubnubdubnub',
+        avatar: 'https://avatars.githubusercontent.com/u/62734255?v=4',
+        links: [
+            {
+                icon: 'github',
+                link: 'https://github.com/dubnubdubnub'
             },
         ]
     },
@@ -80,6 +89,13 @@ const contributors: IMembers[] = [
         avatar: 'https://avatars.githubusercontent.com/u/124042774?v=4',
         links: [
             { icon: 'github', link: 'https://github.com/PallasNeko' },
+        ]
+    },
+    {
+        name: 'Summer',
+        avatar: 'https://avatars.githubusercontent.com/u/115666235?v=4',
+        links: [
+            { icon: 'github', link: 'https://github.com/Summer404NotFound' },
         ]
     }
 ]

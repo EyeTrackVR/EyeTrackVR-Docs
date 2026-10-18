@@ -23,8 +23,6 @@ This tool relies on our own solution called `OpenIris`, [found here](https://git
 You **do not** need to download OpenIris separately. The flashing tool will download it for you.
 :::
 
-To check the status of the project, please visit the [Development Road Map](/dev_roadmap)
-
 ::: details I want to use VSCode - How would I do this?
 [Follow the steps described here](./setup_vscode)
 :::

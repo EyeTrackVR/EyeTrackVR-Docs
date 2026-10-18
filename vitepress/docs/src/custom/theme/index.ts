@@ -30,13 +30,7 @@ const theme = {
     copyright: "Copyright © 2022-present ETVR",
   },
   nav: [
-    {
-      text: "About",
-      items: [
-        { text: "About Us", link: "/about" },
-        { text: "Development Road Map", link: "/dev_roadmap" },
-      ],
-    },
+    { text: "About", link: "/about" },
     { text: "Contact", link: "/contact" },
   ],
   sidebar: [
@@ -179,9 +173,23 @@ const theme = {
       ],
     },
   ],
+  /* Line icons from /icons.svg - the landing page draws its brand marks with
+   * the same stroke style, instead of VitePress' filled glyphs. */
   socialLinks: [
-    { icon: "github", link: "https://github.com/EyeTrackVR" },
-    { icon: "discord", link: "https://discord.gg/kkXYbVykZX" },
+    {
+      icon: {
+        svg: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#github"></use></svg>',
+      },
+      link: "https://github.com/EyeTrackVR",
+      ariaLabel: "GitHub",
+    },
+    {
+      icon: {
+        svg: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#discord"></use></svg>',
+      },
+      link: "https://discord.gg/kkXYbVykZX",
+      ariaLabel: "Discord",
+    },
   ],
 };
 

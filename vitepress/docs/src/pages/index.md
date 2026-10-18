@@ -25,28 +25,28 @@ hero:
       text: View on GitHub
       link: https://github.com/EyeTrackVR/EyeTrackVR
 features:
-  - icon: ⚡️
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#code"></use></svg>'
     title: Source First
     details: open and free to use.
-  - icon: 🎉
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#discord"></use></svg>'
     title: Community Driven
     details: built by you for you.
-  - icon: 💰
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#store"></use></svg>'
     title: Affordable
     details: affordable and easy to use.
-  - icon: 🎮
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#headset"></use></svg>'
     title: Nearly All VR Headsets
     details: EyeTrackVR works with nearly all VR headsets.
-  - icon: 🔨
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#chip"></use></svg>'
     title: Completely DIY
     details: completely DIY and easy to build.
-  - icon: 🌐
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#globe"></use></svg>'
     title: Open Platform
     details: open platform and works with any Social VR game.
-  - icon: 🔏
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#shield"></use></svg>'
     title: Privacy Focused
     details: privacy focused and does not collect any data, hosted on your own PC.
-  - icon: 📡
+  - icon: '<svg class="etvr-icon" aria-hidden="true"><use href="/icons.svg#broadcast"></use></svg>'
     title: Open Protocol
     details: EyeTrackVR uses the Open Sound Control (OSC) protocol.
 ---

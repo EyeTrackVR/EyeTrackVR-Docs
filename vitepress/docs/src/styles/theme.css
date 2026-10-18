@@ -23,6 +23,10 @@
   --etvr-surface: #111115;
   --etvr-surface-hi: #17171d;
   --etvr-line: #2b2b32;
+  /* Hairline once a frosted surface is hovered (landing page uses #55535f). */
+  --etvr-line-hi: #a9a3c4;
+  /* The landing page's pointer highlight: rgba(188, 161, 255, .1). */
+  --etvr-glow: rgba(188, 161, 255, 0.1);
   --etvr-text: #f2f0f5;
   --etvr-muted: #99979f;
 
@@ -112,6 +116,7 @@
   --vp-c-text-3: #6f6d77;
 
   --vp-c-border: var(--etvr-line);
+  --etvr-line-hi: #55535f;
   --vp-c-divider: #232329;
   --vp-c-gutter: var(--etvr-bg);
 
@@ -128,6 +133,8 @@
  * -------------------------------------------------------------------------- */
 
 :root {
+  /* Light theme keeps an accent-filled primary; the near-white plate the
+   * landing page uses would vanish on a white page. */
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: var(--vp-c-white);
   --vp-button-brand-bg: var(--vp-c-brand-3);
@@ -137,14 +144,87 @@
   --vp-button-brand-active-border: transparent;
   --vp-button-brand-active-text: var(--vp-c-white);
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
+
+  --vp-button-alt-border: var(--vp-c-border);
+  --vp-button-alt-text: var(--vp-c-text-1);
+  --vp-button-alt-bg: var(--vp-c-bg);
+  --vp-button-alt-hover-border: var(--vp-c-brand-1);
+  --vp-button-alt-hover-text: var(--vp-c-text-1);
+  --vp-button-alt-hover-bg: var(--vp-c-bg-soft);
+  --vp-button-alt-active-border: var(--vp-c-brand-1);
+  --vp-button-alt-active-text: var(--vp-c-text-1);
+  --vp-button-alt-active-bg: var(--vp-c-bg-soft);
 }
 
-/* The accent is a light purple, so dark ink on it is the readable pairing -
- * same as the landing page primary button. */
+/* Dark theme is the landing page pair: `.button-primary` is a near-white plate
+ * with dark ink that turns accent-purple on hover, `.frosted` is a surface
+ * button with a hairline border that lifts on hover. */
 .dark {
-  --vp-button-brand-text: var(--etvr-ink);
-  --vp-button-brand-hover-text: var(--etvr-ink);
-  --vp-button-brand-active-text: var(--etvr-ink);
+  --vp-button-brand-border: #eeebf4;
+  --vp-button-brand-text: #141017;
+  --vp-button-brand-bg: #eeebf4;
+  --vp-button-brand-hover-border: var(--etvr-accent-hi);
+  --vp-button-brand-hover-text: #141017;
+  --vp-button-brand-hover-bg: var(--etvr-accent-hi);
+  --vp-button-brand-active-border: var(--etvr-accent);
+  --vp-button-brand-active-text: #141017;
+  --vp-button-brand-active-bg: var(--etvr-accent);
+
+  --vp-button-alt-border: var(--etvr-line);
+  --vp-button-alt-text: var(--etvr-text);
+  --vp-button-alt-bg: var(--etvr-surface);
+  --vp-button-alt-hover-border: #55535f;
+  --vp-button-alt-hover-text: var(--etvr-text);
+  --vp-button-alt-hover-bg: var(--etvr-surface-hi);
+  --vp-button-alt-active-border: #55535f;
+  --vp-button-alt-active-text: var(--etvr-text);
+  --vp-button-alt-active-bg: var(--etvr-surface-hi);
+}
+
+/**
+ * Component: Icons
+ *
+ * The landing page draws every icon from one inline-stroke sprite (icons.svg):
+ * 24px, no fill, 1.5 stroke, round caps and joins, tinted with the accent.
+ * The home feature tiles use that sprite instead of emoji.
+ * -------------------------------------------------------------------------- */
+
+.etvr-icon {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Feature tiles: 24px and accent-tinted, the landing page's `.feature-top
+ * .icon`. */
+.VPFeature .etvr-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--vp-c-brand-1);
+}
+
+/* Social links take the link colour and inherit it into the mark, like the
+ * landing page's `.icon-button.frosted`. VitePress paints its brand marks with
+ * `fill: currentColor`, so that has to be undone here. */
+.VPSocialLink > svg.etvr-icon {
+  width: 22px !important;
+  height: 22px !important;
+  fill: none !important;
+}
+
+/* VPFeature wraps a string icon in a 48px tinted plate; the landing page shows
+ * a bare line icon on the tile, so drop the plate. */
+.VPFeature .icon {
+  display: inline-flex !important;
+  align-self: flex-start;
+  justify-content: flex-start !important;
+  width: auto !important;
+  height: auto !important;
+  background-color: transparent !important;
 }
 
 /**
@@ -184,6 +264,159 @@
 .VPHero .clip .brand-vr {
   color: var(--etvr-accent);
   -webkit-text-fill-color: var(--etvr-accent);
+}
+
+/**
+ * Shape
+ *
+ * The landing page is square corners and 1px hairlines - `.frosted` explicitly
+ * sets `border-radius: 0` - so the docs drop VitePress's pill buttons and
+ * rounded cards to match. Most of these live in VitePress' scoped component
+ * styles, which out-specify a plain selector, hence the `!important`.
+ * -------------------------------------------------------------------------- */
+
+/* Theme buttons: the landing page format - square, 50px tall, small bold
+ * label, generous side padding. */
+.VPButton.medium,
+.VPButton.big {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 0 !important;
+  min-height: 50px;
+  padding: 12px 22px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+}
+
+/* Home feature tiles */
+.VPFeature {
+  border: 1px solid var(--vp-c-divider) !important;
+  border-radius: 0 !important;
+}
+
+.VPFeature .icon {
+  border-radius: 0 !important;
+}
+
+/* Nav dropdowns and their links */
+.VPMenu {
+  border-radius: 0 !important;
+}
+
+.VPMenu .link,
+.VPMenuLink .link {
+  border-radius: 0 !important;
+}
+
+/* Search: trigger, modal, field and results */
+.DocSearch-Button,
+.DocSearch-Button .DocSearch-Button-Key {
+  border-radius: 0 !important;
+}
+
+.VPLocalSearchBox .shell,
+.VPLocalSearchBox .search-bar,
+.VPLocalSearchBox .result,
+.VPLocalSearchBox kbd {
+  border-radius: 0 !important;
+}
+
+/* Outline dropdowns (mobile "On this page", aside dropdown) */
+.VPLocalNavOutlineDropdown .items,
+.VPDocOutlineDropdown button {
+  border-radius: 0 !important;
+}
+
+/* Prev / next pager under each page */
+.VPDocFooter .pager-link {
+  border-radius: 0 !important;
+}
+
+/* Badges, team cards (about page), skip link */
+.VPBadge,
+.VPTeamMembersItem,
+.VPSkipLink {
+  border-radius: 0 !important;
+}
+
+/* Code blocks, code-group tabs, inline code and the copy button.
+ * These ship in the theme's global stylesheet, so no `!important` needed. */
+.vp-doc div[class*='language-'],
+.vp-doc li div[class*='language-'],
+.vp-doc .custom-block div[class*='language-'],
+.vp-code-group .tabs,
+.vp-doc :not(pre) > code,
+.vp-doc div[class*='language-'] .copy {
+  border-radius: 0;
+}
+
+/* Custom blocks: NOTE / TIP / WARNING / DANGER / DETAILS */
+.vp-doc .custom-block {
+  border-radius: 0;
+}
+
+/* The dark-mode switch stays a pill; a square toggle just looks broken. */
+
+/**
+ * Component: Frosted surfaces
+ *
+ * The landing page's `.frosted` control: surface fill, hairline border and a
+ * small radial highlight that follows the pointer. --pointer-x / --pointer-y are
+ * written by the delegated pointermove handler in .vitepress/theme/index.ts.
+ * -------------------------------------------------------------------------- */
+
+.VPButton.alt,
+.VPSocialLink {
+  position: relative;
+  isolation: isolate;
+}
+
+.VPButton.alt::before,
+.VPSocialLink::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(
+    56px circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
+    var(--etvr-glow),
+    transparent 75%
+  );
+  transition: opacity 0.12s;
+}
+
+.VPButton.alt:hover::before,
+.VPButton.alt:focus-visible::before,
+.VPSocialLink:hover::before,
+.VPSocialLink:focus-visible::before {
+  opacity: 1;
+}
+
+/* GitHub / Discord links become the landing page's `.icon-button.frosted`
+ * plate instead of bare icons. */
+.VPSocialLinks {
+  gap: 8px !important;
+}
+
+.VPSocialLink {
+  width: 40px !important;
+  height: 40px !important;
+  border: 1px solid var(--vp-c-border);
+  background-color: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-2) !important;
+  transition: color 0.12s, border-color 0.12s, background-color 0.12s;
+}
+
+.VPSocialLink:hover,
+.VPSocialLink:focus-visible {
+  border-color: var(--etvr-line-hi);
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1) !important;
 }
 
 /**
