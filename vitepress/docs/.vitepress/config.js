@@ -57,7 +57,7 @@ export default defineConfig({
     title: 'EyeTrackVR Docs',
     // rc.20 only honours titleTemplate at site level; index.md opts out with
     // `titleTemplate: false` so the home page keeps the plain site title.
-    titleTemplate: ':title — EyeTrackVR',
+    titleTemplate: ':title - EyeTrackVR',
     description: 'Official documentation for EyeTrackVR. Fully open-source and affordable VR eye tracking platform.',
     themeConfig: theme,
 })

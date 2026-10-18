@@ -35,7 +35,7 @@ We design for compliance with these key international safety standards:
 
 EyeTrackVR emitters operate at **850 nm**, within the retinal hazard region.  
 Our calculated output is well below both thresholds:  
-**≤ 1.71 mW/cm²** (worst-case V4 High Bin) at 1.5 cm — safely under the retinal limit and **5.8×** below the corneal limit.
+**≤ 1.71 mW/cm²** (worst-case V4 High Bin) at 1.5 cm, safely under the retinal limit and **5.8×** below the corneal limit.
 
 -----
 
@@ -139,7 +139,7 @@ E_total         = E × (# of LEDs)
 
 > “To avoid thermal injury of the cornea and possible delayed effects on the lens of the eye (cataractogenesis), infrared radiation (780 nm \< λ \< 3 µm) should be limited to 100 W m⁻² (10 mW cm⁻²) for lengthy exposures (\> 1000 s).”
 
-> — *ICNIRP Guidelines on Limits of Exposure to Incoherent Optical Radiation (2013)*  
+> *ICNIRP Guidelines on Limits of Exposure to Incoherent Optical Radiation (2013)*
 > [PDF](https://docs.eyetrackvr.dev/safety/ICNIRP_optical_radiation.pdf)
 
 -----

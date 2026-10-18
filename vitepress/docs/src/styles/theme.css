@@ -266,6 +266,42 @@
   -webkit-text-fill-color: var(--etvr-accent);
 }
 
+/* In light mode the mark sits on a plate of --etvr-surface-hi, the same grey as
+ * the alt buttons and soft surfaces. A hairline in the shared line colour stops
+ * the square from floating on the white page. */
+html:not(.dark) .VPHero .image-src {
+  border: 1px solid var(--vp-c-border);
+}
+
+/* VitePress drives the hero name and its subtitle from a single rule (both
+ * 32/48/56px bold) with no gap between them, and gives each line a different
+ * max-width. Once the subtitle is smaller than the title that reads as ragged
+ * and cramped, so give the two subtitle lines one shared measure, one type
+ * treatment, and real space under the title. */
+.VPHero .name,
+.VPHero .text,
+.VPHero .tagline {
+  max-width: 560px !important;
+}
+
+.VPHero .text {
+  padding-top: 20px;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  letter-spacing: -0.2px !important;
+  color: var(--vp-c-text-1);
+}
+
+.VPHero .tagline {
+  padding-top: 4px;
+  font-size: 22px !important;
+  font-weight: 400 !important;
+  line-height: 1.5 !important;
+  letter-spacing: -0.2px !important;
+  color: var(--vp-c-text-1);
+}
+
 /**
  * Shape
  *
@@ -276,19 +312,34 @@
  * -------------------------------------------------------------------------- */
 
 /* Theme buttons: the landing page format - square, 50px tall, small bold
- * label, generous side padding. */
+ * label, generous side padding, and a wide gap before the trailing icon. */
 .VPButton.medium,
 .VPButton.big {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 26px;
   border-radius: 0 !important;
   min-height: 50px;
   padding: 12px 22px !important;
   font-size: 12px !important;
   font-weight: 600 !important;
   line-height: 1.5 !important;
+}
+
+/* The landing page's primary action ends in a thin arrow (`icons.svg#arrow`).
+ * Hero actions have no icon slot, so it is masked in and painted with the
+ * label colour. */
+.VPHero .VPButton.brand::after {
+  content: '';
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  background-color: currentColor;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h16m-6-6 6 6-6 6'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h16m-6-6 6 6-6 6'/%3E%3C/svg%3E")
+    no-repeat center / contain;
 }
 
 /* Home feature tiles */

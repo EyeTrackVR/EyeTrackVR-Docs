@@ -63,7 +63,7 @@ Need help? Want to show off your build? Join our Discord server! We’re excited
 
 ## ⚠️ Eye Safety in DIY LED Builds
 
-Your safety is our top priority. Because this project involves Infrared (IR) light—which is invisible to the human eye—it is strictly important that you understand the risks.
+Your safety is our top priority. Because this project involves Infrared (IR) light, which is invisible to the human eye, it is strictly important that you understand the risks.
 Our hardware is built with safety in mind, and so it is important that yours does too.
 
 **To ensure safety, you must adhere to the recommended LEDs, wiring diagrams, and firmware settings.**

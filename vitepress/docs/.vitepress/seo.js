@@ -33,7 +33,7 @@ export const SITE = {
   locale: 'en_US',
   lang: 'en',
   ogImage: '/og-image.png',
-  logo: '/logo_light.png',
+  logo: '/logo_no_bg.png',
   twitter: '@EyeTrackVR',
   sameAs: [
     'https://github.com/EyeTrackVR',
@@ -210,8 +210,8 @@ export function transformHead({ pageData }) {
   const branded = title.toLowerCase().includes(SITE.name.toLowerCase()) ||
     title.toLowerCase().includes(SITE.shortName.toLowerCase())
   const ogTitle = isHome
-    ? `${SITE.name} — Open Source & Affordable VR Eye Tracking`
-    : branded ? title : `${title} — ${SITE.name}`
+    ? 'EyeTrackVR: Open Source and Affordable VR Eye Tracking'
+    : branded ? title : `${title} - ${SITE.name}`
   const image = ABS(SITE.ogImage)
 
   const head = [
@@ -225,12 +225,12 @@ export function transformHead({ pageData }) {
     ['meta', { property: 'og:image', content: image }],
     ['meta', { property: 'og:image:width', content: '1200' }],
     ['meta', { property: 'og:image:height', content: '630' }],
-    ['meta', { property: 'og:image:alt', content: `${SITE.name} — ${SITE.tagline}` }],
+    ['meta', { property: 'og:image:alt', content: `EyeTrackVR: ${SITE.tagline}` }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
     ['meta', { name: 'twitter:title', content: ogTitle }],
     ['meta', { name: 'twitter:description', content: description }],
     ['meta', { name: 'twitter:image', content: image }],
-    ['meta', { name: 'twitter:image:alt', content: `${SITE.name} — ${SITE.tagline}` }],
+    ['meta', { name: 'twitter:image:alt', content: `EyeTrackVR: ${SITE.tagline}` }],
     ['meta', { name: 'format-detection', content: 'telephone=no' }],
   ]
 
