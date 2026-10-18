@@ -25,21 +25,6 @@ Contact Us
 <!-- [![Discord](https://discord.com/api/guilds/946212245187199026/widget.png?style=banner3)](https://discord.gg/kkXYbVykZX){:target="_blank" :alt="Discord"} -->
 
 ---
-source: https://docs.eyetrackvr.dev/dev_roadmap
-title: Development Roadmap
----
-
-# EyeTrackVR Development Roadmap
-
-This will contain a list of features that are in progress, completed, and planned.
-
-## Completed
-
-## In Progress
-
-## Planned
-
----
 source: https://docs.eyetrackvr.dev/development/docs/dev_docs
 title: Docs Site Development
 ---
@@ -271,8 +256,6 @@ This tool relies on our own solution called `OpenIris`, [found here](https://git
 ::: info Note
 You **do not** need to download OpenIris separately. The flashing tool will download it for you.
 :::
-
-To check the status of the project, please visit the [Development Road Map](/dev_roadmap)
 
 ::: details I want to use VSCode - How would I do this?
 [Follow the steps described here](./setup_vscode)

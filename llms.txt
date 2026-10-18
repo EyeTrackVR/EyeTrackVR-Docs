@@ -13,7 +13,6 @@ Community: https://discord.gg/kkXYbVykZX
 
 - [About the EyeTrackVR Project](https://docs.eyetrackvr.dev/about): Who builds EyeTrackVR: the team and contributors behind the open-source VR eye tracking project and how it is run.
 - [Contact and Community](https://docs.eyetrackvr.dev/contact): Join the EyeTrackVR Discord for build help, hardware questions and contributing to the open-source VR eye tracking project.
-- [Development Roadmap](https://docs.eyetrackvr.dev/dev_roadmap): Features in progress, completed and planned for EyeTrackVR hardware, firmware and the desktop app.
 
 ## Development
 
