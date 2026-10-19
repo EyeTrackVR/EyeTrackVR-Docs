@@ -1,13 +1,18 @@
 #!/usr/bin/env python3
 """Regenerate the social share card (docs/src/pages/public/og-image.png).
 
-1200x630 is the size Twitter/X and Discord render at, and the docs advertise
-`twitter:card: summary_large_image`, so this file must exist - without it every
-shared docs link renders as a blank card.
+The card is a short 1200x480 banner (2.5:1) so Discord/Slack embeds stay
+compact; the lockup is centred so Twitter/X's 1.91:1 crop never clips it.
+If you change W/H, update `og:image:width/height` in docs/.vitepress/seo.js.
+
+Fonts: Inter is preferred (matches the site). Point INTER_DIR at a folder
+holding Inter-*.ttf/otf (e.g. the extras/ttf folder of the Inter release zip),
+or install Inter system-wide; otherwise Segoe UI / Helvetica are used.
 
 Usage:  python3 scripts/make_og_image.py
 """
 
+import os
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -16,105 +21,103 @@ HERE = Path(__file__).resolve().parent
 OUT = HERE.parent / "docs" / "src" / "pages" / "public" / "og-image.png"
 LOGO = HERE.parent / "docs" / "src" / "pages" / "public" / "logo_no_bg.png"
 
-W, H = 1200, 630
+W, H = 1200, 480
 
-ACCENT = (171, 90, 199)  # #ab5ac7, the docs accent purple
-PINK = (242, 166, 224)
-TEXT = (244, 242, 248)
-MUTED = (176, 168, 192)
+# theme.css tokens
+BG = (9, 9, 12)  # --etvr-bg
+LINE = (43, 43, 50)  # --etvr-line
+ACCENT = (181, 160, 238)  # --etvr-accent
+TEXT = (242, 240, 245)  # --etvr-text
+MUTED = (153, 151, 159)  # --etvr-muted
+FAINT = (98, 96, 106)
 
-FONTS = {
-    "black": [("/System/Library/Fonts/Supplemental/Arial Black.ttf", 0)],
-    "bold": [
-        ("/System/Library/Fonts/Avenir Next.ttc", 0),
+INTER_DIRS = [
+    os.environ.get("INTER_DIR", ""),
+    str(Path.home() / "Library/Fonts"),
+    "/Library/Fonts",
+    "/usr/share/fonts/opentype/inter",
+    "/usr/share/fonts/truetype/inter",
+    str(Path(os.environ.get("LOCALAPPDATA", "")) / "Microsoft/Windows/Fonts"),
+    "C:/Windows/Fonts",
+]
+
+FALLBACKS = {
+    "SemiBold": [
+        ("C:/Windows/Fonts/seguisb.ttf", 0),
         ("/System/Library/Fonts/HelveticaNeue.ttc", 1),
     ],
-    "regular": [
-        ("/System/Library/Fonts/SFNS.ttf", 0),
+    "Regular": [
+        ("C:/Windows/Fonts/segoeui.ttf", 0),
         ("/System/Library/Fonts/Helvetica.ttc", 0),
     ],
 }
 
 
-def font(kind: str, size: int) -> ImageFont.FreeTypeFont:
-    for path, index in FONTS[kind]:
+def font(weight: str, size: int) -> ImageFont.FreeTypeFont:
+    candidates = [
+        (str(Path(d) / f"Inter-{weight}.{ext}"), 0)
+        for d in INTER_DIRS
+        if d
+        for ext in ("ttf", "otf")
+    ]
+    for path, index in candidates + FALLBACKS[weight]:
         try:
             return ImageFont.truetype(path, size, index=index)
         except OSError:
             continue
-    return ImageFont.load_default()
+    return ImageFont.load_default(size)
 
 
 def background() -> Image.Image:
-    img = Image.new("RGB", (W, H))
-    top, bottom = (22, 15, 30), (13, 10, 20)
-    for y in range(H):
-        t = y / H
-        img.paste(tuple(round(a + (b - a) * t) for a, b in zip(top, bottom)), (0, y, W, y + 1))
-    glow = Image.new("RGB", (W, H), (0, 0, 0))
-    draw = ImageDraw.Draw(glow)
-    draw.ellipse((W - 620, -260, W + 320, 520), fill=(58, 26, 82))
-    draw.ellipse((-320, 300, 380, 900), fill=(30, 18, 56))
-    glow = glow.filter(ImageFilter.GaussianBlur(120))
-    return Image.blend(img, Image.blend(img, glow, 0.85), 0.75)
-
-
-def wrap(draw, text, font, max_width):
-    words, lines, line = text.split(), [], ""
-    for word in words:
-        trial = f"{line} {word}".strip()
-        if draw.textlength(trial, font=font) <= max_width:
-            line = trial
-        else:
-            lines.append(line)
-            line = word
-    if line:
-        lines.append(line)
-    return lines
+    img = Image.new("RGB", (W, H), BG)
+    # one faint accent glow behind the lockup, nothing else
+    glow = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(glow).ellipse((W // 2 - 420, H // 2 - 170, W // 2 + 420, H // 2 + 170), fill=255)
+    glow = glow.filter(ImageFilter.GaussianBlur(140)).point(lambda v: v * 0.10)
+    img.paste(Image.new("RGB", (W, H), ACCENT), mask=glow)
+    return img
 
 
 def main() -> None:
     img = background()
     draw = ImageDraw.Draw(img)
 
+    word_font = font("SemiBold", 84)
+    tag_font = font("Regular", 28)
+    url_font = font("Regular", 20)
+
     logo = Image.open(LOGO).convert("RGBA")
-    logo.thumbnail((330, 330), Image.LANCZOS)
-    img.paste(logo, (64, (H - logo.height) // 2), logo)
+    logo = logo.crop(logo.getbbox())
+    logo.thumbnail((112, 112), Image.LANCZOS)
 
-    x = 452
-    max_w = W - x - 64
-    y = 96
+    # wordmark: "EyeTrack" + accent "VR", sitting next to the logo
+    left, right = "EyeTrack", "VR"
+    left_w = draw.textlength(left, font=word_font)
+    word_w = left_w + draw.textlength(right, font=word_font)
+    gap = 32
+    lockup_w = logo.width + gap + word_w
+    x = round((W - lockup_w) / 2)
 
-    draw.text((x, y), "EyeTrackVR", font=font("black", 78), fill=TEXT)
-    y += 104
+    ascent, descent = word_font.getmetrics()
+    cap_top, cap_bottom = word_font.getbbox("E")[1], word_font.getbbox("E")[3]
+    tagline = "Open-source, affordable VR eye tracking"
+    tag_h = tag_font.getbbox(tagline)[3]
+    block_h = max(logo.height, cap_bottom - cap_top) + 36 + tag_h
+    top = round((H - block_h) / 2) - 8
 
-    for line in wrap(draw, "Open-source, affordable VR eye tracking", font("bold", 40), max_w):
-        draw.text((x, y), line, font=font("bold", 40), fill=PINK)
-        y += 52
-    y += 14
-    draw.rounded_rectangle((x, y, x + 96, y + 5), radius=3, fill=ACCENT)
-    y += 34
+    row_h = max(logo.height, cap_bottom - cap_top)
+    img.paste(logo, (x, top + (row_h - logo.height) // 2), logo)
+    text_x = x + logo.width + gap
+    text_y = top + (row_h - (cap_bottom - cap_top)) // 2 - cap_top
+    draw.text((text_x, text_y), left, font=word_font, fill=TEXT)
+    draw.text((text_x + left_w, text_y), right, font=word_font, fill=ACCENT)
 
-    body = (
-        "Build your own eye tracker for VRChat, social VR and PCVR. "
-        "Open hardware, open firmware, OSC out of the box."
-    )
-    for line in wrap(draw, body, font("regular", 27), max_w):
-        draw.text((x, y), line, font=font("regular", 27), fill=MUTED)
-        y += 38
+    tag_y = top + row_h + 36
+    draw.text((W / 2, tag_y), tagline, font=tag_font, fill=MUTED, anchor="mt")
 
-    draw.text(
-        (x, H - 96),
-        "docs.eyetrackvr.dev",
-        font=font("bold", 30),
-        fill=ACCENT,
-    )
-    draw.text(
-        (x, H - 60),
-        "MIT licensed  ·  community built  ·  your data stays on your PC",
-        font=font("regular", 20),
-        fill=(124, 116, 142),
-    )
+    # footer: hairline + url
+    draw.line((W / 2 - 40, H - 78, W / 2 + 40, H - 78), fill=LINE, width=2)
+    draw.text((W / 2, H - 48), "docs.eyetrackvr.dev", font=url_font, fill=FAINT, anchor="mm")
 
     img.save(OUT, "PNG", optimize=True)
     print(f"wrote {OUT} ({OUT.stat().st_size / 1024:.0f} KB)")
