@@ -142,9 +142,7 @@ We like to keep this cohesive, so please use the following style:
 # My Page
 ```
 
-This will give the title a nice orange colour.
-
-The `{}` are required, and the `.text-[#e67e22]` is the colour using `TailWindCSS` classes. You can also use our built in CSS variables ``. You will find these in the `src/styles/theme.css` file. You can change this to any colour you like, but please keep it consistent with the rest of the site.
+Page titles are styled by the theme, so every page gets the same plain heading whatever classes it carries. The `{}` attribute syntax still works for other headings and elements, and the site's CSS variables live in `src/styles/theme.css`.
 
 ::: tip Tip
 This entire site supports `TailWindCSS` classes. You can find the documentation [here](https://tailwindcss.com/docs).
@@ -712,8 +710,6 @@ title: Introduction and Getting Started
 Welcome to **EyeTrackVR**, a Source First, affordable eye-tracking platform designed specifically for adding to VR Headsets.
 
 While built with Social VR (like VRChat) in mind, EyeTrackVR is highly versatile. It works by capturing real-time eye data and transmitting it via `OSC`, making it compatible with a wide variety of VR applications.
-
-Whether you are here to build your own tracker, write code, or just see how it all works, you’ve come to the right place.
 
 ---
 
