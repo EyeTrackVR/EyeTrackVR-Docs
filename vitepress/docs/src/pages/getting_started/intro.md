@@ -16,8 +16,6 @@ Welcome to **EyeTrackVR**, a Source First, affordable eye-tracking platform desi
 
 While built with Social VR (like VRChat) in mind, EyeTrackVR is highly versatile. It works by capturing real-time eye data and transmitting it via `OSC`, making it compatible with a wide variety of VR applications.
 
-Whether you are here to build your own tracker, write code, or just see how it all works, you’ve come to the right place.
-
 ---
 
 ## Getting Started

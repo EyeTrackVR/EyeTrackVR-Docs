@@ -55,9 +55,7 @@ We like to keep this cohesive, so please use the following style:
 # My Page {.text-[var(--font-accent)]}
 ```
 
-This will give the title a nice orange colour.
-
-The `{}` are required, and the `.text-[#e67e22]` is the colour using `TailWindCSS` classes. You can also use our built in CSS variables `{.text-[var(--font-accent)]}`. You will find these in the `src/styles/theme.css` file. You can change this to any colour you like, but please keep it consistent with the rest of the site.
+Page titles are styled by the theme, so every page gets the same plain heading whatever classes it carries. The `{}` attribute syntax still works for other headings and elements, and the site's CSS variables live in `src/styles/theme.css`.
 
 ::: tip Tip
 This entire site supports `TailWindCSS` classes. You can find the documentation [here](https://tailwindcss.com/docs).

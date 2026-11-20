@@ -3,14 +3,12 @@
 /*! Do not put raw CSS code in this file  */
 
 
-/* Fonts - Inter ships with the VitePress default theme; IBM Plex Mono matches
- * the EyeTrackVR landing page. */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+/* Fonts - Atkinson Hyperlegible (text + mono), see theme.css. */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400..800;1,400..800&family=Atkinson+Hyperlegible+Mono:wght@400..700&display=swap');
 
 /* Custom Imports */
 @import 'theme.css';
 @import 'index.css';
-@import 'scrollbar.css';
 @import 'checkboxes.css';
 
 /* TailWindCSS Files */

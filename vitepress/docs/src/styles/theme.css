@@ -1,77 +1,108 @@
-/* https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css */
-
 /**
- * Customize default theme styling by overriding CSS variables:
+ * EyeTrackVR Docs theme.
+ *
+ * Overrides the VitePress default theme variables:
  * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
  *
- * The palette and type below are shared with the EyeTrackVR landing page
- * (https://github.com/EyeTrackVR/ETVR-Landing-Page) so the docs read as the
- * same product: Inter for text, IBM Plex Mono for code, and the #b5a0ee accent
- * on a near-black #09090c / #111115 surface.
+ * The idea: a workbench notebook. Warm paper-white page, near-black ink, and
+ * the EyeTrackVR purple (the colour of the PCBs and the logo's eyes) as the
+ * one accent. Dark mode is the same palette at dusk, not a separate look.
+ *
+ * Rules of thumb when adding styles:
+ *   - purple = interactive (links, buttons, active nav) and the "VR" wordmark
+ *   - everything else is ink on paper
+ *   - no glows, no gradients, no decorative icons
  */
 
 /**
- * Brand tokens
+ * Tokens
  * -------------------------------------------------------------------------- */
 
 :root {
-  /* Straight from the landing page :root */
-  --etvr-accent: #b5a0ee;
-  --etvr-accent-hi: #c7b1f5;
-  --etvr-ink: #09090c;
-  --etvr-bg: #09090c;
-  --etvr-surface: #111115;
-  --etvr-surface-hi: #17171d;
-  --etvr-line: #2b2b32;
-  /* Hairline once a frosted surface is hovered (landing page uses #55535f). */
-  --etvr-line-hi: #a9a3c4;
-  /* The landing page's pointer highlight: rgba(188, 161, 255, .1). */
-  --etvr-glow: rgba(188, 161, 255, 0.1);
-  --etvr-text: #f2f0f5;
-  --etvr-muted: #99979f;
+  --etvr-paper: #faf9f7;
+  --etvr-paper-alt: #f3f2ef;
+  --etvr-paper-soft: #ebeae6;
+  --etvr-line: #d8d6d2;
+  --etvr-line-soft: #e6e4e0;
 
-  /* The landing accent is too light to use as text on white (2.3:1), so the
-   * light theme uses a darkened version of the same hue. Both clear 4.5:1. */
-  --etvr-accent-dark: #6f5bd6;
-  --etvr-accent-darker: #5b45b8;
+  --etvr-ink: #1f1d26; /* 15.8:1 on paper */
+  --etvr-ink-2: #54525e; /* 7.3:1 */
+  --etvr-ink-3: #6a6874; /* 5.2:1 */
 
-  /* Alias kept for content: page headings are written as
-   * `# Title {.text-[var(--font-accent)]}`, so this has to keep resolving. */
-  --font-accent: var(--etvr-accent-dark);
-  --font-accent-light: var(--etvr-accent);
+  /* The brand purple is #b5a0ee, which is too pale to read on paper (2.3:1),
+   * so light mode uses a deeper cut of the same hue. */
+  --etvr-accent: #6750c8; /* 5.6:1 on paper, and under paper-coloured text */
+  --etvr-accent-deep: #523caa;
+  --etvr-accent-soft: rgba(103, 80, 200, 0.1);
+
+  /* Page headings are written as `# Title {.text-[var(--font-accent)]}`, so
+   * this alias has to keep resolving. Headings are plain ink now. */
+  --font-accent: var(--etvr-ink);
+  --font-accent-light: var(--etvr-ink);
+}
+
+.dark {
+  --etvr-paper: #18171c;
+  --etvr-paper-alt: #1e1d23;
+  --etvr-paper-soft: #26252c;
+  --etvr-line: #3a3842;
+  --etvr-line-soft: #2d2c34;
+
+  --etvr-ink: #ebe9f0; /* 14.8:1 */
+  --etvr-ink-2: #aeabb8; /* 7.9:1 */
+  --etvr-ink-3: #888592; /* 4.9:1 */
+
+  --etvr-accent: #b5a0ee; /* 7.8:1 */
+  --etvr-accent-deep: #c7b1f5;
+  --etvr-accent-soft: rgba(181, 160, 238, 0.14);
 }
 
 /**
  * Typography
+ *
+ * Atkinson Hyperlegible, designed by the Braille Institute so that similar
+ * letters (I/l/1, O/0) stay distinct. One family for text, headings and code.
  * -------------------------------------------------------------------------- */
 
 :root {
-  /* Base Font - Inter, self-hosted by VitePress as "Inter var" */
-  --vp-font-family-base: "Chinese Quotes", "Inter var", "Inter", ui-sans-serif,
-    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif,
+  --vp-font-family-base: "Atkinson Hyperlegible Next", "Atkinson Hyperlegible",
+    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
-  /* Code Snippet font */
-  --vp-font-family-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular,
-    "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
-    monospace;
+  --vp-font-family-mono: "Atkinson Hyperlegible Mono", ui-monospace,
+    SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
 }
 
 /**
  * Colors
  * -------------------------------------------------------------------------- */
 
-:root {
-  --vp-c-default-1: var(--vp-c-gray-1);
-  --vp-c-default-2: var(--vp-c-gray-2);
-  --vp-c-default-3: var(--vp-c-gray-3);
-  --vp-c-default-soft: var(--vp-c-gray-soft);
+:root,
+.dark {
+  --vp-c-bg: var(--etvr-paper);
+  --vp-c-bg-alt: var(--etvr-paper-alt);
+  --vp-c-bg-elv: var(--etvr-paper);
+  --vp-c-bg-soft: var(--etvr-paper-alt);
 
-  --vp-c-brand-1: var(--etvr-accent-dark);
-  --vp-c-brand-2: var(--etvr-accent-darker);
-  --vp-c-brand-3: var(--etvr-accent-darker);
-  --vp-c-brand-soft: rgba(111, 91, 214, 0.12);
+  --vp-c-text-1: var(--etvr-ink);
+  --vp-c-text-2: var(--etvr-ink-2);
+  --vp-c-text-3: var(--etvr-ink-3);
+
+  --vp-c-border: var(--etvr-line);
+  --vp-c-divider: var(--etvr-line-soft);
+  --vp-c-gutter: var(--etvr-line-soft);
+
+  --vp-c-default-1: var(--etvr-line);
+  --vp-c-default-2: var(--etvr-line-soft);
+  --vp-c-default-3: var(--etvr-paper-soft);
+  --vp-c-default-soft: var(--etvr-paper-soft);
+
+  --vp-c-brand-1: var(--etvr-accent);
+  --vp-c-brand-2: var(--etvr-accent-deep);
+  --vp-c-brand-3: var(--etvr-accent);
+  --vp-c-brand-soft: var(--etvr-accent-soft);
 
   --vp-c-tip-1: var(--vp-c-brand-1);
   --vp-c-tip-2: var(--vp-c-brand-2);
@@ -88,167 +119,51 @@
   --vp-c-danger-3: var(--vp-c-red-3);
   --vp-c-danger-soft: var(--vp-c-red-soft);
 
-  --vp-c-sponsor: #fd1d7c;
+  --vp-sidebar-bg-color: var(--etvr-paper-alt);
+  --vp-code-block-bg: var(--etvr-paper-alt);
+  --vp-code-color: var(--etvr-ink);
+  --vp-code-bg: var(--etvr-paper-soft);
 }
 
-/* Light theme: keep the white surfaces, just pull them a shade cooler so they
- * sit next to the purple accent. */
-:root {
-  --vp-c-bg: #ffffff;
-  --vp-c-bg-alt: #f6f5fa;
-  --vp-c-bg-elv: #ffffff;
-  --vp-c-bg-soft: #f6f5fa;
-
-  --vp-c-border: #cdc9e0;
-  --vp-c-divider: #e4e1ef;
-  --vp-c-gutter: #e4e1ef;
-}
-
-/* Dark theme: the landing page palette. */
 .dark {
-  --vp-c-bg: var(--etvr-bg);
-  --vp-c-bg-alt: var(--etvr-surface);
-  --vp-c-bg-elv: var(--etvr-surface);
-  --vp-c-bg-soft: var(--etvr-surface-hi);
-
-  --vp-c-text-1: var(--etvr-text);
-  --vp-c-text-2: var(--etvr-muted);
-  --vp-c-text-3: #6f6d77;
-
-  --vp-c-border: var(--etvr-line);
-  --etvr-line-hi: #55535f;
-  --vp-c-divider: #232329;
-  --vp-c-gutter: var(--etvr-bg);
-
-  --vp-c-brand-1: var(--etvr-accent);
-  --vp-c-brand-2: var(--etvr-accent-hi);
-  --vp-c-brand-3: var(--etvr-accent);
-  --vp-c-brand-soft: rgba(181, 160, 238, 0.16);
-
-  --font-accent: var(--etvr-accent);
+  --vp-c-bg-elv: var(--etvr-paper-alt);
 }
 
 /**
- * Component: Button
+ * Buttons
  * -------------------------------------------------------------------------- */
 
-:root {
-  /* Light theme keeps an accent-filled primary; the near-white plate the
-   * landing page uses would vanish on a white page. */
-  --vp-button-brand-border: transparent;
-  --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: var(--vp-c-brand-3);
-  --vp-button-brand-hover-border: transparent;
-  --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
-  --vp-button-brand-active-border: transparent;
-  --vp-button-brand-active-text: var(--vp-c-white);
-  --vp-button-brand-active-bg: var(--vp-c-brand-1);
-
-  --vp-button-alt-border: var(--vp-c-border);
-  --vp-button-alt-text: var(--vp-c-text-1);
-  --vp-button-alt-bg: var(--vp-c-bg);
-  --vp-button-alt-hover-border: var(--vp-c-brand-1);
-  --vp-button-alt-hover-text: var(--vp-c-text-1);
-  --vp-button-alt-hover-bg: var(--vp-c-bg-soft);
-  --vp-button-alt-active-border: var(--vp-c-brand-1);
-  --vp-button-alt-active-text: var(--vp-c-text-1);
-  --vp-button-alt-active-bg: var(--vp-c-bg-soft);
-}
-
-/* Dark theme is the landing page pair: `.button-primary` is a near-white plate
- * with dark ink that turns accent-purple on hover, `.frosted` is a surface
- * button with a hairline border that lifts on hover. */
+:root,
 .dark {
-  --vp-button-brand-border: #eeebf4;
-  --vp-button-brand-text: #141017;
-  --vp-button-brand-bg: #eeebf4;
-  --vp-button-brand-hover-border: var(--etvr-accent-hi);
-  --vp-button-brand-hover-text: #141017;
-  --vp-button-brand-hover-bg: var(--etvr-accent-hi);
-  --vp-button-brand-active-border: var(--etvr-accent);
-  --vp-button-brand-active-text: #141017;
-  --vp-button-brand-active-bg: var(--etvr-accent);
+  --vp-button-brand-border: transparent;
+  --vp-button-brand-text: var(--etvr-paper);
+  --vp-button-brand-bg: var(--etvr-accent);
+  --vp-button-brand-hover-border: transparent;
+  --vp-button-brand-hover-text: var(--etvr-paper);
+  --vp-button-brand-hover-bg: var(--etvr-accent-deep);
+  --vp-button-brand-active-border: transparent;
+  --vp-button-brand-active-text: var(--etvr-paper);
+  --vp-button-brand-active-bg: var(--etvr-accent-deep);
 
   --vp-button-alt-border: var(--etvr-line);
-  --vp-button-alt-text: var(--etvr-text);
-  --vp-button-alt-bg: var(--etvr-surface);
-  --vp-button-alt-hover-border: #55535f;
-  --vp-button-alt-hover-text: var(--etvr-text);
-  --vp-button-alt-hover-bg: var(--etvr-surface-hi);
-  --vp-button-alt-active-border: #55535f;
-  --vp-button-alt-active-text: var(--etvr-text);
-  --vp-button-alt-active-bg: var(--etvr-surface-hi);
+  --vp-button-alt-text: var(--etvr-ink);
+  --vp-button-alt-bg: transparent;
+  --vp-button-alt-hover-border: var(--etvr-ink-3);
+  --vp-button-alt-hover-text: var(--etvr-ink);
+  --vp-button-alt-hover-bg: var(--etvr-paper-alt);
+  --vp-button-alt-active-border: var(--etvr-ink-3);
+  --vp-button-alt-active-text: var(--etvr-ink);
+  --vp-button-alt-active-bg: var(--etvr-paper-soft);
+}
+
+.VPButton.medium,
+.VPButton.big {
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 /**
- * Component: Icons
- *
- * The landing page draws every icon from one inline-stroke sprite (icons.svg):
- * 24px, no fill, 1.5 stroke, round caps and joins, tinted with the accent.
- * The home feature tiles use that sprite instead of emoji.
- * -------------------------------------------------------------------------- */
-
-.etvr-icon {
-  width: 22px;
-  height: 22px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.5;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* Feature tiles: 24px and accent-tinted, the landing page's `.feature-top
- * .icon`. */
-.VPFeature .etvr-icon {
-  width: 24px;
-  height: 24px;
-  color: var(--vp-c-brand-1);
-}
-
-/* Social links take the link colour and inherit it into the mark, like the
- * landing page's `.icon-button.frosted`. VitePress paints its brand marks with
- * `fill: currentColor`, so that has to be undone here. */
-.VPSocialLink > svg.etvr-icon {
-  width: 22px !important;
-  height: 22px !important;
-  fill: none !important;
-}
-
-/* VPFeature wraps a string icon in a 48px tinted plate; the landing page shows
- * a bare line icon on the tile, so drop the plate. */
-.VPFeature .icon {
-  display: inline-flex !important;
-  align-self: flex-start;
-  justify-content: flex-start !important;
-  width: auto !important;
-  height: auto !important;
-  background-color: transparent !important;
-}
-
-/**
- * Component: Home
- * --------------------------------------------------------------------------
- */
-
-:root {
-  /* "EyeTrack" and " Docs" sit in the normal text colour; only "VR" is
-   * accented, exactly like the landing page wordmark. */
-  --vp-home-hero-name-color: var(--vp-c-text-1);
-  --vp-home-hero-name-background: none;
-
-  /* No glow behind the hero logo - the mark stands on its own. */
-  --vp-home-hero-image-background-image: none;
-  --vp-home-hero-image-filter: none;
-}
-
-/**
- * Component: Wordmark
- *
- * The landing page renders its brand as "EyeTrack" + a purple "VR"; the same
- * treatment is used for the docs nav title and the home hero. Logotypes are
- * exempt from text-contrast rules, so the accent stays #b5a0ee in both themes.
+ * Wordmark and icons
  * -------------------------------------------------------------------------- */
 
 .brand-vr {
@@ -257,232 +172,162 @@
 
 .etvr-wordmark {
   white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 
-/* The hero name is painted with -webkit-text-fill-color, which children
- * inherit, so the accent has to be re-declared here. */
-.VPHero .clip .brand-vr {
-  color: var(--etvr-accent);
-  -webkit-text-fill-color: var(--etvr-accent);
+/* Line icons from /icons.svg (nav social links). */
+.etvr-icon {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
-/* In light mode the mark sits on a plate of --etvr-surface-hi, the same grey as
- * the alt buttons and soft surfaces. A hairline in the shared line colour stops
- * the square from floating on the white page. */
-html:not(.dark) .VPHero .image-src {
-  border: 1px solid var(--vp-c-border);
-}
-
-/* VitePress drives the hero name and its subtitle from a single rule (both
- * 32/48/56px bold) with no gap between them, and gives each line a different
- * max-width. Once the subtitle is smaller than the title that reads as ragged
- * and cramped, so give the two subtitle lines one shared measure, one type
- * treatment, and real space under the title. */
-.VPHero .name,
-.VPHero .text,
-.VPHero .tagline {
-  max-width: 560px !important;
-}
-
-.VPHero .text {
-  padding-top: 20px;
-  font-size: 22px !important;
-  font-weight: 400 !important;
-  line-height: 1.5 !important;
-  letter-spacing: -0.2px !important;
-  color: var(--vp-c-text-1);
-}
-
-.VPHero .tagline {
-  padding-top: 4px;
-  font-size: 22px !important;
-  font-weight: 400 !important;
-  line-height: 1.5 !important;
-  letter-spacing: -0.2px !important;
-  color: var(--vp-c-text-1);
+/* VitePress paints its own brand marks with `fill: currentColor`. */
+.VPSocialLink > svg.etvr-icon {
+  width: 20px !important;
+  height: 20px !important;
+  fill: none !important;
 }
 
 /**
- * Shape
+ * Reading
  *
- * The landing page is square corners and 1px hairlines - `.frosted` explicitly
- * sets `border-radius: 0` - so the docs drop VitePress's pill buttons and
- * rounded cards to match. Most of these live in VitePress' scoped component
- * styles, which out-specify a plain selector, hence the `!important`.
+ * Slightly larger text and looser leading than the VitePress default; the
+ * content column is ~690px, which lands around 75 characters a line.
  * -------------------------------------------------------------------------- */
 
-/* Theme buttons: the landing page format - square, 50px tall, small bold
- * label, generous side padding, and a wide gap before the trailing icon. */
-.VPButton.medium,
-.VPButton.big {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 26px;
-  border-radius: 0 !important;
-  min-height: 50px;
-  padding: 12px 22px !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  line-height: 1.5 !important;
+.vp-doc {
+  font-size: 17px;
 }
 
-/* The landing page's primary action ends in a thin arrow (`icons.svg#arrow`).
- * Hero actions have no icon slot, so it is masked in and painted with the
- * label colour. */
-.VPHero .VPButton.brand::after {
-  content: '';
-  flex-shrink: 0;
-  width: 18px;
-  height: 18px;
-  background-color: currentColor;
-  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h16m-6-6 6 6-6 6'/%3E%3C/svg%3E")
-    no-repeat center / contain;
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 12h16m-6-6 6 6-6 6'/%3E%3C/svg%3E")
-    no-repeat center / contain;
+.vp-doc p,
+.vp-doc summary,
+.vp-doc li {
+  line-height: 1.7;
 }
 
-/* Home feature tiles */
-.VPFeature {
-  border: 1px solid var(--vp-c-divider) !important;
-  border-radius: 0 !important;
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  letter-spacing: -0.015em;
 }
 
-.VPFeature .icon {
-  border-radius: 0 !important;
-}
-
-/* Nav dropdowns and their links */
-.VPMenu {
-  border-radius: 0 !important;
-}
-
-.VPMenu .link,
-.VPMenuLink .link {
-  border-radius: 0 !important;
-}
-
-/* Search: trigger, modal, field and results */
-.DocSearch-Button,
-.DocSearch-Button .DocSearch-Button-Key {
-  border-radius: 0 !important;
-}
-
-.VPLocalSearchBox .shell,
-.VPLocalSearchBox .search-bar,
-.VPLocalSearchBox .result,
-.VPLocalSearchBox kbd {
-  border-radius: 0 !important;
-}
-
-/* Outline dropdowns (mobile "On this page", aside dropdown) */
-.VPLocalNavOutlineDropdown .items,
-.VPDocOutlineDropdown button {
-  border-radius: 0 !important;
-}
-
-/* Prev / next pager under each page */
-.VPDocFooter .pager-link {
-  border-radius: 0 !important;
-}
-
-/* Badges, team cards (about page), skip link */
-.VPBadge,
-.VPTeamMembersItem,
-.VPSkipLink {
-  border-radius: 0 !important;
-}
-
-/* Code blocks, code-group tabs, inline code and the copy button.
- * These ship in the theme's global stylesheet, so no `!important` needed. */
-.vp-doc div[class*='language-'],
-.vp-doc li div[class*='language-'],
-.vp-doc .custom-block div[class*='language-'],
-.vp-code-group .tabs,
-.vp-doc :not(pre) > code,
-.vp-doc div[class*='language-'] .copy {
-  border-radius: 0;
-}
-
-/* Custom blocks: NOTE / TIP / WARNING / DANGER / DETAILS */
-.vp-doc .custom-block {
-  border-radius: 0;
-}
-
-/* The dark-mode switch stays a pill; a square toggle just looks broken. */
-
-/**
- * Component: Frosted surfaces
- *
- * The landing page's `.frosted` control: surface fill, hairline border and a
- * small radial highlight that follows the pointer. --pointer-x / --pointer-y are
- * written by the delegated pointermove handler in .vitepress/theme/index.ts.
- * -------------------------------------------------------------------------- */
-
-.VPButton.alt,
-.VPSocialLink {
-  position: relative;
-  isolation: isolate;
-}
-
-.VPButton.alt::before,
-.VPSocialLink::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0;
-  background: radial-gradient(
-    56px circle at var(--pointer-x, 50%) var(--pointer-y, 50%),
-    var(--etvr-glow),
-    transparent 75%
-  );
-  transition: opacity 0.12s;
-}
-
-.VPButton.alt:hover::before,
-.VPButton.alt:focus-visible::before,
-.VPSocialLink:hover::before,
-.VPSocialLink:focus-visible::before {
-  opacity: 1;
-}
-
-/* GitHub / Discord links become the landing page's `.icon-button.frosted`
- * plate instead of bare icons. */
-.VPSocialLinks {
-  gap: 8px !important;
-}
-
-.VPSocialLink {
-  width: 40px !important;
-  height: 40px !important;
-  border: 1px solid var(--vp-c-border);
-  background-color: var(--vp-c-bg-alt);
-  color: var(--vp-c-text-2) !important;
-  transition: color 0.12s, border-color 0.12s, background-color 0.12s;
-}
-
-.VPSocialLink:hover,
-.VPSocialLink:focus-visible {
-  border-color: var(--etvr-line-hi);
-  background-color: var(--vp-c-bg-soft);
+/* Many pages style their H1 inline (`{.text-3xl .underline
+ * .text-[var(--font-accent)]}`); give every page title the same plain
+ * treatment instead of an underlined link-coloured one. */
+.vp-doc h1 {
+  font-size: 34px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
   color: var(--vp-c-text-1) !important;
+  text-decoration: none !important;
+}
+
+.vp-doc h2 {
+  font-size: 25px;
+  margin-top: 44px;
+  padding-top: 28px;
+}
+
+.vp-doc h3 {
+  font-size: 20px;
+}
+
+/* Links read as links without shouting: underlined, coloured, thicker on
+ * hover. */
+.vp-doc a {
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+  transition: text-decoration-color 0.15s, color 0.15s;
+}
+
+.vp-doc a:hover {
+  text-decoration-color: currentColor;
+}
+
+/* Header anchors and buttons inside content are not text links. */
+.vp-doc a.header-anchor,
+.vp-doc a.VPButton {
+  text-decoration: none;
+}
+
+.vp-doc hr {
+  border-top-color: var(--vp-c-divider);
+}
+
+/* Pages often write `---` before a `##`; the H2 already draws a rule, so
+ * don't stack two. */
+.vp-doc hr + h2 {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+}
+
+/* Images: soft corners so photos sit on the page instead of cutting into it. */
+.vp-doc img {
+  border-radius: 8px;
+}
+
+/* Inline code: ink on a soft chip, not accent-coloured. */
+.vp-doc :not(pre) > code {
+  font-size: 0.9em;
+}
+
+/* Code blocks carry a hairline so they hold their shape on paper. */
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-c-divider);
 }
 
 /**
- * Component: Custom Block
+ * Navigation chrome
+ * -------------------------------------------------------------------------- */
+
+/* The sidebar group titles are the map of the docs; make them read as labels. */
+.VPSidebarItem.level-0 > .item > .text,
+.VPSidebarItem.level-0 > .item .text {
+  letter-spacing: 0;
+}
+
+.VPSidebarItem.level-1.is-active > .item .text,
+.VPSidebarItem.level-1.is-active > .item .link .text {
+  font-weight: 600;
+}
+
+.VPDocFooter .pager-link {
+  border-radius: 10px;
+}
+
+/**
+ * Custom blocks (NOTE / TIP / WARNING / DANGER)
+ *
+ * A flat tinted bar: square corners, no border, no accent stripe.
  * -------------------------------------------------------------------------- */
 
 :root {
+  --vp-custom-block-font-size: 15px;
+
   --vp-custom-block-tip-border: transparent;
   --vp-custom-block-tip-text: var(--vp-c-text-1);
   --vp-custom-block-tip-bg: var(--vp-c-brand-soft);
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 }
 
+.vp-doc .custom-block {
+  border: 0;
+  border-radius: 0;
+  line-height: 1.6;
+}
+
 /**
- * Component: Algolia
+ * Search
  * -------------------------------------------------------------------------- */
 
 .DocSearch {
@@ -490,15 +335,15 @@ html:not(.dark) .VPHero .image-src {
 }
 
 /**
- * Selection, matching the landing page.
+ * Selection and focus
  * -------------------------------------------------------------------------- */
 
 ::selection {
-  background: var(--etvr-accent-dark);
-  color: var(--vp-c-white);
+  background: var(--etvr-accent);
+  color: var(--etvr-paper);
 }
 
-.dark ::selection {
-  background: var(--etvr-accent);
-  color: var(--etvr-ink);
+:focus-visible {
+  outline: 2px solid var(--etvr-accent);
+  outline-offset: 2px;
 }

@@ -312,8 +312,8 @@ table {
 }
 
 th, td {
-  padding: 5px;
-  border: 1px solid #ddd;
+  padding: 8px;
+  border: 1px solid var(--vp-c-divider);
   word-wrap: break-word;
   vertical-align: middle;
   text-align: center;
@@ -339,32 +339,34 @@ th, td {
 }
 
 .selected-option {
-  border: 1px solid #999;
-  padding: 5px;
-  background-color: #666;
+  border: 1px solid var(--vp-c-border);
+  border-radius: 6px;
+  padding: 6px 8px;
+  background-color: var(--vp-c-bg);
   min-height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  color: #fff;
-  transition: background-color 0.3s ease;
+  color: var(--vp-c-text-1);
+  transition: border-color 0.15s ease;
 }
 
 .selected-option:hover {
-  background-color: #444;
+  border-color: var(--vp-c-brand-1);
 }
 
 .options {
   position: absolute;
   left: 0;
   right: 0;
-  background-color: #222;
-  border: 1px solid #444;
+  background-color: var(--vp-c-bg);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 6px;
   max-height: 200px;
   overflow-y: auto;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  box-shadow: var(--vp-shadow-2);
   top: 100%;
 }
 
@@ -374,10 +376,10 @@ th, td {
 }
 
 .option {
-  padding: 5px;
-  border-bottom: 1px solid #444;
-  color: #fff;
-  background-color: #333;
+  padding: 6px 8px;
+  border-bottom: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-1);
+  background-color: var(--vp-c-bg);
 }
 
 .option:last-child {
@@ -385,7 +387,7 @@ th, td {
 }
 
 .option:hover {
-  background-color: #1e1e20;
+  background-color: var(--vp-c-default-soft);
 }
 
 .dropdown-arrow {

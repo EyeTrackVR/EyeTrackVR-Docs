@@ -134,6 +134,6 @@ Rules worth keeping:
 - **Reference images as `/imgs/...`**, never `../public/imgs/...`. Relative paths get
   bundled *and* copied, so every image would ship twice.
 - **Give every image a real `alt`.** Describe what the photo shows, not the filename.
-- Run `pnpm seo:images` after adding screenshots and `pnpm seo:og-image` if the brand
-  assets change. Both scripts live in `vitepress/scripts/` and are idempotent.
+- Run `pnpm seo:images` after adding screenshots and `pnpm seo:og-image` (the square
+  link-preview thumbnail) if the logo or theme colours change. Both scripts live in `vitepress/scripts/` and are idempotent.
 - The build fails on dead internal links (`ignoreDeadLinks: false`) — that is intentional.

@@ -12,18 +12,24 @@ const altText = computed(
         (props.options?.caption ?? '').toString().trim() ||
         'EyeTrackVR documentation screenshot'
 );
+
+/* Some entries ask for `width:100%` alongside their max-width; that now lands
+ * on the figure, so pass the stretch on to the image. */
+const stretch = computed(() => /(^|;)\s*width:\s*100%/.test(props.options?.max_width ?? ''));
 </script>
 
 <template>
     <div align="center" class="mb-4">
-        <figure>
+        <!-- max_width sits on the figure, not the img, so `max-w-full` can still
+             shrink the image on narrow screens. -->
+        <figure class="mx-auto" :style="options.max_width">
             <a v-if="options.url_2" class="no_icon" target="_blank" rel="noopener" :href="options.url_2">
-                <img class="docimage max-w-full h-auto rounded-lg" :src="options.url" :alt="altText" loading="lazy"
-                    decoding="async" :style="options.max_width" />
+                <img class="docimage max-w-full h-auto rounded-lg" :class="{ 'w-full': stretch }" :src="options.url" :alt="altText" loading="lazy"
+                    decoding="async" />
             </a>
             <a v-else class="no_icon" target="_blank" rel="noopener" :href="options.url">
-                <img class="docimage max-w-full h-auto rounded-lg" :src="options.url" :alt="altText" loading="lazy"
-                    decoding="async" :style="options.max_width" />
+                <img class="docimage max-w-full h-auto rounded-lg" :class="{ 'w-full': stretch }" :src="options.url" :alt="altText" loading="lazy"
+                    decoding="async" />
             </a>
             <figcaption v-if="options.caption">
                 <br>

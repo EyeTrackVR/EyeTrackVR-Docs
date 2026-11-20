@@ -1,19 +1,15 @@
 <script setup>
+/* Renders as a standard VitePress callout (the same block `::: warning`
+ * produces), so alerts written in Vue and in markdown look identical.
+ * `options.type` is one of: info | tip | warning | danger.
+ * `title_color` / `text_color` in the options are no longer used. */
 const props = defineProps(['options']);
 </script>
 
 <template>
-    <div class="my-2 max-w-xs rounded-lg bg-white px-4 py-4 shadow-xl ring-1 ring-slate-900/5 dark:bg-slate-800">
-        <div>
-            <span class="drop-shadow-lg">
-                <Badge :type="options.type" :text="options.badge_content" />
-            </span>
-        </div>
-        <div class="mt-2 pl-1 text-2xl font-bold tracking-tight text-slate-900" :class="options.title_color">
-            {{ options.title }}
-        </div>
-        <p class="mt-2 pl-1 text-sm" :class="options.text_color">
-            <slot name="content" />
-        </p>
+    <div class="custom-block" :class="options.type">
+        <p class="custom-block-title">{{ options.badge_content }}</p>
+        <p v-if="options.title" class="font-semibold">{{ options.title }}</p>
+        <slot name="content" />
     </div>
 </template>

@@ -5,8 +5,8 @@
 
 const theme = {
   logo: {
-    light: "/logo_dark.png",
-    dark: "/logo_no_bg.png",
+    light: "/logo_ink.svg",
+    dark: "/logo_no_bg.svg",
     alt: "EyeTrackVR Logo",
   },
   /* Rendered as the two-tone "EyeTrackVR Docs" wordmark by the Layout in
@@ -30,6 +30,7 @@ const theme = {
     copyright: "Copyright © 2022-present ETVR",
   },
   nav: [
+    { text: "Guide", link: "/getting_started/intro", activeMatch: "^/(getting_started|how_to_build|headset_guides|firmware_guide|software_guide|misc)/" },
     { text: "About", link: "/about" },
     { text: "Contact", link: "/contact" },
   ],
@@ -173,8 +174,7 @@ const theme = {
       ],
     },
   ],
-  /* Line icons from /icons.svg - the landing page draws its brand marks with
-   * the same stroke style, instead of VitePress' filled glyphs. */
+  /* Line icons from /icons.svg instead of VitePress' filled glyphs. */
   socialLinks: [
     {
       icon: {

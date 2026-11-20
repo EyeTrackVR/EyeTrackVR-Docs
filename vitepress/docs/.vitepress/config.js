@@ -10,6 +10,10 @@ export default defineConfig({
     outDir: './.vitepress/dist',
     srcDir: './src/pages',
     lang: 'en-US',
+    // First visit opens in light mode whatever the OS says; the nav toggle
+    // still switches to dark and the choice is remembered. (The type only
+    // lists 'dark' here, but the value is passed straight through.)
+    appearance: { initialValue: 'light' },
     // `with-subfolders` emitted slash-less links anyway on rc.20 while the
     // trailing-slash variants 404'd on GitHub Pages; `true` matches reality.
     cleanUrls: true,
@@ -37,7 +41,7 @@ export default defineConfig({
         // would render: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     ], */
     markdown: {
-        theme: 'material-theme-palenight',
+        theme: { light: 'github-light', dark: 'vitesse-dark' },
         lineNumbers: true,
         // Docs pages are image heavy; tell the browser to defer anything below
         // the fold instead of blocking on 200 screenshots.
