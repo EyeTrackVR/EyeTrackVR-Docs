@@ -170,6 +170,20 @@
   color: var(--etvr-accent);
 }
 
+/* The logo is the white mark: on a rounded dark tile in light mode
+ * (logo_tile.svg), on its own in dark mode (logo_no_bg.svg). The tile gets a
+ * little more room than the 24px default so the mark stays legible; the bare
+ * mark is centred in the same 28px slot so the wordmark does not move when
+ * the theme changes. */
+:root {
+  --vp-nav-logo-height: 28px;
+}
+
+.VPNavBarTitle .logo.dark {
+  height: 24px;
+  margin: 0 10px 0 2px;
+}
+
 .etvr-wordmark {
   white-space: nowrap;
   letter-spacing: -0.01em;

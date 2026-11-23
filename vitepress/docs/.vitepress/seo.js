@@ -33,8 +33,8 @@ export const SITE = {
   locale: 'en_US',
   lang: 'en',
   // Small square mark for link previews, see scripts/make_og_image.py.
-  ogImage: '/og-logo.png',
-  logo: '/logo_no_bg.png',
+  ogImage: '/og-mark.png',
+  logo: '/og-mark.png',
   twitter: '@EyeTrackVR',
   sameAs: [
     'https://github.com/EyeTrackVR',
@@ -180,7 +180,7 @@ function faqPage() {
 
 /** Sitewide <head> additions: icons, theme colour, third-party preconnects. */
 export const headTags = [
-  ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo_no_bg.svg' }],
+  ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo_tile.svg' }],
   ['link', { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' }],
   ['link', { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' }],
   ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
@@ -194,6 +194,15 @@ export const headTags = [
   // Discord widget; resolving those hosts early keeps LCP off the third party.
   ['link', { rel: 'preconnect', href: 'https://discord.com', crossorigin: '' }],
   ['link', { rel: 'dns-prefetch', href: 'https://cdn.discordapp.com' }],
+  // The light/dark choice is shared with the landing page (eyetrackvr.dev)
+  // through an `etvr-theme` cookie on the parent domain. Copy it into the key
+  // VitePress reads, before VitePress' own script (appended after these tags)
+  // applies the theme. The cookie is written in .vitepress/theme/index.ts.
+  [
+    'script',
+    {},
+    `try{var m=document.cookie.match(/(?:^|; )etvr-theme=(dark|light)/);if(m)localStorage.setItem('vitepress-theme-appearance',m[1])}catch(e){}`,
+  ],
 ]
 
 /**

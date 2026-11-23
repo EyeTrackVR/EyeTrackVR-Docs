@@ -1,5 +1,9 @@
-/* Custom Checkboxes */
-input[type="checkbox"] {
+/* Custom Checkboxes
+ *
+ * Everything here is scoped to `.checkboxes`, the wrapper CheckBoxList.vue
+ * renders. Unscoped `input` and `label` rules also hit the search box: they
+ * drew a second frame inside it and pushed its magnifier icon up 9px. */
+.checkboxes input[type="checkbox"] {
   cursor: pointer;
   width: 10px;
   height: 10px;
@@ -13,8 +17,8 @@ input[type="checkbox"] {
   padding: 3px;
 }
 
-input,
-input:focus {
+.checkboxes input,
+.checkboxes input:focus {
   border: none;
   border-radius: 2pt;
   box-shadow: 0 0 0 1pt var(--vp-c-border);
@@ -22,15 +26,15 @@ input:focus {
   transition: 0.1s;
 }
 
-input[type="checkbox"]:checked {
+.checkboxes input[type="checkbox"]:checked {
   background-color: var(--vp-c-brand-1);
 }
 
-input[type="checkbox"]:focus {
+.checkboxes input[type="checkbox"]:focus {
   box-shadow: 0 0 3pt 2pt var(--vp-c-brand-1);
 }
 
-label {
+.checkboxes label {
   font-size: 18px;
   position: relative;
   top: -9px;

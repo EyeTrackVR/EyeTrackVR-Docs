@@ -4,8 +4,10 @@
 //import MyLayout from '../../vue/MyLayout.vue'
 
 const theme = {
+  /* The white mark: on its rounded dark tile in light mode, on its own in
+   * dark mode. */
   logo: {
-    light: "/logo_ink.svg",
+    light: "/logo_tile.svg",
     dark: "/logo_no_bg.svg",
     alt: "EyeTrackVR Logo",
   },
